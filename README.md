@@ -2,6 +2,7 @@
 
 [![license](https://img.shields.io/github/license/jason-fox/fox.jason.passthrough.swagger.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![DITA-OT 3.3](https://img.shields.io/badge/DITA--OT-3.3-blue.svg)](http://www.dita-ot.org/3.3/) <br/>
+[![Build Status](https://travis-ci.org/jason-fox/fox.jason.passthrough.swagger.svg?branch=master)](https://travis-ci.org/jason-fox/fox.jason.passthrough.swagger)
 
 This is a DITA-OT Plug-in to used extend the available input formats for DITA-OT. Valid DITA can be generated directly from a [Swagger](https://github.com/swagger-api) files  and processed as if they had been written in DITA.
 
