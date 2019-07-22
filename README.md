@@ -82,7 +82,12 @@ shown:
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap>
     ...etc
-    <mapref format="swagger" href="swagger.json"/>
+    <appendices toc="yes" print="no">
+      <topicmeta>
+        <navtitle>Appendices</navtitle>
+      </topicmeta>
+      <appendix format="swagger" href="Swagger_Definition.json"/>
+   </appendices>
 </bookmap>
 ```
 
