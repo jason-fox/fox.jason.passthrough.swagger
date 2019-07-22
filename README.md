@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/jason-fox/fox.jason.passthrough.swagger.svg?branch=master)](https://travis-ci.org/jason-fox/fox.jason.passthrough.swagger)
 [![Documentation Status](https://readthedocs.org/projects/swaggerdita-ot/badge/?version=latest)](https://swaggerdita-ot.readthedocs.io/en/latest/?badge=latest)
 
-This is a DITA-OT Plug-in to used to auto-create valid DITA-based REST API documentation. The documentation can be generated directly from a [Swagger](https://github.com/swagger-api) file and processed as if it had been written in DITA.
+This is a DITA-OT Plug-in used to auto-create valid DITA-based REST API documentation. The documentation can be generated directly from a [Swagger](https://github.com/swagger-api) file and processed as if it had been written in DITA.
 
 # Table of Contents
 
