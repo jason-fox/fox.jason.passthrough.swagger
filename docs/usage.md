@@ -18,5 +18,3 @@ shown:
 ```
 
 The additional file will be converted to a `*.dita` file and will be added to the build job without further processing. The title of the included topic will be the same as root name of the file. Any underscores in the filename will be replaced by spaces in title.
-
-# License
