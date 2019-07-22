@@ -1,6 +1,6 @@
 <h1>Swagger Plugin for DITA-OT</h1>
 
-This is a DITA-OT Plug-in to used to auto-create valid DITA-based REST API documentation. The documentation can be generated directly from a [Swagger](https://github.com/swagger-api) file and processed as if it had been written in DITA.
+This is a DITA-OT Plug-in used to auto-create valid DITA-based REST API documentation. The documentation can be generated directly from a [Swagger](https://github.com/swagger-api) file and processed as if it had been written in DITA.
 
 [<img src="https://swagger.io/swagger/media/assets/images/swagger_logo.svg" align="right" height="55" width="211">](http://swagger.io/)
 
