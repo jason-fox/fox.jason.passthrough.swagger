@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/jason-fox/fox.jason.passthrough.swagger.svg?branch=master)](https://travis-ci.org/jason-fox/fox.jason.passthrough.swagger)
 [![Documentation Status](https://readthedocs.org/projects/swaggerdita-ot/badge/?version=latest)](https://swaggerdita-ot.readthedocs.io/en/latest/?badge=latest)
 
-This is a DITA-OT Plug-in to used extend the available input formats for DITA-OT. Valid DITA can be generated directly from a [Swagger](https://github.com/swagger-api) files  and processed as if they had been written in DITA.
+This is a DITA-OT Plug-in to used extend the available input formats for DITA-OT. Valid DITA can be generated directly from [Swagger](https://github.com/swagger-api) files  and processed as if they had been written in DITA.
 
 # Table of Contents
 
