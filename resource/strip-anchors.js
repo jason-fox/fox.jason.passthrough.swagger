@@ -18,7 +18,7 @@ function moveAnchors(markdown) {
   var id = null;
 
   // Read each line of the Markdown file in turn
-  for (var i = 1; i < lines.length; i++) {
+  for (var i = 0; i < lines.length; i++) {
     if (lines[i].startsWith("<a name")) {
       var start = lines[i].indexOf('"') + 1;
       var end = lines[i].indexOf('"', start);

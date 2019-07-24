@@ -3,13 +3,13 @@
 <fo:flow flow-name="xsl-region-body" xmlns:fo="http://www.w3.org/1999/XSL/Format">
   <fo:block>
     <fo:marker marker-class-name="current-topic-number">2</fo:marker>
-    <fo:marker marker-class-name="current-header">swagger</fo:marker>
+    <fo:marker marker-class-name="current-header">Swagger Petstore</fo:marker>
     <fo:block>
       <fo:block font-weight="bold">Chapter
         <fo:block font-weight="bold">2</fo:block>
       </fo:block>
     </fo:block>
-    <fo:block border-after-color="black" font-family="STANDARD" font-weight="bold">swagger</fo:block>
+    <fo:block border-after-color="black" font-family="STANDARD" font-weight="bold">Swagger Petstore</fo:block>
     <fo:table page-break-after="always" table-layout="fixed" width="100%">
       <fo:table-column column-number="1" column-width="35%"></fo:table-column>
       <fo:table-column column-number="2" column-width="65%"></fo:table-column>
@@ -25,67 +25,7 @@
                   </fo:list-item-label>
                   <fo:list-item-body>
                     <fo:block>
-                      <fo:basic-link color="blue" internal-destination="unique_3">Version information</fo:basic-link>
-                    </fo:block>
-                  </fo:list-item-body>
-                </fo:list-item>
-                <fo:list-item relative-align="baseline">
-                  <fo:list-item-label keep-together.within-line="always">
-                    <fo:block text-align="start">&#8226;</fo:block>
-                  </fo:list-item-label>
-                  <fo:list-item-body>
-                    <fo:block>
-                      <fo:basic-link color="blue" internal-destination="unique_4">Contact information</fo:basic-link>
-                    </fo:block>
-                  </fo:list-item-body>
-                </fo:list-item>
-                <fo:list-item relative-align="baseline">
-                  <fo:list-item-label keep-together.within-line="always">
-                    <fo:block text-align="start">&#8226;</fo:block>
-                  </fo:list-item-label>
-                  <fo:list-item-body>
-                    <fo:block>
-                      <fo:basic-link color="blue" internal-destination="unique_5">License information</fo:basic-link>
-                    </fo:block>
-                  </fo:list-item-body>
-                </fo:list-item>
-                <fo:list-item relative-align="baseline">
-                  <fo:list-item-label keep-together.within-line="always">
-                    <fo:block text-align="start">&#8226;</fo:block>
-                  </fo:list-item-label>
-                  <fo:list-item-body>
-                    <fo:block>
-                      <fo:basic-link color="blue" internal-destination="unique_6">URI scheme</fo:basic-link>
-                    </fo:block>
-                  </fo:list-item-body>
-                </fo:list-item>
-                <fo:list-item relative-align="baseline">
-                  <fo:list-item-label keep-together.within-line="always">
-                    <fo:block text-align="start">&#8226;</fo:block>
-                  </fo:list-item-label>
-                  <fo:list-item-body>
-                    <fo:block>
-                      <fo:basic-link color="blue" internal-destination="unique_7">Tags</fo:basic-link>
-                    </fo:block>
-                  </fo:list-item-body>
-                </fo:list-item>
-                <fo:list-item relative-align="baseline">
-                  <fo:list-item-label keep-together.within-line="always">
-                    <fo:block text-align="start">&#8226;</fo:block>
-                  </fo:list-item-label>
-                  <fo:list-item-body>
-                    <fo:block>
-                      <fo:basic-link color="blue" internal-destination="unique_8">External Docs</fo:basic-link>
-                    </fo:block>
-                  </fo:list-item-body>
-                </fo:list-item>
-                <fo:list-item relative-align="baseline">
-                  <fo:list-item-label keep-together.within-line="always">
-                    <fo:block text-align="start">&#8226;</fo:block>
-                  </fo:list-item-label>
-                  <fo:list-item-body>
-                    <fo:block>
-                      <fo:basic-link color="blue" internal-destination="unique_9">Overview</fo:basic-link>
+                      <fo:basic-link color="blue" internal-destination="unique_3">Overview</fo:basic-link>
                     </fo:block>
                   </fo:list-item-body>
                 </fo:list-item>
@@ -132,119 +72,6 @@
       <fo:block>
         <fo:block border-after-color="black" font-family="STANDARD" font-weight="bold">
           <fo:block border-end-width="0pt">
-            <fo:marker marker-class-name="current-h2">Version information</fo:marker>
-            <fo:wrapper></fo:wrapper>
-            <fo:wrapper></fo:wrapper>Version information</fo:block>
-        </fo:block>
-        <fo:block>
-          <fo:block>
-            <fo:inline font-style="italic">Version</fo:inline>: 1.0.0</fo:block>
-        </fo:block>
-      </fo:block>
-    </fo:block>
-    <fo:block>
-      <fo:block>
-        <fo:block border-after-color="black" font-family="STANDARD" font-weight="bold">
-          <fo:block border-end-width="0pt">
-            <fo:marker marker-class-name="current-h2">Contact information</fo:marker>
-            <fo:wrapper></fo:wrapper>
-            <fo:wrapper></fo:wrapper>Contact information</fo:block>
-        </fo:block>
-        <fo:block>
-          <fo:block>
-            <fo:inline font-style="italic">Contact Email</fo:inline>: apiteam@swagger.io</fo:block>
-        </fo:block>
-      </fo:block>
-    </fo:block>
-    <fo:block>
-      <fo:block>
-        <fo:block border-after-color="black" font-family="STANDARD" font-weight="bold">
-          <fo:block border-end-width="0pt">
-            <fo:marker marker-class-name="current-h2">License information</fo:marker>
-            <fo:wrapper></fo:wrapper>
-            <fo:wrapper></fo:wrapper>License information</fo:block>
-        </fo:block>
-        <fo:block>
-          <fo:block>
-            <fo:inline font-style="italic">License</fo:inline>: Apache 2.0
-            <fo:inline font-style="italic">License URL</fo:inline>: http://www.apache.org/licenses/LICENSE-2.0.html
-            <fo:inline font-style="italic">Terms of service</fo:inline>: http://swagger.io/terms/</fo:block>
-        </fo:block>
-      </fo:block>
-    </fo:block>
-    <fo:block>
-      <fo:block>
-        <fo:block border-after-color="black" font-family="STANDARD" font-weight="bold">
-          <fo:block border-end-width="0pt">
-            <fo:marker marker-class-name="current-h2">URI scheme</fo:marker>
-            <fo:wrapper></fo:wrapper>
-            <fo:wrapper></fo:wrapper>URI scheme</fo:block>
-        </fo:block>
-        <fo:block>
-          <fo:block>
-            <fo:inline font-style="italic">Host</fo:inline>: petstore.swagger.io
-            <fo:inline font-style="italic">BasePath</fo:inline>: /v2
-            <fo:inline font-style="italic">Schemes</fo:inline>: HTTPS, HTTP</fo:block>
-        </fo:block>
-      </fo:block>
-    </fo:block>
-    <fo:block>
-      <fo:block>
-        <fo:block border-after-color="black" font-family="STANDARD" font-weight="bold">
-          <fo:block border-end-width="0pt">
-            <fo:marker marker-class-name="current-h2">Tags</fo:marker>
-            <fo:wrapper></fo:wrapper>
-            <fo:wrapper></fo:wrapper>Tags</fo:block>
-        </fo:block>
-        <fo:block>
-          <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
-            <fo:list-item relative-align="baseline">
-              <fo:list-item-label keep-together.within-line="always">
-                <fo:block text-align="start">&#8226;</fo:block>
-              </fo:list-item-label>
-              <fo:list-item-body>
-                <fo:block>pet : Everything about your Pets</fo:block>
-              </fo:list-item-body>
-            </fo:list-item>
-            <fo:list-item relative-align="baseline">
-              <fo:list-item-label keep-together.within-line="always">
-                <fo:block text-align="start">&#8226;</fo:block>
-              </fo:list-item-label>
-              <fo:list-item-body>
-                <fo:block>store : Access to Petstore orders</fo:block>
-              </fo:list-item-body>
-            </fo:list-item>
-            <fo:list-item relative-align="baseline">
-              <fo:list-item-label keep-together.within-line="always">
-                <fo:block text-align="start">&#8226;</fo:block>
-              </fo:list-item-label>
-              <fo:list-item-body>
-                <fo:block>user : Operations about user</fo:block>
-              </fo:list-item-body>
-            </fo:list-item>
-          </fo:list-block>
-        </fo:block>
-      </fo:block>
-    </fo:block>
-    <fo:block>
-      <fo:block>
-        <fo:block border-after-color="black" font-family="STANDARD" font-weight="bold">
-          <fo:block border-end-width="0pt">
-            <fo:marker marker-class-name="current-h2">External Docs</fo:marker>
-            <fo:wrapper></fo:wrapper>
-            <fo:wrapper></fo:wrapper>External Docs</fo:block>
-        </fo:block>
-        <fo:block>
-          <fo:block>
-            <fo:inline font-style="italic">Description</fo:inline>: Find out more about Swagger
-            <fo:inline font-style="italic">URL</fo:inline>: http://swagger.io</fo:block>
-        </fo:block>
-      </fo:block>
-    </fo:block>
-    <fo:block>
-      <fo:block>
-        <fo:block border-after-color="black" font-family="STANDARD" font-weight="bold">
-          <fo:block border-end-width="0pt">
             <fo:marker marker-class-name="current-h2">Overview</fo:marker>
             <fo:wrapper></fo:wrapper>
             <fo:wrapper></fo:wrapper>Overview</fo:block>
@@ -254,6 +81,113 @@
             <fo:basic-link color="blue" external-destination="url('http://swagger.io')">http://swagger.io</fo:basic-link>or on
             <fo:basic-link color="blue" external-destination="url('http://swagger.io/irc/')">irc.freenode.net, #swagger</fo:basic-link>. For this sample, you can use the api key
             <fo:inline font-family="MONOSPACE">special-key</fo:inline>to test the authorization filters.</fo:block>
+        </fo:block>
+        <fo:block>
+          <fo:block>
+            <fo:block font-family="STANDARD" font-weight="bold">
+              <fo:block>
+                <fo:wrapper></fo:wrapper>
+                <fo:wrapper></fo:wrapper>Version information</fo:block>
+            </fo:block>
+            <fo:block>
+              <fo:block>
+                <fo:inline font-style="italic">Version</fo:inline>: 1.0.0</fo:block>
+            </fo:block>
+          </fo:block>
+        </fo:block>
+        <fo:block>
+          <fo:block>
+            <fo:block font-family="STANDARD" font-weight="bold">
+              <fo:block>
+                <fo:wrapper></fo:wrapper>
+                <fo:wrapper></fo:wrapper>Contact information</fo:block>
+            </fo:block>
+            <fo:block>
+              <fo:block>
+                <fo:inline font-style="italic">Contact Email</fo:inline>: apiteam@swagger.io</fo:block>
+            </fo:block>
+          </fo:block>
+        </fo:block>
+        <fo:block>
+          <fo:block>
+            <fo:block font-family="STANDARD" font-weight="bold">
+              <fo:block>
+                <fo:wrapper></fo:wrapper>
+                <fo:wrapper></fo:wrapper>License information</fo:block>
+            </fo:block>
+            <fo:block>
+              <fo:block>
+                <fo:inline font-style="italic">License</fo:inline>: Apache 2.0
+                <fo:inline font-style="italic">License URL</fo:inline>: http://www.apache.org/licenses/LICENSE-2.0.html
+                <fo:inline font-style="italic">Terms of service</fo:inline>: http://swagger.io/terms/</fo:block>
+            </fo:block>
+          </fo:block>
+        </fo:block>
+        <fo:block>
+          <fo:block>
+            <fo:block font-family="STANDARD" font-weight="bold">
+              <fo:block>
+                <fo:wrapper></fo:wrapper>
+                <fo:wrapper></fo:wrapper>URI scheme</fo:block>
+            </fo:block>
+            <fo:block>
+              <fo:block>
+                <fo:inline font-style="italic">Host</fo:inline>: petstore.swagger.io
+                <fo:inline font-style="italic">BasePath</fo:inline>: /v2
+                <fo:inline font-style="italic">Schemes</fo:inline>: HTTPS, HTTP</fo:block>
+            </fo:block>
+          </fo:block>
+        </fo:block>
+        <fo:block>
+          <fo:block>
+            <fo:block font-family="STANDARD" font-weight="bold">
+              <fo:block>
+                <fo:wrapper></fo:wrapper>
+                <fo:wrapper></fo:wrapper>Tags</fo:block>
+            </fo:block>
+            <fo:block>
+              <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
+                <fo:list-item relative-align="baseline">
+                  <fo:list-item-label keep-together.within-line="always">
+                    <fo:block text-align="start">&#8226;</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                    <fo:block>pet : Everything about your Pets</fo:block>
+                  </fo:list-item-body>
+                </fo:list-item>
+                <fo:list-item relative-align="baseline">
+                  <fo:list-item-label keep-together.within-line="always">
+                    <fo:block text-align="start">&#8226;</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                    <fo:block>store : Access to Petstore orders</fo:block>
+                  </fo:list-item-body>
+                </fo:list-item>
+                <fo:list-item relative-align="baseline">
+                  <fo:list-item-label keep-together.within-line="always">
+                    <fo:block text-align="start">&#8226;</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                    <fo:block>user : Operations about user</fo:block>
+                  </fo:list-item-body>
+                </fo:list-item>
+              </fo:list-block>
+            </fo:block>
+          </fo:block>
+        </fo:block>
+        <fo:block>
+          <fo:block>
+            <fo:block font-family="STANDARD" font-weight="bold">
+              <fo:block>
+                <fo:wrapper></fo:wrapper>
+                <fo:wrapper></fo:wrapper>External Docs</fo:block>
+            </fo:block>
+            <fo:block>
+              <fo:block>
+                <fo:inline font-style="italic">Description</fo:inline>: Find out more about Swagger
+                <fo:inline font-style="italic">URL</fo:inline>: http://swagger.io</fo:block>
+            </fo:block>
+          </fo:block>
         </fo:block>
       </fo:block>
     </fo:block>
