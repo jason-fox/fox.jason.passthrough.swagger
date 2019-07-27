@@ -27,7 +27,9 @@ function moveAnchors(markdown) {
     } else if (id !== null && lines[i].startsWith("#")) {
       text.push(lines[i] + " {#" + id + "}");
       id = null;
-    } else {
+    } else if (id !== null && lines[i].startsWith("####")) {
+      text.push(lines[i] + " {.section}");
+    }else {
       text.push(lines[i]);
     }
   }

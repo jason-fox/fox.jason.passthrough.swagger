@@ -221,6 +221,10 @@
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -282,6 +286,9 @@
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -414,6 +421,9 @@
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -480,6 +490,10 @@
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -541,6 +555,9 @@
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -699,6 +716,9 @@
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -835,6 +855,9 @@
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -953,6 +976,9 @@
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1033,6 +1059,10 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1087,6 +1117,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1205,6 +1238,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1271,6 +1307,10 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1363,6 +1403,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1485,6 +1528,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1563,6 +1609,10 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1617,6 +1667,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1749,6 +1802,8 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1809,6 +1864,10 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1882,6 +1941,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1994,6 +2056,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -2156,6 +2221,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -2275,6 +2343,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -2353,6 +2424,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -2442,6 +2516,8 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -2502,6 +2578,10 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -2563,6 +2643,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -2706,6 +2789,10 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -2760,6 +2847,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -2974,6 +3064,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -3110,6 +3203,10 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -3171,6 +3268,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -3282,6 +3382,10 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -3342,6 +3446,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -3453,6 +3560,10 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -3513,6 +3624,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -3624,6 +3738,10 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -3827,6 +3945,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -3996,6 +4117,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -4152,6 +4276,10 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -4232,6 +4360,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -4368,6 +4499,10 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
+                        <fo:table-column column-number="4"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -4422,6 +4557,9 @@ operation.deprecated</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                        <fo:table-column column-number="1"></fo:table-column>
+                        <fo:table-column column-number="2"></fo:table-column>
+                        <fo:table-column column-number="3"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -4547,6 +4685,8 @@ operation.deprecated</fo:block>
               <fo:block-container reference-orientation="0">
                 <fo:block>
                   <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                    <fo:table-column column-number="1"></fo:table-column>
+                    <fo:table-column column-number="2"></fo:table-column>
                     <fo:table-header>
                       <fo:table-row>
                         <fo:table-cell border-before-color="black" text-align="left">
@@ -4609,6 +4749,8 @@ operation.deprecated</fo:block>
               <fo:block-container reference-orientation="0">
                 <fo:block>
                   <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                    <fo:table-column column-number="1"></fo:table-column>
+                    <fo:table-column column-number="2"></fo:table-column>
                     <fo:table-header>
                       <fo:table-row>
                         <fo:table-cell border-before-color="black" text-align="left">
@@ -4660,6 +4802,9 @@ operation.deprecated</fo:block>
               <fo:block-container reference-orientation="0">
                 <fo:block>
                   <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                    <fo:table-column column-number="1"></fo:table-column>
+                    <fo:table-column column-number="2"></fo:table-column>
+                    <fo:table-column column-number="3"></fo:table-column>
                     <fo:table-header>
                       <fo:table-row>
                         <fo:table-cell border-before-color="black" text-align="left">
@@ -4779,6 +4924,9 @@ operation.deprecated</fo:block>
               <fo:block-container reference-orientation="0">
                 <fo:block>
                   <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                    <fo:table-column column-number="1"></fo:table-column>
+                    <fo:table-column column-number="2"></fo:table-column>
+                    <fo:table-column column-number="3"></fo:table-column>
                     <fo:table-header>
                       <fo:table-row>
                         <fo:table-cell border-before-color="black" text-align="left">
@@ -4911,6 +5059,8 @@ operation.deprecated</fo:block>
               <fo:block-container reference-orientation="0">
                 <fo:block>
                   <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                    <fo:table-column column-number="1"></fo:table-column>
+                    <fo:table-column column-number="2"></fo:table-column>
                     <fo:table-header>
                       <fo:table-row>
                         <fo:table-cell border-before-color="black" text-align="left">
@@ -4962,6 +5112,9 @@ operation.deprecated</fo:block>
               <fo:block-container reference-orientation="0">
                 <fo:block>
                   <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                    <fo:table-column column-number="1"></fo:table-column>
+                    <fo:table-column column-number="2"></fo:table-column>
+                    <fo:table-column column-number="3"></fo:table-column>
                     <fo:table-header>
                       <fo:table-row>
                         <fo:table-cell border-before-color="black" text-align="left">
@@ -5121,6 +5274,8 @@ operation.deprecated</fo:block>
               <fo:block-container reference-orientation="0">
                 <fo:block>
                   <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
+                    <fo:table-column column-number="1"></fo:table-column>
+                    <fo:table-column column-number="2"></fo:table-column>
                     <fo:table-header>
                       <fo:table-row>
                         <fo:table-cell border-before-color="black" text-align="left">
