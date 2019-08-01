@@ -94,6 +94,43 @@ shown:
 
 The additional file will be converted to a `*.dita` file and will be added to the build job without further processing. Unless overriden, the `navtitle` of the included topic will be the same as root name of the file. Any underscores in the filename will be replaced by spaces in title.
 
+#### Sample Swagger Endpoint
+
+```json
+  "paths": {
+    "/pet": {
+      "put": {
+        "tags": [ "pet" ],
+        "summary": "Update an existing pet",
+        "description": "",
+        "operationId": "updatePet",
+        "consumes": ["application/json", "application/xml"],
+        "produces": ["application/xml", "application/json"],
+        "parameters": [
+          {
+            "in": "body", "name": "body",  "required": true,
+            "description": "Pet object that needs to be added to the store",
+            "schema": { "$ref": "#/definitions/Pet" }
+          }
+        ],
+        "responses": {
+          "400": {"description": "Invalid ID supplied"},
+          "404": {"description": "Pet not found"},
+          "405": {"description": "Validation exception"}
+        },
+        "security": [
+          {
+            "petstore_auth": ["write:pets","read:pets"]
+          }
+        ]
+      }
+    },
+```
+
+#### Sample DITA Output
+
+> ![](https://jason-fox.github.io/fox.jason.passthrough.swagger/request-formatted.png)
+
 # License
 
 [Apache 2.0](LICENSE) © 2019 Jason Fox
