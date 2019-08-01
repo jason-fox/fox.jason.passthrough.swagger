@@ -9,3 +9,40 @@ This is a DITA-OT Plug-in used to auto-create valid DITA-based REST API document
 [Swagger2Markup](https://github.com/Swagger2Markup/swagger2markup) converts a Swagger JSON or YAML file into one or more AsciiDoc or GitHub Flavored Markdown documents which can be combined with hand-written documentation. The Swagger source file can be located locally or remotely via HTTP. Swagger2Markup supports the Swagger 1.2 and 2.0 specification. Internally it uses the official swagger-parser and my markup-document-builder.
 
 This plugin processes the Swagger file to Pandoc markdown, and the converts the markdown to DITA using the [Pandoc DITA-OT Plugin](https://github.com/jason-fox/fox.jason.passthrough.pandoc)
+
+<h4>Sample Swagger Endpoint</h4>
+
+```json
+  "paths": {
+    "/pet": {
+      "put": {
+        "tags": [ "pet" ],
+        "summary": "Update an existing pet",
+        "description": "",
+        "operationId": "updatePet",
+        "consumes": ["application/json", "application/xml"],
+        "produces": ["application/xml", "application/json"],
+        "parameters": [
+          {
+            "in": "body", "name": "body",  "required": true,
+            "description": "Pet object that needs to be added to the store",
+            "schema": { "$ref": "#/definitions/Pet" }
+          }
+        ],
+        "responses": {
+          "400": {"description": "Invalid ID supplied"},
+          "404": {"description": "Pet not found"},
+          "405": {"description": "Validation exception"}
+        },
+        "security": [
+          {
+            "petstore_auth": ["write:pets","read:pets"]
+          }
+        ]
+      }
+    },
+```
+
+<h4>Sample DITA Output</h4>
+
+> ![](https://jason-fox.github.io/fox.jason.passthrough.swagger/request-formatted.png)
