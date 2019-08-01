@@ -45,4 +45,4 @@ This plugin processes the Swagger file to Pandoc markdown, and the converts the 
 
 <h4>Sample DITA Output</h4>
 
-> ![](https://jason-fox.github.io/fox.jason.passthrough.swagger/request-formatted.png)
+<img src="https://jason-fox.github.io/fox.jason.passthrough.swagger/request-formatted.png" align="center" style="border-style:solid; border-width:1px; border-color:black"/>
