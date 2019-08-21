@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><!--ant--><!--
-	This file is part of the DITA-OT swagger Plug-in project.
+	This file is part of the DITA-OT  Plug-in project.
 	See the accompanying LICENSE file for applicable licenses.
 -->
 <project name="fox.jason.passthrough.swagger" xmlns:if="ant:if" xmlns:unless="ant:unless">
 
+	<target name="swagger.init">
+		<condition property="is.html">
+			<equals arg1="${out.ext}" arg2=".html"/>
+	    </condition>
+	</target>
+
+	<target name="swagger.css">
+		<copy if:set="is.html"  tofile="${output.dir}/swagger.css" file="${dita.plugin.fox.jason.passthrough.swagger.dir}${file.separator}resource/swagger.css"/>
+	
+	</target>
 
 	<!--
 		Create Swagger processing macros.
 	-->
-	<target name="swagger.process.pre">
+	<target name="swagger.process.pre" depends="swagger.init,swagger.css">
 		<!--
 
 			Entry point to the JavaScript tidier function which 

@@ -16,6 +16,7 @@ function moveAnchors(markdown) {
   var lines = markdown.split("\n");
   var text = [];
   var id = null;
+  var codeblock = true;
 
   // Read each line of the Markdown file in turn
   for (var i = 0; i < lines.length; i++) {
@@ -29,7 +30,17 @@ function moveAnchors(markdown) {
       id = null;
     } else if (id !== null && lines[i].startsWith("####")) {
       text.push(lines[i] + " {.section}");
-    }else {
+    } else if (lines[i].startsWith("```")){
+     
+      if(codeblock){
+        var arr = lines[i+1].split(' ');
+        text.push("```swagger-" + arr[0].toLowerCase());
+        codeblock = false;
+      } else {
+        text.push(lines[i]);
+        codeblock = true;
+      }
+    } else {
       text.push(lines[i]);
     }
   }

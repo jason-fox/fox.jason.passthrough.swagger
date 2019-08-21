@@ -1,0 +1,94 @@
+
+
+.swagger-post, .swagger-put, .swagger-delete, .swagger-get, .swagger-patch, .swagger-head, .swagger-options, .swagger-deprecated  {
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+    padding-left: 1em;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 3px;
+}
+
+span.swagger-verb {
+	color: white;
+    border-radius: 3px;
+    padding: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: sans-serif;
+    font-size: medium;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+.swagger-post {
+    border-color: #49cc90;
+    background: rgba(73,204,144,.1)
+}
+
+.swagger-post span.swagger-verb {
+	background: #49cc90;
+}
+
+
+.swagger-put {
+    border-color: #fca130;
+    background: rgba(252,161,48,.1)
+}
+
+.swagger-put span.swagger-verb {
+	background: #fca130;
+}
+
+
+.swagger-delete {
+    border-color: #f93e3e;
+    background: rgba(249,62,62,.1)
+}
+
+.swagger-delete span.swagger-verb {
+	background: #f93e3e;
+}
+
+.swagger-get {
+    border-color: #61affe;
+    background: rgba(97,175,254,.1)
+}
+
+.swagger-get span.swagger-verb {
+	background: #61affe;
+}
+
+.swagger-patch {
+    border-color: #50e3c2;
+    background: rgba(80,227,194,.1)
+}
+
+.swagger-patch span.swagger-verb {
+	background: #50e3c2;
+}
+
+.swagger-head {
+    border-color: #9012fe;
+    background: rgba(144,18,254,.1)
+}
+
+.swagger-head span.swagger-verb {
+	background: #9012fe;
+}
+
+.swagger-options {
+    border-color: #0d5aa7;
+    background: rgba(13,90,167,.1)
+}
+
+.swagger-options span.swagger-verb {
+	background: #0d5aa7;
+}
+
+.swagger-deprecated {
+    border-color: #ebebeb;
+    background: hsla(0,0%,92.2%,.1)
+}
