@@ -3,6 +3,7 @@
 [![license](https://img.shields.io/github/license/jason-fox/fox.jason.passthrough.swagger.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![DITA-OT 3.3](https://img.shields.io/badge/DITA--OT-3.3-blue.svg)](http://www.dita-ot.org/3.3/) <br/>
 [![Build Status](https://travis-ci.org/jason-fox/fox.jason.passthrough.swagger.svg?branch=master)](https://travis-ci.org/jason-fox/fox.jason.passthrough.swagger)
+[![Coverage Status](https://coveralls.io/repos/github/jason-fox/fox.jason.passthrough.swagger/badge.svg?branch=master)](https://coveralls.io/github/jason-fox/fox.jason.passthrough.swagger?branch=master)
 [![Documentation Status](https://readthedocs.org/projects/swaggerdita-ot/badge/?version=latest)](https://swaggerdita-ot.readthedocs.io/en/latest/?badge=latest)
 
 This is a DITA-OT Plug-in used to auto-create valid DITA-based REST API documentation. The documentation can be generated directly from a [Swagger](https://github.com/swagger-api) file and processed as if it had been written in DITA.
