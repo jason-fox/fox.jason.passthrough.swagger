@@ -87,59 +87,59 @@
 <section class="section" id="example-http-response__response-200"><h5 class="title sectiontitle">Response 200</h5>
 
 
-<pre class="codeblock json"><code>{
- "versions": {
-  "values": [
-   {
-    "status": "stable",
-    "updated": "2013-03-06T00:00:00Z",
-    "media-types": [
-     {
-      "base": "application/json",
-      "type": "application/vnd.openstack.identity-v3+json"
-     },
-     {
-      "base": "application/xml",
-      "type": "application/vnd.openstack.identity-v3+xml"
-     }
-    ],
-    "id": "v3.0",
-    "links": [
-     {
-      "href": "http://192.168.122.176:5000/v3/",
-      "rel": "self"
-     }
-    ]
-   },
-   {
-    "status": "stable",
-    "updated": "2014-04-17T00:00:00Z",
-    "media-types": [
-     {
-      "base": "application/json",
-      "type": "application/vnd.openstack.identity-v2.0+json"
-     },
-     {
-      "base": "application/xml",
-      "type": "application/vnd.openstack.identity-v2.0+xml"
-     }
-    ],
-    "id": "v2.0",
-    "links": [
-     {
-      "href": "http://192.168.122.176:5000/v2.0/",
-      "rel": "self"
-     },
-     {
-      "href": "http://docs.openstack.org/",
-      "type": "text/html",
-      "rel": "describedby"
-     }
-    ]
-   }
-  ]
- }
-}</code></pre>
+<pre class="codeblock json"><code><span class="ph token punctuation">{</span>
+ <span class="ph token property">"versions"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+  <span class="ph token property">"values"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"status"</span><span class="ph token operator">:</span> <span class="ph token string">"stable"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-03-06T00:00:00Z"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"media-types"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"base"</span><span class="ph token operator">:</span> <span class="ph token string">"application/json"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"application/vnd.openstack.identity-v3+json"</span>
+     <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"base"</span><span class="ph token operator">:</span> <span class="ph token string">"application/xml"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"application/vnd.openstack.identity-v3+xml"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"v3.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"http://192.168.122.176:5000/v3/"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"self"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"status"</span><span class="ph token operator">:</span> <span class="ph token string">"stable"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2014-04-17T00:00:00Z"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"media-types"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"base"</span><span class="ph token operator">:</span> <span class="ph token string">"application/json"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"application/vnd.openstack.identity-v2.0+json"</span>
+     <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"base"</span><span class="ph token operator">:</span> <span class="ph token string">"application/xml"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"application/vnd.openstack.identity-v2.0+xml"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"v2.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"http://192.168.122.176:5000/v2.0/"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"self"</span>
+     <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span>
+   <span class="ph token punctuation">}</span>
+  <span class="ph token punctuation">]</span>
+ <span class="ph token punctuation">}</span>
+<span class="ph token punctuation">}</span></code></pre>
 </section>
 
 </div>
@@ -200,57 +200,57 @@
 <section class="section" id="example-http-response-1__response-200-1"><h5 class="title sectiontitle">Response 200</h5>
 
 
-<pre class="codeblock json"><code>{
- "version": {
-  "status": "stable",
-  "updated": "2013-03-06T00:00:00Z",
-  "media-types": [
-   {
-    "base": "application/json",
-    "type": "application/vnd.openstack.identity-v3+json"
-   },
-   {
-    "base": "application/xml",
-    "type": "application/vnd.openstack.identity-v3+xml"
-   }
-  ],
-  "id": "v3.0",
-  "links": [
-   {
-    "href": "http://23.253.228.211:35357/v3/",
-    "rel": "self"
-   }
-  ]
- }
-}</code></pre>
+<pre class="codeblock json"><code><span class="ph token punctuation">{</span>
+ <span class="ph token property">"version"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+  <span class="ph token property">"status"</span><span class="ph token operator">:</span> <span class="ph token string">"stable"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-03-06T00:00:00Z"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"media-types"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"base"</span><span class="ph token operator">:</span> <span class="ph token string">"application/json"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"application/vnd.openstack.identity-v3+json"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"base"</span><span class="ph token operator">:</span> <span class="ph token string">"application/xml"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"application/vnd.openstack.identity-v3+xml"</span>
+   <span class="ph token punctuation">}</span>
+  <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"v3.0"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.228.211:35357/v3/"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"self"</span>
+   <span class="ph token punctuation">}</span>
+  <span class="ph token punctuation">]</span>
+ <span class="ph token punctuation">}</span>
+<span class="ph token punctuation">}</span></code></pre>
 </section>
 
 <section class="section" id="example-http-response-1__response-203"><h5 class="title sectiontitle">Response 203</h5>
 
 
-<pre class="codeblock json"><code>{
- "version": {
-  "status": "stable",
-  "updated": "2013-03-06T00:00:00Z",
-  "media-types": [
-   {
-    "base": "application/json",
-    "type": "application/vnd.openstack.identity-v3+json"
-   },
-   {
-    "base": "application/xml",
-    "type": "application/vnd.openstack.identity-v3+xml"
-   }
-  ],
-  "id": "v3.0",
-  "links": [
-   {
-    "href": "http://23.253.228.211:35357/v3/",
-    "rel": "self"
-   }
-  ]
- }
-}</code></pre>
+<pre class="codeblock json"><code><span class="ph token punctuation">{</span>
+ <span class="ph token property">"version"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+  <span class="ph token property">"status"</span><span class="ph token operator">:</span> <span class="ph token string">"stable"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-03-06T00:00:00Z"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"media-types"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"base"</span><span class="ph token operator">:</span> <span class="ph token string">"application/json"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"application/vnd.openstack.identity-v3+json"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"base"</span><span class="ph token operator">:</span> <span class="ph token string">"application/xml"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"application/vnd.openstack.identity-v3+xml"</span>
+   <span class="ph token punctuation">}</span>
+  <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"v3.0"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.228.211:35357/v3/"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"self"</span>
+   <span class="ph token punctuation">}</span>
+  <span class="ph token punctuation">]</span>
+ <span class="ph token punctuation">}</span>
+<span class="ph token punctuation">}</span></code></pre>
 </section>
 
 </div>
@@ -311,191 +311,191 @@
 <section class="section" id="example-http-response-2__response-200-2"><h5 class="title sectiontitle">Response 200</h5>
 
 
-<pre class="codeblock json"><code>{
- "extensions": {
-  "values": [
-   {
-    "updated": "2013-07-07T12:00:0-00:00",
-    "name": "OpenStack S3 API",
-    "links": [
-     {
-      "href": "https://github.com/openstack/identity-api",
-      "type": "text/html",
-      "rel": "describedby"
-     }
-    ],
-    "namespace": "http://docs.openstack.org/identity/api/ext/s3tokens/v1.0",
-    "alias": "s3tokens",
-    "description": "OpenStack S3 API."
-   },
-   {
-    "updated": "2013-07-23T12:00:0-00:00",
-    "name": "OpenStack Keystone Endpoint Filter API",
-    "links": [
-     {
-      "href": "https://github.com/openstack/identity-api/blob/master/openstack-identity-api/v3/src/markdown/identity-api-v3-os-ep-filter-ext.md",
-      "type": "text/html",
-      "rel": "describedby"
-     }
-    ],
-    "namespace": "http://docs.openstack.org/identity/api/ext/OS-EP-FILTER/v1.0",
-    "alias": "OS-EP-FILTER",
-    "description": "OpenStack Keystone Endpoint Filter API."
-   },
-   {
-    "updated": "2013-12-17T12:00:0-00:00",
-    "name": "OpenStack Federation APIs",
-    "links": [
-     {
-      "href": "https://github.com/openstack/identity-api",
-      "type": "text/html",
-      "rel": "describedby"
-     }
-    ],
-    "namespace": "http://docs.openstack.org/identity/api/ext/OS-FEDERATION/v1.0",
-    "alias": "OS-FEDERATION",
-    "description": "OpenStack Identity Providers Mechanism."
-   },
-   {
-    "updated": "2013-07-11T17:14:00-00:00",
-    "name": "OpenStack Keystone Admin",
-    "links": [
-     {
-      "href": "https://github.com/openstack/identity-api",
-      "type": "text/html",
-      "rel": "describedby"
-     }
-    ],
-    "namespace": "http://docs.openstack.org/identity/api/ext/OS-KSADM/v1.0",
-    "alias": "OS-KSADM",
-    "description": "OpenStack extensions to Keystone v2.0 API enabling Administrative Operations."
-   },
-   {
-    "updated": "2014-01-20T12:00:0-00:00",
-    "name": "OpenStack Simple Certificate API",
-    "links": [
-     {
-      "href": "https://github.com/openstack/identity-api",
-      "type": "text/html",
-      "rel": "describedby"
-     }
-    ],
-    "namespace": "http://docs.openstack.org/identity/api/ext/OS-SIMPLE-CERT/v1.0",
-    "alias": "OS-SIMPLE-CERT",
-    "description": "OpenStack simple certificate retrieval extension"
-   },
-   {
-    "updated": "2013-07-07T12:00:0-00:00",
-    "name": "OpenStack EC2 API",
-    "links": [
-     {
-      "href": "https://github.com/openstack/identity-api",
-      "type": "text/html",
-      "rel": "describedby"
-     }
-    ],
-    "namespace": "http://docs.openstack.org/identity/api/ext/OS-EC2/v1.0",
-    "alias": "OS-EC2",
-    "description": "OpenStack EC2 Credentials backend."
-   }
-  ]
- }
-}</code></pre>
+<pre class="codeblock json"><code><span class="ph token punctuation">{</span>
+ <span class="ph token property">"extensions"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+  <span class="ph token property">"values"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-07-07T12:00:0-00:00"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack S3 API"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/s3tokens/v1.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"s3tokens"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack S3 API."</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-07-23T12:00:0-00:00"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack Keystone Endpoint Filter API"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api/blob/master/openstack-identity-api/v3/src/markdown/identity-api-v3-os-ep-filter-ext.md"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/OS-EP-FILTER/v1.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"OS-EP-FILTER"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack Keystone Endpoint Filter API."</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-12-17T12:00:0-00:00"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack Federation APIs"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/OS-FEDERATION/v1.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"OS-FEDERATION"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack Identity Providers Mechanism."</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-07-11T17:14:00-00:00"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack Keystone Admin"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/OS-KSADM/v1.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"OS-KSADM"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack extensions to Keystone v2.0 API enabling Administrative Operations."</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2014-01-20T12:00:0-00:00"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack Simple Certificate API"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/OS-SIMPLE-CERT/v1.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"OS-SIMPLE-CERT"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack simple certificate retrieval extension"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-07-07T12:00:0-00:00"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack EC2 API"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/OS-EC2/v1.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"OS-EC2"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack EC2 Credentials backend."</span>
+   <span class="ph token punctuation">}</span>
+  <span class="ph token punctuation">]</span>
+ <span class="ph token punctuation">}</span>
+<span class="ph token punctuation">}</span></code></pre>
 </section>
 
 <section class="section" id="example-http-response-2__response-203-1"><h5 class="title sectiontitle">Response 203</h5>
 
 
-<pre class="codeblock json"><code>{
- "extensions": {
-  "values": [
-   {
-    "updated": "2013-07-07T12:00:0-00:00",
-    "name": "OpenStack S3 API",
-    "links": [
-     {
-      "href": "https://github.com/openstack/identity-api",
-      "type": "text/html",
-      "rel": "describedby"
-     }
-    ],
-    "namespace": "http://docs.openstack.org/identity/api/ext/s3tokens/v1.0",
-    "alias": "s3tokens",
-    "description": "OpenStack S3 API."
-   },
-   {
-    "updated": "2013-07-23T12:00:0-00:00",
-    "name": "OpenStack Keystone Endpoint Filter API",
-    "links": [
-     {
-      "href": "https://github.com/openstack/identity-api/blob/master/openstack-identity-api/v3/src/markdown/identity-api-v3-os-ep-filter-ext.md",
-      "type": "text/html",
-      "rel": "describedby"
-     }
-    ],
-    "namespace": "http://docs.openstack.org/identity/api/ext/OS-EP-FILTER/v1.0",
-    "alias": "OS-EP-FILTER",
-    "description": "OpenStack Keystone Endpoint Filter API."
-   },
-   {
-    "updated": "2013-12-17T12:00:0-00:00",
-    "name": "OpenStack Federation APIs",
-    "links": [
-     {
-      "href": "https://github.com/openstack/identity-api",
-      "type": "text/html",
-      "rel": "describedby"
-     }
-    ],
-    "namespace": "http://docs.openstack.org/identity/api/ext/OS-FEDERATION/v1.0",
-    "alias": "OS-FEDERATION",
-    "description": "OpenStack Identity Providers Mechanism."
-   },
-   {
-    "updated": "2013-07-11T17:14:00-00:00",
-    "name": "OpenStack Keystone Admin",
-    "links": [
-     {
-      "href": "https://github.com/openstack/identity-api",
-      "type": "text/html",
-      "rel": "describedby"
-     }
-    ],
-    "namespace": "http://docs.openstack.org/identity/api/ext/OS-KSADM/v1.0",
-    "alias": "OS-KSADM",
-    "description": "OpenStack extensions to Keystone v2.0 API enabling Administrative Operations."
-   },
-   {
-    "updated": "2014-01-20T12:00:0-00:00",
-    "name": "OpenStack Simple Certificate API",
-    "links": [
-     {
-      "href": "https://github.com/openstack/identity-api",
-      "type": "text/html",
-      "rel": "describedby"
-     }
-    ],
-    "namespace": "http://docs.openstack.org/identity/api/ext/OS-SIMPLE-CERT/v1.0",
-    "alias": "OS-SIMPLE-CERT",
-    "description": "OpenStack simple certificate retrieval extension"
-   },
-   {
-    "updated": "2013-07-07T12:00:0-00:00",
-    "name": "OpenStack EC2 API",
-    "links": [
-     {
-      "href": "https://github.com/openstack/identity-api",
-      "type": "text/html",
-      "rel": "describedby"
-     }
-    ],
-    "namespace": "http://docs.openstack.org/identity/api/ext/OS-EC2/v1.0",
-    "alias": "OS-EC2",
-    "description": "OpenStack EC2 Credentials backend."
-   }
-  ]
- }
-}</code></pre>
+<pre class="codeblock json"><code><span class="ph token punctuation">{</span>
+ <span class="ph token property">"extensions"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+  <span class="ph token property">"values"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-07-07T12:00:0-00:00"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack S3 API"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/s3tokens/v1.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"s3tokens"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack S3 API."</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-07-23T12:00:0-00:00"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack Keystone Endpoint Filter API"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api/blob/master/openstack-identity-api/v3/src/markdown/identity-api-v3-os-ep-filter-ext.md"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/OS-EP-FILTER/v1.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"OS-EP-FILTER"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack Keystone Endpoint Filter API."</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-12-17T12:00:0-00:00"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack Federation APIs"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/OS-FEDERATION/v1.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"OS-FEDERATION"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack Identity Providers Mechanism."</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-07-11T17:14:00-00:00"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack Keystone Admin"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/OS-KSADM/v1.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"OS-KSADM"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack extensions to Keystone v2.0 API enabling Administrative Operations."</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2014-01-20T12:00:0-00:00"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack Simple Certificate API"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/OS-SIMPLE-CERT/v1.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"OS-SIMPLE-CERT"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack simple certificate retrieval extension"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-07-07T12:00:0-00:00"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack EC2 API"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/OS-EC2/v1.0"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"OS-EC2"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack EC2 Credentials backend."</span>
+   <span class="ph token punctuation">}</span>
+  <span class="ph token punctuation">]</span>
+ <span class="ph token punctuation">}</span>
+<span class="ph token punctuation">}</span></code></pre>
 </section>
 
 </div>
@@ -577,43 +577,43 @@
 <section class="section" id="example-http-response-3__response-200-3"><h5 class="title sectiontitle">Response 200</h5>
 
 
-<pre class="codeblock json"><code>{
- "extension": {
-  "updated": "2013-07-07T12:00:0-00:00",
-  "name": "OpenStack S3 API",
-  "links": [
-   {
-    "href": "https://github.com/openstack/identity-api",
-    "type": "text/html",
-    "rel": "describedby"
-   }
-  ],
-  "namespace": "http://docs.openstack.org/identity/api/ext/s3tokens/v1.0",
-  "alias": "s3tokens",
-  "description": "OpenStack S3 API."
- }
-}</code></pre>
+<pre class="codeblock json"><code><span class="ph token punctuation">{</span>
+ <span class="ph token property">"extension"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+  <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-07-07T12:00:0-00:00"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack S3 API"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+   <span class="ph token punctuation">}</span>
+  <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/s3tokens/v1.0"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"s3tokens"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack S3 API."</span>
+ <span class="ph token punctuation">}</span>
+<span class="ph token punctuation">}</span></code></pre>
 </section>
 
 <section class="section" id="example-http-response-3__response-203-2"><h5 class="title sectiontitle">Response 203</h5>
 
 
-<pre class="codeblock json"><code>{
- "extension": {
-  "updated": "2013-07-07T12:00:0-00:00",
-  "name": "OpenStack S3 API",
-  "links": [
-   {
-    "href": "https://github.com/openstack/identity-api",
-    "type": "text/html",
-    "rel": "describedby"
-   }
-  ],
-  "namespace": "http://docs.openstack.org/identity/api/ext/s3tokens/v1.0",
-  "alias": "s3tokens",
-  "description": "OpenStack S3 API."
- }
-}</code></pre>
+<pre class="codeblock json"><code><span class="ph token punctuation">{</span>
+ <span class="ph token property">"extension"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+  <span class="ph token property">"updated"</span><span class="ph token operator">:</span> <span class="ph token string">"2013-07-07T12:00:0-00:00"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack S3 API"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"href"</span><span class="ph token operator">:</span> <span class="ph token string">"https://github.com/openstack/identity-api"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"text/html"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"rel"</span><span class="ph token operator">:</span> <span class="ph token string">"describedby"</span>
+   <span class="ph token punctuation">}</span>
+  <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"namespace"</span><span class="ph token operator">:</span> <span class="ph token string">"http://docs.openstack.org/identity/api/ext/s3tokens/v1.0"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"alias"</span><span class="ph token operator">:</span> <span class="ph token string">"s3tokens"</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"OpenStack S3 API."</span>
+ <span class="ph token punctuation">}</span>
+<span class="ph token punctuation">}</span></code></pre>
 </section>
 
 </div>
@@ -707,45 +707,45 @@
 <section class="section" id="example-http-response-4__response-200-4"><h5 class="title sectiontitle">Response 200</h5>
 
 
-<pre class="codeblock json"><code>{
- "tenants_links": [],
- "tenants": [
-  {
-   "description": "A description ...",
-   "enabled": true,
-   "id": "1234",
-   "name": "ACME Corp"
-  },
-  {
-   "description": "A description ...",
-   "enabled": true,
-   "id": "3456",
-   "name": "Iron Works"
-  }
- ]
-}</code></pre>
+<pre class="codeblock json"><code><span class="ph token punctuation">{</span>
+ <span class="ph token property">"tenants_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+ <span class="ph token property">"tenants"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+  <span class="ph token punctuation">{</span>
+   <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"A description ..."</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"enabled"</span><span class="ph token operator">:</span> <span class="ph token boolean">true</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"1234"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"ACME Corp"</span>
+  <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+  <span class="ph token punctuation">{</span>
+   <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"A description ..."</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"enabled"</span><span class="ph token operator">:</span> <span class="ph token boolean">true</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"3456"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"Iron Works"</span>
+  <span class="ph token punctuation">}</span>
+ <span class="ph token punctuation">]</span>
+<span class="ph token punctuation">}</span></code></pre>
 </section>
 
 <section class="section" id="example-http-response-4__response-203-3"><h5 class="title sectiontitle">Response 203</h5>
 
 
-<pre class="codeblock json"><code>{
- "tenants_links": [],
- "tenants": [
-  {
-   "description": "A description ...",
-   "enabled": true,
-   "id": "1234",
-   "name": "ACME Corp"
-  },
-  {
-   "description": "A description ...",
-   "enabled": true,
-   "id": "3456",
-   "name": "Iron Works"
-  }
- ]
-}</code></pre>
+<pre class="codeblock json"><code><span class="ph token punctuation">{</span>
+ <span class="ph token property">"tenants_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+ <span class="ph token property">"tenants"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+  <span class="ph token punctuation">{</span>
+   <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"A description ..."</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"enabled"</span><span class="ph token operator">:</span> <span class="ph token boolean">true</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"1234"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"ACME Corp"</span>
+  <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+  <span class="ph token punctuation">{</span>
+   <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token string">"A description ..."</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"enabled"</span><span class="ph token operator">:</span> <span class="ph token boolean">true</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"3456"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"Iron Works"</span>
+  <span class="ph token punctuation">}</span>
+ <span class="ph token punctuation">]</span>
+<span class="ph token punctuation">}</span></code></pre>
 </section>
 
 </div>
@@ -806,367 +806,367 @@
 <section class="section" id="example-http-response-5__response-200-5"><h5 class="title sectiontitle">Response 200</h5>
 
 
-<pre class="codeblock json"><code>{
- "access": {
-  "token": {
-   "issued_at": "2014-01-30T15:30:58.819584",
-   "expires": "2014-01-31T15:30:58Z",
-   "id": "aaaaa-bbbbb-ccccc-dddd",
-   "tenant": {
-    "enabled": true,
-    "description": null,
-    "name": "demo",
-    "id": "fc394f2ab2df4114bde39905f800dc57"
-   }
-  },
-  "serviceCatalog": [
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
-      "id": "2dad48f09e2a447a9bf852bcd93548ef"
-     }
-    ],
-    "type": "compute",
-    "name": "nova"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:9696/",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:9696/",
-      "internalURL": "http://23.253.72.207:9696/",
-      "id": "97c526db8d7a4c88bbb8d68db1bdcdb8"
-     }
-    ],
-    "type": "network",
-    "name": "neutron"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
-      "id": "93f86dfcbba143a39a33d0c2cd424870"
-     }
-    ],
-    "type": "volumev2",
-    "name": "cinder"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8774/v3",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8774/v3",
-      "internalURL": "http://23.253.72.207:8774/v3",
-      "id": "3eb274b12b1d47b2abc536038d87339e"
-     }
-    ],
-    "type": "computev3",
-    "name": "nova"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:3333",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:3333",
-      "internalURL": "http://23.253.72.207:3333",
-      "id": "957f1e54afc64d33a62099faa5e980a2"
-     }
-    ],
-    "type": "s3",
-    "name": "s3"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:9292",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:9292",
-      "internalURL": "http://23.253.72.207:9292",
-      "id": "27d5749f36864c7d96bebf84a5ec9767"
-     }
-    ],
-    "type": "image",
-    "name": "glance"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
-      "id": "37c83a2157f944f1972e74658aa0b139"
-     }
-    ],
-    "type": "volume",
-    "name": "cinder"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8773/services/Admin",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8773/services/Cloud",
-      "internalURL": "http://23.253.72.207:8773/services/Cloud",
-      "id": "289b59289d6048e2912b327e5d3240ca"
-     }
-    ],
-    "type": "ec2",
-    "name": "ec2"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8080",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
-      "id": "16b76b5e5b7d48039a6e4cc3129545f3"
-     }
-    ],
-    "type": "object-store",
-    "name": "swift"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:35357/v2.0",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:5000/v2.0",
-      "internalURL": "http://23.253.72.207:5000/v2.0",
-      "id": "26af053673df4ef3a2340c4239e21ea2"
-     }
-    ],
-    "type": "identity",
-    "name": "keystone"
-   }
-  ],
-  "user": {
-   "username": "demo",
-   "roles_links": [],
-   "id": "9a6590b2ab024747bc2167c4e064d00d",
-   "roles": [
-    {
-     "name": "Member"
-    },
-    {
-     "name": "anotherrole"
-    }
-   ],
-   "name": "demo"
-  },
-  "metadata": {
-   "is_admin": 0,
-   "roles": [
-    "7598ac3c634d4c3da4b9126a5f67ca2b",
-    "f95c0ab82d6045d9805033ee1fbc80d4"
-   ]
-  }
- }
-}</code></pre>
+<pre class="codeblock json"><code><span class="ph token punctuation">{</span>
+ <span class="ph token property">"access"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+  <span class="ph token property">"token"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+   <span class="ph token property">"issued_at"</span><span class="ph token operator">:</span> <span class="ph token string">"2014-01-30T15:30:58.819584"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"expires"</span><span class="ph token operator">:</span> <span class="ph token string">"2014-01-31T15:30:58Z"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"aaaaa-bbbbb-ccccc-dddd"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"tenant"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+    <span class="ph token property">"enabled"</span><span class="ph token operator">:</span> <span class="ph token boolean">true</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token null keyword">null</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"demo"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"fc394f2ab2df4114bde39905f800dc57"</span>
+   <span class="ph token punctuation">}</span>
+  <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"serviceCatalog"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"2dad48f09e2a447a9bf852bcd93548ef"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"compute"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"nova"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:9696/"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:9696/"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:9696/"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"97c526db8d7a4c88bbb8d68db1bdcdb8"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"network"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"neutron"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"93f86dfcbba143a39a33d0c2cd424870"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"volumev2"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"cinder"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8774/v3"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8774/v3"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8774/v3"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"3eb274b12b1d47b2abc536038d87339e"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"computev3"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"nova"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:3333"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:3333"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:3333"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"957f1e54afc64d33a62099faa5e980a2"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"s3"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"s3"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:9292"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:9292"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:9292"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"27d5749f36864c7d96bebf84a5ec9767"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"image"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"glance"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"37c83a2157f944f1972e74658aa0b139"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"volume"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"cinder"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8773/services/Admin"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8773/services/Cloud"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8773/services/Cloud"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"289b59289d6048e2912b327e5d3240ca"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"ec2"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"ec2"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8080"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"16b76b5e5b7d48039a6e4cc3129545f3"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"object-store"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"swift"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:35357/v2.0"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:5000/v2.0"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:5000/v2.0"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"26af053673df4ef3a2340c4239e21ea2"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"identity"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"keystone"</span>
+   <span class="ph token punctuation">}</span>
+  <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"user"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+   <span class="ph token property">"username"</span><span class="ph token operator">:</span> <span class="ph token string">"demo"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"roles_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"9a6590b2ab024747bc2167c4e064d00d"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"roles"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+    <span class="ph token punctuation">{</span>
+     <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"Member"</span>
+    <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+    <span class="ph token punctuation">{</span>
+     <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"anotherrole"</span>
+    <span class="ph token punctuation">}</span>
+   <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"demo"</span>
+  <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"metadata"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+   <span class="ph token property">"is_admin"</span><span class="ph token operator">:</span> <span class="ph token number">0</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"roles"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+    <span class="ph token string">"7598ac3c634d4c3da4b9126a5f67ca2b"</span><span class="ph token punctuation">,</span>
+    <span class="ph token string">"f95c0ab82d6045d9805033ee1fbc80d4"</span>
+   <span class="ph token punctuation">]</span>
+  <span class="ph token punctuation">}</span>
+ <span class="ph token punctuation">}</span>
+<span class="ph token punctuation">}</span></code></pre>
 </section>
 
 <section class="section" id="example-http-response-5__response-203-4"><h5 class="title sectiontitle">Response 203</h5>
 
 
-<pre class="codeblock json"><code>{
- "access": {
-  "token": {
-   "issued_at": "2014-01-30T15:30:58.819584",
-   "expires": "2014-01-31T15:30:58Z",
-   "id": "aaaaa-bbbbb-ccccc-dddd",
-   "tenant": {
-    "enabled": true,
-    "description": null,
-    "name": "demo",
-    "id": "fc394f2ab2df4114bde39905f800dc57"
-   }
-  },
-  "serviceCatalog": [
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
-      "id": "2dad48f09e2a447a9bf852bcd93548ef"
-     }
-    ],
-    "type": "compute",
-    "name": "nova"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:9696/",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:9696/",
-      "internalURL": "http://23.253.72.207:9696/",
-      "id": "97c526db8d7a4c88bbb8d68db1bdcdb8"
-     }
-    ],
-    "type": "network",
-    "name": "neutron"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
-      "id": "93f86dfcbba143a39a33d0c2cd424870"
-     }
-    ],
-    "type": "volumev2",
-    "name": "cinder"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8774/v3",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8774/v3",
-      "internalURL": "http://23.253.72.207:8774/v3",
-      "id": "3eb274b12b1d47b2abc536038d87339e"
-     }
-    ],
-    "type": "computev3",
-    "name": "nova"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:3333",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:3333",
-      "internalURL": "http://23.253.72.207:3333",
-      "id": "957f1e54afc64d33a62099faa5e980a2"
-     }
-    ],
-    "type": "s3",
-    "name": "s3"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:9292",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:9292",
-      "internalURL": "http://23.253.72.207:9292",
-      "id": "27d5749f36864c7d96bebf84a5ec9767"
-     }
-    ],
-    "type": "image",
-    "name": "glance"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
-      "id": "37c83a2157f944f1972e74658aa0b139"
-     }
-    ],
-    "type": "volume",
-    "name": "cinder"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8773/services/Admin",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8773/services/Cloud",
-      "internalURL": "http://23.253.72.207:8773/services/Cloud",
-      "id": "289b59289d6048e2912b327e5d3240ca"
-     }
-    ],
-    "type": "ec2",
-    "name": "ec2"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8080",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
-      "id": "16b76b5e5b7d48039a6e4cc3129545f3"
-     }
-    ],
-    "type": "object-store",
-    "name": "swift"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:35357/v2.0",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:5000/v2.0",
-      "internalURL": "http://23.253.72.207:5000/v2.0",
-      "id": "26af053673df4ef3a2340c4239e21ea2"
-     }
-    ],
-    "type": "identity",
-    "name": "keystone"
-   }
-  ],
-  "user": {
-   "username": "demo",
-   "roles_links": [],
-   "id": "9a6590b2ab024747bc2167c4e064d00d",
-   "roles": [
-    {
-     "name": "Member"
-    },
-    {
-     "name": "anotherrole"
-    }
-   ],
-   "name": "demo"
-  },
-  "metadata": {
-   "is_admin": 0,
-   "roles": [
-    "7598ac3c634d4c3da4b9126a5f67ca2b",
-    "f95c0ab82d6045d9805033ee1fbc80d4"
-   ]
-  }
- }
-}</code></pre>
+<pre class="codeblock json"><code><span class="ph token punctuation">{</span>
+ <span class="ph token property">"access"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+  <span class="ph token property">"token"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+   <span class="ph token property">"issued_at"</span><span class="ph token operator">:</span> <span class="ph token string">"2014-01-30T15:30:58.819584"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"expires"</span><span class="ph token operator">:</span> <span class="ph token string">"2014-01-31T15:30:58Z"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"aaaaa-bbbbb-ccccc-dddd"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"tenant"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+    <span class="ph token property">"enabled"</span><span class="ph token operator">:</span> <span class="ph token boolean">true</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"description"</span><span class="ph token operator">:</span> <span class="ph token null keyword">null</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"demo"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"fc394f2ab2df4114bde39905f800dc57"</span>
+   <span class="ph token punctuation">}</span>
+  <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"serviceCatalog"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"2dad48f09e2a447a9bf852bcd93548ef"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"compute"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"nova"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:9696/"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:9696/"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:9696/"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"97c526db8d7a4c88bbb8d68db1bdcdb8"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"network"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"neutron"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"93f86dfcbba143a39a33d0c2cd424870"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"volumev2"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"cinder"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8774/v3"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8774/v3"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8774/v3"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"3eb274b12b1d47b2abc536038d87339e"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"computev3"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"nova"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:3333"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:3333"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:3333"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"957f1e54afc64d33a62099faa5e980a2"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"s3"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"s3"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:9292"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:9292"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:9292"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"27d5749f36864c7d96bebf84a5ec9767"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"image"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"glance"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"37c83a2157f944f1972e74658aa0b139"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"volume"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"cinder"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8773/services/Admin"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8773/services/Cloud"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8773/services/Cloud"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"289b59289d6048e2912b327e5d3240ca"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"ec2"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"ec2"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8080"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"16b76b5e5b7d48039a6e4cc3129545f3"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"object-store"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"swift"</span>
+   <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+   <span class="ph token punctuation">{</span>
+    <span class="ph token property">"endpoints_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"endpoints"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+     <span class="ph token punctuation">{</span>
+      <span class="ph token property">"adminURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:35357/v2.0"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"region"</span><span class="ph token operator">:</span> <span class="ph token string">"RegionOne"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"publicURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:5000/v2.0"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"internalURL"</span><span class="ph token operator">:</span> <span class="ph token string">"http://23.253.72.207:5000/v2.0"</span><span class="ph token punctuation">,</span>
+      <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"26af053673df4ef3a2340c4239e21ea2"</span>
+     <span class="ph token punctuation">}</span>
+    <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"type"</span><span class="ph token operator">:</span> <span class="ph token string">"identity"</span><span class="ph token punctuation">,</span>
+    <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"keystone"</span>
+   <span class="ph token punctuation">}</span>
+  <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"user"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+   <span class="ph token property">"username"</span><span class="ph token operator">:</span> <span class="ph token string">"demo"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"roles_links"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span><span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"id"</span><span class="ph token operator">:</span> <span class="ph token string">"9a6590b2ab024747bc2167c4e064d00d"</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"roles"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+    <span class="ph token punctuation">{</span>
+     <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"Member"</span>
+    <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+    <span class="ph token punctuation">{</span>
+     <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"anotherrole"</span>
+    <span class="ph token punctuation">}</span>
+   <span class="ph token punctuation">]</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"name"</span><span class="ph token operator">:</span> <span class="ph token string">"demo"</span>
+  <span class="ph token punctuation">}</span><span class="ph token punctuation">,</span>
+  <span class="ph token property">"metadata"</span><span class="ph token operator">:</span> <span class="ph token punctuation">{</span>
+   <span class="ph token property">"is_admin"</span><span class="ph token operator">:</span> <span class="ph token number">0</span><span class="ph token punctuation">,</span>
+   <span class="ph token property">"roles"</span><span class="ph token operator">:</span> <span class="ph token punctuation">[</span>
+    <span class="ph token string">"7598ac3c634d4c3da4b9126a5f67ca2b"</span><span class="ph token punctuation">,</span>
+    <span class="ph token string">"f95c0ab82d6045d9805033ee1fbc80d4"</span>
+   <span class="ph token punctuation">]</span>
+  <span class="ph token punctuation">}</span>
+ <span class="ph token punctuation">}</span>
+<span class="ph token punctuation">}</span></code></pre>
 </section>
 
 </div>
