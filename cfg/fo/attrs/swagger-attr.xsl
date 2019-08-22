@@ -20,9 +20,6 @@
     </xsl:attribute-set>
 
     <xsl:attribute-set name="__swagger__verb">
-     <xsl:attribute name="border-style">solid</xsl:attribute>
-     <xsl:attribute name="border-width">1.5pt</xsl:attribute>
-     <xsl:attribute name="border-color">white</xsl:attribute>
      <xsl:attribute name="color">white</xsl:attribute>
      <xsl:attribute name="font-family">sans-serif</xsl:attribute>
      <xsl:attribute name="padding-start">8pt</xsl:attribute>
@@ -65,6 +62,42 @@
 
     <xsl:attribute-set name="__swagger__verb__delete" use-attribute-sets="__swagger__verb">
      <xsl:attribute name="background-color">#f93e3e</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="__swagger__patch" use-attribute-sets="__swagger__common">
+     <xsl:attribute name="border-color">#50e3c2</xsl:attribute>
+     <xsl:attribute name="background-color">#e9fcf9</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="__swagger__verb__patch" use-attribute-sets="__swagger__verb">
+     <xsl:attribute name="background-color">#50e3c2</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="__swagger__head" use-attribute-sets="__swagger__common">
+     <xsl:attribute name="border-color">#9012fe</xsl:attribute>
+     <xsl:attribute name="background-color">#f3e7fd</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="__swagger__verb__head" use-attribute-sets="__swagger__verb">
+     <xsl:attribute name="background-color">#9012fe</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="__swagger__options" use-attribute-sets="__swagger__common">
+     <xsl:attribute name="border-color">#0d5aa7</xsl:attribute>
+     <xsl:attribute name="background-color">#e6edf6</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="__swagger__verb__options" use-attribute-sets="__swagger__verb">
+     <xsl:attribute name="background-color">#0d5aa7</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="__swagger__deprecated" use-attribute-sets="__swagger__common">
+     <xsl:attribute name="border-color">#ebebeb</xsl:attribute>
+     <xsl:attribute name="background-color">#f9f9f9</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="__swagger__verb__deprecated" use-attribute-sets="__swagger__verb">
+     <xsl:attribute name="background-color">#ebebeb</xsl:attribute>
     </xsl:attribute-set>
 
 </xsl:stylesheet>

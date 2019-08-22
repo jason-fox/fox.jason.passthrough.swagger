@@ -25,16 +25,19 @@ function moveAnchors(markdown) {
       var end = lines[i].indexOf('"', start);
       id = lines[i].substring(start, end);
       text.push("");
+    } else if (id === null && lines[i].startsWith("#####")) {
+      text.push(lines[i] + " {.section}");
     } else if (id !== null && lines[i].startsWith("#")) {
       text.push(lines[i] + " {#" + id + "}");
       id = null;
-    } else if (id !== null && lines[i].startsWith("####")) {
-      text.push(lines[i] + " {.section}");
     } else if (lines[i].startsWith("```")){
-     
       if(codeblock){
-        var arr = lines[i+1].split(' ');
-        text.push("```swagger-" + arr[0].toLowerCase());
+        if(lines[i].equals("```")){
+          var arr = lines[i+1].split(' ');
+          text.push("```swagger-" + arr[0].toLowerCase());
+        } else {
+          text.push(lines[i]);
+        }
         codeblock = false;
       } else {
         text.push(lines[i]);

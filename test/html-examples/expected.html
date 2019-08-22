@@ -1,0 +1,1179 @@
+<body id="identity"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+<h1 class="title topictitle1" id="ariaid-title1">identity</h1>
+<div class="body">
+</div>
+<article class="topic nested1" aria-labelledby="ariaid-title2" id="overview">
+<h2 class="title topictitle2" id="ariaid-title2">Overview</h2>
+<div class="body">
+</div>
+<article class="topic nested2" aria-labelledby="ariaid-title3" id="version-information">
+<h3 class="title topictitle3" id="ariaid-title3">Version information</h3>
+<div class="body">
+<p class="p">
+	<em class="i">Version</em> : Unknown
+</p>
+</div>
+</article>
+
+<article class="topic nested2" aria-labelledby="ariaid-title4" id="consumes">
+<h3 class="title topictitle3" id="ariaid-title4">Consumes</h3>
+<div class="body">
+<ul class="ul">
+	<li class="li"><code class="codeph">application/json</code></li>
+</ul>
+</div>
+</article>
+
+<article class="topic nested2" aria-labelledby="ariaid-title5" id="produces">
+<h3 class="title topictitle3" id="ariaid-title5">Produces</h3>
+<div class="body">
+<ul class="ul">
+	<li class="li"><code class="codeph">application/json</code></li>
+</ul>
+</div>
+</article>
+
+</article>
+
+<article class="topic nested1" aria-labelledby="ariaid-title6" id="paths">
+<h2 class="title topictitle2" id="ariaid-title6">Paths</h2>
+<div class="body">
+</div>
+<article class="topic nested2" aria-labelledby="ariaid-title7" id="getversions-v2">
+<h3 class="title topictitle3" id="ariaid-title7">List versions</h3>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-get"><code><span class="swagger-verb">GET</span>/</code></pre>
+</div>
+<article class="topic nested3" aria-labelledby="ariaid-title8" id="description">
+<h4 class="title topictitle4" id="ariaid-title8">Description</h4>
+<div class="body">
+<p class="p">
+	Lists information about all Identity API versions.
+</p>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title9" id="responses">
+<h4 class="title topictitle4" id="ariaid-title9">Responses</h4>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+			<tr class="row">
+				<th class="entry align-left" id="responses__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="responses__entry__2">Description</th>
+				<th class="entry align-left" id="responses__entry__3">Schema</th>
+			</tr>
+		</thead><tbody class="tbody">
+			<tr class="row">
+				<td class="entry align-left" headers="responses__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="responses__entry__2">200 response</td>
+				<td class="entry align-left" headers="responses__entry__3">No Content</td>
+			</tr>
+		</tbody></table>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title10" id="produces-1">
+<h4 class="title topictitle4" id="ariaid-title10">Produces</h4>
+<div class="body">
+<ul class="ul">
+	<li class="li"><code class="codeph">application/json</code></li>
+</ul>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title11" id="example-http-response">
+<h4 class="title topictitle4" id="ariaid-title11">Example HTTP response</h4>
+<div class="body">
+<section class="section" id="example-http-response__response-200"><h5 class="title sectiontitle">Response 200</h5>
+
+
+<pre class="codeblock json"><code>{
+ "versions": {
+  "values": [
+   {
+    "status": "stable",
+    "updated": "2013-03-06T00:00:00Z",
+    "media-types": [
+     {
+      "base": "application/json",
+      "type": "application/vnd.openstack.identity-v3+json"
+     },
+     {
+      "base": "application/xml",
+      "type": "application/vnd.openstack.identity-v3+xml"
+     }
+    ],
+    "id": "v3.0",
+    "links": [
+     {
+      "href": "http://192.168.122.176:5000/v3/",
+      "rel": "self"
+     }
+    ]
+   },
+   {
+    "status": "stable",
+    "updated": "2014-04-17T00:00:00Z",
+    "media-types": [
+     {
+      "base": "application/json",
+      "type": "application/vnd.openstack.identity-v2.0+json"
+     },
+     {
+      "base": "application/xml",
+      "type": "application/vnd.openstack.identity-v2.0+xml"
+     }
+    ],
+    "id": "v2.0",
+    "links": [
+     {
+      "href": "http://192.168.122.176:5000/v2.0/",
+      "rel": "self"
+     },
+     {
+      "href": "http://docs.openstack.org/",
+      "type": "text/html",
+      "rel": "describedby"
+     }
+    ]
+   }
+  ]
+ }
+}</code></pre>
+</section>
+
+</div>
+</article>
+
+</article>
+
+<article class="topic nested2" aria-labelledby="ariaid-title12" id="getversioninfo-v2-0">
+<h3 class="title topictitle3" id="ariaid-title12">Show version details</h3>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-get"><code><span class="swagger-verb">GET</span>/v2.0</code></pre>
+</div>
+<article class="topic nested3" aria-labelledby="ariaid-title13" id="description-1">
+<h4 class="title topictitle4" id="ariaid-title13">Description</h4>
+<div class="body">
+<p class="p">
+	Shows details for the Identity API v2.0.
+</p>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title14" id="responses-1">
+<h4 class="title topictitle4" id="ariaid-title14">Responses</h4>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+			<tr class="row">
+				<th class="entry align-left" id="responses-1__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="responses-1__entry__2">Description</th>
+				<th class="entry align-left" id="responses-1__entry__3">Schema</th>
+			</tr>
+		</thead><tbody class="tbody">
+			<tr class="row">
+				<td class="entry align-left" headers="responses-1__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="responses-1__entry__2">200 203 response</td>
+				<td class="entry align-left" headers="responses-1__entry__3">No Content</td>
+			</tr>
+			<tr class="row">
+				<td class="entry align-left" headers="responses-1__entry__1"><strong class="b">203</strong></td>
+				<td class="entry align-left" headers="responses-1__entry__2">200 203 response</td>
+				<td class="entry align-left" headers="responses-1__entry__3">No Content</td>
+			</tr>
+		</tbody></table>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title15" id="produces-2">
+<h4 class="title topictitle4" id="ariaid-title15">Produces</h4>
+<div class="body">
+<ul class="ul">
+	<li class="li"><code class="codeph">application/json</code></li>
+</ul>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title16" id="example-http-response-1">
+<h4 class="title topictitle4" id="ariaid-title16">Example HTTP response</h4>
+<div class="body">
+<section class="section" id="example-http-response-1__response-200-1"><h5 class="title sectiontitle">Response 200</h5>
+
+
+<pre class="codeblock json"><code>{
+ "version": {
+  "status": "stable",
+  "updated": "2013-03-06T00:00:00Z",
+  "media-types": [
+   {
+    "base": "application/json",
+    "type": "application/vnd.openstack.identity-v3+json"
+   },
+   {
+    "base": "application/xml",
+    "type": "application/vnd.openstack.identity-v3+xml"
+   }
+  ],
+  "id": "v3.0",
+  "links": [
+   {
+    "href": "http://23.253.228.211:35357/v3/",
+    "rel": "self"
+   }
+  ]
+ }
+}</code></pre>
+</section>
+
+<section class="section" id="example-http-response-1__response-203"><h5 class="title sectiontitle">Response 203</h5>
+
+
+<pre class="codeblock json"><code>{
+ "version": {
+  "status": "stable",
+  "updated": "2013-03-06T00:00:00Z",
+  "media-types": [
+   {
+    "base": "application/json",
+    "type": "application/vnd.openstack.identity-v3+json"
+   },
+   {
+    "base": "application/xml",
+    "type": "application/vnd.openstack.identity-v3+xml"
+   }
+  ],
+  "id": "v3.0",
+  "links": [
+   {
+    "href": "http://23.253.228.211:35357/v3/",
+    "rel": "self"
+   }
+  ]
+ }
+}</code></pre>
+</section>
+
+</div>
+</article>
+
+</article>
+
+<article class="topic nested2" aria-labelledby="ariaid-title17" id="listextensions-v2-0">
+<h3 class="title topictitle3" id="ariaid-title17">List extensions</h3>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-get"><code><span class="swagger-verb">GET</span>/v2.0/extensions</code></pre>
+</div>
+<article class="topic nested3" aria-labelledby="ariaid-title18" id="description-2">
+<h4 class="title topictitle4" id="ariaid-title18">Description</h4>
+<div class="body">
+<p class="p">
+	Lists available extensions.
+</p>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title19" id="responses-2">
+<h4 class="title topictitle4" id="ariaid-title19">Responses</h4>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+			<tr class="row">
+				<th class="entry align-left" id="responses-2__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="responses-2__entry__2">Description</th>
+				<th class="entry align-left" id="responses-2__entry__3">Schema</th>
+			</tr>
+		</thead><tbody class="tbody">
+			<tr class="row">
+				<td class="entry align-left" headers="responses-2__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="responses-2__entry__2">200 203 response</td>
+				<td class="entry align-left" headers="responses-2__entry__3">No Content</td>
+			</tr>
+			<tr class="row">
+				<td class="entry align-left" headers="responses-2__entry__1"><strong class="b">203</strong></td>
+				<td class="entry align-left" headers="responses-2__entry__2">200 203 response</td>
+				<td class="entry align-left" headers="responses-2__entry__3">No Content</td>
+			</tr>
+		</tbody></table>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title20" id="produces-3">
+<h4 class="title topictitle4" id="ariaid-title20">Produces</h4>
+<div class="body">
+<ul class="ul">
+	<li class="li"><code class="codeph">application/json</code></li>
+</ul>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title21" id="example-http-response-2">
+<h4 class="title topictitle4" id="ariaid-title21">Example HTTP response</h4>
+<div class="body">
+<section class="section" id="example-http-response-2__response-200-2"><h5 class="title sectiontitle">Response 200</h5>
+
+
+<pre class="codeblock json"><code>{
+ "extensions": {
+  "values": [
+   {
+    "updated": "2013-07-07T12:00:0-00:00",
+    "name": "OpenStack S3 API",
+    "links": [
+     {
+      "href": "https://github.com/openstack/identity-api",
+      "type": "text/html",
+      "rel": "describedby"
+     }
+    ],
+    "namespace": "http://docs.openstack.org/identity/api/ext/s3tokens/v1.0",
+    "alias": "s3tokens",
+    "description": "OpenStack S3 API."
+   },
+   {
+    "updated": "2013-07-23T12:00:0-00:00",
+    "name": "OpenStack Keystone Endpoint Filter API",
+    "links": [
+     {
+      "href": "https://github.com/openstack/identity-api/blob/master/openstack-identity-api/v3/src/markdown/identity-api-v3-os-ep-filter-ext.md",
+      "type": "text/html",
+      "rel": "describedby"
+     }
+    ],
+    "namespace": "http://docs.openstack.org/identity/api/ext/OS-EP-FILTER/v1.0",
+    "alias": "OS-EP-FILTER",
+    "description": "OpenStack Keystone Endpoint Filter API."
+   },
+   {
+    "updated": "2013-12-17T12:00:0-00:00",
+    "name": "OpenStack Federation APIs",
+    "links": [
+     {
+      "href": "https://github.com/openstack/identity-api",
+      "type": "text/html",
+      "rel": "describedby"
+     }
+    ],
+    "namespace": "http://docs.openstack.org/identity/api/ext/OS-FEDERATION/v1.0",
+    "alias": "OS-FEDERATION",
+    "description": "OpenStack Identity Providers Mechanism."
+   },
+   {
+    "updated": "2013-07-11T17:14:00-00:00",
+    "name": "OpenStack Keystone Admin",
+    "links": [
+     {
+      "href": "https://github.com/openstack/identity-api",
+      "type": "text/html",
+      "rel": "describedby"
+     }
+    ],
+    "namespace": "http://docs.openstack.org/identity/api/ext/OS-KSADM/v1.0",
+    "alias": "OS-KSADM",
+    "description": "OpenStack extensions to Keystone v2.0 API enabling Administrative Operations."
+   },
+   {
+    "updated": "2014-01-20T12:00:0-00:00",
+    "name": "OpenStack Simple Certificate API",
+    "links": [
+     {
+      "href": "https://github.com/openstack/identity-api",
+      "type": "text/html",
+      "rel": "describedby"
+     }
+    ],
+    "namespace": "http://docs.openstack.org/identity/api/ext/OS-SIMPLE-CERT/v1.0",
+    "alias": "OS-SIMPLE-CERT",
+    "description": "OpenStack simple certificate retrieval extension"
+   },
+   {
+    "updated": "2013-07-07T12:00:0-00:00",
+    "name": "OpenStack EC2 API",
+    "links": [
+     {
+      "href": "https://github.com/openstack/identity-api",
+      "type": "text/html",
+      "rel": "describedby"
+     }
+    ],
+    "namespace": "http://docs.openstack.org/identity/api/ext/OS-EC2/v1.0",
+    "alias": "OS-EC2",
+    "description": "OpenStack EC2 Credentials backend."
+   }
+  ]
+ }
+}</code></pre>
+</section>
+
+<section class="section" id="example-http-response-2__response-203-1"><h5 class="title sectiontitle">Response 203</h5>
+
+
+<pre class="codeblock json"><code>{
+ "extensions": {
+  "values": [
+   {
+    "updated": "2013-07-07T12:00:0-00:00",
+    "name": "OpenStack S3 API",
+    "links": [
+     {
+      "href": "https://github.com/openstack/identity-api",
+      "type": "text/html",
+      "rel": "describedby"
+     }
+    ],
+    "namespace": "http://docs.openstack.org/identity/api/ext/s3tokens/v1.0",
+    "alias": "s3tokens",
+    "description": "OpenStack S3 API."
+   },
+   {
+    "updated": "2013-07-23T12:00:0-00:00",
+    "name": "OpenStack Keystone Endpoint Filter API",
+    "links": [
+     {
+      "href": "https://github.com/openstack/identity-api/blob/master/openstack-identity-api/v3/src/markdown/identity-api-v3-os-ep-filter-ext.md",
+      "type": "text/html",
+      "rel": "describedby"
+     }
+    ],
+    "namespace": "http://docs.openstack.org/identity/api/ext/OS-EP-FILTER/v1.0",
+    "alias": "OS-EP-FILTER",
+    "description": "OpenStack Keystone Endpoint Filter API."
+   },
+   {
+    "updated": "2013-12-17T12:00:0-00:00",
+    "name": "OpenStack Federation APIs",
+    "links": [
+     {
+      "href": "https://github.com/openstack/identity-api",
+      "type": "text/html",
+      "rel": "describedby"
+     }
+    ],
+    "namespace": "http://docs.openstack.org/identity/api/ext/OS-FEDERATION/v1.0",
+    "alias": "OS-FEDERATION",
+    "description": "OpenStack Identity Providers Mechanism."
+   },
+   {
+    "updated": "2013-07-11T17:14:00-00:00",
+    "name": "OpenStack Keystone Admin",
+    "links": [
+     {
+      "href": "https://github.com/openstack/identity-api",
+      "type": "text/html",
+      "rel": "describedby"
+     }
+    ],
+    "namespace": "http://docs.openstack.org/identity/api/ext/OS-KSADM/v1.0",
+    "alias": "OS-KSADM",
+    "description": "OpenStack extensions to Keystone v2.0 API enabling Administrative Operations."
+   },
+   {
+    "updated": "2014-01-20T12:00:0-00:00",
+    "name": "OpenStack Simple Certificate API",
+    "links": [
+     {
+      "href": "https://github.com/openstack/identity-api",
+      "type": "text/html",
+      "rel": "describedby"
+     }
+    ],
+    "namespace": "http://docs.openstack.org/identity/api/ext/OS-SIMPLE-CERT/v1.0",
+    "alias": "OS-SIMPLE-CERT",
+    "description": "OpenStack simple certificate retrieval extension"
+   },
+   {
+    "updated": "2013-07-07T12:00:0-00:00",
+    "name": "OpenStack EC2 API",
+    "links": [
+     {
+      "href": "https://github.com/openstack/identity-api",
+      "type": "text/html",
+      "rel": "describedby"
+     }
+    ],
+    "namespace": "http://docs.openstack.org/identity/api/ext/OS-EC2/v1.0",
+    "alias": "OS-EC2",
+    "description": "OpenStack EC2 Credentials backend."
+   }
+  ]
+ }
+}</code></pre>
+</section>
+
+</div>
+</article>
+
+</article>
+
+<article class="topic nested2" aria-labelledby="ariaid-title22" id="getextension-v2-0">
+<h3 class="title topictitle3" id="ariaid-title22">Get extension details</h3>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-get"><code><span class="swagger-verb">GET</span>/v2.0/extensions/{alias}</code></pre>
+</div>
+<article class="topic nested3" aria-labelledby="ariaid-title23" id="description-3">
+<h4 class="title topictitle4" id="ariaid-title23">Description</h4>
+<div class="body">
+<p class="p">
+	Gets detailed information for a specified extension.
+</p>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title24" id="parameters">
+<h4 class="title topictitle4" id="ariaid-title24">Parameters</h4>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
+			<tr class="row">
+				<th class="entry align-left" id="parameters__entry__1">Type</th>
+				<th class="entry align-left" id="parameters__entry__2">Name</th>
+				<th class="entry align-left" id="parameters__entry__3">Description</th>
+				<th class="entry align-left" id="parameters__entry__4">Schema</th>
+			</tr>
+		</thead><tbody class="tbody">
+			<tr class="row">
+				<td class="entry align-left" headers="parameters__entry__1"><strong class="b">Path</strong></td>
+				<td class="entry align-left" headers="parameters__entry__2"><strong class="b">alias</strong> <span class="undefined_element"></span><em class="i">required</em></td>
+				<td class="entry align-left" headers="parameters__entry__3">The extension name.</td>
+				<td class="entry align-left" headers="parameters__entry__4">string</td>
+			</tr>
+		</tbody></table>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title25" id="responses-3">
+<h4 class="title topictitle4" id="ariaid-title25">Responses</h4>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+			<tr class="row">
+				<th class="entry align-left" id="responses-3__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="responses-3__entry__2">Description</th>
+				<th class="entry align-left" id="responses-3__entry__3">Schema</th>
+			</tr>
+		</thead><tbody class="tbody">
+			<tr class="row">
+				<td class="entry align-left" headers="responses-3__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="responses-3__entry__2">200 203 response</td>
+				<td class="entry align-left" headers="responses-3__entry__3">No Content</td>
+			</tr>
+			<tr class="row">
+				<td class="entry align-left" headers="responses-3__entry__1"><strong class="b">203</strong></td>
+				<td class="entry align-left" headers="responses-3__entry__2">200 203 response</td>
+				<td class="entry align-left" headers="responses-3__entry__3">No Content</td>
+			</tr>
+		</tbody></table>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title26" id="produces-4">
+<h4 class="title topictitle4" id="ariaid-title26">Produces</h4>
+<div class="body">
+<ul class="ul">
+	<li class="li"><code class="codeph">application/json</code></li>
+</ul>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title27" id="example-http-response-3">
+<h4 class="title topictitle4" id="ariaid-title27">Example HTTP response</h4>
+<div class="body">
+<section class="section" id="example-http-response-3__response-200-3"><h5 class="title sectiontitle">Response 200</h5>
+
+
+<pre class="codeblock json"><code>{
+ "extension": {
+  "updated": "2013-07-07T12:00:0-00:00",
+  "name": "OpenStack S3 API",
+  "links": [
+   {
+    "href": "https://github.com/openstack/identity-api",
+    "type": "text/html",
+    "rel": "describedby"
+   }
+  ],
+  "namespace": "http://docs.openstack.org/identity/api/ext/s3tokens/v1.0",
+  "alias": "s3tokens",
+  "description": "OpenStack S3 API."
+ }
+}</code></pre>
+</section>
+
+<section class="section" id="example-http-response-3__response-203-2"><h5 class="title sectiontitle">Response 203</h5>
+
+
+<pre class="codeblock json"><code>{
+ "extension": {
+  "updated": "2013-07-07T12:00:0-00:00",
+  "name": "OpenStack S3 API",
+  "links": [
+   {
+    "href": "https://github.com/openstack/identity-api",
+    "type": "text/html",
+    "rel": "describedby"
+   }
+  ],
+  "namespace": "http://docs.openstack.org/identity/api/ext/s3tokens/v1.0",
+  "alias": "s3tokens",
+  "description": "OpenStack S3 API."
+ }
+}</code></pre>
+</section>
+
+</div>
+</article>
+
+</article>
+
+<article class="topic nested2" aria-labelledby="ariaid-title28" id="listtenants">
+<h3 class="title topictitle3" id="ariaid-title28">List tenants</h3>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-get"><code><span class="swagger-verb">GET</span>/v2.0/tenants</code></pre>
+</div>
+<article class="topic nested3" aria-labelledby="ariaid-title29" id="description-4">
+<h4 class="title topictitle4" id="ariaid-title29">Description</h4>
+<div class="body">
+<p class="p">
+	Lists tenants to which the specified token has access.
+</p>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title30" id="parameters-1">
+<h4 class="title topictitle4" id="ariaid-title30">Parameters</h4>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
+			<tr class="row">
+				<th class="entry align-left" id="parameters-1__entry__1">Type</th>
+				<th class="entry align-left" id="parameters-1__entry__2">Name</th>
+				<th class="entry align-left" id="parameters-1__entry__3">Description</th>
+				<th class="entry align-left" id="parameters-1__entry__4">Schema</th>
+			</tr>
+		</thead><tbody class="tbody">
+			<tr class="row">
+				<td class="entry align-left" headers="parameters-1__entry__1"><strong class="b">Header</strong></td>
+				<td class="entry align-left" headers="parameters-1__entry__2"><strong class="b">X-Auth-Token</strong> <span class="undefined_element"></span><em class="i">required</em></td>
+				<td class="entry align-left" headers="parameters-1__entry__3">A valid authentication token.</td>
+				<td class="entry align-left" headers="parameters-1__entry__4">string</td>
+			</tr>
+			<tr class="row">
+				<td class="entry align-left" headers="parameters-1__entry__1"><strong class="b">Query</strong></td>
+				<td class="entry align-left" headers="parameters-1__entry__2"><strong class="b">limit</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="parameters-1__entry__3">The page size.</td>
+				<td class="entry align-left" headers="parameters-1__entry__4">integer</td>
+			</tr>
+			<tr class="row">
+				<td class="entry align-left" headers="parameters-1__entry__1"><strong class="b">Query</strong></td>
+				<td class="entry align-left" headers="parameters-1__entry__2"><strong class="b">marker</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="parameters-1__entry__3">The ID of the last item in the previous list.</td>
+				<td class="entry align-left" headers="parameters-1__entry__4">string</td>
+			</tr>
+		</tbody></table>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title31" id="responses-4">
+<h4 class="title topictitle4" id="ariaid-title31">Responses</h4>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+			<tr class="row">
+				<th class="entry align-left" id="responses-4__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="responses-4__entry__2">Description</th>
+				<th class="entry align-left" id="responses-4__entry__3">Schema</th>
+			</tr>
+		</thead><tbody class="tbody">
+			<tr class="row">
+				<td class="entry align-left" headers="responses-4__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="responses-4__entry__2">200 203 response</td>
+				<td class="entry align-left" headers="responses-4__entry__3">No Content</td>
+			</tr>
+			<tr class="row">
+				<td class="entry align-left" headers="responses-4__entry__1"><strong class="b">203</strong></td>
+				<td class="entry align-left" headers="responses-4__entry__2">200 203 response</td>
+				<td class="entry align-left" headers="responses-4__entry__3">No Content</td>
+			</tr>
+		</tbody></table>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title32" id="produces-5">
+<h4 class="title topictitle4" id="ariaid-title32">Produces</h4>
+<div class="body">
+<ul class="ul">
+	<li class="li"><code class="codeph">application/json</code></li>
+</ul>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title33" id="example-http-response-4">
+<h4 class="title topictitle4" id="ariaid-title33">Example HTTP response</h4>
+<div class="body">
+<section class="section" id="example-http-response-4__response-200-4"><h5 class="title sectiontitle">Response 200</h5>
+
+
+<pre class="codeblock json"><code>{
+ "tenants_links": [],
+ "tenants": [
+  {
+   "description": "A description ...",
+   "enabled": true,
+   "id": "1234",
+   "name": "ACME Corp"
+  },
+  {
+   "description": "A description ...",
+   "enabled": true,
+   "id": "3456",
+   "name": "Iron Works"
+  }
+ ]
+}</code></pre>
+</section>
+
+<section class="section" id="example-http-response-4__response-203-3"><h5 class="title sectiontitle">Response 203</h5>
+
+
+<pre class="codeblock json"><code>{
+ "tenants_links": [],
+ "tenants": [
+  {
+   "description": "A description ...",
+   "enabled": true,
+   "id": "1234",
+   "name": "ACME Corp"
+  },
+  {
+   "description": "A description ...",
+   "enabled": true,
+   "id": "3456",
+   "name": "Iron Works"
+  }
+ ]
+}</code></pre>
+</section>
+
+</div>
+</article>
+
+</article>
+
+<article class="topic nested2" aria-labelledby="ariaid-title34" id="authenticate-v2-0">
+<h3 class="title topictitle3" id="ariaid-title34">Authenticate</h3>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-post"><code><span class="swagger-verb">POST</span>/v2.0/tokens</code></pre>
+</div>
+<article class="topic nested3" aria-labelledby="ariaid-title35" id="description-5">
+<h4 class="title topictitle4" id="ariaid-title35">Description</h4>
+<div class="body">
+<p class="p">
+	Authenticates and generates a token.
+</p>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title36" id="responses-5">
+<h4 class="title topictitle4" id="ariaid-title36">Responses</h4>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+			<tr class="row">
+				<th class="entry align-left" id="responses-5__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="responses-5__entry__2">Description</th>
+				<th class="entry align-left" id="responses-5__entry__3">Schema</th>
+			</tr>
+		</thead><tbody class="tbody">
+			<tr class="row">
+				<td class="entry align-left" headers="responses-5__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="responses-5__entry__2">200 203 response</td>
+				<td class="entry align-left" headers="responses-5__entry__3">No Content</td>
+			</tr>
+			<tr class="row">
+				<td class="entry align-left" headers="responses-5__entry__1"><strong class="b">203</strong></td>
+				<td class="entry align-left" headers="responses-5__entry__2">200 203 response</td>
+				<td class="entry align-left" headers="responses-5__entry__3">No Content</td>
+			</tr>
+		</tbody></table>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title37" id="produces-6">
+<h4 class="title topictitle4" id="ariaid-title37">Produces</h4>
+<div class="body">
+<ul class="ul">
+	<li class="li"><code class="codeph">application/json</code></li>
+</ul>
+</div>
+</article>
+
+<article class="topic nested3" aria-labelledby="ariaid-title38" id="example-http-response-5">
+<h4 class="title topictitle4" id="ariaid-title38">Example HTTP response</h4>
+<div class="body">
+<section class="section" id="example-http-response-5__response-200-5"><h5 class="title sectiontitle">Response 200</h5>
+
+
+<pre class="codeblock json"><code>{
+ "access": {
+  "token": {
+   "issued_at": "2014-01-30T15:30:58.819584",
+   "expires": "2014-01-31T15:30:58Z",
+   "id": "aaaaa-bbbbb-ccccc-dddd",
+   "tenant": {
+    "enabled": true,
+    "description": null,
+    "name": "demo",
+    "id": "fc394f2ab2df4114bde39905f800dc57"
+   }
+  },
+  "serviceCatalog": [
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+      "id": "2dad48f09e2a447a9bf852bcd93548ef"
+     }
+    ],
+    "type": "compute",
+    "name": "nova"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:9696/",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:9696/",
+      "internalURL": "http://23.253.72.207:9696/",
+      "id": "97c526db8d7a4c88bbb8d68db1bdcdb8"
+     }
+    ],
+    "type": "network",
+    "name": "neutron"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+      "id": "93f86dfcbba143a39a33d0c2cd424870"
+     }
+    ],
+    "type": "volumev2",
+    "name": "cinder"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8774/v3",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8774/v3",
+      "internalURL": "http://23.253.72.207:8774/v3",
+      "id": "3eb274b12b1d47b2abc536038d87339e"
+     }
+    ],
+    "type": "computev3",
+    "name": "nova"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:3333",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:3333",
+      "internalURL": "http://23.253.72.207:3333",
+      "id": "957f1e54afc64d33a62099faa5e980a2"
+     }
+    ],
+    "type": "s3",
+    "name": "s3"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:9292",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:9292",
+      "internalURL": "http://23.253.72.207:9292",
+      "id": "27d5749f36864c7d96bebf84a5ec9767"
+     }
+    ],
+    "type": "image",
+    "name": "glance"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+      "id": "37c83a2157f944f1972e74658aa0b139"
+     }
+    ],
+    "type": "volume",
+    "name": "cinder"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8773/services/Admin",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8773/services/Cloud",
+      "internalURL": "http://23.253.72.207:8773/services/Cloud",
+      "id": "289b59289d6048e2912b327e5d3240ca"
+     }
+    ],
+    "type": "ec2",
+    "name": "ec2"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8080",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
+      "id": "16b76b5e5b7d48039a6e4cc3129545f3"
+     }
+    ],
+    "type": "object-store",
+    "name": "swift"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:35357/v2.0",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:5000/v2.0",
+      "internalURL": "http://23.253.72.207:5000/v2.0",
+      "id": "26af053673df4ef3a2340c4239e21ea2"
+     }
+    ],
+    "type": "identity",
+    "name": "keystone"
+   }
+  ],
+  "user": {
+   "username": "demo",
+   "roles_links": [],
+   "id": "9a6590b2ab024747bc2167c4e064d00d",
+   "roles": [
+    {
+     "name": "Member"
+    },
+    {
+     "name": "anotherrole"
+    }
+   ],
+   "name": "demo"
+  },
+  "metadata": {
+   "is_admin": 0,
+   "roles": [
+    "7598ac3c634d4c3da4b9126a5f67ca2b",
+    "f95c0ab82d6045d9805033ee1fbc80d4"
+   ]
+  }
+ }
+}</code></pre>
+</section>
+
+<section class="section" id="example-http-response-5__response-203-4"><h5 class="title sectiontitle">Response 203</h5>
+
+
+<pre class="codeblock json"><code>{
+ "access": {
+  "token": {
+   "issued_at": "2014-01-30T15:30:58.819584",
+   "expires": "2014-01-31T15:30:58Z",
+   "id": "aaaaa-bbbbb-ccccc-dddd",
+   "tenant": {
+    "enabled": true,
+    "description": null,
+    "name": "demo",
+    "id": "fc394f2ab2df4114bde39905f800dc57"
+   }
+  },
+  "serviceCatalog": [
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+      "id": "2dad48f09e2a447a9bf852bcd93548ef"
+     }
+    ],
+    "type": "compute",
+    "name": "nova"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:9696/",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:9696/",
+      "internalURL": "http://23.253.72.207:9696/",
+      "id": "97c526db8d7a4c88bbb8d68db1bdcdb8"
+     }
+    ],
+    "type": "network",
+    "name": "neutron"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+      "id": "93f86dfcbba143a39a33d0c2cd424870"
+     }
+    ],
+    "type": "volumev2",
+    "name": "cinder"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8774/v3",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8774/v3",
+      "internalURL": "http://23.253.72.207:8774/v3",
+      "id": "3eb274b12b1d47b2abc536038d87339e"
+     }
+    ],
+    "type": "computev3",
+    "name": "nova"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:3333",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:3333",
+      "internalURL": "http://23.253.72.207:3333",
+      "id": "957f1e54afc64d33a62099faa5e980a2"
+     }
+    ],
+    "type": "s3",
+    "name": "s3"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:9292",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:9292",
+      "internalURL": "http://23.253.72.207:9292",
+      "id": "27d5749f36864c7d96bebf84a5ec9767"
+     }
+    ],
+    "type": "image",
+    "name": "glance"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+      "id": "37c83a2157f944f1972e74658aa0b139"
+     }
+    ],
+    "type": "volume",
+    "name": "cinder"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8773/services/Admin",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8773/services/Cloud",
+      "internalURL": "http://23.253.72.207:8773/services/Cloud",
+      "id": "289b59289d6048e2912b327e5d3240ca"
+     }
+    ],
+    "type": "ec2",
+    "name": "ec2"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8080",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
+      "id": "16b76b5e5b7d48039a6e4cc3129545f3"
+     }
+    ],
+    "type": "object-store",
+    "name": "swift"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:35357/v2.0",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:5000/v2.0",
+      "internalURL": "http://23.253.72.207:5000/v2.0",
+      "id": "26af053673df4ef3a2340c4239e21ea2"
+     }
+    ],
+    "type": "identity",
+    "name": "keystone"
+   }
+  ],
+  "user": {
+   "username": "demo",
+   "roles_links": [],
+   "id": "9a6590b2ab024747bc2167c4e064d00d",
+   "roles": [
+    {
+     "name": "Member"
+    },
+    {
+     "name": "anotherrole"
+    }
+   ],
+   "name": "demo"
+  },
+  "metadata": {
+   "is_admin": 0,
+   "roles": [
+    "7598ac3c634d4c3da4b9126a5f67ca2b",
+    "f95c0ab82d6045d9805033ee1fbc80d4"
+   ]
+  }
+ }
+}</code></pre>
+</section>
+
+</div>
+</article>
+
+</article>
+
+</article>
+
+</article></main></body>
