@@ -11,20 +11,18 @@
 	<require plugin="fox.jason.passthrough.pandoc"/>
 	<require plugin="fox.jason.extend.css"/>
 
-
-
-	<!-- PDF -->
+	<!-- PDF extension point -->
 	<feature extension="dita.xsl.xslfo" value="xsl/xslfo.xsl" type="file"/>
 	<!-- HTML5 extension points -->   
 	<feature extension="dita.xsl.html5" value="xsl/xhtml.xsl" type="file"/>
-	<!-- XHTML extension points -->
 	<feature extension="dita.xsl.xhtml" value="xsl/xhtml.xsl" type="file"/>
 
+	<!-- Uses the Extended CSS extension point -->
+	<feature extension="extend.css.process" value="swagger.css.copy"/>
+	<!-- Uses the passthrough extension point and file reader -->
 	<feature extension="dita.parser">
 		<parser format="swagger" class="fox.jason.passthrough.parser.FileReader"/>
 	</feature>
-
 	<feature extension="passthrough.pre" value="swagger.process.pre"/>
 	<feature extension="passthrough.process" value="swagger.process"/>
-	<feature extension="extend.css.process" value="swagger.css.copy"/>
 </plugin>
