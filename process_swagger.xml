@@ -4,14 +4,10 @@
 -->
 <project name="fox.jason.passthrough.swagger" xmlns:if="ant:if" xmlns:unless="ant:unless">
 
-	<target name="swagger.prismjs.pre">
-		<loadfile property="swagger.prismjs" srcFile="${dita.plugin.fox.jason.passthrough.swagger.dir}/resource/prism.js"/>
+	<target name="swagger.css.copy">
 		<loadfile property="swagger.css" srcFile="${dita.plugin.fox.jason.passthrough.swagger.dir}/resource/swagger.css"/>
-		<echo append="true" message="${line.separator}${swagger.prismjs}" file="${prismjs.temp.file}"/>
-		<echo append="true" message=" or @format='swagger'" file="${prismjs.formats.temp.file}"/>
-		<echo append="true" message="${line.separator}${swagger.css}" file="${prismjs.css.temp.file}"/>
+		<echo append="true" message="${line.separator}${swagger.css}" file="${extend.css.file}"/>
 	</target>
-
 	<!--
 		Create Swagger processing macros.
 	-->
@@ -58,9 +54,7 @@
 					<arg value="${dita.plugin.fox.jason.passthrough.swagger.dir}/cfg/config.properties"/>
 				</java>
 
-
 				<strip-swagger-anchors file="${swagger.temp.file}.md"/>
-				<copy file="${swagger.temp.file}.md" toFile="${output.dir}/Y.md"/>
 				<add-pandoc-file src="${swagger.temp.file}.md" dest="@{dest}" title="@{title}"/>
 			</sequential>
 		</macrodef>

@@ -19,6 +19,7 @@ install:
   - dita-ot-$DITA_OT/bin/dita --install https://github.com/doctales/org.doctales.xmltask/archive/master.zip
   - dita-ot-$DITA_OT/bin/dita --install https://github.com/jason-fox/fox.jason.passthrough/archive/master.zip
   - dita-ot-$DITA_OT/bin/dita --install https://github.com/jason-fox/fox.jason.passthrough.pandoc/archive/master.zip
+  - dita-ot-$DITA_OT/bin/dita --install https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
   - dita-ot-$DITA_OT/bin/dita --install https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
   - dita-ot-$DITA_OT/bin/dita --install fox.jason.passthrough.swagger.zip
 
