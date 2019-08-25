@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!--ant--><!--
-	This file is part of the DITA-OT  Plug-in project.
+	This file is part of the DITA-OT Swagger Plug-in project.
 	See the accompanying LICENSE file for applicable licenses.
 -->
 <project name="fox.jason.passthrough.swagger" xmlns:if="ant:if" xmlns:unless="ant:unless">

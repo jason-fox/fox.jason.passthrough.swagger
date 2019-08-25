@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"?>
 <!--
-	This file is part of the DITA-OT  Plug-in project.
+	This file is part of the DITA-OT Swagger Plug-in project.
 	See the accompanying LICENSE file for applicable licenses.
 -->
 <plugin id="fox.jason.passthrough.swagger" version="1.1.0">
