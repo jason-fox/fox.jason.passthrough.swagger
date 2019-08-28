@@ -1,6 +1,7 @@
 
 
-.swagger-post, .swagger-put, .swagger-delete, .swagger-get, .swagger-patch, .swagger-head, .swagger-options, .swagger-deprecated  {
+code[class*="swagger-"],
+pre[class*="swagger-"]{
     border-width: 2px;
     border-style: solid;
     padding: 10px;
@@ -23,72 +24,72 @@ span.swagger-verb {
 }
 
 
-.swagger-post {
+pre.swagger-post {
     border-color: #49cc90;
     background: rgba(73,204,144,.1)
 }
 
-.swagger-post span.swagger-verb {
+pre.swagger-post span.swagger-verb {
 	background: #49cc90;
 }
 
 
-.swagger-put {
+pre.swagger-put {
     border-color: #fca130;
     background: rgba(252,161,48,.1)
 }
 
-.swagger-put span.swagger-verb {
+pre.swagger-put span.swagger-verb {
 	background: #fca130;
 }
 
 
-.swagger-delete {
+pre.swagger-delete {
     border-color: #f93e3e;
     background: rgba(249,62,62,.1)
 }
 
-.swagger-delete span.swagger-verb {
+pre.swagger-delete span.swagger-verb {
 	background: #f93e3e;
 }
 
-.swagger-get {
+pre.swagger-get {
     border-color: #61affe;
     background: rgba(97,175,254,.1)
 }
 
-.swagger-get span.swagger-verb {
+pre.swagger-get span.swagger-verb {
 	background: #61affe;
 }
 
-.swagger-patch {
+pre.swagger-patch {
     border-color: #50e3c2;
     background: rgba(80,227,194,.1)
 }
 
-.swagger-patch span.swagger-verb {
+pre.swagger-patch span.swagger-verb {
 	background: #50e3c2;
 }
 
-.swagger-head {
+pre.swagger-head {
     border-color: #9012fe;
     background: rgba(144,18,254,.1)
 }
 
-.swagger-head span.swagger-verb {
+pre.swagger-head span.swagger-verb {
 	background: #9012fe;
 }
 
-.swagger-options {
+pre.swagger-options {
     border-color: #0d5aa7;
     background: rgba(13,90,167,.1)
 }
 
-.swagger-options span.swagger-verb {
+pre.swagger-options span.swagger-verb {
 	background: #0d5aa7;
 }
 
-.swagger-deprecated {
+pre.swagger-deprecated {
     border-color: #ebebeb;
     background: hsla(0,0%,92.2%,.1)
 }

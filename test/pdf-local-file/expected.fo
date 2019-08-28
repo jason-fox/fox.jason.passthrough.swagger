@@ -35,7 +35,7 @@
                   </fo:list-item-label>
                   <fo:list-item-body>
                     <fo:block>
-                      <fo:basic-link color="blue" internal-destination="unique_10">Paths</fo:basic-link>
+                      <fo:basic-link color="blue" internal-destination="unique_4">Paths</fo:basic-link>
                     </fo:block>
                   </fo:list-item-body>
                 </fo:list-item>
@@ -45,7 +45,7 @@
                   </fo:list-item-label>
                   <fo:list-item-body>
                     <fo:block>
-                      <fo:basic-link color="blue" internal-destination="unique_137">Definitions</fo:basic-link>
+                      <fo:basic-link color="blue" internal-destination="unique_31">Definitions</fo:basic-link>
                     </fo:block>
                   </fo:list-item-body>
                 </fo:list-item>
@@ -55,7 +55,7 @@
                   </fo:list-item-label>
                   <fo:list-item-body>
                     <fo:block>
-                      <fo:basic-link color="blue" internal-destination="unique_140">Security</fo:basic-link>
+                      <fo:basic-link color="blue" internal-destination="unique_34">Security</fo:basic-link>
                     </fo:block>
                   </fo:list-item-body>
                 </fo:list-item>
@@ -81,40 +81,22 @@
             <fo:basic-link color="blue" external-destination="url('http://swagger.io')">http://swagger.io</fo:basic-link>or on
             <fo:basic-link color="blue" external-destination="url('http://swagger.io/irc/')">irc.freenode.net, #swagger</fo:basic-link>. For this sample, you can use the api key
             <fo:inline font-family="MONOSPACE">special-key</fo:inline>to test the authorization filters.</fo:block>
-        </fo:block>
-        <fo:block>
           <fo:block>
-            <fo:block font-family="STANDARD" font-weight="bold">
-              <fo:block>
-                <fo:wrapper></fo:wrapper>
-                <fo:wrapper></fo:wrapper>Version information</fo:block>
-            </fo:block>
+            <fo:block font-family="STANDARD" font-weight="bold">Version information</fo:block>
             <fo:block>
               <fo:block>
                 <fo:inline font-style="italic">Version</fo:inline>: 1.0.0</fo:block>
             </fo:block>
           </fo:block>
-        </fo:block>
-        <fo:block>
           <fo:block>
-            <fo:block font-family="STANDARD" font-weight="bold">
-              <fo:block>
-                <fo:wrapper></fo:wrapper>
-                <fo:wrapper></fo:wrapper>Contact information</fo:block>
-            </fo:block>
+            <fo:block font-family="STANDARD" font-weight="bold">Contact information</fo:block>
             <fo:block>
               <fo:block>
                 <fo:inline font-style="italic">Contact Email</fo:inline>: apiteam@swagger.io</fo:block>
             </fo:block>
           </fo:block>
-        </fo:block>
-        <fo:block>
           <fo:block>
-            <fo:block font-family="STANDARD" font-weight="bold">
-              <fo:block>
-                <fo:wrapper></fo:wrapper>
-                <fo:wrapper></fo:wrapper>License information</fo:block>
-            </fo:block>
+            <fo:block font-family="STANDARD" font-weight="bold">License information</fo:block>
             <fo:block>
               <fo:block>
                 <fo:inline font-style="italic">License</fo:inline>: Apache 2.0
@@ -122,14 +104,8 @@
                 <fo:inline font-style="italic">Terms of service</fo:inline>: http://swagger.io/terms/</fo:block>
             </fo:block>
           </fo:block>
-        </fo:block>
-        <fo:block>
           <fo:block>
-            <fo:block font-family="STANDARD" font-weight="bold">
-              <fo:block>
-                <fo:wrapper></fo:wrapper>
-                <fo:wrapper></fo:wrapper>URI scheme</fo:block>
-            </fo:block>
+            <fo:block font-family="STANDARD" font-weight="bold">URI scheme</fo:block>
             <fo:block>
               <fo:block>
                 <fo:inline font-style="italic">Host</fo:inline>: petstore.swagger.io
@@ -137,14 +113,8 @@
                 <fo:inline font-style="italic">Schemes</fo:inline>: HTTPS, HTTP</fo:block>
             </fo:block>
           </fo:block>
-        </fo:block>
-        <fo:block>
           <fo:block>
-            <fo:block font-family="STANDARD" font-weight="bold">
-              <fo:block>
-                <fo:wrapper></fo:wrapper>
-                <fo:wrapper></fo:wrapper>Tags</fo:block>
-            </fo:block>
+            <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
             <fo:block>
               <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                 <fo:list-item relative-align="baseline">
@@ -174,14 +144,8 @@
               </fo:list-block>
             </fo:block>
           </fo:block>
-        </fo:block>
-        <fo:block>
           <fo:block>
-            <fo:block font-family="STANDARD" font-weight="bold">
-              <fo:block>
-                <fo:wrapper></fo:wrapper>
-                <fo:wrapper></fo:wrapper>External Docs</fo:block>
-            </fo:block>
+            <fo:block font-family="STANDARD" font-weight="bold">External Docs</fo:block>
             <fo:block>
               <fo:block>
                 <fo:inline font-style="italic">Description</fo:inline>: Find out more about Swagger
@@ -212,14 +176,8 @@
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
                 <fo:inline padding-start="10pt">/pet</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -262,10 +220,10 @@
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_13">Pet</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_13"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>
                               </fo:block>
@@ -277,14 +235,8 @@
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -325,14 +277,8 @@
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Consumes</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Consumes</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -358,14 +304,8 @@
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -391,14 +331,8 @@
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -412,14 +346,8 @@
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Security</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Security</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -450,10 +378,10 @@
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
-                                  <fo:basic-link color="blue" internal-destination="unique_19">petstore_auth</fo:basic-link>
+                                  <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
                                   <fo:inline>on page
                                     <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
+                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
                                     </fo:inline>
                                   </fo:inline>
                                 </fo:inline>
@@ -484,14 +412,8 @@
                 <fo:inline background-color="#fca130" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">PUT</fo:inline>
                 <fo:inline padding-start="10pt">/pet</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -534,10 +456,10 @@
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_13">Pet</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_13"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>
                               </fo:block>
@@ -549,14 +471,8 @@
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -623,14 +539,8 @@
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Consumes</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Consumes</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -656,14 +566,8 @@
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -689,14 +593,8 @@
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -710,14 +608,8 @@
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Security</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Security</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -748,10 +640,10 @@
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
-                                  <fo:basic-link color="blue" internal-destination="unique_19">petstore_auth</fo:basic-link>
+                                  <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
                                   <fo:inline>on page
                                     <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
+                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
                                     </fo:inline>
                                   </fo:inline>
                                 </fo:inline>
@@ -782,26 +674,14 @@
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
                 <fo:inline padding-start="10pt">/pet/findByStatus</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Description</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
                 <fo:block>
                   <fo:block>Multiple status values can be provided with comma separated strings</fo:block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -852,14 +732,8 @@
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -892,10 +766,10 @@
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">&lt;
-                                <fo:basic-link color="blue" internal-destination="unique_13">Pet</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_13"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>&gt; array</fo:block>
                             </fo:table-cell>
@@ -919,14 +793,8 @@
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -952,14 +820,8 @@
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -973,14 +835,8 @@
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Security</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Security</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -1011,10 +867,10 @@
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
-                                  <fo:basic-link color="blue" internal-destination="unique_19">petstore_auth</fo:basic-link>
+                                  <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
                                   <fo:inline>on page
                                     <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
+                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
                                     </fo:inline>
                                   </fo:inline>
                                 </fo:inline>
@@ -1047,26 +903,14 @@
               </fo:block>
               <fo:block>Caution :
 operation.deprecated</fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Description</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
                 <fo:block>
                   <fo:block>Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.</fo:block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -1117,14 +961,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -1157,10 +995,10 @@ operation.deprecated</fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">&lt;
-                                <fo:basic-link color="blue" internal-destination="unique_13">Pet</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_13"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>&gt; array</fo:block>
                             </fo:table-cell>
@@ -1184,14 +1022,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -1217,14 +1049,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -1238,14 +1064,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Security</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Security</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -1276,10 +1096,10 @@ operation.deprecated</fo:block>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
-                                  <fo:basic-link color="blue" internal-destination="unique_19">petstore_auth</fo:basic-link>
+                                  <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
                                   <fo:inline>on page
                                     <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
+                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
                                     </fo:inline>
                                   </fo:inline>
                                 </fo:inline>
@@ -1310,14 +1130,8 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
                 <fo:inline padding-start="10pt">/pet/{petId}</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -1406,14 +1220,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -1454,14 +1262,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Consumes</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Consumes</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -1477,14 +1279,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -1510,14 +1306,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -1531,14 +1321,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Security</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Security</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -1569,10 +1353,10 @@ operation.deprecated</fo:block>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
-                                  <fo:basic-link color="blue" internal-destination="unique_19">petstore_auth</fo:basic-link>
+                                  <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
                                   <fo:inline>on page
                                     <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
+                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
                                     </fo:inline>
                                   </fo:inline>
                                 </fo:inline>
@@ -1603,26 +1387,14 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
                 <fo:inline padding-start="10pt">/pet/{petId}</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Description</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
                 <fo:block>
                   <fo:block>Returns a single pet</fo:block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -1673,14 +1445,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -1713,10 +1479,10 @@ operation.deprecated</fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_13">Pet</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_13"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>
                               </fo:block>
@@ -1754,14 +1520,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -1787,14 +1547,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -1808,14 +1562,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Security</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Security</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -1842,10 +1590,10 @@ operation.deprecated</fo:block>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
-                                  <fo:basic-link color="blue" internal-destination="unique_55">api_key</fo:basic-link>
+                                  <fo:basic-link color="blue" internal-destination="unique_13">api_key</fo:basic-link>
                                   <fo:inline>on page
                                     <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_55"></fo:page-number-citation>
+                                      <fo:page-number-citation ref-id="unique_13"></fo:page-number-citation>
                                     </fo:inline>
                                   </fo:inline>
                                 </fo:inline>
@@ -1873,14 +1621,8 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">DELETE</fo:inline>
                 <fo:inline padding-start="10pt">/pet/{petId}</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -1950,14 +1692,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -2011,14 +1747,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -2044,14 +1774,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -2065,14 +1789,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Security</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Security</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -2103,10 +1821,10 @@ operation.deprecated</fo:block>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
-                                  <fo:basic-link color="blue" internal-destination="unique_19">petstore_auth</fo:basic-link>
+                                  <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
                                   <fo:inline>on page
                                     <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
+                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
                                     </fo:inline>
                                   </fo:inline>
                                 </fo:inline>
@@ -2137,14 +1855,8 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
                 <fo:inline padding-start="10pt">/pet/{petId}/uploadImage</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -2233,14 +1945,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -2273,10 +1979,10 @@ operation.deprecated</fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_65">ApiResponse</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_16">ApiResponse</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_65"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_16"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>
                               </fo:block>
@@ -2288,14 +1994,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Consumes</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Consumes</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -2311,14 +2011,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -2334,14 +2028,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -2355,14 +2043,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Security</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Security</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -2393,10 +2075,10 @@ operation.deprecated</fo:block>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
-                                  <fo:basic-link color="blue" internal-destination="unique_19">petstore_auth</fo:basic-link>
+                                  <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
                                   <fo:inline>on page
                                     <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
+                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
                                     </fo:inline>
                                   </fo:inline>
                                 </fo:inline>
@@ -2427,26 +2109,14 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
                 <fo:inline padding-start="10pt">/store/inventory</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Description</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
                 <fo:block>
                   <fo:block>Returns a map of status codes to quantities</fo:block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -2487,14 +2157,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -2510,14 +2174,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -2531,14 +2189,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Security</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Security</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -2565,10 +2217,10 @@ operation.deprecated</fo:block>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
-                                  <fo:basic-link color="blue" internal-destination="unique_55">api_key</fo:basic-link>
+                                  <fo:basic-link color="blue" internal-destination="unique_13">api_key</fo:basic-link>
                                   <fo:inline>on page
                                     <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_55"></fo:page-number-citation>
+                                      <fo:page-number-citation ref-id="unique_13"></fo:page-number-citation>
                                     </fo:inline>
                                   </fo:inline>
                                 </fo:inline>
@@ -2596,14 +2248,8 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
                 <fo:inline padding-start="10pt">/store/order</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -2646,10 +2292,10 @@ operation.deprecated</fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_78">Order</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_19">Order</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_78"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>
                               </fo:block>
@@ -2661,14 +2307,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -2701,10 +2341,10 @@ operation.deprecated</fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_78">Order</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_19">Order</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_78"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>
                               </fo:block>
@@ -2729,14 +2369,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -2762,14 +2396,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -2798,26 +2426,14 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
                 <fo:inline padding-start="10pt">/store/order/{orderId}</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Description</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
                 <fo:block>
                   <fo:block>For valid response try integer IDs with value &gt;= 1 and &lt;= 10. Other values will generated exceptions</fo:block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -2868,14 +2484,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -2908,10 +2518,10 @@ operation.deprecated</fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_78">Order</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_19">Order</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_78"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>
                               </fo:block>
@@ -2949,14 +2559,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -2982,14 +2586,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -3018,26 +2616,14 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">DELETE</fo:inline>
                 <fo:inline padding-start="10pt">/store/order/{orderId}</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Description</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
                 <fo:block>
                   <fo:block>For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors</fo:block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -3088,14 +2674,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -3149,14 +2729,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -3182,14 +2756,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -3218,26 +2786,14 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
                 <fo:inline padding-start="10pt">/user</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Description</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
                 <fo:block>
                   <fo:block>This can only be done by the logged in user.</fo:block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -3280,10 +2836,10 @@ operation.deprecated</fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_97">User</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_97"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>
                               </fo:block>
@@ -3295,14 +2851,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -3343,14 +2893,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -3376,14 +2920,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -3412,14 +2950,8 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
                 <fo:inline padding-start="10pt">/user/createWithArray</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -3462,10 +2994,10 @@ operation.deprecated</fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">&lt;
-                                <fo:basic-link color="blue" internal-destination="unique_97">User</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_97"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>&gt; array</fo:block>
                             </fo:table-cell>
@@ -3476,14 +3008,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -3524,14 +3050,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -3557,14 +3077,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -3593,14 +3107,8 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
                 <fo:inline padding-start="10pt">/user/createWithList</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -3643,10 +3151,10 @@ operation.deprecated</fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">&lt;
-                                <fo:basic-link color="blue" internal-destination="unique_97">User</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_97"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>&gt; array</fo:block>
                             </fo:table-cell>
@@ -3657,14 +3165,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -3705,14 +3207,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -3738,14 +3234,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -3774,14 +3264,8 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
                 <fo:inline padding-start="10pt">/user/login</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -3851,14 +3335,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -3887,9 +3365,9 @@ operation.deprecated</fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">successful operation
-                                <fo:inline font-weight="bold">Headers</fo:inline>:
-                                <fo:inline font-family="MONOSPACE">X-Rate-Limit</fo:inline>(integer (int32)) : calls per hour allowed by the user.
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">successful operation 
+                                <fo:inline font-weight="bold">Headers</fo:inline>: 
+                                <fo:inline font-family="MONOSPACE">X-Rate-Limit</fo:inline>(integer (int32)) : calls per hour allowed by the user. 
                                 <fo:inline font-family="MONOSPACE">X-Expires-After</fo:inline>(string (date-time)) : date in UTC when token expires.</fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -3915,14 +3393,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -3948,14 +3420,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -3984,14 +3450,8 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
                 <fo:inline padding-start="10pt">/user/logout</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -4032,14 +3492,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -4065,14 +3519,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -4101,14 +3549,8 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
                 <fo:inline padding-start="10pt">/user/{username}</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -4159,14 +3601,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -4199,10 +3635,10 @@ operation.deprecated</fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_97">User</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_97"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>
                               </fo:block>
@@ -4240,14 +3676,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -4273,14 +3703,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -4309,26 +3733,14 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="#fca130" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">PUT</fo:inline>
                 <fo:inline padding-start="10pt">/user/{username}</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Description</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
                 <fo:block>
                   <fo:block>This can only be done by the logged in user.</fo:block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -4390,10 +3802,10 @@ operation.deprecated</fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_97">User</fo:basic-link>
+                                <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
                                 <fo:inline>on page
                                   <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_97"></fo:page-number-citation>
+                                    <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
                                   </fo:inline>
                                 </fo:inline>
                               </fo:block>
@@ -4405,14 +3817,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -4466,14 +3872,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -4499,14 +3899,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -4535,26 +3929,14 @@ operation.deprecated</fo:block>
                 <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">DELETE</fo:inline>
                 <fo:inline padding-start="10pt">/user/{username}</fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Description</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
                 <fo:block>
                   <fo:block>This can only be done by the logged in user.</fo:block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Parameters</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -4605,14 +3987,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Responses</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
@@ -4666,14 +4042,8 @@ operation.deprecated</fo:block>
                   </fo:block-container>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Produces</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Produces</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -4699,14 +4069,8 @@ operation.deprecated</fo:block>
                   </fo:list-block>
                 </fo:block>
               </fo:block>
-            </fo:block>
-            <fo:block>
               <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">
-                  <fo:block>
-                    <fo:wrapper></fo:wrapper>
-                    <fo:wrapper></fo:wrapper>Tags</fo:block>
-                </fo:block>
+                <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
                 <fo:block>
                   <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
                     <fo:list-item relative-align="baseline">
@@ -5013,10 +4377,10 @@ operation.deprecated</fo:block>
                         </fo:table-cell>
                         <fo:table-cell border-before-color="black" text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:basic-link color="blue" internal-destination="unique_138">Category</fo:basic-link>
+                            <fo:basic-link color="blue" internal-destination="unique_32">Category</fo:basic-link>
                             <fo:inline>on page
                               <fo:inline>
-                                <fo:page-number-citation ref-id="unique_138"></fo:page-number-citation>
+                                <fo:page-number-citation ref-id="unique_32"></fo:page-number-citation>
                               </fo:inline>
                             </fo:inline>
                           </fo:block>
@@ -5093,10 +4457,10 @@ operation.deprecated</fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">&lt;
-                            <fo:basic-link color="blue" internal-destination="unique_139">Tag</fo:basic-link>
+                            <fo:basic-link color="blue" internal-destination="unique_33">Tag</fo:basic-link>
                             <fo:inline>on page
                               <fo:inline>
-                                <fo:page-number-citation ref-id="unique_139"></fo:page-number-citation>
+                                <fo:page-number-citation ref-id="unique_33"></fo:page-number-citation>
                               </fo:inline>
                             </fo:inline>&gt; array</fo:block>
                         </fo:table-cell>

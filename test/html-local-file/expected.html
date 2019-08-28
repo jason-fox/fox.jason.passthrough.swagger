@@ -1,4 +1,4 @@
-<body id="swagger-petstore"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+<body class="swagger" id="swagger-petstore"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
 <h1 class="title topictitle1" id="ariaid-title1">Swagger Petstore</h1>
 <div class="body">
 </div>
@@ -8,1770 +8,1685 @@
 <p class="p">
 	This is a sample server Petstore server. You can find out more about Swagger at <a class="xref" href="http://swagger.io" target="_blank">http://swagger.io</a> or on <a class="xref" href="http://swagger.io/irc/" target="_blank">irc.freenode.net, #swagger</a>. For this sample, you can use the api key <code class="codeph">special-key</code> to test the authorization filters.
 </p>
-</div>
-<article class="topic nested2" aria-labelledby="ariaid-title3" id="version-information">
-<h3 class="title topictitle3" id="ariaid-title3">Version information</h3>
-<div class="body">
+<section class="section" id="overview__version-information"><h3 class="title sectiontitle">Version information</h3>
+
+
 <p class="p">
 	<em class="i">Version</em> : 1.0.0
 </p>
-</div>
-</article>
+</section>
 
-<article class="topic nested2" aria-labelledby="ariaid-title4" id="contact-information">
-<h3 class="title topictitle3" id="ariaid-title4">Contact information</h3>
-<div class="body">
+<section class="section" id="overview__contact-information"><h3 class="title sectiontitle">Contact information</h3>
+
+
 <p class="p">
 	<em class="i">Contact Email</em> : apiteam@swagger.io
 </p>
-</div>
-</article>
+</section>
 
-<article class="topic nested2" aria-labelledby="ariaid-title5" id="license-information">
-<h3 class="title topictitle3" id="ariaid-title5">License information</h3>
-<div class="body">
+<section class="section" id="overview__license-information"><h3 class="title sectiontitle">License information</h3>
+
+
 <p class="p">
 	<em class="i">License</em> : Apache 2.0
 <em class="i">License URL</em> : http://www.apache.org/licenses/LICENSE-2.0.html
 <em class="i">Terms of service</em> : http://swagger.io/terms/
 </p>
-</div>
-</article>
+</section>
 
-<article class="topic nested2" aria-labelledby="ariaid-title6" id="uri-scheme">
-<h3 class="title topictitle3" id="ariaid-title6">URI scheme</h3>
-<div class="body">
+<section class="section" id="overview__uri-scheme"><h3 class="title sectiontitle">URI scheme</h3>
+
+
 <p class="p">
 	<em class="i">Host</em> : petstore.swagger.io
 <em class="i">BasePath</em> : /v2
 <em class="i">Schemes</em> : HTTPS, HTTP
 </p>
-</div>
-</article>
+</section>
 
-<article class="topic nested2" aria-labelledby="ariaid-title7" id="tags">
-<h3 class="title topictitle3" id="ariaid-title7">Tags</h3>
-<div class="body">
+<section class="section" id="overview__tags"><h3 class="title sectiontitle">Tags</h3>
+
+
 <ul class="ul">
 	<li class="li">pet : Everything about your Pets</li>
 	<li class="li">store : Access to Petstore orders</li>
 	<li class="li">user : Operations about user</li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested2" aria-labelledby="ariaid-title8" id="external-docs">
-<h3 class="title topictitle3" id="ariaid-title8">External Docs</h3>
-<div class="body">
+<section class="section" id="overview__external-docs"><h3 class="title sectiontitle">External Docs</h3>
+
+
 <p class="p">
 	<em class="i">Description</em> : Find out more about Swagger
 <em class="i">URL</em> : http://swagger.io
 </p>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested1" aria-labelledby="ariaid-title9" id="paths">
-<h2 class="title topictitle2" id="ariaid-title9">Paths</h2>
+<article class="topic nested1" aria-labelledby="ariaid-title3" id="paths">
+<h2 class="title topictitle2" id="ariaid-title3">Paths</h2>
 <div class="body">
 </div>
-<article class="topic nested2" aria-labelledby="ariaid-title10" id="addpet">
-<h3 class="title topictitle3" id="ariaid-title10">Add a new pet to the store</h3>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title4" id="addpet">
+<h3 class="title topictitle3" id="ariaid-title4">Add a new pet to the store</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-post"><code><span class="swagger-verb">POST</span>/pet</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title11" id="parameters">
-<h4 class="title topictitle4" id="ariaid-title11">Parameters</h4>
-<div class="body">
+<section class="section" id="addpet__parameters"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters__entry__1">Type</th>
-				<th class="entry align-left" id="parameters__entry__2">Name</th>
-				<th class="entry align-left" id="parameters__entry__3">Description</th>
-				<th class="entry align-left" id="parameters__entry__4">Schema</th>
+				<th class="entry align-left" id="addpet__parameters__entry__1">Type</th>
+				<th class="entry align-left" id="addpet__parameters__entry__2">Name</th>
+				<th class="entry align-left" id="addpet__parameters__entry__3">Description</th>
+				<th class="entry align-left" id="addpet__parameters__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters__entry__1"><strong class="b">Body</strong></td>
-				<td class="entry align-left" headers="parameters__entry__2"><strong class="b">body</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters__entry__3">Pet object that needs to be added to the store</td>
-				<td class="entry align-left" headers="parameters__entry__4"><a class="xref" href="#pet">Pet</a></td>
+				<td class="entry align-left" headers="addpet__parameters__entry__1"><strong class="b">Body</strong></td>
+				<td class="entry align-left" headers="addpet__parameters__entry__2"><strong class="b">body</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="addpet__parameters__entry__3">Pet object that needs to be added to the store</td>
+				<td class="entry align-left" headers="addpet__parameters__entry__4"><a class="xref" href="#pet">Pet</a></td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title12" id="responses">
-<h4 class="title topictitle4" id="ariaid-title12">Responses</h4>
-<div class="body">
+<section class="section" id="addpet__responses"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses__entry__2">Description</th>
-				<th class="entry align-left" id="responses__entry__3">Schema</th>
+				<th class="entry align-left" id="addpet__responses__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="addpet__responses__entry__2">Description</th>
+				<th class="entry align-left" id="addpet__responses__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses__entry__1"><strong class="b">405</strong></td>
-				<td class="entry align-left" headers="responses__entry__2">Invalid input</td>
-				<td class="entry align-left" headers="responses__entry__3">No Content</td>
+				<td class="entry align-left" headers="addpet__responses__entry__1"><strong class="b">405</strong></td>
+				<td class="entry align-left" headers="addpet__responses__entry__2">Invalid input</td>
+				<td class="entry align-left" headers="addpet__responses__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title13" id="consumes">
-<h4 class="title topictitle4" id="ariaid-title13">Consumes</h4>
-<div class="body">
+<section class="section" id="addpet__consumes"><h4 class="title sectiontitle">Consumes</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/json</code></li>
 	<li class="li"><code class="codeph">application/xml</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title14" id="produces">
-<h4 class="title topictitle4" id="ariaid-title14">Produces</h4>
-<div class="body">
+<section class="section" id="addpet__produces"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title15" id="tags-1">
-<h4 class="title topictitle4" id="ariaid-title15">Tags</h4>
-<div class="body">
+<section class="section" id="addpet__tags-1"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">pet</li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title16" id="security">
-<h4 class="title topictitle4" id="ariaid-title16">Security</h4>
-<div class="body">
+<section class="section" id="addpet__security"><h4 class="title sectiontitle">Security</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="security__entry__1">Type</th>
-				<th class="entry align-left" id="security__entry__2">Name</th>
-				<th class="entry align-left" id="security__entry__3">Scopes</th>
+				<th class="entry align-left" id="addpet__security__entry__1">Type</th>
+				<th class="entry align-left" id="addpet__security__entry__2">Name</th>
+				<th class="entry align-left" id="addpet__security__entry__3">Scopes</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="security__entry__1"><strong class="b">oauth2</strong></td>
-				<td class="entry align-left" headers="security__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
-				<td class="entry align-left" headers="security__entry__3">write:pets,read:pets</td>
+				<td class="entry align-left" headers="addpet__security__entry__1"><strong class="b">oauth2</strong></td>
+				<td class="entry align-left" headers="addpet__security__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
+				<td class="entry align-left" headers="addpet__security__entry__3">write:pets,read:pets</td>
 			</tr>
 		</tbody></table>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title17" id="updatepet">
-<h3 class="title topictitle3" id="ariaid-title17">Update an existing pet</h3>
+<article class="topic nested2 swagger-put" aria-labelledby="ariaid-title5" id="updatepet">
+<h3 class="title topictitle3" id="ariaid-title5">Update an existing pet</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-put"><code><span class="swagger-verb">PUT</span>/pet</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title18" id="parameters-1">
-<h4 class="title topictitle4" id="ariaid-title18">Parameters</h4>
-<div class="body">
+<section class="section" id="updatepet__parameters-1"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-1__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-1__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-1__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-1__entry__4">Schema</th>
+				<th class="entry align-left" id="updatepet__parameters-1__entry__1">Type</th>
+				<th class="entry align-left" id="updatepet__parameters-1__entry__2">Name</th>
+				<th class="entry align-left" id="updatepet__parameters-1__entry__3">Description</th>
+				<th class="entry align-left" id="updatepet__parameters-1__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-1__entry__1"><strong class="b">Body</strong></td>
-				<td class="entry align-left" headers="parameters-1__entry__2"><strong class="b">body</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-1__entry__3">Pet object that needs to be added to the store</td>
-				<td class="entry align-left" headers="parameters-1__entry__4"><a class="xref" href="#pet">Pet</a></td>
+				<td class="entry align-left" headers="updatepet__parameters-1__entry__1"><strong class="b">Body</strong></td>
+				<td class="entry align-left" headers="updatepet__parameters-1__entry__2"><strong class="b">body</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="updatepet__parameters-1__entry__3">Pet object that needs to be added to the store</td>
+				<td class="entry align-left" headers="updatepet__parameters-1__entry__4"><a class="xref" href="#pet">Pet</a></td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title19" id="responses-1">
-<h4 class="title topictitle4" id="ariaid-title19">Responses</h4>
-<div class="body">
+<section class="section" id="updatepet__responses-1"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-1__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-1__entry__2">Description</th>
-				<th class="entry align-left" id="responses-1__entry__3">Schema</th>
+				<th class="entry align-left" id="updatepet__responses-1__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="updatepet__responses-1__entry__2">Description</th>
+				<th class="entry align-left" id="updatepet__responses-1__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-1__entry__1"><strong class="b">400</strong></td>
-				<td class="entry align-left" headers="responses-1__entry__2">Invalid ID supplied</td>
-				<td class="entry align-left" headers="responses-1__entry__3">No Content</td>
+				<td class="entry align-left" headers="updatepet__responses-1__entry__1"><strong class="b">400</strong></td>
+				<td class="entry align-left" headers="updatepet__responses-1__entry__2">Invalid ID supplied</td>
+				<td class="entry align-left" headers="updatepet__responses-1__entry__3">No Content</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-1__entry__1"><strong class="b">404</strong></td>
-				<td class="entry align-left" headers="responses-1__entry__2">Pet not found</td>
-				<td class="entry align-left" headers="responses-1__entry__3">No Content</td>
+				<td class="entry align-left" headers="updatepet__responses-1__entry__1"><strong class="b">404</strong></td>
+				<td class="entry align-left" headers="updatepet__responses-1__entry__2">Pet not found</td>
+				<td class="entry align-left" headers="updatepet__responses-1__entry__3">No Content</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-1__entry__1"><strong class="b">405</strong></td>
-				<td class="entry align-left" headers="responses-1__entry__2">Validation exception</td>
-				<td class="entry align-left" headers="responses-1__entry__3">No Content</td>
+				<td class="entry align-left" headers="updatepet__responses-1__entry__1"><strong class="b">405</strong></td>
+				<td class="entry align-left" headers="updatepet__responses-1__entry__2">Validation exception</td>
+				<td class="entry align-left" headers="updatepet__responses-1__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title20" id="consumes-1">
-<h4 class="title topictitle4" id="ariaid-title20">Consumes</h4>
-<div class="body">
+<section class="section" id="updatepet__consumes-1"><h4 class="title sectiontitle">Consumes</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/json</code></li>
 	<li class="li"><code class="codeph">application/xml</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title21" id="produces-1">
-<h4 class="title topictitle4" id="ariaid-title21">Produces</h4>
-<div class="body">
+<section class="section" id="updatepet__produces-1"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title22" id="tags-2">
-<h4 class="title topictitle4" id="ariaid-title22">Tags</h4>
-<div class="body">
+<section class="section" id="updatepet__tags-2"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">pet</li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title23" id="security-1">
-<h4 class="title topictitle4" id="ariaid-title23">Security</h4>
-<div class="body">
+<section class="section" id="updatepet__security-1"><h4 class="title sectiontitle">Security</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="security-1__entry__1">Type</th>
-				<th class="entry align-left" id="security-1__entry__2">Name</th>
-				<th class="entry align-left" id="security-1__entry__3">Scopes</th>
+				<th class="entry align-left" id="updatepet__security-1__entry__1">Type</th>
+				<th class="entry align-left" id="updatepet__security-1__entry__2">Name</th>
+				<th class="entry align-left" id="updatepet__security-1__entry__3">Scopes</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="security-1__entry__1"><strong class="b">oauth2</strong></td>
-				<td class="entry align-left" headers="security-1__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
-				<td class="entry align-left" headers="security-1__entry__3">write:pets,read:pets</td>
+				<td class="entry align-left" headers="updatepet__security-1__entry__1"><strong class="b">oauth2</strong></td>
+				<td class="entry align-left" headers="updatepet__security-1__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
+				<td class="entry align-left" headers="updatepet__security-1__entry__3">write:pets,read:pets</td>
 			</tr>
 		</tbody></table>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title24" id="findpetsbystatus">
-<h3 class="title topictitle3" id="ariaid-title24">Finds Pets by status</h3>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title6" id="findpetsbystatus">
+<h3 class="title topictitle3" id="ariaid-title6">Finds Pets by status</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-get"><code><span class="swagger-verb">GET</span>/pet/findByStatus</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title25" id="description">
-<h4 class="title topictitle4" id="ariaid-title25">Description</h4>
-<div class="body">
+<section class="section" id="findpetsbystatus__description"><h4 class="title sectiontitle">Description</h4>
+
+
 <p class="p">
 	Multiple status values can be provided with comma separated strings
 </p>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title26" id="parameters-2">
-<h4 class="title topictitle4" id="ariaid-title26">Parameters</h4>
-<div class="body">
+<section class="section" id="findpetsbystatus__parameters-2"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col style="width:25%"><col style="width:25%"><col style="width:25%"><col style="width:25%"></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-2__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-2__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-2__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-2__entry__4">Schema</th>
+				<th class="entry align-left" id="findpetsbystatus__parameters-2__entry__1">Type</th>
+				<th class="entry align-left" id="findpetsbystatus__parameters-2__entry__2">Name</th>
+				<th class="entry align-left" id="findpetsbystatus__parameters-2__entry__3">Description</th>
+				<th class="entry align-left" id="findpetsbystatus__parameters-2__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-2__entry__1"><strong class="b">Query</strong></td>
-				<td class="entry align-left" headers="parameters-2__entry__2"><strong class="b">status</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-2__entry__3">Status values that need to be considered for filter</td>
-				<td class="entry align-left" headers="parameters-2__entry__4">&lt; enum (available, pending, sold) &gt; array(multi)</td>
+				<td class="entry align-left" headers="findpetsbystatus__parameters-2__entry__1"><strong class="b">Query</strong></td>
+				<td class="entry align-left" headers="findpetsbystatus__parameters-2__entry__2"><strong class="b">status</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="findpetsbystatus__parameters-2__entry__3">Status values that need to be considered for filter</td>
+				<td class="entry align-left" headers="findpetsbystatus__parameters-2__entry__4">&lt; enum (available, pending, sold) &gt; array(multi)</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title27" id="responses-2">
-<h4 class="title topictitle4" id="ariaid-title27">Responses</h4>
-<div class="body">
+<section class="section" id="findpetsbystatus__responses-2"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-2__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-2__entry__2">Description</th>
-				<th class="entry align-left" id="responses-2__entry__3">Schema</th>
+				<th class="entry align-left" id="findpetsbystatus__responses-2__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="findpetsbystatus__responses-2__entry__2">Description</th>
+				<th class="entry align-left" id="findpetsbystatus__responses-2__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-2__entry__1"><strong class="b">200</strong></td>
-				<td class="entry align-left" headers="responses-2__entry__2">successful operation</td>
-				<td class="entry align-left" headers="responses-2__entry__3">&lt; <a class="xref" href="#pet">Pet</a> &gt; array</td>
+				<td class="entry align-left" headers="findpetsbystatus__responses-2__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="findpetsbystatus__responses-2__entry__2">successful operation</td>
+				<td class="entry align-left" headers="findpetsbystatus__responses-2__entry__3">&lt; <a class="xref" href="#pet">Pet</a> &gt; array</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-2__entry__1"><strong class="b">400</strong></td>
-				<td class="entry align-left" headers="responses-2__entry__2">Invalid status value</td>
-				<td class="entry align-left" headers="responses-2__entry__3">No Content</td>
+				<td class="entry align-left" headers="findpetsbystatus__responses-2__entry__1"><strong class="b">400</strong></td>
+				<td class="entry align-left" headers="findpetsbystatus__responses-2__entry__2">Invalid status value</td>
+				<td class="entry align-left" headers="findpetsbystatus__responses-2__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title28" id="produces-2">
-<h4 class="title topictitle4" id="ariaid-title28">Produces</h4>
-<div class="body">
+<section class="section" id="findpetsbystatus__produces-2"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title29" id="tags-3">
-<h4 class="title topictitle4" id="ariaid-title29">Tags</h4>
-<div class="body">
+<section class="section" id="findpetsbystatus__tags-3"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">pet</li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title30" id="security-2">
-<h4 class="title topictitle4" id="ariaid-title30">Security</h4>
-<div class="body">
+<section class="section" id="findpetsbystatus__security-2"><h4 class="title sectiontitle">Security</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="security-2__entry__1">Type</th>
-				<th class="entry align-left" id="security-2__entry__2">Name</th>
-				<th class="entry align-left" id="security-2__entry__3">Scopes</th>
+				<th class="entry align-left" id="findpetsbystatus__security-2__entry__1">Type</th>
+				<th class="entry align-left" id="findpetsbystatus__security-2__entry__2">Name</th>
+				<th class="entry align-left" id="findpetsbystatus__security-2__entry__3">Scopes</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="security-2__entry__1"><strong class="b">oauth2</strong></td>
-				<td class="entry align-left" headers="security-2__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
-				<td class="entry align-left" headers="security-2__entry__3">write:pets,read:pets</td>
+				<td class="entry align-left" headers="findpetsbystatus__security-2__entry__1"><strong class="b">oauth2</strong></td>
+				<td class="entry align-left" headers="findpetsbystatus__security-2__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
+				<td class="entry align-left" headers="findpetsbystatus__security-2__entry__3">write:pets,read:pets</td>
 			</tr>
 		</tbody></table>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title31" id="findpetsbytags">
-<h3 class="title topictitle3" id="ariaid-title31">Finds Pets by tags</h3>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title7" id="findpetsbytags">
+<h3 class="title topictitle3" id="ariaid-title7">Finds Pets by tags</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-get"><code><span class="swagger-verb">GET</span>/pet/findByTags</code></pre>
 <p class="p">
 	Caution :
 operation.deprecated
 </p>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title32" id="description-1">
-<h4 class="title topictitle4" id="ariaid-title32">Description</h4>
-<div class="body">
+<section class="section" id="findpetsbytags__description-1"><h4 class="title sectiontitle">Description</h4>
+
+
 <p class="p">
 	Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.
 </p>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title33" id="parameters-3">
-<h4 class="title topictitle4" id="ariaid-title33">Parameters</h4>
-<div class="body">
+<section class="section" id="findpetsbytags__parameters-3"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-3__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-3__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-3__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-3__entry__4">Schema</th>
+				<th class="entry align-left" id="findpetsbytags__parameters-3__entry__1">Type</th>
+				<th class="entry align-left" id="findpetsbytags__parameters-3__entry__2">Name</th>
+				<th class="entry align-left" id="findpetsbytags__parameters-3__entry__3">Description</th>
+				<th class="entry align-left" id="findpetsbytags__parameters-3__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-3__entry__1"><strong class="b">Query</strong></td>
-				<td class="entry align-left" headers="parameters-3__entry__2"><strong class="b">tags</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-3__entry__3">Tags to filter by</td>
-				<td class="entry align-left" headers="parameters-3__entry__4">&lt; string &gt; array(multi)</td>
+				<td class="entry align-left" headers="findpetsbytags__parameters-3__entry__1"><strong class="b">Query</strong></td>
+				<td class="entry align-left" headers="findpetsbytags__parameters-3__entry__2"><strong class="b">tags</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="findpetsbytags__parameters-3__entry__3">Tags to filter by</td>
+				<td class="entry align-left" headers="findpetsbytags__parameters-3__entry__4">&lt; string &gt; array(multi)</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title34" id="responses-3">
-<h4 class="title topictitle4" id="ariaid-title34">Responses</h4>
-<div class="body">
+<section class="section" id="findpetsbytags__responses-3"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-3__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-3__entry__2">Description</th>
-				<th class="entry align-left" id="responses-3__entry__3">Schema</th>
+				<th class="entry align-left" id="findpetsbytags__responses-3__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="findpetsbytags__responses-3__entry__2">Description</th>
+				<th class="entry align-left" id="findpetsbytags__responses-3__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-3__entry__1"><strong class="b">200</strong></td>
-				<td class="entry align-left" headers="responses-3__entry__2">successful operation</td>
-				<td class="entry align-left" headers="responses-3__entry__3">&lt; <a class="xref" href="#pet">Pet</a> &gt; array</td>
+				<td class="entry align-left" headers="findpetsbytags__responses-3__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="findpetsbytags__responses-3__entry__2">successful operation</td>
+				<td class="entry align-left" headers="findpetsbytags__responses-3__entry__3">&lt; <a class="xref" href="#pet">Pet</a> &gt; array</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-3__entry__1"><strong class="b">400</strong></td>
-				<td class="entry align-left" headers="responses-3__entry__2">Invalid tag value</td>
-				<td class="entry align-left" headers="responses-3__entry__3">No Content</td>
+				<td class="entry align-left" headers="findpetsbytags__responses-3__entry__1"><strong class="b">400</strong></td>
+				<td class="entry align-left" headers="findpetsbytags__responses-3__entry__2">Invalid tag value</td>
+				<td class="entry align-left" headers="findpetsbytags__responses-3__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title35" id="produces-3">
-<h4 class="title topictitle4" id="ariaid-title35">Produces</h4>
-<div class="body">
+<section class="section" id="findpetsbytags__produces-3"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title36" id="tags-4">
-<h4 class="title topictitle4" id="ariaid-title36">Tags</h4>
-<div class="body">
+<section class="section" id="findpetsbytags__tags-4"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">pet</li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title37" id="security-3">
-<h4 class="title topictitle4" id="ariaid-title37">Security</h4>
-<div class="body">
+<section class="section" id="findpetsbytags__security-3"><h4 class="title sectiontitle">Security</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="security-3__entry__1">Type</th>
-				<th class="entry align-left" id="security-3__entry__2">Name</th>
-				<th class="entry align-left" id="security-3__entry__3">Scopes</th>
+				<th class="entry align-left" id="findpetsbytags__security-3__entry__1">Type</th>
+				<th class="entry align-left" id="findpetsbytags__security-3__entry__2">Name</th>
+				<th class="entry align-left" id="findpetsbytags__security-3__entry__3">Scopes</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="security-3__entry__1"><strong class="b">oauth2</strong></td>
-				<td class="entry align-left" headers="security-3__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
-				<td class="entry align-left" headers="security-3__entry__3">write:pets,read:pets</td>
+				<td class="entry align-left" headers="findpetsbytags__security-3__entry__1"><strong class="b">oauth2</strong></td>
+				<td class="entry align-left" headers="findpetsbytags__security-3__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
+				<td class="entry align-left" headers="findpetsbytags__security-3__entry__3">write:pets,read:pets</td>
 			</tr>
 		</tbody></table>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title38" id="updatepetwithform">
-<h3 class="title topictitle3" id="ariaid-title38">Updates a pet in the store with form data</h3>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title8" id="updatepetwithform">
+<h3 class="title topictitle3" id="ariaid-title8">Updates a pet in the store with form data</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-post"><code><span class="swagger-verb">POST</span>/pet/{petId}</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title39" id="parameters-4">
-<h4 class="title topictitle4" id="ariaid-title39">Parameters</h4>
-<div class="body">
+<section class="section" id="updatepetwithform__parameters-4"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-4__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-4__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-4__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-4__entry__4">Schema</th>
+				<th class="entry align-left" id="updatepetwithform__parameters-4__entry__1">Type</th>
+				<th class="entry align-left" id="updatepetwithform__parameters-4__entry__2">Name</th>
+				<th class="entry align-left" id="updatepetwithform__parameters-4__entry__3">Description</th>
+				<th class="entry align-left" id="updatepetwithform__parameters-4__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-4__entry__1"><strong class="b">Path</strong></td>
-				<td class="entry align-left" headers="parameters-4__entry__2"><strong class="b">petId</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-4__entry__3">ID of pet that needs to be updated</td>
-				<td class="entry align-left" headers="parameters-4__entry__4">integer (int64)</td>
+				<td class="entry align-left" headers="updatepetwithform__parameters-4__entry__1"><strong class="b">Path</strong></td>
+				<td class="entry align-left" headers="updatepetwithform__parameters-4__entry__2"><strong class="b">petId</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="updatepetwithform__parameters-4__entry__3">ID of pet that needs to be updated</td>
+				<td class="entry align-left" headers="updatepetwithform__parameters-4__entry__4">integer (int64)</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-4__entry__1"><strong class="b">FormData</strong></td>
-				<td class="entry align-left" headers="parameters-4__entry__2"><strong class="b">name</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
-				<td class="entry align-left" headers="parameters-4__entry__3">Updated name of the pet</td>
-				<td class="entry align-left" headers="parameters-4__entry__4">string</td>
+				<td class="entry align-left" headers="updatepetwithform__parameters-4__entry__1"><strong class="b">FormData</strong></td>
+				<td class="entry align-left" headers="updatepetwithform__parameters-4__entry__2"><strong class="b">name</strong> &#xD;<em class="i">optional</em></td>
+				<td class="entry align-left" headers="updatepetwithform__parameters-4__entry__3">Updated name of the pet</td>
+				<td class="entry align-left" headers="updatepetwithform__parameters-4__entry__4">string</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-4__entry__1"><strong class="b">FormData</strong></td>
-				<td class="entry align-left" headers="parameters-4__entry__2"><strong class="b">status</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
-				<td class="entry align-left" headers="parameters-4__entry__3">Updated status of the pet</td>
-				<td class="entry align-left" headers="parameters-4__entry__4">string</td>
+				<td class="entry align-left" headers="updatepetwithform__parameters-4__entry__1"><strong class="b">FormData</strong></td>
+				<td class="entry align-left" headers="updatepetwithform__parameters-4__entry__2"><strong class="b">status</strong> &#xD;<em class="i">optional</em></td>
+				<td class="entry align-left" headers="updatepetwithform__parameters-4__entry__3">Updated status of the pet</td>
+				<td class="entry align-left" headers="updatepetwithform__parameters-4__entry__4">string</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title40" id="responses-4">
-<h4 class="title topictitle4" id="ariaid-title40">Responses</h4>
-<div class="body">
+<section class="section" id="updatepetwithform__responses-4"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-4__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-4__entry__2">Description</th>
-				<th class="entry align-left" id="responses-4__entry__3">Schema</th>
+				<th class="entry align-left" id="updatepetwithform__responses-4__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="updatepetwithform__responses-4__entry__2">Description</th>
+				<th class="entry align-left" id="updatepetwithform__responses-4__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-4__entry__1"><strong class="b">405</strong></td>
-				<td class="entry align-left" headers="responses-4__entry__2">Invalid input</td>
-				<td class="entry align-left" headers="responses-4__entry__3">No Content</td>
+				<td class="entry align-left" headers="updatepetwithform__responses-4__entry__1"><strong class="b">405</strong></td>
+				<td class="entry align-left" headers="updatepetwithform__responses-4__entry__2">Invalid input</td>
+				<td class="entry align-left" headers="updatepetwithform__responses-4__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title41" id="consumes-2">
-<h4 class="title topictitle4" id="ariaid-title41">Consumes</h4>
-<div class="body">
+<section class="section" id="updatepetwithform__consumes-2"><h4 class="title sectiontitle">Consumes</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/x-www-form-urlencoded</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title42" id="produces-4">
-<h4 class="title topictitle4" id="ariaid-title42">Produces</h4>
-<div class="body">
+<section class="section" id="updatepetwithform__produces-4"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title43" id="tags-5">
-<h4 class="title topictitle4" id="ariaid-title43">Tags</h4>
-<div class="body">
+<section class="section" id="updatepetwithform__tags-5"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">pet</li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title44" id="security-4">
-<h4 class="title topictitle4" id="ariaid-title44">Security</h4>
-<div class="body">
+<section class="section" id="updatepetwithform__security-4"><h4 class="title sectiontitle">Security</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="security-4__entry__1">Type</th>
-				<th class="entry align-left" id="security-4__entry__2">Name</th>
-				<th class="entry align-left" id="security-4__entry__3">Scopes</th>
+				<th class="entry align-left" id="updatepetwithform__security-4__entry__1">Type</th>
+				<th class="entry align-left" id="updatepetwithform__security-4__entry__2">Name</th>
+				<th class="entry align-left" id="updatepetwithform__security-4__entry__3">Scopes</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="security-4__entry__1"><strong class="b">oauth2</strong></td>
-				<td class="entry align-left" headers="security-4__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
-				<td class="entry align-left" headers="security-4__entry__3">write:pets,read:pets</td>
+				<td class="entry align-left" headers="updatepetwithform__security-4__entry__1"><strong class="b">oauth2</strong></td>
+				<td class="entry align-left" headers="updatepetwithform__security-4__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
+				<td class="entry align-left" headers="updatepetwithform__security-4__entry__3">write:pets,read:pets</td>
 			</tr>
 		</tbody></table>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title45" id="getpetbyid">
-<h3 class="title topictitle3" id="ariaid-title45">Find pet by ID</h3>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title9" id="getpetbyid">
+<h3 class="title topictitle3" id="ariaid-title9">Find pet by ID</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-get"><code><span class="swagger-verb">GET</span>/pet/{petId}</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title46" id="description-2">
-<h4 class="title topictitle4" id="ariaid-title46">Description</h4>
-<div class="body">
+<section class="section" id="getpetbyid__description-2"><h4 class="title sectiontitle">Description</h4>
+
+
 <p class="p">
 	Returns a single pet
 </p>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title47" id="parameters-5">
-<h4 class="title topictitle4" id="ariaid-title47">Parameters</h4>
-<div class="body">
+<section class="section" id="getpetbyid__parameters-5"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-5__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-5__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-5__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-5__entry__4">Schema</th>
+				<th class="entry align-left" id="getpetbyid__parameters-5__entry__1">Type</th>
+				<th class="entry align-left" id="getpetbyid__parameters-5__entry__2">Name</th>
+				<th class="entry align-left" id="getpetbyid__parameters-5__entry__3">Description</th>
+				<th class="entry align-left" id="getpetbyid__parameters-5__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-5__entry__1"><strong class="b">Path</strong></td>
-				<td class="entry align-left" headers="parameters-5__entry__2"><strong class="b">petId</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-5__entry__3">ID of pet to return</td>
-				<td class="entry align-left" headers="parameters-5__entry__4">integer (int64)</td>
+				<td class="entry align-left" headers="getpetbyid__parameters-5__entry__1"><strong class="b">Path</strong></td>
+				<td class="entry align-left" headers="getpetbyid__parameters-5__entry__2"><strong class="b">petId</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="getpetbyid__parameters-5__entry__3">ID of pet to return</td>
+				<td class="entry align-left" headers="getpetbyid__parameters-5__entry__4">integer (int64)</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title48" id="responses-5">
-<h4 class="title topictitle4" id="ariaid-title48">Responses</h4>
-<div class="body">
+<section class="section" id="getpetbyid__responses-5"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-5__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-5__entry__2">Description</th>
-				<th class="entry align-left" id="responses-5__entry__3">Schema</th>
+				<th class="entry align-left" id="getpetbyid__responses-5__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="getpetbyid__responses-5__entry__2">Description</th>
+				<th class="entry align-left" id="getpetbyid__responses-5__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-5__entry__1"><strong class="b">200</strong></td>
-				<td class="entry align-left" headers="responses-5__entry__2">successful operation</td>
-				<td class="entry align-left" headers="responses-5__entry__3"><a class="xref" href="#pet">Pet</a></td>
+				<td class="entry align-left" headers="getpetbyid__responses-5__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="getpetbyid__responses-5__entry__2">successful operation</td>
+				<td class="entry align-left" headers="getpetbyid__responses-5__entry__3"><a class="xref" href="#pet">Pet</a></td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-5__entry__1"><strong class="b">400</strong></td>
-				<td class="entry align-left" headers="responses-5__entry__2">Invalid ID supplied</td>
-				<td class="entry align-left" headers="responses-5__entry__3">No Content</td>
+				<td class="entry align-left" headers="getpetbyid__responses-5__entry__1"><strong class="b">400</strong></td>
+				<td class="entry align-left" headers="getpetbyid__responses-5__entry__2">Invalid ID supplied</td>
+				<td class="entry align-left" headers="getpetbyid__responses-5__entry__3">No Content</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-5__entry__1"><strong class="b">404</strong></td>
-				<td class="entry align-left" headers="responses-5__entry__2">Pet not found</td>
-				<td class="entry align-left" headers="responses-5__entry__3">No Content</td>
+				<td class="entry align-left" headers="getpetbyid__responses-5__entry__1"><strong class="b">404</strong></td>
+				<td class="entry align-left" headers="getpetbyid__responses-5__entry__2">Pet not found</td>
+				<td class="entry align-left" headers="getpetbyid__responses-5__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title49" id="produces-5">
-<h4 class="title topictitle4" id="ariaid-title49">Produces</h4>
-<div class="body">
+<section class="section" id="getpetbyid__produces-5"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title50" id="tags-6">
-<h4 class="title topictitle4" id="ariaid-title50">Tags</h4>
-<div class="body">
+<section class="section" id="getpetbyid__tags-6"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">pet</li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title51" id="security-5">
-<h4 class="title topictitle4" id="ariaid-title51">Security</h4>
-<div class="body">
+<section class="section" id="getpetbyid__security-5"><h4 class="title sectiontitle">Security</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="security-5__entry__1">Type</th>
-				<th class="entry align-left" id="security-5__entry__2">Name</th>
+				<th class="entry align-left" id="getpetbyid__security-5__entry__1">Type</th>
+				<th class="entry align-left" id="getpetbyid__security-5__entry__2">Name</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="security-5__entry__1"><strong class="b">apiKey</strong></td>
-				<td class="entry align-left" headers="security-5__entry__2"><strong class="b"><a class="xref" href="#api-key">api_key</a></strong></td>
+				<td class="entry align-left" headers="getpetbyid__security-5__entry__1"><strong class="b">apiKey</strong></td>
+				<td class="entry align-left" headers="getpetbyid__security-5__entry__2"><strong class="b"><a class="xref" href="#api-key">api_key</a></strong></td>
 			</tr>
 		</tbody></table>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title52" id="deletepet">
-<h3 class="title topictitle3" id="ariaid-title52">Deletes a pet</h3>
+<article class="topic nested2 swagger-delete" aria-labelledby="ariaid-title10" id="deletepet">
+<h3 class="title topictitle3" id="ariaid-title10">Deletes a pet</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-delete"><code><span class="swagger-verb">DELETE</span>/pet/{petId}</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title53" id="parameters-6">
-<h4 class="title topictitle4" id="ariaid-title53">Parameters</h4>
-<div class="body">
+<section class="section" id="deletepet__parameters-6"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-6__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-6__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-6__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-6__entry__4">Schema</th>
+				<th class="entry align-left" id="deletepet__parameters-6__entry__1">Type</th>
+				<th class="entry align-left" id="deletepet__parameters-6__entry__2">Name</th>
+				<th class="entry align-left" id="deletepet__parameters-6__entry__3">Description</th>
+				<th class="entry align-left" id="deletepet__parameters-6__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-6__entry__1"><strong class="b">Header</strong></td>
-				<td class="entry align-left" headers="parameters-6__entry__2"><strong class="b">api_key</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
-				<td class="entry align-left" headers="parameters-6__entry__3"></td>
-				<td class="entry align-left" headers="parameters-6__entry__4">string</td>
+				<td class="entry align-left" headers="deletepet__parameters-6__entry__1"><strong class="b">Header</strong></td>
+				<td class="entry align-left" headers="deletepet__parameters-6__entry__2"><strong class="b">api_key</strong> &#xD;<em class="i">optional</em></td>
+				<td class="entry align-left" headers="deletepet__parameters-6__entry__3"></td>
+				<td class="entry align-left" headers="deletepet__parameters-6__entry__4">string</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-6__entry__1"><strong class="b">Path</strong></td>
-				<td class="entry align-left" headers="parameters-6__entry__2"><strong class="b">petId</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-6__entry__3">Pet id to delete</td>
-				<td class="entry align-left" headers="parameters-6__entry__4">integer (int64)</td>
+				<td class="entry align-left" headers="deletepet__parameters-6__entry__1"><strong class="b">Path</strong></td>
+				<td class="entry align-left" headers="deletepet__parameters-6__entry__2"><strong class="b">petId</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="deletepet__parameters-6__entry__3">Pet id to delete</td>
+				<td class="entry align-left" headers="deletepet__parameters-6__entry__4">integer (int64)</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title54" id="responses-6">
-<h4 class="title topictitle4" id="ariaid-title54">Responses</h4>
-<div class="body">
+<section class="section" id="deletepet__responses-6"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-6__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-6__entry__2">Description</th>
-				<th class="entry align-left" id="responses-6__entry__3">Schema</th>
+				<th class="entry align-left" id="deletepet__responses-6__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="deletepet__responses-6__entry__2">Description</th>
+				<th class="entry align-left" id="deletepet__responses-6__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-6__entry__1"><strong class="b">400</strong></td>
-				<td class="entry align-left" headers="responses-6__entry__2">Invalid ID supplied</td>
-				<td class="entry align-left" headers="responses-6__entry__3">No Content</td>
+				<td class="entry align-left" headers="deletepet__responses-6__entry__1"><strong class="b">400</strong></td>
+				<td class="entry align-left" headers="deletepet__responses-6__entry__2">Invalid ID supplied</td>
+				<td class="entry align-left" headers="deletepet__responses-6__entry__3">No Content</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-6__entry__1"><strong class="b">404</strong></td>
-				<td class="entry align-left" headers="responses-6__entry__2">Pet not found</td>
-				<td class="entry align-left" headers="responses-6__entry__3">No Content</td>
+				<td class="entry align-left" headers="deletepet__responses-6__entry__1"><strong class="b">404</strong></td>
+				<td class="entry align-left" headers="deletepet__responses-6__entry__2">Pet not found</td>
+				<td class="entry align-left" headers="deletepet__responses-6__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title55" id="produces-6">
-<h4 class="title topictitle4" id="ariaid-title55">Produces</h4>
-<div class="body">
+<section class="section" id="deletepet__produces-6"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title56" id="tags-7">
-<h4 class="title topictitle4" id="ariaid-title56">Tags</h4>
-<div class="body">
+<section class="section" id="deletepet__tags-7"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">pet</li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title57" id="security-6">
-<h4 class="title topictitle4" id="ariaid-title57">Security</h4>
-<div class="body">
+<section class="section" id="deletepet__security-6"><h4 class="title sectiontitle">Security</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="security-6__entry__1">Type</th>
-				<th class="entry align-left" id="security-6__entry__2">Name</th>
-				<th class="entry align-left" id="security-6__entry__3">Scopes</th>
+				<th class="entry align-left" id="deletepet__security-6__entry__1">Type</th>
+				<th class="entry align-left" id="deletepet__security-6__entry__2">Name</th>
+				<th class="entry align-left" id="deletepet__security-6__entry__3">Scopes</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="security-6__entry__1"><strong class="b">oauth2</strong></td>
-				<td class="entry align-left" headers="security-6__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
-				<td class="entry align-left" headers="security-6__entry__3">write:pets,read:pets</td>
+				<td class="entry align-left" headers="deletepet__security-6__entry__1"><strong class="b">oauth2</strong></td>
+				<td class="entry align-left" headers="deletepet__security-6__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
+				<td class="entry align-left" headers="deletepet__security-6__entry__3">write:pets,read:pets</td>
 			</tr>
 		</tbody></table>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title58" id="uploadfile">
-<h3 class="title topictitle3" id="ariaid-title58">uploads an image</h3>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title11" id="uploadfile">
+<h3 class="title topictitle3" id="ariaid-title11">uploads an image</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-post"><code><span class="swagger-verb">POST</span>/pet/{petId}/uploadImage</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title59" id="parameters-7">
-<h4 class="title topictitle4" id="ariaid-title59">Parameters</h4>
-<div class="body">
+<section class="section" id="uploadfile__parameters-7"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col style="width:25%"><col style="width:25%"><col style="width:25%"><col style="width:25%"></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-7__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-7__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-7__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-7__entry__4">Schema</th>
+				<th class="entry align-left" id="uploadfile__parameters-7__entry__1">Type</th>
+				<th class="entry align-left" id="uploadfile__parameters-7__entry__2">Name</th>
+				<th class="entry align-left" id="uploadfile__parameters-7__entry__3">Description</th>
+				<th class="entry align-left" id="uploadfile__parameters-7__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-7__entry__1"><strong class="b">Path</strong></td>
-				<td class="entry align-left" headers="parameters-7__entry__2"><strong class="b">petId</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-7__entry__3">ID of pet to update</td>
-				<td class="entry align-left" headers="parameters-7__entry__4">integer (int64)</td>
+				<td class="entry align-left" headers="uploadfile__parameters-7__entry__1"><strong class="b">Path</strong></td>
+				<td class="entry align-left" headers="uploadfile__parameters-7__entry__2"><strong class="b">petId</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="uploadfile__parameters-7__entry__3">ID of pet to update</td>
+				<td class="entry align-left" headers="uploadfile__parameters-7__entry__4">integer (int64)</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-7__entry__1"><strong class="b">FormData</strong></td>
-				<td class="entry align-left" headers="parameters-7__entry__2"><strong class="b">additionalMetadata</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
-				<td class="entry align-left" headers="parameters-7__entry__3">Additional data to pass to server</td>
-				<td class="entry align-left" headers="parameters-7__entry__4">string</td>
+				<td class="entry align-left" headers="uploadfile__parameters-7__entry__1"><strong class="b">FormData</strong></td>
+				<td class="entry align-left" headers="uploadfile__parameters-7__entry__2"><strong class="b">additionalMetadata</strong> &#xD;<em class="i">optional</em></td>
+				<td class="entry align-left" headers="uploadfile__parameters-7__entry__3">Additional data to pass to server</td>
+				<td class="entry align-left" headers="uploadfile__parameters-7__entry__4">string</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-7__entry__1"><strong class="b">FormData</strong></td>
-				<td class="entry align-left" headers="parameters-7__entry__2"><strong class="b">file</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
-				<td class="entry align-left" headers="parameters-7__entry__3">file to upload</td>
-				<td class="entry align-left" headers="parameters-7__entry__4">file</td>
+				<td class="entry align-left" headers="uploadfile__parameters-7__entry__1"><strong class="b">FormData</strong></td>
+				<td class="entry align-left" headers="uploadfile__parameters-7__entry__2"><strong class="b">file</strong> &#xD;<em class="i">optional</em></td>
+				<td class="entry align-left" headers="uploadfile__parameters-7__entry__3">file to upload</td>
+				<td class="entry align-left" headers="uploadfile__parameters-7__entry__4">file</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title60" id="responses-7">
-<h4 class="title topictitle4" id="ariaid-title60">Responses</h4>
-<div class="body">
+<section class="section" id="uploadfile__responses-7"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-7__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-7__entry__2">Description</th>
-				<th class="entry align-left" id="responses-7__entry__3">Schema</th>
+				<th class="entry align-left" id="uploadfile__responses-7__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="uploadfile__responses-7__entry__2">Description</th>
+				<th class="entry align-left" id="uploadfile__responses-7__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-7__entry__1"><strong class="b">200</strong></td>
-				<td class="entry align-left" headers="responses-7__entry__2">successful operation</td>
-				<td class="entry align-left" headers="responses-7__entry__3"><a class="xref" href="#apiresponse">ApiResponse</a></td>
+				<td class="entry align-left" headers="uploadfile__responses-7__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="uploadfile__responses-7__entry__2">successful operation</td>
+				<td class="entry align-left" headers="uploadfile__responses-7__entry__3"><a class="xref" href="#apiresponse">ApiResponse</a></td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title61" id="consumes-3">
-<h4 class="title topictitle4" id="ariaid-title61">Consumes</h4>
-<div class="body">
+<section class="section" id="uploadfile__consumes-3"><h4 class="title sectiontitle">Consumes</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">multipart/form-data</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title62" id="produces-7">
-<h4 class="title topictitle4" id="ariaid-title62">Produces</h4>
-<div class="body">
+<section class="section" id="uploadfile__produces-7"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title63" id="tags-8">
-<h4 class="title topictitle4" id="ariaid-title63">Tags</h4>
-<div class="body">
+<section class="section" id="uploadfile__tags-8"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">pet</li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title64" id="security-7">
-<h4 class="title topictitle4" id="ariaid-title64">Security</h4>
-<div class="body">
+<section class="section" id="uploadfile__security-7"><h4 class="title sectiontitle">Security</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="security-7__entry__1">Type</th>
-				<th class="entry align-left" id="security-7__entry__2">Name</th>
-				<th class="entry align-left" id="security-7__entry__3">Scopes</th>
+				<th class="entry align-left" id="uploadfile__security-7__entry__1">Type</th>
+				<th class="entry align-left" id="uploadfile__security-7__entry__2">Name</th>
+				<th class="entry align-left" id="uploadfile__security-7__entry__3">Scopes</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="security-7__entry__1"><strong class="b">oauth2</strong></td>
-				<td class="entry align-left" headers="security-7__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
-				<td class="entry align-left" headers="security-7__entry__3">write:pets,read:pets</td>
+				<td class="entry align-left" headers="uploadfile__security-7__entry__1"><strong class="b">oauth2</strong></td>
+				<td class="entry align-left" headers="uploadfile__security-7__entry__2"><strong class="b"><a class="xref" href="#petstore-auth">petstore_auth</a></strong></td>
+				<td class="entry align-left" headers="uploadfile__security-7__entry__3">write:pets,read:pets</td>
 			</tr>
 		</tbody></table>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title65" id="getinventory">
-<h3 class="title topictitle3" id="ariaid-title65">Returns pet inventories by status</h3>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title12" id="getinventory">
+<h3 class="title topictitle3" id="ariaid-title12">Returns pet inventories by status</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-get"><code><span class="swagger-verb">GET</span>/store/inventory</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title66" id="description-3">
-<h4 class="title topictitle4" id="ariaid-title66">Description</h4>
-<div class="body">
+<section class="section" id="getinventory__description-3"><h4 class="title sectiontitle">Description</h4>
+
+
 <p class="p">
 	Returns a map of status codes to quantities
 </p>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title67" id="responses-8">
-<h4 class="title topictitle4" id="ariaid-title67">Responses</h4>
-<div class="body">
+<section class="section" id="getinventory__responses-8"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-8__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-8__entry__2">Description</th>
-				<th class="entry align-left" id="responses-8__entry__3">Schema</th>
+				<th class="entry align-left" id="getinventory__responses-8__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="getinventory__responses-8__entry__2">Description</th>
+				<th class="entry align-left" id="getinventory__responses-8__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-8__entry__1"><strong class="b">200</strong></td>
-				<td class="entry align-left" headers="responses-8__entry__2">successful operation</td>
-				<td class="entry align-left" headers="responses-8__entry__3">&lt; string, integer (int32) &gt; map</td>
+				<td class="entry align-left" headers="getinventory__responses-8__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="getinventory__responses-8__entry__2">successful operation</td>
+				<td class="entry align-left" headers="getinventory__responses-8__entry__3">&lt; string, integer (int32) &gt; map</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title68" id="produces-8">
-<h4 class="title topictitle4" id="ariaid-title68">Produces</h4>
-<div class="body">
+<section class="section" id="getinventory__produces-8"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title69" id="tags-9">
-<h4 class="title topictitle4" id="ariaid-title69">Tags</h4>
-<div class="body">
+<section class="section" id="getinventory__tags-9"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">store</li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title70" id="security-8">
-<h4 class="title topictitle4" id="ariaid-title70">Security</h4>
-<div class="body">
+<section class="section" id="getinventory__security-8"><h4 class="title sectiontitle">Security</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="security-8__entry__1">Type</th>
-				<th class="entry align-left" id="security-8__entry__2">Name</th>
+				<th class="entry align-left" id="getinventory__security-8__entry__1">Type</th>
+				<th class="entry align-left" id="getinventory__security-8__entry__2">Name</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="security-8__entry__1"><strong class="b">apiKey</strong></td>
-				<td class="entry align-left" headers="security-8__entry__2"><strong class="b"><a class="xref" href="#api-key">api_key</a></strong></td>
+				<td class="entry align-left" headers="getinventory__security-8__entry__1"><strong class="b">apiKey</strong></td>
+				<td class="entry align-left" headers="getinventory__security-8__entry__2"><strong class="b"><a class="xref" href="#api-key">api_key</a></strong></td>
 			</tr>
 		</tbody></table>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title71" id="placeorder">
-<h3 class="title topictitle3" id="ariaid-title71">Place an order for a pet</h3>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title13" id="placeorder">
+<h3 class="title topictitle3" id="ariaid-title13">Place an order for a pet</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-post"><code><span class="swagger-verb">POST</span>/store/order</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title72" id="parameters-8">
-<h4 class="title topictitle4" id="ariaid-title72">Parameters</h4>
-<div class="body">
+<section class="section" id="placeorder__parameters-8"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-8__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-8__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-8__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-8__entry__4">Schema</th>
+				<th class="entry align-left" id="placeorder__parameters-8__entry__1">Type</th>
+				<th class="entry align-left" id="placeorder__parameters-8__entry__2">Name</th>
+				<th class="entry align-left" id="placeorder__parameters-8__entry__3">Description</th>
+				<th class="entry align-left" id="placeorder__parameters-8__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-8__entry__1"><strong class="b">Body</strong></td>
-				<td class="entry align-left" headers="parameters-8__entry__2"><strong class="b">body</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-8__entry__3">order placed for purchasing the pet</td>
-				<td class="entry align-left" headers="parameters-8__entry__4"><a class="xref" href="#order">Order</a></td>
+				<td class="entry align-left" headers="placeorder__parameters-8__entry__1"><strong class="b">Body</strong></td>
+				<td class="entry align-left" headers="placeorder__parameters-8__entry__2"><strong class="b">body</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="placeorder__parameters-8__entry__3">order placed for purchasing the pet</td>
+				<td class="entry align-left" headers="placeorder__parameters-8__entry__4"><a class="xref" href="#order">Order</a></td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title73" id="responses-9">
-<h4 class="title topictitle4" id="ariaid-title73">Responses</h4>
-<div class="body">
+<section class="section" id="placeorder__responses-9"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-9__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-9__entry__2">Description</th>
-				<th class="entry align-left" id="responses-9__entry__3">Schema</th>
+				<th class="entry align-left" id="placeorder__responses-9__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="placeorder__responses-9__entry__2">Description</th>
+				<th class="entry align-left" id="placeorder__responses-9__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-9__entry__1"><strong class="b">200</strong></td>
-				<td class="entry align-left" headers="responses-9__entry__2">successful operation</td>
-				<td class="entry align-left" headers="responses-9__entry__3"><a class="xref" href="#order">Order</a></td>
+				<td class="entry align-left" headers="placeorder__responses-9__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="placeorder__responses-9__entry__2">successful operation</td>
+				<td class="entry align-left" headers="placeorder__responses-9__entry__3"><a class="xref" href="#order">Order</a></td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-9__entry__1"><strong class="b">400</strong></td>
-				<td class="entry align-left" headers="responses-9__entry__2">Invalid Order</td>
-				<td class="entry align-left" headers="responses-9__entry__3">No Content</td>
+				<td class="entry align-left" headers="placeorder__responses-9__entry__1"><strong class="b">400</strong></td>
+				<td class="entry align-left" headers="placeorder__responses-9__entry__2">Invalid Order</td>
+				<td class="entry align-left" headers="placeorder__responses-9__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title74" id="produces-9">
-<h4 class="title topictitle4" id="ariaid-title74">Produces</h4>
-<div class="body">
+<section class="section" id="placeorder__produces-9"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title75" id="tags-10">
-<h4 class="title topictitle4" id="ariaid-title75">Tags</h4>
-<div class="body">
+<section class="section" id="placeorder__tags-10"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">store</li>
 </ul>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title76" id="getorderbyid">
-<h3 class="title topictitle3" id="ariaid-title76">Find purchase order by ID</h3>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title14" id="getorderbyid">
+<h3 class="title topictitle3" id="ariaid-title14">Find purchase order by ID</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-get"><code><span class="swagger-verb">GET</span>/store/order/{orderId}</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title77" id="description-4">
-<h4 class="title topictitle4" id="ariaid-title77">Description</h4>
-<div class="body">
+<section class="section" id="getorderbyid__description-4"><h4 class="title sectiontitle">Description</h4>
+
+
 <p class="p">
 	For valid response try integer IDs with value &gt;= 1 and &lt;= 10. Other values will generated exceptions
 </p>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title78" id="parameters-9">
-<h4 class="title topictitle4" id="ariaid-title78">Parameters</h4>
-<div class="body">
+<section class="section" id="getorderbyid__parameters-9"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-9__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-9__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-9__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-9__entry__4">Schema</th>
+				<th class="entry align-left" id="getorderbyid__parameters-9__entry__1">Type</th>
+				<th class="entry align-left" id="getorderbyid__parameters-9__entry__2">Name</th>
+				<th class="entry align-left" id="getorderbyid__parameters-9__entry__3">Description</th>
+				<th class="entry align-left" id="getorderbyid__parameters-9__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-9__entry__1"><strong class="b">Path</strong></td>
-				<td class="entry align-left" headers="parameters-9__entry__2"><strong class="b">orderId</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-9__entry__3">ID of pet that needs to be fetched</td>
-				<td class="entry align-left" headers="parameters-9__entry__4">integer (int64)</td>
+				<td class="entry align-left" headers="getorderbyid__parameters-9__entry__1"><strong class="b">Path</strong></td>
+				<td class="entry align-left" headers="getorderbyid__parameters-9__entry__2"><strong class="b">orderId</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="getorderbyid__parameters-9__entry__3">ID of pet that needs to be fetched</td>
+				<td class="entry align-left" headers="getorderbyid__parameters-9__entry__4">integer (int64)</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title79" id="responses-10">
-<h4 class="title topictitle4" id="ariaid-title79">Responses</h4>
-<div class="body">
+<section class="section" id="getorderbyid__responses-10"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-10__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-10__entry__2">Description</th>
-				<th class="entry align-left" id="responses-10__entry__3">Schema</th>
+				<th class="entry align-left" id="getorderbyid__responses-10__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="getorderbyid__responses-10__entry__2">Description</th>
+				<th class="entry align-left" id="getorderbyid__responses-10__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-10__entry__1"><strong class="b">200</strong></td>
-				<td class="entry align-left" headers="responses-10__entry__2">successful operation</td>
-				<td class="entry align-left" headers="responses-10__entry__3"><a class="xref" href="#order">Order</a></td>
+				<td class="entry align-left" headers="getorderbyid__responses-10__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="getorderbyid__responses-10__entry__2">successful operation</td>
+				<td class="entry align-left" headers="getorderbyid__responses-10__entry__3"><a class="xref" href="#order">Order</a></td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-10__entry__1"><strong class="b">400</strong></td>
-				<td class="entry align-left" headers="responses-10__entry__2">Invalid ID supplied</td>
-				<td class="entry align-left" headers="responses-10__entry__3">No Content</td>
+				<td class="entry align-left" headers="getorderbyid__responses-10__entry__1"><strong class="b">400</strong></td>
+				<td class="entry align-left" headers="getorderbyid__responses-10__entry__2">Invalid ID supplied</td>
+				<td class="entry align-left" headers="getorderbyid__responses-10__entry__3">No Content</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-10__entry__1"><strong class="b">404</strong></td>
-				<td class="entry align-left" headers="responses-10__entry__2">Order not found</td>
-				<td class="entry align-left" headers="responses-10__entry__3">No Content</td>
+				<td class="entry align-left" headers="getorderbyid__responses-10__entry__1"><strong class="b">404</strong></td>
+				<td class="entry align-left" headers="getorderbyid__responses-10__entry__2">Order not found</td>
+				<td class="entry align-left" headers="getorderbyid__responses-10__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title80" id="produces-10">
-<h4 class="title topictitle4" id="ariaid-title80">Produces</h4>
-<div class="body">
+<section class="section" id="getorderbyid__produces-10"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title81" id="tags-11">
-<h4 class="title topictitle4" id="ariaid-title81">Tags</h4>
-<div class="body">
+<section class="section" id="getorderbyid__tags-11"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">store</li>
 </ul>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title82" id="deleteorder">
-<h3 class="title topictitle3" id="ariaid-title82">Delete purchase order by ID</h3>
+<article class="topic nested2 swagger-delete" aria-labelledby="ariaid-title15" id="deleteorder">
+<h3 class="title topictitle3" id="ariaid-title15">Delete purchase order by ID</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-delete"><code><span class="swagger-verb">DELETE</span>/store/order/{orderId}</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title83" id="description-5">
-<h4 class="title topictitle4" id="ariaid-title83">Description</h4>
-<div class="body">
+<section class="section" id="deleteorder__description-5"><h4 class="title sectiontitle">Description</h4>
+
+
 <p class="p">
 	For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors
 </p>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title84" id="parameters-10">
-<h4 class="title topictitle4" id="ariaid-title84">Parameters</h4>
-<div class="body">
+<section class="section" id="deleteorder__parameters-10"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col style="width:25%"><col style="width:25%"><col style="width:25%"><col style="width:25%"></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-10__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-10__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-10__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-10__entry__4">Schema</th>
+				<th class="entry align-left" id="deleteorder__parameters-10__entry__1">Type</th>
+				<th class="entry align-left" id="deleteorder__parameters-10__entry__2">Name</th>
+				<th class="entry align-left" id="deleteorder__parameters-10__entry__3">Description</th>
+				<th class="entry align-left" id="deleteorder__parameters-10__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-10__entry__1"><strong class="b">Path</strong></td>
-				<td class="entry align-left" headers="parameters-10__entry__2"><strong class="b">orderId</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-10__entry__3">ID of the order that needs to be deleted</td>
-				<td class="entry align-left" headers="parameters-10__entry__4">integer (int64)</td>
+				<td class="entry align-left" headers="deleteorder__parameters-10__entry__1"><strong class="b">Path</strong></td>
+				<td class="entry align-left" headers="deleteorder__parameters-10__entry__2"><strong class="b">orderId</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="deleteorder__parameters-10__entry__3">ID of the order that needs to be deleted</td>
+				<td class="entry align-left" headers="deleteorder__parameters-10__entry__4">integer (int64)</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title85" id="responses-11">
-<h4 class="title topictitle4" id="ariaid-title85">Responses</h4>
-<div class="body">
+<section class="section" id="deleteorder__responses-11"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-11__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-11__entry__2">Description</th>
-				<th class="entry align-left" id="responses-11__entry__3">Schema</th>
+				<th class="entry align-left" id="deleteorder__responses-11__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="deleteorder__responses-11__entry__2">Description</th>
+				<th class="entry align-left" id="deleteorder__responses-11__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-11__entry__1"><strong class="b">400</strong></td>
-				<td class="entry align-left" headers="responses-11__entry__2">Invalid ID supplied</td>
-				<td class="entry align-left" headers="responses-11__entry__3">No Content</td>
+				<td class="entry align-left" headers="deleteorder__responses-11__entry__1"><strong class="b">400</strong></td>
+				<td class="entry align-left" headers="deleteorder__responses-11__entry__2">Invalid ID supplied</td>
+				<td class="entry align-left" headers="deleteorder__responses-11__entry__3">No Content</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-11__entry__1"><strong class="b">404</strong></td>
-				<td class="entry align-left" headers="responses-11__entry__2">Order not found</td>
-				<td class="entry align-left" headers="responses-11__entry__3">No Content</td>
+				<td class="entry align-left" headers="deleteorder__responses-11__entry__1"><strong class="b">404</strong></td>
+				<td class="entry align-left" headers="deleteorder__responses-11__entry__2">Order not found</td>
+				<td class="entry align-left" headers="deleteorder__responses-11__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title86" id="produces-11">
-<h4 class="title topictitle4" id="ariaid-title86">Produces</h4>
-<div class="body">
+<section class="section" id="deleteorder__produces-11"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title87" id="tags-12">
-<h4 class="title topictitle4" id="ariaid-title87">Tags</h4>
-<div class="body">
+<section class="section" id="deleteorder__tags-12"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">store</li>
 </ul>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title88" id="createuser">
-<h3 class="title topictitle3" id="ariaid-title88">Create user</h3>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title16" id="createuser">
+<h3 class="title topictitle3" id="ariaid-title16">Create user</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-post"><code><span class="swagger-verb">POST</span>/user</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title89" id="description-6">
-<h4 class="title topictitle4" id="ariaid-title89">Description</h4>
-<div class="body">
+<section class="section" id="createuser__description-6"><h4 class="title sectiontitle">Description</h4>
+
+
 <p class="p">
 	This can only be done by the logged in user.
 </p>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title90" id="parameters-11">
-<h4 class="title topictitle4" id="ariaid-title90">Parameters</h4>
-<div class="body">
+<section class="section" id="createuser__parameters-11"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-11__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-11__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-11__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-11__entry__4">Schema</th>
+				<th class="entry align-left" id="createuser__parameters-11__entry__1">Type</th>
+				<th class="entry align-left" id="createuser__parameters-11__entry__2">Name</th>
+				<th class="entry align-left" id="createuser__parameters-11__entry__3">Description</th>
+				<th class="entry align-left" id="createuser__parameters-11__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-11__entry__1"><strong class="b">Body</strong></td>
-				<td class="entry align-left" headers="parameters-11__entry__2"><strong class="b">body</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-11__entry__3">Created user object</td>
-				<td class="entry align-left" headers="parameters-11__entry__4"><a class="xref" href="#user">User</a></td>
+				<td class="entry align-left" headers="createuser__parameters-11__entry__1"><strong class="b">Body</strong></td>
+				<td class="entry align-left" headers="createuser__parameters-11__entry__2"><strong class="b">body</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="createuser__parameters-11__entry__3">Created user object</td>
+				<td class="entry align-left" headers="createuser__parameters-11__entry__4"><a class="xref" href="#user">User</a></td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title91" id="responses-12">
-<h4 class="title topictitle4" id="ariaid-title91">Responses</h4>
-<div class="body">
+<section class="section" id="createuser__responses-12"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-12__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-12__entry__2">Description</th>
-				<th class="entry align-left" id="responses-12__entry__3">Schema</th>
+				<th class="entry align-left" id="createuser__responses-12__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="createuser__responses-12__entry__2">Description</th>
+				<th class="entry align-left" id="createuser__responses-12__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-12__entry__1"><strong class="b">default</strong></td>
-				<td class="entry align-left" headers="responses-12__entry__2">successful operation</td>
-				<td class="entry align-left" headers="responses-12__entry__3">No Content</td>
+				<td class="entry align-left" headers="createuser__responses-12__entry__1"><strong class="b">default</strong></td>
+				<td class="entry align-left" headers="createuser__responses-12__entry__2">successful operation</td>
+				<td class="entry align-left" headers="createuser__responses-12__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title92" id="produces-12">
-<h4 class="title topictitle4" id="ariaid-title92">Produces</h4>
-<div class="body">
+<section class="section" id="createuser__produces-12"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title93" id="tags-13">
-<h4 class="title topictitle4" id="ariaid-title93">Tags</h4>
-<div class="body">
+<section class="section" id="createuser__tags-13"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">user</li>
 </ul>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title94" id="createuserswitharrayinput">
-<h3 class="title topictitle3" id="ariaid-title94">Creates list of users with given input array</h3>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title17" id="createuserswitharrayinput">
+<h3 class="title topictitle3" id="ariaid-title17">Creates list of users with given input array</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-post"><code><span class="swagger-verb">POST</span>/user/createWithArray</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title95" id="parameters-12">
-<h4 class="title topictitle4" id="ariaid-title95">Parameters</h4>
-<div class="body">
+<section class="section" id="createuserswitharrayinput__parameters-12"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-12__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-12__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-12__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-12__entry__4">Schema</th>
+				<th class="entry align-left" id="createuserswitharrayinput__parameters-12__entry__1">Type</th>
+				<th class="entry align-left" id="createuserswitharrayinput__parameters-12__entry__2">Name</th>
+				<th class="entry align-left" id="createuserswitharrayinput__parameters-12__entry__3">Description</th>
+				<th class="entry align-left" id="createuserswitharrayinput__parameters-12__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-12__entry__1"><strong class="b">Body</strong></td>
-				<td class="entry align-left" headers="parameters-12__entry__2"><strong class="b">body</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-12__entry__3">List of user object</td>
-				<td class="entry align-left" headers="parameters-12__entry__4">&lt; <a class="xref" href="#user">User</a> &gt; array</td>
+				<td class="entry align-left" headers="createuserswitharrayinput__parameters-12__entry__1"><strong class="b">Body</strong></td>
+				<td class="entry align-left" headers="createuserswitharrayinput__parameters-12__entry__2"><strong class="b">body</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="createuserswitharrayinput__parameters-12__entry__3">List of user object</td>
+				<td class="entry align-left" headers="createuserswitharrayinput__parameters-12__entry__4">&lt; <a class="xref" href="#user">User</a> &gt; array</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title96" id="responses-13">
-<h4 class="title topictitle4" id="ariaid-title96">Responses</h4>
-<div class="body">
+<section class="section" id="createuserswitharrayinput__responses-13"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-13__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-13__entry__2">Description</th>
-				<th class="entry align-left" id="responses-13__entry__3">Schema</th>
+				<th class="entry align-left" id="createuserswitharrayinput__responses-13__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="createuserswitharrayinput__responses-13__entry__2">Description</th>
+				<th class="entry align-left" id="createuserswitharrayinput__responses-13__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-13__entry__1"><strong class="b">default</strong></td>
-				<td class="entry align-left" headers="responses-13__entry__2">successful operation</td>
-				<td class="entry align-left" headers="responses-13__entry__3">No Content</td>
+				<td class="entry align-left" headers="createuserswitharrayinput__responses-13__entry__1"><strong class="b">default</strong></td>
+				<td class="entry align-left" headers="createuserswitharrayinput__responses-13__entry__2">successful operation</td>
+				<td class="entry align-left" headers="createuserswitharrayinput__responses-13__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title97" id="produces-13">
-<h4 class="title topictitle4" id="ariaid-title97">Produces</h4>
-<div class="body">
+<section class="section" id="createuserswitharrayinput__produces-13"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title98" id="tags-14">
-<h4 class="title topictitle4" id="ariaid-title98">Tags</h4>
-<div class="body">
+<section class="section" id="createuserswitharrayinput__tags-14"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">user</li>
 </ul>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title99" id="createuserswithlistinput">
-<h3 class="title topictitle3" id="ariaid-title99">Creates list of users with given input array</h3>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title18" id="createuserswithlistinput">
+<h3 class="title topictitle3" id="ariaid-title18">Creates list of users with given input array</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-post"><code><span class="swagger-verb">POST</span>/user/createWithList</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title100" id="parameters-13">
-<h4 class="title topictitle4" id="ariaid-title100">Parameters</h4>
-<div class="body">
+<section class="section" id="createuserswithlistinput__parameters-13"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-13__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-13__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-13__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-13__entry__4">Schema</th>
+				<th class="entry align-left" id="createuserswithlistinput__parameters-13__entry__1">Type</th>
+				<th class="entry align-left" id="createuserswithlistinput__parameters-13__entry__2">Name</th>
+				<th class="entry align-left" id="createuserswithlistinput__parameters-13__entry__3">Description</th>
+				<th class="entry align-left" id="createuserswithlistinput__parameters-13__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-13__entry__1"><strong class="b">Body</strong></td>
-				<td class="entry align-left" headers="parameters-13__entry__2"><strong class="b">body</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-13__entry__3">List of user object</td>
-				<td class="entry align-left" headers="parameters-13__entry__4">&lt; <a class="xref" href="#user">User</a> &gt; array</td>
+				<td class="entry align-left" headers="createuserswithlistinput__parameters-13__entry__1"><strong class="b">Body</strong></td>
+				<td class="entry align-left" headers="createuserswithlistinput__parameters-13__entry__2"><strong class="b">body</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="createuserswithlistinput__parameters-13__entry__3">List of user object</td>
+				<td class="entry align-left" headers="createuserswithlistinput__parameters-13__entry__4">&lt; <a class="xref" href="#user">User</a> &gt; array</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title101" id="responses-14">
-<h4 class="title topictitle4" id="ariaid-title101">Responses</h4>
-<div class="body">
+<section class="section" id="createuserswithlistinput__responses-14"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-14__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-14__entry__2">Description</th>
-				<th class="entry align-left" id="responses-14__entry__3">Schema</th>
+				<th class="entry align-left" id="createuserswithlistinput__responses-14__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="createuserswithlistinput__responses-14__entry__2">Description</th>
+				<th class="entry align-left" id="createuserswithlistinput__responses-14__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-14__entry__1"><strong class="b">default</strong></td>
-				<td class="entry align-left" headers="responses-14__entry__2">successful operation</td>
-				<td class="entry align-left" headers="responses-14__entry__3">No Content</td>
+				<td class="entry align-left" headers="createuserswithlistinput__responses-14__entry__1"><strong class="b">default</strong></td>
+				<td class="entry align-left" headers="createuserswithlistinput__responses-14__entry__2">successful operation</td>
+				<td class="entry align-left" headers="createuserswithlistinput__responses-14__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title102" id="produces-14">
-<h4 class="title topictitle4" id="ariaid-title102">Produces</h4>
-<div class="body">
+<section class="section" id="createuserswithlistinput__produces-14"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title103" id="tags-15">
-<h4 class="title topictitle4" id="ariaid-title103">Tags</h4>
-<div class="body">
+<section class="section" id="createuserswithlistinput__tags-15"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">user</li>
 </ul>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title104" id="loginuser">
-<h3 class="title topictitle3" id="ariaid-title104">Logs user into the system</h3>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title19" id="loginuser">
+<h3 class="title topictitle3" id="ariaid-title19">Logs user into the system</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-get"><code><span class="swagger-verb">GET</span>/user/login</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title105" id="parameters-14">
-<h4 class="title topictitle4" id="ariaid-title105">Parameters</h4>
-<div class="body">
+<section class="section" id="loginuser__parameters-14"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-14__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-14__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-14__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-14__entry__4">Schema</th>
+				<th class="entry align-left" id="loginuser__parameters-14__entry__1">Type</th>
+				<th class="entry align-left" id="loginuser__parameters-14__entry__2">Name</th>
+				<th class="entry align-left" id="loginuser__parameters-14__entry__3">Description</th>
+				<th class="entry align-left" id="loginuser__parameters-14__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-14__entry__1"><strong class="b">Query</strong></td>
-				<td class="entry align-left" headers="parameters-14__entry__2"><strong class="b">password</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-14__entry__3">The password for login in clear text</td>
-				<td class="entry align-left" headers="parameters-14__entry__4">string</td>
+				<td class="entry align-left" headers="loginuser__parameters-14__entry__1"><strong class="b">Query</strong></td>
+				<td class="entry align-left" headers="loginuser__parameters-14__entry__2"><strong class="b">password</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="loginuser__parameters-14__entry__3">The password for login in clear text</td>
+				<td class="entry align-left" headers="loginuser__parameters-14__entry__4">string</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-14__entry__1"><strong class="b">Query</strong></td>
-				<td class="entry align-left" headers="parameters-14__entry__2"><strong class="b">username</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-14__entry__3">The user name for login</td>
-				<td class="entry align-left" headers="parameters-14__entry__4">string</td>
+				<td class="entry align-left" headers="loginuser__parameters-14__entry__1"><strong class="b">Query</strong></td>
+				<td class="entry align-left" headers="loginuser__parameters-14__entry__2"><strong class="b">username</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="loginuser__parameters-14__entry__3">The user name for login</td>
+				<td class="entry align-left" headers="loginuser__parameters-14__entry__4">string</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title106" id="responses-15">
-<h4 class="title topictitle4" id="ariaid-title106">Responses</h4>
-<div class="body">
+<section class="section" id="loginuser__responses-15"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col style="width:33%"><col style="width:33%"><col style="width:33%"></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-15__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-15__entry__2">Description</th>
-				<th class="entry align-left" id="responses-15__entry__3">Schema</th>
+				<th class="entry align-left" id="loginuser__responses-15__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="loginuser__responses-15__entry__2">Description</th>
+				<th class="entry align-left" id="loginuser__responses-15__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-15__entry__1"><strong class="b">200</strong></td>
-				<td class="entry align-left" headers="responses-15__entry__2">successful operation <span class="undefined_element"></span><strong class="b">Headers</strong> : <span class="undefined_element"></span><code class="codeph">X-Rate-Limit</code> (integer (int32)) : calls per hour allowed by the user. <span class="undefined_element"></span><code class="codeph">X-Expires-After</code> (string (date-time)) : date in UTC when token expires.</td>
-				<td class="entry align-left" headers="responses-15__entry__3">string</td>
+				<td class="entry align-left" headers="loginuser__responses-15__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="loginuser__responses-15__entry__2">successful operation &#xD;<strong class="b">Headers</strong> : &#xD;<code class="codeph">X-Rate-Limit</code> (integer (int32)) : calls per hour allowed by the user. &#xD;<code class="codeph">X-Expires-After</code> (string (date-time)) : date in UTC when token expires.</td>
+				<td class="entry align-left" headers="loginuser__responses-15__entry__3">string</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-15__entry__1"><strong class="b">400</strong></td>
-				<td class="entry align-left" headers="responses-15__entry__2">Invalid username/password supplied</td>
-				<td class="entry align-left" headers="responses-15__entry__3">No Content</td>
+				<td class="entry align-left" headers="loginuser__responses-15__entry__1"><strong class="b">400</strong></td>
+				<td class="entry align-left" headers="loginuser__responses-15__entry__2">Invalid username/password supplied</td>
+				<td class="entry align-left" headers="loginuser__responses-15__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title107" id="produces-15">
-<h4 class="title topictitle4" id="ariaid-title107">Produces</h4>
-<div class="body">
+<section class="section" id="loginuser__produces-15"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title108" id="tags-16">
-<h4 class="title topictitle4" id="ariaid-title108">Tags</h4>
-<div class="body">
+<section class="section" id="loginuser__tags-16"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">user</li>
 </ul>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title109" id="logoutuser">
-<h3 class="title topictitle3" id="ariaid-title109">Logs out current logged in user session</h3>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title20" id="logoutuser">
+<h3 class="title topictitle3" id="ariaid-title20">Logs out current logged in user session</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-get"><code><span class="swagger-verb">GET</span>/user/logout</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title110" id="responses-16">
-<h4 class="title topictitle4" id="ariaid-title110">Responses</h4>
-<div class="body">
+<section class="section" id="logoutuser__responses-16"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-16__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-16__entry__2">Description</th>
-				<th class="entry align-left" id="responses-16__entry__3">Schema</th>
+				<th class="entry align-left" id="logoutuser__responses-16__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="logoutuser__responses-16__entry__2">Description</th>
+				<th class="entry align-left" id="logoutuser__responses-16__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-16__entry__1"><strong class="b">default</strong></td>
-				<td class="entry align-left" headers="responses-16__entry__2">successful operation</td>
-				<td class="entry align-left" headers="responses-16__entry__3">No Content</td>
+				<td class="entry align-left" headers="logoutuser__responses-16__entry__1"><strong class="b">default</strong></td>
+				<td class="entry align-left" headers="logoutuser__responses-16__entry__2">successful operation</td>
+				<td class="entry align-left" headers="logoutuser__responses-16__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title111" id="produces-16">
-<h4 class="title topictitle4" id="ariaid-title111">Produces</h4>
-<div class="body">
+<section class="section" id="logoutuser__produces-16"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title112" id="tags-17">
-<h4 class="title topictitle4" id="ariaid-title112">Tags</h4>
-<div class="body">
+<section class="section" id="logoutuser__tags-17"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">user</li>
 </ul>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title113" id="getuserbyname">
-<h3 class="title topictitle3" id="ariaid-title113">Get user by user name</h3>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title21" id="getuserbyname">
+<h3 class="title topictitle3" id="ariaid-title21">Get user by user name</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-get"><code><span class="swagger-verb">GET</span>/user/{username}</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title114" id="parameters-15">
-<h4 class="title topictitle4" id="ariaid-title114">Parameters</h4>
-<div class="body">
+<section class="section" id="getuserbyname__parameters-15"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col style="width:25%"><col style="width:25%"><col style="width:25%"><col style="width:25%"></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-15__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-15__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-15__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-15__entry__4">Schema</th>
+				<th class="entry align-left" id="getuserbyname__parameters-15__entry__1">Type</th>
+				<th class="entry align-left" id="getuserbyname__parameters-15__entry__2">Name</th>
+				<th class="entry align-left" id="getuserbyname__parameters-15__entry__3">Description</th>
+				<th class="entry align-left" id="getuserbyname__parameters-15__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-15__entry__1"><strong class="b">Path</strong></td>
-				<td class="entry align-left" headers="parameters-15__entry__2"><strong class="b">username</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-15__entry__3">The name that needs to be fetched. Use user1 for testing.</td>
-				<td class="entry align-left" headers="parameters-15__entry__4">string</td>
+				<td class="entry align-left" headers="getuserbyname__parameters-15__entry__1"><strong class="b">Path</strong></td>
+				<td class="entry align-left" headers="getuserbyname__parameters-15__entry__2"><strong class="b">username</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="getuserbyname__parameters-15__entry__3">The name that needs to be fetched. Use user1 for testing.</td>
+				<td class="entry align-left" headers="getuserbyname__parameters-15__entry__4">string</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title115" id="responses-17">
-<h4 class="title topictitle4" id="ariaid-title115">Responses</h4>
-<div class="body">
+<section class="section" id="getuserbyname__responses-17"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-17__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-17__entry__2">Description</th>
-				<th class="entry align-left" id="responses-17__entry__3">Schema</th>
+				<th class="entry align-left" id="getuserbyname__responses-17__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="getuserbyname__responses-17__entry__2">Description</th>
+				<th class="entry align-left" id="getuserbyname__responses-17__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-17__entry__1"><strong class="b">200</strong></td>
-				<td class="entry align-left" headers="responses-17__entry__2">successful operation</td>
-				<td class="entry align-left" headers="responses-17__entry__3"><a class="xref" href="#user">User</a></td>
+				<td class="entry align-left" headers="getuserbyname__responses-17__entry__1"><strong class="b">200</strong></td>
+				<td class="entry align-left" headers="getuserbyname__responses-17__entry__2">successful operation</td>
+				<td class="entry align-left" headers="getuserbyname__responses-17__entry__3"><a class="xref" href="#user">User</a></td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-17__entry__1"><strong class="b">400</strong></td>
-				<td class="entry align-left" headers="responses-17__entry__2">Invalid username supplied</td>
-				<td class="entry align-left" headers="responses-17__entry__3">No Content</td>
+				<td class="entry align-left" headers="getuserbyname__responses-17__entry__1"><strong class="b">400</strong></td>
+				<td class="entry align-left" headers="getuserbyname__responses-17__entry__2">Invalid username supplied</td>
+				<td class="entry align-left" headers="getuserbyname__responses-17__entry__3">No Content</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-17__entry__1"><strong class="b">404</strong></td>
-				<td class="entry align-left" headers="responses-17__entry__2">User not found</td>
-				<td class="entry align-left" headers="responses-17__entry__3">No Content</td>
+				<td class="entry align-left" headers="getuserbyname__responses-17__entry__1"><strong class="b">404</strong></td>
+				<td class="entry align-left" headers="getuserbyname__responses-17__entry__2">User not found</td>
+				<td class="entry align-left" headers="getuserbyname__responses-17__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title116" id="produces-17">
-<h4 class="title topictitle4" id="ariaid-title116">Produces</h4>
-<div class="body">
+<section class="section" id="getuserbyname__produces-17"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title117" id="tags-18">
-<h4 class="title topictitle4" id="ariaid-title117">Tags</h4>
-<div class="body">
+<section class="section" id="getuserbyname__tags-18"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">user</li>
 </ul>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title118" id="updateuser">
-<h3 class="title topictitle3" id="ariaid-title118">Updated user</h3>
+<article class="topic nested2 swagger-put" aria-labelledby="ariaid-title22" id="updateuser">
+<h3 class="title topictitle3" id="ariaid-title22">Updated user</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-put"><code><span class="swagger-verb">PUT</span>/user/{username}</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title119" id="description-7">
-<h4 class="title topictitle4" id="ariaid-title119">Description</h4>
-<div class="body">
+<section class="section" id="updateuser__description-7"><h4 class="title sectiontitle">Description</h4>
+
+
 <p class="p">
 	This can only be done by the logged in user.
 </p>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title120" id="parameters-16">
-<h4 class="title topictitle4" id="ariaid-title120">Parameters</h4>
-<div class="body">
+<section class="section" id="updateuser__parameters-16"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-16__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-16__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-16__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-16__entry__4">Schema</th>
+				<th class="entry align-left" id="updateuser__parameters-16__entry__1">Type</th>
+				<th class="entry align-left" id="updateuser__parameters-16__entry__2">Name</th>
+				<th class="entry align-left" id="updateuser__parameters-16__entry__3">Description</th>
+				<th class="entry align-left" id="updateuser__parameters-16__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-16__entry__1"><strong class="b">Path</strong></td>
-				<td class="entry align-left" headers="parameters-16__entry__2"><strong class="b">username</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-16__entry__3">name that need to be updated</td>
-				<td class="entry align-left" headers="parameters-16__entry__4">string</td>
+				<td class="entry align-left" headers="updateuser__parameters-16__entry__1"><strong class="b">Path</strong></td>
+				<td class="entry align-left" headers="updateuser__parameters-16__entry__2"><strong class="b">username</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="updateuser__parameters-16__entry__3">name that need to be updated</td>
+				<td class="entry align-left" headers="updateuser__parameters-16__entry__4">string</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-16__entry__1"><strong class="b">Body</strong></td>
-				<td class="entry align-left" headers="parameters-16__entry__2"><strong class="b">body</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-16__entry__3">Updated user object</td>
-				<td class="entry align-left" headers="parameters-16__entry__4"><a class="xref" href="#user">User</a></td>
+				<td class="entry align-left" headers="updateuser__parameters-16__entry__1"><strong class="b">Body</strong></td>
+				<td class="entry align-left" headers="updateuser__parameters-16__entry__2"><strong class="b">body</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="updateuser__parameters-16__entry__3">Updated user object</td>
+				<td class="entry align-left" headers="updateuser__parameters-16__entry__4"><a class="xref" href="#user">User</a></td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title121" id="responses-18">
-<h4 class="title topictitle4" id="ariaid-title121">Responses</h4>
-<div class="body">
+<section class="section" id="updateuser__responses-18"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-18__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-18__entry__2">Description</th>
-				<th class="entry align-left" id="responses-18__entry__3">Schema</th>
+				<th class="entry align-left" id="updateuser__responses-18__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="updateuser__responses-18__entry__2">Description</th>
+				<th class="entry align-left" id="updateuser__responses-18__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-18__entry__1"><strong class="b">400</strong></td>
-				<td class="entry align-left" headers="responses-18__entry__2">Invalid user supplied</td>
-				<td class="entry align-left" headers="responses-18__entry__3">No Content</td>
+				<td class="entry align-left" headers="updateuser__responses-18__entry__1"><strong class="b">400</strong></td>
+				<td class="entry align-left" headers="updateuser__responses-18__entry__2">Invalid user supplied</td>
+				<td class="entry align-left" headers="updateuser__responses-18__entry__3">No Content</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-18__entry__1"><strong class="b">404</strong></td>
-				<td class="entry align-left" headers="responses-18__entry__2">User not found</td>
-				<td class="entry align-left" headers="responses-18__entry__3">No Content</td>
+				<td class="entry align-left" headers="updateuser__responses-18__entry__1"><strong class="b">404</strong></td>
+				<td class="entry align-left" headers="updateuser__responses-18__entry__2">User not found</td>
+				<td class="entry align-left" headers="updateuser__responses-18__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title122" id="produces-18">
-<h4 class="title topictitle4" id="ariaid-title122">Produces</h4>
-<div class="body">
+<section class="section" id="updateuser__produces-18"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title123" id="tags-19">
-<h4 class="title topictitle4" id="ariaid-title123">Tags</h4>
-<div class="body">
+<section class="section" id="updateuser__tags-19"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">user</li>
 </ul>
+</section>
+
 </div>
-</article>
 
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title124" id="deleteuser">
-<h3 class="title topictitle3" id="ariaid-title124">Delete user</h3>
+<article class="topic nested2 swagger-delete" aria-labelledby="ariaid-title23" id="deleteuser">
+<h3 class="title topictitle3" id="ariaid-title23">Delete user</h3>
 <div class="body">
 <pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="codeblock swagger-delete"><code><span class="swagger-verb">DELETE</span>/user/{username}</code></pre>
-</div>
-<article class="topic nested3" aria-labelledby="ariaid-title125" id="description-8">
-<h4 class="title topictitle4" id="ariaid-title125">Description</h4>
-<div class="body">
+<section class="section" id="deleteuser__description-8"><h4 class="title sectiontitle">Description</h4>
+
+
 <p class="p">
 	This can only be done by the logged in user.
 </p>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title126" id="parameters-17">
-<h4 class="title topictitle4" id="ariaid-title126">Parameters</h4>
-<div class="body">
+<section class="section" id="deleteuser__parameters-17"><h4 class="title sectiontitle">Parameters</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="parameters-17__entry__1">Type</th>
-				<th class="entry align-left" id="parameters-17__entry__2">Name</th>
-				<th class="entry align-left" id="parameters-17__entry__3">Description</th>
-				<th class="entry align-left" id="parameters-17__entry__4">Schema</th>
+				<th class="entry align-left" id="deleteuser__parameters-17__entry__1">Type</th>
+				<th class="entry align-left" id="deleteuser__parameters-17__entry__2">Name</th>
+				<th class="entry align-left" id="deleteuser__parameters-17__entry__3">Description</th>
+				<th class="entry align-left" id="deleteuser__parameters-17__entry__4">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="parameters-17__entry__1"><strong class="b">Path</strong></td>
-				<td class="entry align-left" headers="parameters-17__entry__2"><strong class="b">username</strong> <span class="undefined_element"></span><em class="i">required</em></td>
-				<td class="entry align-left" headers="parameters-17__entry__3">The name that needs to be deleted</td>
-				<td class="entry align-left" headers="parameters-17__entry__4">string</td>
+				<td class="entry align-left" headers="deleteuser__parameters-17__entry__1"><strong class="b">Path</strong></td>
+				<td class="entry align-left" headers="deleteuser__parameters-17__entry__2"><strong class="b">username</strong> &#xD;<em class="i">required</em></td>
+				<td class="entry align-left" headers="deleteuser__parameters-17__entry__3">The name that needs to be deleted</td>
+				<td class="entry align-left" headers="deleteuser__parameters-17__entry__4">string</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title127" id="responses-19">
-<h4 class="title topictitle4" id="ariaid-title127">Responses</h4>
-<div class="body">
+<section class="section" id="deleteuser__responses-19"><h4 class="title sectiontitle">Responses</h4>
+
+
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
-				<th class="entry align-left" id="responses-19__entry__1">HTTP Code</th>
-				<th class="entry align-left" id="responses-19__entry__2">Description</th>
-				<th class="entry align-left" id="responses-19__entry__3">Schema</th>
+				<th class="entry align-left" id="deleteuser__responses-19__entry__1">HTTP Code</th>
+				<th class="entry align-left" id="deleteuser__responses-19__entry__2">Description</th>
+				<th class="entry align-left" id="deleteuser__responses-19__entry__3">Schema</th>
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="responses-19__entry__1"><strong class="b">400</strong></td>
-				<td class="entry align-left" headers="responses-19__entry__2">Invalid username supplied</td>
-				<td class="entry align-left" headers="responses-19__entry__3">No Content</td>
+				<td class="entry align-left" headers="deleteuser__responses-19__entry__1"><strong class="b">400</strong></td>
+				<td class="entry align-left" headers="deleteuser__responses-19__entry__2">Invalid username supplied</td>
+				<td class="entry align-left" headers="deleteuser__responses-19__entry__3">No Content</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="responses-19__entry__1"><strong class="b">404</strong></td>
-				<td class="entry align-left" headers="responses-19__entry__2">User not found</td>
-				<td class="entry align-left" headers="responses-19__entry__3">No Content</td>
+				<td class="entry align-left" headers="deleteuser__responses-19__entry__1"><strong class="b">404</strong></td>
+				<td class="entry align-left" headers="deleteuser__responses-19__entry__2">User not found</td>
+				<td class="entry align-left" headers="deleteuser__responses-19__entry__3">No Content</td>
 			</tr>
 		</tbody></table>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title128" id="produces-19">
-<h4 class="title topictitle4" id="ariaid-title128">Produces</h4>
-<div class="body">
+<section class="section" id="deleteuser__produces-19"><h4 class="title sectiontitle">Produces</h4>
+
+
 <ul class="ul">
 	<li class="li"><code class="codeph">application/xml</code></li>
 	<li class="li"><code class="codeph">application/json</code></li>
 </ul>
-</div>
-</article>
+</section>
 
-<article class="topic nested3" aria-labelledby="ariaid-title129" id="tags-20">
-<h4 class="title topictitle4" id="ariaid-title129">Tags</h4>
-<div class="body">
+<section class="section" id="deleteuser__tags-20"><h4 class="title sectiontitle">Tags</h4>
+
+
 <ul class="ul">
 	<li class="li">user</li>
 </ul>
+</section>
+
 </div>
-</article>
 
 </article>
 
 </article>
 
-<article class="topic nested1" aria-labelledby="ariaid-title130" id="definitions">
-<h2 class="title topictitle2" id="ariaid-title130">Definitions</h2>
+<article class="topic nested1" aria-labelledby="ariaid-title24" id="definitions">
+<h2 class="title topictitle2" id="ariaid-title24">Definitions</h2>
 <div class="body">
 </div>
-<article class="topic nested2" aria-labelledby="ariaid-title131" id="apiresponse">
-<h3 class="title topictitle3" id="ariaid-title131">ApiResponse</h3>
+<article class="topic nested2" aria-labelledby="ariaid-title25" id="apiresponse">
+<h3 class="title topictitle3" id="ariaid-title25">ApiResponse</h3>
 <div class="body">
 <table class="table"><caption></caption><colgroup><col><col></colgroup><thead class="thead">
 			<tr class="row">
@@ -1780,23 +1695,23 @@ operation.deprecated
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="apiresponse__entry__1"><strong class="b">code</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="apiresponse__entry__1"><strong class="b">code</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="apiresponse__entry__2">integer (int32)</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="apiresponse__entry__1"><strong class="b">message</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="apiresponse__entry__1"><strong class="b">message</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="apiresponse__entry__2">string</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="apiresponse__entry__1"><strong class="b">type</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="apiresponse__entry__1"><strong class="b">type</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="apiresponse__entry__2">string</td>
 			</tr>
 		</tbody></table>
 </div>
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title132" id="category">
-<h3 class="title topictitle3" id="ariaid-title132">Category</h3>
+<article class="topic nested2" aria-labelledby="ariaid-title26" id="category">
+<h3 class="title topictitle3" id="ariaid-title26">Category</h3>
 <div class="body">
 <table class="table"><caption></caption><colgroup><col><col></colgroup><thead class="thead">
 			<tr class="row">
@@ -1805,19 +1720,19 @@ operation.deprecated
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="category__entry__1"><strong class="b">id</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="category__entry__1"><strong class="b">id</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="category__entry__2">integer (int64)</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="category__entry__1"><strong class="b">name</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="category__entry__1"><strong class="b">name</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="category__entry__2">string</td>
 			</tr>
 		</tbody></table>
 </div>
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title133" id="order">
-<h3 class="title topictitle3" id="ariaid-title133">Order</h3>
+<article class="topic nested2" aria-labelledby="ariaid-title27" id="order">
+<h3 class="title topictitle3" id="ariaid-title27">Order</h3>
 <div class="body">
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
@@ -1827,32 +1742,32 @@ operation.deprecated
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="order__entry__1"><strong class="b">complete</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="order__entry__1"><strong class="b">complete</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="order__entry__2"><strong class="b">Default</strong> : <code class="codeph">false</code></td>
 				<td class="entry align-left" headers="order__entry__3">boolean</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="order__entry__1"><strong class="b">id</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="order__entry__1"><strong class="b">id</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="order__entry__2"></td>
 				<td class="entry align-left" headers="order__entry__3">integer (int64)</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="order__entry__1"><strong class="b">petId</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="order__entry__1"><strong class="b">petId</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="order__entry__2"></td>
 				<td class="entry align-left" headers="order__entry__3">integer (int64)</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="order__entry__1"><strong class="b">quantity</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="order__entry__1"><strong class="b">quantity</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="order__entry__2"></td>
 				<td class="entry align-left" headers="order__entry__3">integer (int32)</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="order__entry__1"><strong class="b">shipDate</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="order__entry__1"><strong class="b">shipDate</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="order__entry__2"></td>
 				<td class="entry align-left" headers="order__entry__3">string (date-time)</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="order__entry__1"><strong class="b">status</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="order__entry__1"><strong class="b">status</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="order__entry__2">Order Status</td>
 				<td class="entry align-left" headers="order__entry__3">enum (placed, approved, delivered)</td>
 			</tr>
@@ -1860,8 +1775,8 @@ operation.deprecated
 </div>
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title134" id="pet">
-<h3 class="title topictitle3" id="ariaid-title134">Pet</h3>
+<article class="topic nested2" aria-labelledby="ariaid-title28" id="pet">
+<h3 class="title topictitle3" id="ariaid-title28">Pet</h3>
 <div class="body">
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
@@ -1871,32 +1786,32 @@ operation.deprecated
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="pet__entry__1"><strong class="b">category</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="pet__entry__1"><strong class="b">category</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="pet__entry__2"></td>
 				<td class="entry align-left" headers="pet__entry__3"><a class="xref" href="#category">Category</a></td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="pet__entry__1"><strong class="b">id</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="pet__entry__1"><strong class="b">id</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="pet__entry__2"></td>
 				<td class="entry align-left" headers="pet__entry__3">integer (int64)</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="pet__entry__1"><strong class="b">name</strong> <span class="undefined_element"></span><em class="i">required</em></td>
+				<td class="entry align-left" headers="pet__entry__1"><strong class="b">name</strong> &#xD;<em class="i">required</em></td>
 				<td class="entry align-left" headers="pet__entry__2"><strong class="b">Example</strong> : <code class="codeph">"doggie"</code></td>
 				<td class="entry align-left" headers="pet__entry__3">string</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="pet__entry__1"><strong class="b">photoUrls</strong> <span class="undefined_element"></span><em class="i">required</em></td>
+				<td class="entry align-left" headers="pet__entry__1"><strong class="b">photoUrls</strong> &#xD;<em class="i">required</em></td>
 				<td class="entry align-left" headers="pet__entry__2"></td>
 				<td class="entry align-left" headers="pet__entry__3">&lt; string &gt; array</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="pet__entry__1"><strong class="b">status</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="pet__entry__1"><strong class="b">status</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="pet__entry__2">pet status in the store</td>
 				<td class="entry align-left" headers="pet__entry__3">enum (available, pending, sold)</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="pet__entry__1"><strong class="b">tags</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="pet__entry__1"><strong class="b">tags</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="pet__entry__2"></td>
 				<td class="entry align-left" headers="pet__entry__3">&lt; <a class="xref" href="#tag">Tag</a> &gt; array</td>
 			</tr>
@@ -1904,8 +1819,8 @@ operation.deprecated
 </div>
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title135" id="tag">
-<h3 class="title topictitle3" id="ariaid-title135">Tag</h3>
+<article class="topic nested2" aria-labelledby="ariaid-title29" id="tag">
+<h3 class="title topictitle3" id="ariaid-title29">Tag</h3>
 <div class="body">
 <table class="table"><caption></caption><colgroup><col><col></colgroup><thead class="thead">
 			<tr class="row">
@@ -1914,19 +1829,19 @@ operation.deprecated
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="tag__entry__1"><strong class="b">id</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="tag__entry__1"><strong class="b">id</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="tag__entry__2">integer (int64)</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="tag__entry__1"><strong class="b">name</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="tag__entry__1"><strong class="b">name</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="tag__entry__2">string</td>
 			</tr>
 		</tbody></table>
 </div>
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title136" id="user">
-<h3 class="title topictitle3" id="ariaid-title136">User</h3>
+<article class="topic nested2" aria-labelledby="ariaid-title30" id="user">
+<h3 class="title topictitle3" id="ariaid-title30">User</h3>
 <div class="body">
 <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
 			<tr class="row">
@@ -1936,42 +1851,42 @@ operation.deprecated
 			</tr>
 		</thead><tbody class="tbody">
 			<tr class="row">
-				<td class="entry align-left" headers="user__entry__1"><strong class="b">email</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="user__entry__1"><strong class="b">email</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="user__entry__2"></td>
 				<td class="entry align-left" headers="user__entry__3">string</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="user__entry__1"><strong class="b">firstName</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="user__entry__1"><strong class="b">firstName</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="user__entry__2"></td>
 				<td class="entry align-left" headers="user__entry__3">string</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="user__entry__1"><strong class="b">id</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="user__entry__1"><strong class="b">id</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="user__entry__2"></td>
 				<td class="entry align-left" headers="user__entry__3">integer (int64)</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="user__entry__1"><strong class="b">lastName</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="user__entry__1"><strong class="b">lastName</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="user__entry__2"></td>
 				<td class="entry align-left" headers="user__entry__3">string</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="user__entry__1"><strong class="b">password</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="user__entry__1"><strong class="b">password</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="user__entry__2"></td>
 				<td class="entry align-left" headers="user__entry__3">string</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="user__entry__1"><strong class="b">phone</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="user__entry__1"><strong class="b">phone</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="user__entry__2"></td>
 				<td class="entry align-left" headers="user__entry__3">string</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="user__entry__1"><strong class="b">userStatus</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="user__entry__1"><strong class="b">userStatus</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="user__entry__2">User Status</td>
 				<td class="entry align-left" headers="user__entry__3">integer (int32)</td>
 			</tr>
 			<tr class="row">
-				<td class="entry align-left" headers="user__entry__1"><strong class="b">username</strong> <span class="undefined_element"></span><em class="i">optional</em></td>
+				<td class="entry align-left" headers="user__entry__1"><strong class="b">username</strong> &#xD;<em class="i">optional</em></td>
 				<td class="entry align-left" headers="user__entry__2"></td>
 				<td class="entry align-left" headers="user__entry__3">string</td>
 			</tr>
@@ -1981,12 +1896,12 @@ operation.deprecated
 
 </article>
 
-<article class="topic nested1" aria-labelledby="ariaid-title137" id="securityscheme">
-<h2 class="title topictitle2" id="ariaid-title137">Security</h2>
+<article class="topic nested1" aria-labelledby="ariaid-title31" id="securityscheme">
+<h2 class="title topictitle2" id="ariaid-title31">Security</h2>
 <div class="body">
 </div>
-<article class="topic nested2" aria-labelledby="ariaid-title138" id="petstore-auth">
-<h3 class="title topictitle3" id="ariaid-title138">petstore_auth</h3>
+<article class="topic nested2" aria-labelledby="ariaid-title32" id="petstore-auth">
+<h3 class="title topictitle3" id="ariaid-title32">petstore_auth</h3>
 <div class="body">
 <p class="p">
 	<em class="i">Type</em> : oauth2
@@ -2011,8 +1926,8 @@ operation.deprecated
 </div>
 </article>
 
-<article class="topic nested2" aria-labelledby="ariaid-title139" id="api-key">
-<h3 class="title topictitle3" id="ariaid-title139">api_key</h3>
+<article class="topic nested2" aria-labelledby="ariaid-title33" id="api-key">
+<h3 class="title topictitle3" id="ariaid-title33">api_key</h3>
 <div class="body">
 <p class="p">
 	<em class="i">Type</em> : apiKey

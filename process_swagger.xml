@@ -20,7 +20,7 @@
 			@param file	- The Swagger Markdown file to clean up
 		
 		-->
-		<scriptdef language="javascript" name="strip-swagger-anchors" src="${dita.plugin.fox.jason.passthrough.swagger.dir}/resource/strip-anchors.js">
+		<scriptdef language="javascript" name="format-swagger-markdown" src="${dita.plugin.fox.jason.passthrough.swagger.dir}/resource/format-markdown.js">
 			<attribute name="file"/>
 		</scriptdef>
 		<!--
@@ -54,7 +54,9 @@
 					<arg value="${dita.plugin.fox.jason.passthrough.swagger.dir}/cfg/config.properties"/>
 				</java>
 
-				<strip-swagger-anchors file="${swagger.temp.file}.md"/>
+				<format-swagger-markdown file="${swagger.temp.file}.md"/>
+
+				<!--copy file="${swagger.temp.file}.md" tofile="${output.dir}/test.md"/-->
 				<add-pandoc-file src="${swagger.temp.file}.md" dest="@{dest}" title="@{title}"/>
 			</sequential>
 		</macrodef>
