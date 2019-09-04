@@ -30,11 +30,13 @@
 			@param src - The input file to convert to DITA
 			@param dest - The output file location
 			@param title - The title of the converted file
+			@param metadata - The metadata of the converted file
 		-->
 		<macrodef name="add-swagger-file">
 			<attribute name="src" />
 			<attribute name="dest" />
 			<attribute name="title" />
+			<attribute name="metadata"/>
 			<sequential>
 				<echo if:set="swagger.installed" taskname="swagger" level="info" message="Processing @{src}"/>
 
@@ -57,7 +59,7 @@
 				<format-swagger-markdown file="${swagger.temp.file}.md"/>
 
 				<!--copy file="${swagger.temp.file}.md" tofile="${output.dir}/test.md"/-->
-				<add-pandoc-file src="${swagger.temp.file}.md" dest="@{dest}" title="@{title}"/>
+				<add-pandoc-file src="${swagger.temp.file}.md" dest="@{dest}" title="@{title}" metadata="@{metadata}"/>
 			</sequential>
 		</macrodef>
 	</target>
