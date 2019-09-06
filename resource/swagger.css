@@ -11,6 +11,11 @@ pre[class*="swagger-"]{
     border-radius: 3px;
 }
 
+pre[class*="swagger-"]{
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+
 span.swagger-verb {
 	color: white;
     border-radius: 3px;
