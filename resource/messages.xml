@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  This file is part of the DITA-OT Swagger DITA Plug-in project.
+  See the accompanying LICENSE file for applicable licenses.
+-->
+<messages xmlns:dita="http://dita-ot.sourceforge.net">
+  <message id="SWAG001F" type="FATAL">
+    <reason>SwaggerGen failed to generate documentation:&#xD;&#xD; %1.</reason>
+    <response>Check that your swagger file is valid.</response>
+  </message>
+</messages>
