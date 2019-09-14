@@ -33,6 +33,7 @@ rm dita-ot-3.3.zip
 dita --install https://github.com/doctales/org.doctales.xmltask/archive/master.zip
 dita --install https://github.com/jason-fox/fox.jason.passthrough/archive/master.zip
 dita --install https://github.com/jason-fox/fox.jason.passthrough.pandoc/archive/master.zip
+dita --install https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
 dita --install https://github.com/jason-fox/fox.jason.passthrough.swagger/archive/master.zip
 ```
 
