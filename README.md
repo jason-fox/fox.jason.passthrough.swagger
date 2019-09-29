@@ -126,7 +126,7 @@ shown:
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap>
     ...etc
-    <appendices toc="yes" print="no">
+    <appendices toc="yes" print="yes">
       <topicmeta>
         <navtitle>Appendices</navtitle>
       </topicmeta>
