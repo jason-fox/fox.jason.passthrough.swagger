@@ -2,7 +2,7 @@
 <project basedir="." default="unit-test">
 	<import file="../bootstrap.xml"/>
 	<description>
-		Expect that a local swagger file  with examples is copied to an HTML build
+		Expect that a swagger file generates as HTML
 	</description>
 	<target name="unit-test">
 		<exec-html5/>

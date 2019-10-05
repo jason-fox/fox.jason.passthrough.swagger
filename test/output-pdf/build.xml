@@ -2,7 +2,7 @@
 <project basedir="." default="unit-test">
 	<import file="../bootstrap.xml"/>
 	<description>
-		Expect that a local passthrough file is copied to a PDF build
+		Expect that a swagger file generates as a PDF
 	</description>
 	<target name="unit-test">
 		<exec-pdf/>
