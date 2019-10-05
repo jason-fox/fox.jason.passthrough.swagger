@@ -508,14 +508,22 @@
               <tbody>
                 <row>
                   <entry align="left" colname="c1">
-                    <b>Path</b>
+                    <lines>
+                      <b>Path</b>
+                    </lines>
                   </entry>
                   <entry align="left" colname="c2">
-                    <b>alias</b>
-                    <i>required</i>
+                    <lines>
+                      <b>alias</b>
+                      <i>required</i>
+                    </lines>
                   </entry>
-                  <entry align="left" colname="c3">The extension name.</entry>
-                  <entry align="left" colname="c4">string</entry>
+                  <entry align="left" colname="c3">
+                    <lines>The extension name.</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
                 </row>
               </tbody>
             </tgroup>
@@ -632,36 +640,60 @@
               <tbody>
                 <row>
                   <entry align="left" colname="c1">
-                    <b>Header</b>
+                    <lines>
+                      <b>Header</b>
+                    </lines>
                   </entry>
                   <entry align="left" colname="c2">
-                    <b>X-Auth-Token</b>
-                    <i>required</i>
+                    <lines>
+                      <b>X-Auth-Token</b>
+                      <i>required</i>
+                    </lines>
                   </entry>
-                  <entry align="left" colname="c3">A valid authentication token.</entry>
-                  <entry align="left" colname="c4">string</entry>
+                  <entry align="left" colname="c3">
+                    <lines>A valid authentication token.</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
                 </row>
                 <row>
                   <entry align="left" colname="c1">
-                    <b>Query</b>
+                    <lines>
+                      <b>Query</b>
+                    </lines>
                   </entry>
                   <entry align="left" colname="c2">
-                    <b>limit</b>
-                    <i>optional</i>
+                    <lines>
+                      <b>limit</b>
+                      <i>optional</i>
+                    </lines>
                   </entry>
-                  <entry align="left" colname="c3">The page size.</entry>
-                  <entry align="left" colname="c4">integer</entry>
+                  <entry align="left" colname="c3">
+                    <lines>The page size.</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>integer</lines>
+                  </entry>
                 </row>
                 <row>
                   <entry align="left" colname="c1">
-                    <b>Query</b>
+                    <lines>
+                      <b>Query</b>
+                    </lines>
                   </entry>
                   <entry align="left" colname="c2">
-                    <b>marker</b>
-                    <i>optional</i>
+                    <lines>
+                      <b>marker</b>
+                      <i>optional</i>
+                    </lines>
                   </entry>
-                  <entry align="left" colname="c3">The ID of the last item in the previous list.</entry>
-                  <entry align="left" colname="c4">string</entry>
+                  <entry align="left" colname="c3">
+                    <lines>The ID of the last item in the previous list.</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
                 </row>
               </tbody>
             </tgroup>

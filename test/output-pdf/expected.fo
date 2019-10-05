@@ -206,26 +206,34 @@
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Body</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Body</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">body</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">body</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">Pet object that needs to be added to the store</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">Pet object that needs to be added to the store</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
+                                  <fo:inline>on page
+                                    <fo:inline>
+                                      <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
+                                    </fo:inline>
                                   </fo:inline>
-                                </fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
@@ -442,26 +450,34 @@
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Body</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Body</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">body</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">body</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">Pet object that needs to be added to the store</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">Pet object that needs to be added to the store</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
+                                  <fo:inline>on page
+                                    <fo:inline>
+                                      <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
+                                    </fo:inline>
                                   </fo:inline>
-                                </fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
@@ -710,20 +726,28 @@
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Query</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Query</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">status</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">status</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">Status values that need to be considered for filter</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">Status values that need to be considered for filter</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">&lt; enum (available, pending, sold) &gt; array(multi)</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">&lt; enum (available, pending, sold) &gt; array(multi)</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                         </fo:table-body>
@@ -939,20 +963,28 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Query</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Query</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">tags</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">tags</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">Tags to filter by</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">Tags to filter by</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">&lt; string &gt; array(multi)</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">&lt; string &gt; array(multi)</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                         </fo:table-body>
@@ -1160,58 +1192,82 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Path</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Path</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">petId</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">petId</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">ID of pet that needs to be updated</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">ID of pet that needs to be updated</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int64)</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int64)</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">FormData</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">FormData</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">name</fo:inline>
-                                <fo:inline font-style="italic">optional</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">name</fo:inline>
+                                  <fo:inline font-style="italic">optional</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">Updated name of the pet</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">Updated name of the pet</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">FormData</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">FormData</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">status</fo:inline>
-                                <fo:inline font-style="italic">optional</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">status</fo:inline>
+                                  <fo:inline font-style="italic">optional</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">Updated status of the pet</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">Updated status of the pet</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                         </fo:table-body>
@@ -1423,20 +1479,28 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Path</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Path</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">petId</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">petId</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">ID of pet to return</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">ID of pet to return</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int64)</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int64)</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                         </fo:table-body>
@@ -1651,39 +1715,55 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Header</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Header</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">api_key</fo:inline>
-                                <fo:inline font-style="italic">optional</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">api_key</fo:inline>
+                                  <fo:inline font-style="italic">optional</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Path</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Path</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">petId</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">petId</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">Pet id to delete</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">Pet id to delete</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int64)</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int64)</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                         </fo:table-body>
@@ -1885,58 +1965,82 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Path</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Path</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">petId</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">petId</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">ID of pet to update</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">ID of pet to update</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int64)</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int64)</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">FormData</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">FormData</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">additionalMetadata</fo:inline>
-                                <fo:inline font-style="italic">optional</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">additionalMetadata</fo:inline>
+                                  <fo:inline font-style="italic">optional</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">Additional data to pass to server</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">Additional data to pass to server</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">FormData</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">FormData</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">file</fo:inline>
-                                <fo:inline font-style="italic">optional</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">file</fo:inline>
+                                  <fo:inline font-style="italic">optional</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">file to upload</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">file to upload</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">file</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">file</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                         </fo:table-body>
@@ -2278,26 +2382,34 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Body</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Body</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">body</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">body</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">order placed for purchasing the pet</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">order placed for purchasing the pet</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_19">Order</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:basic-link color="blue" internal-destination="unique_19">Order</fo:basic-link>
+                                  <fo:inline>on page
+                                    <fo:inline>
+                                      <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
+                                    </fo:inline>
                                   </fo:inline>
-                                </fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
@@ -2462,20 +2574,28 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Path</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Path</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">orderId</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">orderId</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">ID of pet that needs to be fetched</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">ID of pet that needs to be fetched</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int64)</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int64)</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                         </fo:table-body>
@@ -2652,20 +2772,28 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Path</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Path</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">orderId</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">orderId</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">ID of the order that needs to be deleted</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">ID of the order that needs to be deleted</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int64)</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int64)</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                         </fo:table-body>
@@ -2822,26 +2950,34 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Body</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Body</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">body</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">body</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">Created user object</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">Created user object</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
+                                  <fo:inline>on page
+                                    <fo:inline>
+                                      <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
+                                    </fo:inline>
                                   </fo:inline>
-                                </fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
@@ -2980,26 +3116,34 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Body</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Body</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">body</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">body</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">List of user object</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">List of user object</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">&lt;
-                                <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
-                                  </fo:inline>
-                                </fo:inline>&gt; array</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">&lt;
+                                  <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
+                                  <fo:inline>on page
+                                    <fo:inline>
+                                      <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
+                                    </fo:inline>
+                                  </fo:inline>&gt; array</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                         </fo:table-body>
@@ -3137,26 +3281,34 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Body</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Body</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">body</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">body</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">List of user object</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">List of user object</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">&lt;
-                                <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
-                                  </fo:inline>
-                                </fo:inline>&gt; array</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">&lt;
+                                  <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
+                                  <fo:inline>on page
+                                    <fo:inline>
+                                      <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
+                                    </fo:inline>
+                                  </fo:inline>&gt; array</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                         </fo:table-body>
@@ -3294,39 +3446,55 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Query</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Query</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">password</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">password</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">The password for login in clear text</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">The password for login in clear text</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Query</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Query</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">username</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">username</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">The user name for login</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">The user name for login</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                         </fo:table-body>
@@ -3361,17 +3529,23 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">200</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">200</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">successful operation 
-                                <fo:inline font-weight="bold">Headers</fo:inline>: 
-                                <fo:inline font-family="MONOSPACE">X-Rate-Limit</fo:inline>(integer (int32)) : calls per hour allowed by the user. 
-                                <fo:inline font-family="MONOSPACE">X-Expires-After</fo:inline>(string (date-time)) : date in UTC when token expires.</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">successful operation 
+                                  <fo:inline font-weight="bold">Headers</fo:inline>: 
+                                  <fo:inline font-family="MONOSPACE">X-Rate-Limit</fo:inline>(integer (int32)) : calls per hour allowed by the user. 
+                                  <fo:inline font-family="MONOSPACE">X-Expires-After</fo:inline>(string (date-time)) : date in UTC when token expires.</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                           <fo:table-row keep-together.within-page="always">
@@ -3579,20 +3753,28 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Path</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Path</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">username</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">username</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">The name that needs to be fetched. Use user1 for testing.</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">The name that needs to be fetched. Use user1 for testing.</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                         </fo:table-body>
@@ -3769,45 +3951,61 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Path</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Path</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">username</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">username</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">name that need to be updated</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">name that need to be updated</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Body</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Body</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">body</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">body</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">Updated user object</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">Updated user object</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
+                                  <fo:inline>on page
+                                    <fo:inline>
+                                      <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
+                                    </fo:inline>
                                   </fo:inline>
-                                </fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
@@ -3965,20 +4163,28 @@ operation.deprecated</fo:block>
                           <fo:table-row keep-together.within-page="always">
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">Path</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">Path</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:inline font-weight="bold">username</fo:inline>
-                                <fo:inline font-style="italic">required</fo:inline>
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                                  <fo:inline font-weight="bold">username</fo:inline>
+                                  <fo:inline font-style="italic">required</fo:inline>
+                                </fo:block>
                               </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">The name that needs to be deleted</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">The name that needs to be deleted</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
-                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                              <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                              </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                         </fo:table-body>
@@ -4125,34 +4331,46 @@ operation.deprecated</fo:block>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell border-before-color="black" text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">code</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">code</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell border-before-color="black" text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int32)</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int32)</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">message</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">message</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">type</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">type</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                     </fo:table-body>
@@ -4189,23 +4407,31 @@ operation.deprecated</fo:block>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell border-before-color="black" text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">id</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">id</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell border-before-color="black" text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int64)</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int64)</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">name</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">name</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                     </fo:table-body>
@@ -4246,88 +4472,124 @@ operation.deprecated</fo:block>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell border-before-color="black" text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">complete</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">complete</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell border-before-color="black" text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">Default</fo:inline>:
-                            <fo:inline font-family="MONOSPACE">false</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">Default</fo:inline>:
+                              <fo:inline font-family="MONOSPACE">false</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell border-before-color="black" text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">boolean</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">boolean</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">id</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">id</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int64)</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int64)</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">petId</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">petId</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int64)</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int64)</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">quantity</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">quantity</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int32)</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int32)</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">shipDate</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">shipDate</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string (date-time)</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string (date-time)</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">status</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">status</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">Order Status</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">Order Status</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">enum (placed, approved, delivered)</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">enum (placed, approved, delivered)</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                     </fo:table-body>
@@ -4368,101 +4630,137 @@ operation.deprecated</fo:block>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell border-before-color="black" text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">category</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">category</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell border-before-color="black" text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell border-before-color="black" text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:basic-link color="blue" internal-destination="unique_32">Category</fo:basic-link>
-                            <fo:inline>on page
-                              <fo:inline>
-                                <fo:page-number-citation ref-id="unique_32"></fo:page-number-citation>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:basic-link color="blue" internal-destination="unique_32">Category</fo:basic-link>
+                              <fo:inline>on page
+                                <fo:inline>
+                                  <fo:page-number-citation ref-id="unique_32"></fo:page-number-citation>
+                                </fo:inline>
                               </fo:inline>
-                            </fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">id</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">id</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int64)</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int64)</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">name</fo:inline>
-                            <fo:inline font-style="italic">required</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">name</fo:inline>
+                              <fo:inline font-style="italic">required</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">Example</fo:inline>:
-                            <fo:inline font-family="MONOSPACE">"doggie"</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">Example</fo:inline>:
+                              <fo:inline font-family="MONOSPACE">"doggie"</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">photoUrls</fo:inline>
-                            <fo:inline font-style="italic">required</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">photoUrls</fo:inline>
+                              <fo:inline font-style="italic">required</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">&lt; string &gt; array</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">&lt; string &gt; array</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">status</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">status</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">pet status in the store</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">pet status in the store</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">enum (available, pending, sold)</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">enum (available, pending, sold)</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">tags</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">tags</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">&lt;
-                            <fo:basic-link color="blue" internal-destination="unique_33">Tag</fo:basic-link>
-                            <fo:inline>on page
-                              <fo:inline>
-                                <fo:page-number-citation ref-id="unique_33"></fo:page-number-citation>
-                              </fo:inline>
-                            </fo:inline>&gt; array</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">&lt;
+                              <fo:basic-link color="blue" internal-destination="unique_33">Tag</fo:basic-link>
+                              <fo:inline>on page
+                                <fo:inline>
+                                  <fo:page-number-citation ref-id="unique_33"></fo:page-number-citation>
+                                </fo:inline>
+                              </fo:inline>&gt; array</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                     </fo:table-body>
@@ -4499,23 +4797,31 @@ operation.deprecated</fo:block>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell border-before-color="black" text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">id</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">id</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell border-before-color="black" text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int64)</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int64)</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">name</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">name</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                     </fo:table-body>
@@ -4556,113 +4862,161 @@ operation.deprecated</fo:block>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell border-before-color="black" text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">email</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">email</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell border-before-color="black" text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell border-before-color="black" text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">firstName</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">firstName</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">id</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">id</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int64)</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int64)</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">lastName</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">lastName</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">password</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">password</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">phone</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">phone</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">userStatus</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">userStatus</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">User Status</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">User Status</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">integer (int32)</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">integer (int32)</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                       <fo:table-row keep-together.within-page="always">
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                            <fo:inline font-weight="bold">username</fo:inline>
-                            <fo:inline font-style="italic">optional</fo:inline>
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
+                              <fo:inline font-weight="bold">username</fo:inline>
+                              <fo:inline font-style="italic">optional</fo:inline>
+                            </fo:block>
                           </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain"></fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap"></fo:block>
+                          </fo:block>
                         </fo:table-cell>
                         <fo:table-cell text-align="left">
-                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">string</fo:block>
+                          <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
+                            <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">string</fo:block>
+                          </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
                     </fo:table-body>
