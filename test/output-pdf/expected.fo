@@ -3536,9 +3536,9 @@ operation.deprecated</fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
-                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">successful operation 
-                                  <fo:inline font-weight="bold">Headers</fo:inline>: 
-                                  <fo:inline font-family="MONOSPACE">X-Rate-Limit</fo:inline>(integer (int32)) : calls per hour allowed by the user. 
+                                <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">successful operation
+                                  <fo:inline font-weight="bold">Headers</fo:inline>:
+                                  <fo:inline font-family="MONOSPACE">X-Rate-Limit</fo:inline>(integer (int32)) : calls per hour allowed by the user.
                                   <fo:inline font-family="MONOSPACE">X-Expires-After</fo:inline>(string (date-time)) : date in UTC when token expires.</fo:block>
                               </fo:block>
                             </fo:table-cell>
