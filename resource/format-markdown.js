@@ -24,7 +24,7 @@ function moveAnchors(markdown) {
   for (var i = 0; i < lines.length; i++) {
     if (firstTopic && lines[i].startsWith("# ")){
       text.push(lines[i] + " {.swagger}");
-      firstTopic == false;
+      firstTopic = false;
     } else if (lines[i].startsWith("<a name")) {
       var start = lines[i].indexOf('"') + 1;
       var end = lines[i].indexOf('"', start);
