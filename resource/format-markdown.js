@@ -18,6 +18,7 @@ function moveAnchors(markdown) {
   var id = null;
   var codeblock = true;
   var swaggerVerb = "";
+  var splitLine = [];
   var firstTopic = true;
 
   // Read each line of the Markdown file in turn
@@ -38,8 +39,8 @@ function moveAnchors(markdown) {
       text.push(lines[i] + " {.example}");
     } else if (id !== null && lines[i].startsWith("#")) {
       if(lines[i+1].equals("```")){
-        var arr = lines[i+2].split(' ');
-        var verb =  arr[0].toLowerCase();
+        splitLine = lines[i+2].split(' ');
+        var verb =  splitLine[0].toLowerCase();
         text.push(lines[i] + " {#" + id + " .swagger-" + verb +"}");
       } else { 
         text.push(lines[i] + " {#" + id + "}");
@@ -48,8 +49,8 @@ function moveAnchors(markdown) {
     } else if (lines[i].startsWith("```")){
       if(codeblock){
         if(lines[i].equals("```")){
-          var arr = lines[i+1].split(' ');
-          swaggerVerb = "swagger-" + arr[0].toLowerCase();
+          splitLine = lines[i+1].split(' ');
+          swaggerVerb = "swagger-" + splitLine[0].toLowerCase();
           text.push("```" + swaggerVerb);
         } else {
           text.push(lines[i]);
