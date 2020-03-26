@@ -9,6 +9,10 @@
 
 This is a [DITA-OT Plug-in](https://www.dita-ot.org/plugins) used to auto-create valid DITA-based REST API documentation. The documentation can be generated directly from a [Swagger](https://github.com/swagger-api) file and processed as if it had been written in DITA.
 
+:arrow_forward: [Video from DITA-OT Day 2019](https://youtu.be/cd7XThpkivw)
+
+[![](https://jason-fox.github.io/fox.jason.passthrough.swagger/nothing-video.png)](https://youtu.be/cd7XThpkivw)
+
 <details>
 <summary><strong>Table of Contents</strong></summary>
 
