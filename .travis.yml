@@ -15,7 +15,7 @@ addons:
       secure: "Ms4KtLQRA8OpCCA9jM2bQdT3D1GraTm0vmdnKqKaFpQji1bUWL8cP+TBQ//RosZjBrKNmCq1vByly0KLIk6e8YM7ljDgSpp3bUMgpGa7sS6qvigEivDdotG9pMDjkaje0/N1BamuzY2nlCcyWaticqYAwfsZuoJrxKO40l0E3/upq+K2ADyZeEjU7eOQS0Ey8VrbnNWIolvYSZluoL+SBC/rSWI2VOLpqOyoC3bGDLkD12hSR35a1znz14XLfVY4K787Cyyz8UuV3tZNrtzW0q6tEOku0ACLt92toYSpXzJHOHGBRxPDCD0pxSmjE+X0ZkEwbJiVC8OC7q/lh5WgniU//9J7uFLSKrI4Mz/MdZIDkhpntgnB8dJwMN0KbNrZNNsNiyjJgHomFK5XPLxtefpQc2ezv0U5wERM5xtD5k1zOBljcTYnt3P9gAO2UGwg3mil0oPmq3DI1QhNom0AT86lpyFfKY2vLHa+PtPC80X6AVL7yTlBEazWy4rpp1VJfUxLCLFuqirzTCMqDKbrVyH+Un19i5kBWrTB4N4tpbIe1O3VR2jbI9QIFJh46W2+U3UePKevxMoOnOQ7aV3aP1jHhx2RsRQJh9+wDWckQbs3jlmOkray32QBsAEQCw19i5HrqOfnFB8Tj8RkXTglIp+tqm84CC2r9Nx0vrI1umw="
 
 env:
-  - DITA_OT=3.4
+  - DITA_OT=3.4.1
 
 before_install:
   - sudo wget https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-1-amd64.deb
