@@ -12,6 +12,8 @@
 		Create Swagger processing macros.
 	-->
 	<target name="swagger.process.pre">
+		<property name="passthrough.swagger.jar" value="${dita.plugin.fox.jason.passthrough.swagger.dir}/lib/passthrough-swagger-1.0.jar"/>
+
 		<!--
 
 			Entry point to the JavaScript tidier function which 
@@ -20,9 +22,12 @@
 			@param file	- The Swagger Markdown file to clean up
 		
 		-->
-		<scriptdef language="javascript" name="format-swagger-markdown" src="${dita.plugin.fox.jason.passthrough.swagger.dir}/resource/format-markdown.js">
-			<attribute name="file"/>
-		</scriptdef>
+		<taskdef classname="fox.jason.passthrough.tasks.FormatMarkdownTask" name="format-swagger-markdown" >
+			<classpath>
+				<pathelement location="${passthrough.swagger.jar}"/>
+			</classpath>
+		</taskdef>
+
 		<!--
 			Individual file processing for swagger.
 			Take an input format run swagger against it and convert to DITA

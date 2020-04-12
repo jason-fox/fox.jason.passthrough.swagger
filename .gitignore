@@ -1,6 +1,10 @@
 **/out/**
 **/temp/**
 **/tmp/**
+target/
+classes/
+lib/ant-1.10.7.jar
+lib/ant-launcher-1.10.7.jar
 
 .scannerwork/
 
