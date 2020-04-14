@@ -12,15 +12,7 @@
 		Create Swagger processing macros.
 	-->
 	<target name="swagger.process.pre">
-		<!--
-
-			Entry point to the JavaScript tidier function which 
-			removes HTML anchor tags and adds ids to headers
-
-			@param file	- The Swagger Markdown file to clean up
-		
-		-->
-		<taskdef classname="fox.jason.passthrough.tasks.FormatMarkdownTask" name="format-swagger-markdown"/>
+		<taskdef resource="fox/jason/swagger/antlib.xml"/>
 
 		<!--
 			Individual file processing for swagger.
