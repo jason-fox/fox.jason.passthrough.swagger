@@ -144,7 +144,7 @@ The additional file will be converted to a `*.dita` file and will be added to th
 
 ## License
 
-[Apache 2.0](LICENSE) © 2019 Jason Fox
+[Apache 2.0](LICENSE) © 2019 - 2020 Jason Fox
 
 The Program includes the following additional software components which were obtained under license:
 
