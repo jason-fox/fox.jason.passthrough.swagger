@@ -1,0 +1,1240 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "The IOM RMA REST API supports programmatic access to objects related to the Return Merchandise Authorization process.",
+    "version" : "2.9.4",
+    "title" : "IOM RMA REST API",
+    "contact" : {
+      "name" : "Intershop Communications AG",
+      "url" : "http://intershop.com"
+    }
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/rest/rma",
+  "tags" : [ {
+    "name" : "shop",
+    "description" : "API endpoints, that could be used by the shop."
+  } ],
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "security" : [ {
+    "auth" : [ ]
+  } ],
+  "paths" : {
+    "/shops/{shopName}/orders/{shopOrderNumber}/return-requests" : {
+      "get" : {
+        "tags" : [ "shop" ],
+        "summary" : "getReturnRequests",
+        "description" : "Returns a list of return requests for a given shopName and shopOrderNumber.",
+        "operationId" : "ShopsOrdersReturnRequestsByShopNameAndShopOrderNumberGet",
+        "produces" : [ "application/vnd.intershop.return-request.v1+json" ],
+        "parameters" : [ {
+          "name" : "shopOrderNumber",
+          "in" : "path",
+          "description" : "The order number of the shop",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shopName",
+          "in" : "path",
+          "description" : "The shop name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "headers" : { },
+            "schema" : { }
+            }
+          },
+          "401" : {
+            "description" : "Authentication information is missing or invalid",
+            "schema" : { }
+          },
+          "403" : {
+            "description" : "Forbidden",
+            "schema" : { }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : { }
+          },
+          "406" : {
+            "description" : "Not Acceptable",
+            "schema" : { }
+          }
+        },
+        "deprecated" : false
+      },
+      "post" : {
+        "tags" : [ "shop" ],
+        "summary" : "createReturnRequest",
+        "description" : "Creates a new return request",
+        "operationId" : "ShopsOrdersReturnRequestsByShopNameAndShopOrderNumberPost",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "shopOrderNumber",
+          "in" : "path",
+          "description" : "The order number of the shop",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shopName",
+          "in" : "path",
+          "description" : "The shop name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "description" : "",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/WriteReturnRequest"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Created",
+            "headers" : {
+              "Location" : {
+                "type" : "string"
+              }
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/ErrorReport"
+            }
+          },
+          "401" : {
+            "description" : "Authentication information is missing or invalid",
+            "schema" : { }
+          },
+          "403" : {
+            "description" : "Forbidden",
+            "schema" : { }
+          },
+          "415" : {
+            "description" : "Unsupported Media Type",
+            "schema" : { }
+          },
+          "default" : {
+            "description" : "An unexpected error occured",
+            "schema" : { }
+          }
+        },
+        "deprecated" : false
+      }
+    },
+    "/shops/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions" : {
+      "get" : {
+        "tags" : [ "shop" ],
+        "summary" : "getReturnRequestPositions",
+        "description" : "Returns a list of return request positions for a given returnRequestId, shopName and shopOrderNumber.",
+        "operationId" : "ShopsOrdersReturnRequestsReturnRequestIdPositionsByShopNameAndShopOrderNumberGet",
+        "produces" : [ "application/vnd.intershop.return-request-position.v1+json" ],
+        "parameters" : [ {
+          "name" : "returnRequestId",
+          "in" : "path",
+          "description" : "The return request id of the related order",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "shopOrderNumber",
+          "in" : "path",
+          "description" : "The order number of the shop",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shopName",
+          "in" : "path",
+          "description" : "The shop name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "headers" : { },
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/ReadReturnRequestPosition"
+              }
+            }
+          },
+          "401" : {
+            "description" : "Authentication information is missing or invalid",
+            "schema" : { }
+          },
+          "403" : {
+            "description" : "Forbidden",
+            "schema" : { }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : { }
+          },
+          "406" : {
+            "description" : "Not Acceptable",
+            "schema" : { }
+          }
+        },
+        "deprecated" : false
+      }
+    },
+    "/shops/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}" : {
+      "get" : {
+        "tags" : [ "shop" ],
+        "summary" : "getReturnRequestPosition",
+        "description" : "Returns a return request position for a given returnRequestId, shopName, shopOrderNumber and a returnRequestPositionId.",
+        "operationId" : "ShopsOrdersReturnRequestsReturnRequestIdPositionsReturnRequestPositionIdByShopNameAndShopOrderNumberGet",
+        "produces" : [ "application/vnd.intershop.return-request-position.v1+json" ],
+        "parameters" : [ {
+          "name" : "returnRequestPositionId",
+          "in" : "path",
+          "description" : "The return request position id of the related return request",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "returnRequestId",
+          "in" : "path",
+          "description" : "The return request id of the related order",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "shopOrderNumber",
+          "in" : "path",
+          "description" : "The order number of the shop",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shopName",
+          "in" : "path",
+          "description" : "The shop name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "headers" : { },
+            "schema" : {}
+          },
+          "401" : {
+            "description" : "Authentication information is missing or invalid",
+            "schema" : { }
+          },
+          "403" : {
+            "description" : "Forbidden",
+            "schema" : { }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : { }
+          },
+          "406" : {
+            "description" : "Not Acceptable",
+            "schema" : { }
+          }
+        },
+        "deprecated" : false
+      }
+    },
+    "/shops/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}/items" : {
+      "get" : {
+        "tags" : [ "shop" ],
+        "summary" : "getReturnRequestItems",
+        "description" : "Returns a list of return request position items for a given returnRequestId, shopName and shopOrderNumber.",
+        "operationId" : "ShopsOrdersReturnRequestsReturnRequestIdPositionsReturnRequestPositionIdItemsByShopNameAndShopOrderNumberGet",
+        "produces" : [ "application/vnd.intershop.return-request-item.v1+json" ],
+        "parameters" : [ {
+          "name" : "returnRequestPositionId",
+          "in" : "path",
+          "description" : "The return request position id of the related return request",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "returnRequestId",
+          "in" : "path",
+          "description" : "The return request id of the related order",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "shopOrderNumber",
+          "in" : "path",
+          "description" : "The order number of the shop",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shopName",
+          "in" : "path",
+          "description" : "The shop name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "headers" : { },
+            "schema" : {}
+            }
+          },
+          "401" : {
+            "description" : "Authentication information is missing or invalid",
+            "schema" : { }
+          },
+          "403" : {
+            "description" : "Forbidden",
+            "schema" : { }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : { }
+          },
+          "406" : {
+            "description" : "Not Acceptable",
+            "schema" : { }
+          }
+        },
+        "deprecated" : false
+      }
+    },
+    "/shops/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/custom-attributes" : {
+      "get" : {
+        "tags" : [ "shop" ],
+        "summary" : "getCustomAttributes",
+        "description" : "Returns a list of return request custom attributes for a given returnRequestId, shopName and shopOrderNumber.",
+        "operationId" : "ShopsOrdersReturnRequestsReturnRequestIdCustomAttributesByShopNameAndShopOrderNumberGet",
+        "produces" : [ "application/vnd.intershop.custom-attribute.v1+json" ],
+        "parameters" : [ {
+          "name" : "returnRequestId",
+          "in" : "path",
+          "description" : "The return request id of the related order",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "shopOrderNumber",
+          "in" : "path",
+          "description" : "The order number of the shop",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shopName",
+          "in" : "path",
+          "description" : "The shop name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "headers" : { },
+            "schema" : {}
+            }
+          },
+          "401" : {
+            "description" : "Authentication information is missing or invalid",
+            "schema" : { }
+          },
+          "403" : {
+            "description" : "Forbidden",
+            "schema" : { }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : { }
+          },
+          "406" : {
+            "description" : "Not Acceptable",
+            "schema" : { }
+          }
+        },
+        "deprecated" : false
+      }
+    },
+    "/shops/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/pickup-addresses" : {
+      "get" : {
+        "tags" : [ "shop" ],
+        "summary" : "getReturnRequestPickupAddresses",
+        "description" : "Returns a list of return request pickup addresses for a given returnRequestId, shopName and shopOrderNumber.",
+        "operationId" : "ShopsOrdersReturnRequestsReturnRequestIdPickupAddressesByShopNameAndShopOrderNumberGet",
+        "produces" : [ "application/vnd.intershop.pickup-address.v1+json" ],
+        "parameters" : [ {
+          "name" : "returnRequestId",
+          "in" : "path",
+          "description" : "The return request id of the related order",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "shopOrderNumber",
+          "in" : "path",
+          "description" : "The order number of the shop",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shopName",
+          "in" : "path",
+          "description" : "The shop name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "headers" : { },
+            "schema" : {
+            }
+          },
+          "401" : {
+            "description" : "Authentication information is missing or invalid",
+            "schema" : { }
+          },
+          "403" : {
+            "description" : "Forbidden",
+            "schema" : { }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : { }
+          },
+          "406" : {
+            "description" : "Not Acceptable",
+            "schema" : { }
+          }
+        },
+        "deprecated" : false
+      }
+    },
+    "/shops/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/approvals" : {
+      "post" : {
+        "tags" : [ "shop" ],
+        "summary" : "createApproval",
+        "description" : "Creates a new approval",
+        "operationId" : "ShopsOrdersReturnRequestsReturnRequestIdApprovalsByShopNameAndShopOrderNumberPost",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "returnRequestId",
+          "in" : "path",
+          "description" : "The return request id of the related order",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "shopOrderNumber",
+          "in" : "path",
+          "description" : "The order number of the shop",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shopName",
+          "in" : "path",
+          "description" : "The shop name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "description" : "",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/WriteApproval"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Created",
+            "headers" : {
+              "Location" : {
+                "type" : "string"
+              }
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/ErrorReport"
+            }
+          },
+          "401" : {
+            "description" : "Authentication information is missing or invalid",
+            "schema" : { }
+          },
+          "403" : {
+            "description" : "Forbidden",
+            "schema" : { }
+          },
+          "415" : {
+            "description" : "Unsupported Media Type",
+            "schema" : { }
+          },
+          "default" : {
+            "description" : "An unexpected error occured",
+            "schema" : { }
+          }
+        },
+        "deprecated" : false
+      }
+    },
+    "/shops/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/contact-persons" : {
+      "get" : {
+        "tags" : [ "shop" ],
+        "summary" : "getContactPersons",
+        "description" : "Returns a list of return request contact persons for a given returnRequestId, shopName and shopOrderNumber.",
+        "operationId" : "ShopsOrdersReturnRequestsReturnRequestIdContactPersonsByShopNameAndShopOrderNumberGet",
+        "produces" : [ "application/vnd.intershop.contact-person.v1+json" ],
+        "parameters" : [ {
+          "name" : "returnRequestId",
+          "in" : "path",
+          "description" : "The return request id of the related order",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "shopOrderNumber",
+          "in" : "path",
+          "description" : "The order number of the shop",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shopName",
+          "in" : "path",
+          "description" : "The shop name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "headers" : { },
+            "schema" : {
+              }
+            }
+          },
+          "401" : {
+            "description" : "Authentication information is missing or invalid",
+            "schema" : { }
+          },
+          "403" : {
+            "description" : "Forbidden",
+            "schema" : { }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : { }
+          },
+          "406" : {
+            "description" : "Not Acceptable",
+            "schema" : { }
+          }
+        },
+        "deprecated" : false
+      }
+    },
+    "/shops/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}" : {
+      "get" : {
+        "tags" : [ "shop" ],
+        "summary" : "getReturnRequest",
+        "description" : "Returns a return request for a given shopName, shopOrderNumber and returnRequestId.",
+        "operationId" : "ShopsOrdersReturnRequestsReturnRequestIdByShopNameAndShopOrderNumberGet",
+        "produces" : [ "application/vnd.intershop.return-request.v1+json" ],
+        "parameters" : [ {
+          "name" : "returnRequestId",
+          "in" : "path",
+          "description" : "The return request id of the related order",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "shopOrderNumber",
+          "in" : "path",
+          "description" : "The order number of the shop",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shopName",
+          "in" : "path",
+          "description" : "The shop name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "headers" : { },
+            "schema" : {
+              "$ref" : "#/definitions/ReadReturnRequest"
+            }
+          },
+          "401" : {
+            "description" : "Authentication information is missing or invalid",
+            "schema" : { }
+          },
+          "403" : {
+            "description" : "Forbidden",
+            "schema" : { }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : { }
+          },
+          "406" : {
+            "description" : "Not Acceptable",
+            "schema" : { }
+          }
+        },
+        "deprecated" : false
+      }
+    }
+  },
+  "securityDefinitions" : {
+    "auth" : {
+      "type" : "basic"
+    }
+  },
+  "definitions" : {
+    "Error" : {
+      "type" : "object",
+      "required" : [ "code", "message" ],
+      "properties" : {
+        "code" : {
+          "type" : "string",
+          "example" : "VALIDATION_EXCEPTION",
+          "description" : "Exception / Error code"
+        },
+        "message" : {
+          "type" : "string",
+          "example" : "Attribute XYZ is mandatory",
+          "description" : "Exception / Error message"
+        },
+        "value" : {
+          "type" : "object",
+          "description" : "Value which caused the exception / error",
+          "properties" : { }
+        }
+      },
+      "title" : "Error"
+    },
+    "ErrorReport" : {
+      "type" : "object",
+      "properties" : {
+        "status" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 400,
+          "description" : "The HTTP status code applicable to this problem, expressed as a string value"
+        },
+        "errors" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Error"
+          }
+        }
+      },
+      "title" : "ErrorReport",
+      "description" : "Detailed information about what went wrong"
+    },
+    "WriteCustomAttribute" : {
+      "type" : "object",
+      "required" : [ "key", "value" ],
+      "properties" : {
+        "key" : {
+          "type" : "string",
+          "example" : "Example Key",
+          "description" : "The key of a custom attribute.",
+          "minLength" : 1,
+          "maxLength" : 250
+        },
+        "value" : {
+          "type" : "string",
+          "example" : "Example Value",
+          "description" : "The value of a custom attribute.",
+          "minLength" : 1,
+          "maxLength" : 1000
+        }
+      },
+      "title" : "WriteCustomAttribute",
+      "description" : "Represents a custom attribute (key/value pair) of a return request from an order of a shop."
+    },
+    "WritePickupAddress" : {
+      "type" : "object",
+      "required" : [ "city", "countryCode", "lastName", "postCode", "streetName" ],
+      "properties" : {
+        "company" : {
+          "type" : "string",
+          "example" : "Intershop Communication AG",
+          "description" : "The name of the company of the pickup adress.",
+          "minLength" : 1,
+          "maxLength" : 100
+        },
+        "firstName" : {
+          "type" : "string",
+          "example" : "John",
+          "description" : "The first name related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 50
+        },
+        "lastName" : {
+          "type" : "string",
+          "example" : "Doe",
+          "description" : "The last name related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 50
+        },
+        "streetName" : {
+          "type" : "string",
+          "example" : "Alexstraße",
+          "description" : "The name of the street related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 100
+        },
+        "houseNumber" : {
+          "type" : "string",
+          "example" : "28",
+          "description" : "The house number related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 20
+        },
+        "postCode" : {
+          "type" : "string",
+          "example" : "12053",
+          "description" : "The post code related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 25
+        },
+        "city" : {
+          "type" : "string",
+          "example" : "Berlin",
+          "description" : "The city name related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 100
+        },
+        "countryCode" : {
+          "type" : "string",
+          "example" : "DEU",
+          "description" : "The ISO 3166-1 alpha-3 code for the country name related to the pickup address."
+        },
+        "district" : {
+          "type" : "string",
+          "example" : "Berlin",
+          "description" : "The district related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 100
+        },
+        "additionFirstLine" : {
+          "type" : "string",
+          "example" : "Finanz",
+          "description" : "The first addition line related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 100
+        },
+        "additionSecondLine" : {
+          "type" : "string",
+          "example" : "3.Floor",
+          "description" : "The second addition line related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 100
+        }
+      },
+      "title" : "WritePickupAddress",
+      "description" : "Represents a pickup address related to the return request from an order of a shop."
+    },
+    "WriteReturnRequest" : {
+      "type" : "object",
+      "required" : [ "positions", "type" ],
+      "properties" : {
+        "type" : {
+          "$ref" : "#/definitions/Type"
+        },
+        "rmaNumber" : {
+          "type" : "string",
+          "example" : "10901095",
+          "description" : "The actual number of the return request.",
+          "minLength" : 1,
+          "maxLength" : 50
+        },
+        "comment" : {
+          "type" : "string",
+          "example" : "The battery is draining quickly",
+          "description" : "The comment of the return request.",
+          "minLength" : 0,
+          "maxLength" : 255
+        },
+        "positions" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/WriteReturnRequestPosition"
+          },
+          "maxItems" : 2147483647,
+          "minItems" : 1
+        },
+        "pickupAddress" : {
+          "$ref" : "#/definitions/WritePickupAddress"
+        },
+        "customAttributes" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/WriteCustomAttribute"
+          }
+        }
+      },
+      "title" : "WriteReturnRequest",
+      "description" : "Represents a return request from a shop."
+    },
+    "WriteReturnRequestItem" : {
+      "type" : "object",
+      "required" : [ "productSerialNumber" ],
+      "properties" : {
+        "productSerialNumber" : {
+          "type" : "string",
+          "example" : "W88401231AX",
+          "description" : "The serial number of the product.",
+          "minLength" : 1,
+          "maxLength" : 70
+        }
+      },
+      "title" : "WriteReturnRequestItem",
+      "description" : "Represents a return request item of a return request from an order of a shop."
+    },
+    "WriteReturnRequestPosition" : {
+      "type" : "object",
+      "required" : [ "positionNumber", "productNumber", "quantity", "reason" ],
+      "properties" : {
+        "positionNumber" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 1,
+          "description" : "The posistion number as used by the shop."
+        },
+        "productNumber" : {
+          "type" : "string",
+          "example" : "20180303123",
+          "description" : "The product number as used by the shop.",
+          "minLength" : 1,
+          "maxLength" : 50
+        },
+        "reason" : {
+          "type" : "string",
+          "example" : "RET100",
+          "description" : "The reason for the return."
+        },
+        "quantity" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 1,
+          "description" : "The quantity of the related product by the shop.",
+          "minimum" : 1
+        },
+        "items" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/WriteReturnRequestItem"
+          }
+        }
+      },
+      "title" : "WriteReturnRequestPosition",
+      "description" : "Represents a return request position of a return request from an order of a shop."
+    },
+    "Link" : {
+      "type" : "object",
+      "properties" : {
+        "href" : {
+          "type" : "string"
+        },
+        "rel" : {
+          "type" : "string"
+        }
+      },
+      "title" : "Link"
+    },
+    "ReadReturnRequestPosition" : {
+      "type" : "object",
+      "required" : [ "positionNumber", "productNumber", "quantity", "reason" ],
+      "properties" : {
+        "links" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Link"
+          }
+        },
+        "positionNumber" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 1,
+          "description" : "The posistion number as used by the shop."
+        },
+        "productNumber" : {
+          "type" : "string",
+          "example" : "20180303123",
+          "description" : "The product number as used by the shop.",
+          "minLength" : 1,
+          "maxLength" : 50
+        },
+        "reason" : {
+          "type" : "string",
+          "example" : "RET100",
+          "description" : "The reason for the return."
+        },
+        "quantity" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 1,
+          "description" : "The quantity of the related product by the shop.",
+          "minimum" : 1
+        },
+        "id" : {
+          "type" : "integer",
+          "format" : "int64",
+          "example" : 10000,
+          "description" : "The return request position identifier."
+        },
+        "productName" : {
+          "type" : "string",
+          "example" : "test_product_1",
+          "description" : "The product name as used by the shop."
+        },
+        "supplierProductNumber" : {
+          "type" : "string",
+          "example" : "20180303123",
+          "description" : "The article number as used by the supplier."
+        }
+      },
+      "title" : "ReadReturnRequestPosition",
+      "description" : "Represents a return request position of a return request from an order of a shop."
+    },
+    "ReadReturnRequestItem" : {
+      "type" : "object",
+      "required" : [ "productSerialNumber" ],
+      "properties" : {
+        "links" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Link"
+          }
+        },
+        "productSerialNumber" : {
+          "type" : "string",
+          "example" : "W88401231AX",
+          "description" : "The serial number of the product.",
+          "minLength" : 1,
+          "maxLength" : 70
+        },
+        "id" : {
+          "type" : "integer",
+          "format" : "int64",
+          "example" : 10000,
+          "description" : "The return request item identifier."
+        }
+      },
+      "title" : "ReadReturnRequestItem",
+      "description" : "Represents a return request item of a return request from an order of a shop."
+    },
+    "ReadCustomAttribute" : {
+      "type" : "object",
+      "required" : [ "key", "value" ],
+      "properties" : {
+        "links" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Link"
+          }
+        },
+        "key" : {
+          "type" : "string",
+          "example" : "Example Key",
+          "description" : "The key of a custom attribute.",
+          "minLength" : 1,
+          "maxLength" : 250
+        },
+        "value" : {
+          "type" : "string",
+          "example" : "Example Value",
+          "description" : "The value of a custom attribute.",
+          "minLength" : 1,
+          "maxLength" : 1000
+        },
+        "id" : {
+          "type" : "integer",
+          "format" : "int64",
+          "example" : 10000,
+          "description" : "The custom attribute identifier."
+        }
+      },
+      "title" : "ReadCustomAttribute",
+      "description" : "Represents a custom attribute (key/value pair) of a return request from an order of a shop."
+    },
+    "ReadPickupAddress" : {
+      "type" : "object",
+      "required" : [ "city", "countryCode", "lastName", "postCode", "streetName" ],
+      "properties" : {
+        "links" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Link"
+          }
+        },
+        "company" : {
+          "type" : "string",
+          "example" : "Intershop Communication AG",
+          "description" : "The name of the company of the pickup adress.",
+          "minLength" : 1,
+          "maxLength" : 100
+        },
+        "firstName" : {
+          "type" : "string",
+          "example" : "John",
+          "description" : "The first name related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 50
+        },
+        "lastName" : {
+          "type" : "string",
+          "example" : "Doe",
+          "description" : "The last name related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 50
+        },
+        "streetName" : {
+          "type" : "string",
+          "example" : "Alexstraße",
+          "description" : "The name of the street related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 100
+        },
+        "houseNumber" : {
+          "type" : "string",
+          "example" : "28",
+          "description" : "The house number related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 20
+        },
+        "postCode" : {
+          "type" : "string",
+          "example" : "12053",
+          "description" : "The post code related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 25
+        },
+        "city" : {
+          "type" : "string",
+          "example" : "Berlin",
+          "description" : "The city name related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 100
+        },
+        "countryCode" : {
+          "type" : "string",
+          "example" : "DEU",
+          "description" : "The ISO 3166-1 alpha-3 code for the country name related to the pickup address."
+        },
+        "district" : {
+          "type" : "string",
+          "example" : "Berlin",
+          "description" : "The district related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 100
+        },
+        "additionFirstLine" : {
+          "type" : "string",
+          "example" : "Finanz",
+          "description" : "The first addition line related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 100
+        },
+        "additionSecondLine" : {
+          "type" : "string",
+          "example" : "3.Floor",
+          "description" : "The second addition line related to the pickup address.",
+          "minLength" : 1,
+          "maxLength" : 100
+        },
+        "id" : {
+          "type" : "integer",
+          "format" : "int64",
+          "example" : 10000,
+          "description" : "The pickup address identifier."
+        }
+      },
+      "title" : "ReadPickupAddress",
+      "description" : "Represents a pickup address related to the return request from an order of a shop."
+    },
+    "ReadReturnRequest" : {
+      "type" : "object",
+      "required" : [ "type" ],
+      "properties" : {
+        "links" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Link"
+          }
+        },
+        "type" : {
+          "$ref" : "#/definitions/Type"
+        },
+        "rmaNumber" : {
+          "type" : "string",
+          "example" : "10901095",
+          "description" : "The actual number of the return request.",
+          "minLength" : 1,
+          "maxLength" : 50
+        },
+        "comment" : {
+          "type" : "string",
+          "example" : "The battery is draining quickly",
+          "description" : "The comment of the return request.",
+          "minLength" : 0,
+          "maxLength" : 255
+        },
+        "id" : {
+          "type" : "integer",
+          "format" : "int64",
+          "example" : 10000,
+          "description" : "The return request identifier."
+        },
+        "creationDate" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "The date when the return request was created."
+        },
+        "shopOrderNumber" : {
+          "type" : "string",
+          "example" : "20180303123",
+          "description" : "The order number as used by the shop."
+        },
+        "shopName" : {
+          "type" : "string",
+          "example" : "Test Shop US DE",
+          "description" : "The name of the shop."
+        },
+        "supplierOrderNumber" : {
+          "type" : "string",
+          "example" : "20180303321",
+          "description" : "The order number as used by the supplier."
+        },
+        "supplierName" : {
+          "type" : "string",
+          "example" : "Test Supplier US DE",
+          "description" : "The name of the supplier."
+        },
+        "status" : {
+          "$ref" : "#/definitions/Status"
+        },
+        "businessStatus" : {
+          "$ref" : "#/definitions/BusinessStatus"
+        }
+      },
+      "title" : "ReadReturnRequest",
+      "description" : "Represents a return request from a shop."
+    },
+    "WriteApproval" : {
+      "type" : "object",
+      "required" : [ "status" ],
+      "properties" : {
+        "status" : {
+          "$ref" : "#/definitions/Status1"
+        },
+        "comment" : {
+          "type" : "string",
+          "example" : "The return request reasons are not convincing.",
+          "description" : "The comment for the approval."
+        }
+      },
+      "title" : "WriteApproval",
+      "description" : "Represents an approval of a return request of an order of a shop."
+    },
+    "ContactPerson" : {
+      "type" : "object",
+      "properties" : {
+        "links" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Link"
+          }
+        },
+        "id" : {
+          "type" : "integer",
+          "format" : "int64",
+          "example" : 10000,
+          "description" : "The contact person identifier."
+        },
+        "company" : {
+          "type" : "string",
+          "example" : "Intershop Communication AG",
+          "description" : "The name of the company of the contact person."
+        },
+        "firstName" : {
+          "type" : "string",
+          "example" : "John",
+          "description" : "The first name of the contact person."
+        },
+        "lastName" : {
+          "type" : "string",
+          "example" : "Doe",
+          "description" : "The last name of the contact person."
+        },
+        "phoneNumber" : {
+          "type" : "string",
+          "example" : "0176 12345677",
+          "description" : "The phone number of the contact person."
+        },
+        "emailAddress" : {
+          "type" : "string",
+          "example" : "john.doe@intershop.com",
+          "description" : "The email address of the contact person."
+        },
+        "language" : {
+          "type" : "string",
+          "example" : "english",
+          "description" : "The preferred correspondence language to answer the contact person."
+        }
+      },
+      "title" : "ContactPerson",
+      "description" : "Represents a contact person of the return request from an order of a shop."
+    },
+    "BusinessStatus" : {
+      "type" : "string",
+      "title" : "BusinessStatus",
+      "description" : "The business status of the return request.",
+      "example" : "ACCEPTED",
+      "enum" : [ "ACCEPTED", "IN_APPROVAL", "READY_TO_APPROVE", "REJECTED", "UNKNOWN" ]
+    },
+    "protocol" : {
+      "type" : "string",
+      "title" : "protocol",
+      "example" : "http",
+      "enum" : [ "http", "https" ]
+    },
+    "Status" : {
+      "type" : "string",
+      "title" : "Status",
+      "description" : "The technical status of the return request.",
+      "example" : "ACCEPTED",
+      "enum" : [ "ACCEPTED", "CLOSED", "DO_APPROVE", "DO_CLOSE", "INITIAL", "REJECTED" ]
+    },
+    "Status1" : {
+      "type" : "string",
+      "title" : "Status1",
+      "description" : "The status of the approval.",
+      "example" : "APPROVED",
+      "enum" : [ "APPROVED", "NOT_APPROVED" ]
+    },
+    "Type" : {
+      "type" : "string",
+      "title" : "Type",
+      "description" : "The type that specifies the return request.",
+      "example" : "RETURN",
+      "enum" : [ "RETURN", "PICKUP" ]
+    }
+  }
+}
