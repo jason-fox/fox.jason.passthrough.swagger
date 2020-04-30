@@ -1,4 +1,4 @@
-# Swagger Plugin for DITA-OT  [<img src="https://jason-fox.github.io/fox.jason.passthrough.swagger/swagger.png" align="right" width="300">](http://swaggerdita-ot.rtfd.io/)
+# Swagger Plugin for DITA-OT [<img src="https://jason-fox.github.io/fox.jason.passthrough.swagger/swagger.png" align="right" width="300">](http://swaggerdita-ot.rtfd.io/)
 
 [![license](https://img.shields.io/github/license/jason-fox/fox.jason.passthrough.swagger.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![DITA-OT 3.4](https://img.shields.io/badge/DITA--OT-3.4-blue.svg)](http://www.dita-ot.org/3.4)
@@ -7,7 +7,9 @@
 [![Documentation Status](https://readthedocs.org/projects/swaggerdita-ot/badge/?version=latest)](https://swaggerdita-ot.readthedocs.io/en/latest/?badge=latest)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=fox.jason.passthrough.swagger&metric=alert_status)](https://sonarcloud.io/dashboard?id=fox.jason.passthrough.swagger)
 
-This is a [DITA-OT Plug-in](https://www.dita-ot.org/plugins) used to auto-create valid DITA-based REST API documentation. The documentation can be generated directly from a [Swagger](https://github.com/swagger-api) file and processed as if it had been written in DITA.
+This is a [DITA-OT Plug-in](https://www.dita-ot.org/plugins) used to auto-create valid DITA-based REST API
+documentation. The documentation can be generated directly from a [Swagger](https://github.com/swagger-api) file and
+processed as if it had been written in DITA.
 
 :arrow_forward: [Video from DITA-OT Day 2019](https://youtu.be/cd7XThpkivw)
 
@@ -30,12 +32,17 @@ This is a [DITA-OT Plug-in](https://www.dita-ot.org/plugins) used to auto-create
 
 [<img src="https://swagger.io/swagger/media/assets/images/swagger_logo.svg" align="right" height="55">](http://swagger.io/)
 
-[Swagger](https://swagger.io/) is an open-source software framework backed by a large ecosystem of tools that helps developers design, build, document, and consume RESTful Web services. While most users identify Swagger by the Swagger UI tool, the Swagger toolset includes support for automated documentation, code generation, and test-case generation.
+[Swagger](https://swagger.io/) is an open-source software framework backed by a large ecosystem of tools that helps
+developers design, build, document, and consume RESTful Web services. While most users identify Swagger by the Swagger
+UI tool, the Swagger toolset includes support for automated documentation, code generation, and test-case generation.
 
-[Swagger2Markup](https://github.com/Swagger2Markup/swagger2markup) converts a Swagger JSON or YAML file into one or more AsciiDoc or GitHub Flavored Markdown documents which can be combined with hand-written documentation. The Swagger source file can be located locally or remotely via HTTP. Swagger2Markup supports the Swagger 1.2 and 2.0 specification. Internally it uses the official swagger-parser and my markup-document-builder.
+[Swagger2Markup](https://github.com/Swagger2Markup/swagger2markup) converts a Swagger JSON or YAML file into one or more
+AsciiDoc or GitHub Flavored Markdown documents which can be combined with hand-written documentation. The Swagger source
+file can be located locally or remotely via HTTP. Swagger2Markup supports the Swagger 1.2 and 2.0 specification.
+Internally it uses the official swagger-parser and my markup-document-builder.
 
-This plugin processes the Swagger file to Pandoc markdown, and the converts the markdown to DITA using the [Pandoc DITA-OT Plugin](https://github.com/jason-fox/fox.jason.passthrough.pandoc)
-
+This plugin processes the Swagger file to Pandoc markdown, and the converts the markdown to DITA using the
+[Pandoc DITA-OT Plugin](https://github.com/jason-fox/fox.jason.passthrough.pandoc)
 
 #### Sample Swagger Endpoint
 
@@ -76,8 +83,8 @@ This plugin processes the Swagger file to Pandoc markdown, and the converts the 
 
 ## Install
 
-The DITA-OT Swagger plug-in has been tested against [DITA-OT 3.x](http://www.dita-ot.org/download). It is
-recommended that you upgrade to the latest version.
+The DITA-OT Swagger plug-in has been tested against [DITA-OT 3.x](http://www.dita-ot.org/download). It is recommended
+that you upgrade to the latest version.
 
 ### Installing DITA-OT
 
@@ -123,8 +130,8 @@ To download a copy follow the instructions on the [Install page](https://github.
 
 ## Usage
 
-To mark a file to be passed through for **Swagger** processing, label it with `format="swagger"` within the `*.ditamap` as
-shown:
+To mark a file to be passed through for **Swagger** processing, label it with `format="swagger"` within the `*.ditamap`
+as shown:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -140,7 +147,9 @@ shown:
 </bookmap>
 ```
 
-The additional file will be converted to a `*.dita` file and will be added to the build job without further processing. Unless overriden, the `navtitle` of the included topic will be the same as root name of the file. Any underscores in the filename will be replaced by spaces in title.
+The additional file will be converted to a `*.dita` file and will be added to the build job without further processing.
+Unless overriden, the `navtitle` of the included topic will be the same as root name of the file. Any underscores in the
+filename will be replaced by spaces in title.
 
 ## License
 
@@ -151,4 +160,3 @@ The Program includes the following additional software components which were obt
 -   swagger2markup-cli-1.3.3.jar - https://github.com/Swagger2Markup/swagger2markup - **Apache 2.0 license**
 -   xmltask.jar - http://www.oopsconsultancy.com/software/xmltask/ - **Apache 1.1 license** (within
     `org.doctales.xmltask` plug-in)
-
