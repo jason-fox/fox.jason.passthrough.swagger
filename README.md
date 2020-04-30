@@ -1,7 +1,7 @@
 # Swagger Plugin for DITA-OT [<img src="https://jason-fox.github.io/fox.jason.passthrough.swagger/swagger.png" align="right" width="300">](http://swaggerdita-ot.rtfd.io/)
 
 [![license](https://img.shields.io/github/license/jason-fox/fox.jason.passthrough.swagger.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-[![DITA-OT 3.4](https://img.shields.io/badge/DITA--OT-3.4-blue.svg)](http://www.dita-ot.org/3.4)
+[![DITA-OT 3.5](https://img.shields.io/badge/DITA--OT-3.5-blue.svg)](http://www.dita-ot.org/3.5)
 [![Build Status](https://travis-ci.org/jason-fox/fox.jason.passthrough.swagger.svg?branch=master)](https://travis-ci.org/jason-fox/fox.jason.passthrough.swagger)
 [![Coverage Status](https://coveralls.io/repos/github/jason-fox/fox.jason.passthrough.swagger/badge.svg?branch=master)](https://coveralls.io/github/jason-fox/fox.jason.passthrough.swagger?branch=master)
 [![Documentation Status](https://readthedocs.org/projects/swaggerdita-ot/badge/?version=latest)](https://swaggerdita-ot.readthedocs.io/en/latest/?badge=latest)
@@ -93,9 +93,9 @@ that you upgrade to the latest version.
 The DITA-OT Swagger plug-in is a file reader for the DITA Open Toolkit.
 
 -   Full installation instructions for downloading DITA-OT can be found
-    [here](https://www.dita-ot.org/3.4/topics/installing-client.html).
+    [here](https://www.dita-ot.org/3.5/topics/installing-client.html).
 
-    1.  Download the `dita-ot-3.4.1.zip` package from the project website at
+    1.  Download the `dita-ot-3.5.zip` package from the project website at
         [dita-ot.org/download](https://www.dita-ot.org/download)
     2.  Extract the contents of the package to the directory where you want to install DITA-OT.
     3.  **Optional**: Add the absolute path for the `bin` directory to the _PATH_ system variable.
@@ -103,9 +103,9 @@ The DITA-OT Swagger plug-in is a file reader for the DITA Open Toolkit.
     This defines the necessary environment variable to run the `dita` command from the command line.
 
 ```console
-curl -LO https://github.com/dita-ot/dita-ot/releases/download/3.4.1/dita-ot-3.4.1.zip
-unzip -q dita-ot-3.4.1.zip
-rm dita-ot-3.4.1.zip
+curl -LO https://github.com/dita-ot/dita-ot/releases/download/3.5/dita-ot-3.5.zip
+unzip -q dita-ot-3.5.zip
+rm dita-ot-3.5.zip
 ```
 
 ### Installing the Plug-in
@@ -113,11 +113,11 @@ rm dita-ot-3.4.1.zip
 -   Run the plug-in installation commands:
 
 ```console
-dita --install https://github.com/doctales/org.doctales.xmltask/archive/master.zip
-dita --install https://github.com/jason-fox/fox.jason.passthrough/archive/master.zip
-dita --install https://github.com/jason-fox/fox.jason.passthrough.pandoc/archive/master.zip
-dita --install https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
-dita --install https://github.com/jason-fox/fox.jason.passthrough.swagger/archive/master.zip
+dita install https://github.com/doctales/org.doctales.xmltask/archive/master.zip
+dita install https://github.com/jason-fox/fox.jason.passthrough/archive/master.zip
+dita install https://github.com/jason-fox/fox.jason.passthrough.pandoc/archive/master.zip
+dita install https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
+dita install https://github.com/jason-fox/fox.jason.passthrough.swagger/archive/master.zip
 ```
 
 The `dita` command line tool requires no additional configuration.
