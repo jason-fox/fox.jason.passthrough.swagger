@@ -41,7 +41,7 @@ public class FormatMarkdownTask extends Task {
   }
 
   private String moveAnchors(String markdown) {
-    String[] lines = markdown.split("\n");
+    String[] lines = markdown.split("\\r?\\n|\\r");
     List<String> text = new ArrayList<>();
     String id = null;
     boolean codeblock = true;
