@@ -926,7 +926,7 @@
                 <fo:inline padding-start="10pt">/pet/findByTags</fo:inline>
               </fo:block>
               <fo:block>Caution :
-operation.deprecated</fo:block>
+This operation is deprecated.</fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
                 <fo:block>
