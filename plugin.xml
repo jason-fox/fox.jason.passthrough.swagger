@@ -5,8 +5,8 @@
 	See the accompanying LICENSE file for applicable licenses.
 -->
 <plugin id="fox.jason.passthrough.swagger" version="1.2.0">
-	<feature extension="dita.conductor.lib.import" file="lib/swagger2markup-2.0.0.jar"/>
-	<feature extension="dita.conductor.lib.import" file="lib/passthrough.swagger-1.0.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/swagger2markup-cli-2.0.0.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/passthrough.swagger-1.1.jar"/>
 	<feature extension="ant.import" file="process_swagger.xml"/>
 	<!--
 		This plugin requires Pandoc and the passthrough reader.

@@ -157,6 +157,6 @@ filename will be replaced by spaces in title.
 
 The Program includes the following additional software components which were obtained under license:
 
--   swagger2markup-cli-1.3.3.jar - https://github.com/Swagger2Markup/swagger2markup - **Apache 2.0 license**
+-   swagger2markup-cli-2.0.0.jar - https://github.com/Swagger2Markup/swagger2markup - **Apache 2.0 license**
 -   xmltask.jar - http://www.oopsconsultancy.com/software/xmltask/ - **Apache 1.1 license** (within
     `org.doctales.xmltask` plug-in)

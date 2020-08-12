@@ -41,7 +41,7 @@
 			<tempfile deleteonexit="true" destdir="${dita.temp.dir}" 
 				property="swagger.temp.file" suffix=""/>
 
-			<java taskname="swagger-gen" outputproperty="swagger.output" resultproperty="swagger.result"  errorproperty="swagger.error" jar="${dita.plugin.fox.jason.passthrough.swagger.dir}/lib/swagger2markup-cli-1.3.3.jar"
+			<java taskname="swagger-gen" outputproperty="swagger.output" resultproperty="swagger.result"  errorproperty="swagger.error" jar="${dita.plugin.fox.jason.passthrough.swagger.dir}/lib/swagger2markup-cli-2.0.0.jar"
 				fork="true" failonerror="false" maxmemory="128m">
 			  
 				<arg value="convert"/>
