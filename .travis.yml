@@ -1,0 +1,53 @@
+language: java
+sudo: required
+dist: bionic
+
+jdk:
+  - openjdk11
+
+addons:
+  apt:
+    packages:
+      - ant
+  sonarcloud:
+    organization: "dita-ot-plugins"
+    token:
+      secure: "Ms4KtLQRA8OpCCA9jM2bQdT3D1GraTm0vmdnKqKaFpQji1bUWL8cP+TBQ//RosZjBrKNmCq1vByly0KLIk6e8YM7ljDgSpp3bUMgpGa7sS6qvigEivDdotG9pMDjkaje0/N1BamuzY2nlCcyWaticqYAwfsZuoJrxKO40l0E3/upq+K2ADyZeEjU7eOQS0Ey8VrbnNWIolvYSZluoL+SBC/rSWI2VOLpqOyoC3bGDLkD12hSR35a1znz14XLfVY4K787Cyyz8UuV3tZNrtzW0q6tEOku0ACLt92toYSpXzJHOHGBRxPDCD0pxSmjE+X0ZkEwbJiVC8OC7q/lh5WgniU//9J7uFLSKrI4Mz/MdZIDkhpntgnB8dJwMN0KbNrZNNsNiyjJgHomFK5XPLxtefpQc2ezv0U5wERM5xtD5k1zOBljcTYnt3P9gAO2UGwg3mil0oPmq3DI1QhNom0AT86lpyFfKY2vLHa+PtPC80X6AVL7yTlBEazWy4rpp1VJfUxLCLFuqirzTCMqDKbrVyH+Un19i5kBWrTB4N4tpbIe1O3VR2jbI9QIFJh46W2+U3UePKevxMoOnOQ7aV3aP1jHhx2RsRQJh9+wDWckQbs3jlmOkray32QBsAEQCw19i5HrqOfnFB8Tj8RkXTglIp+tqm84CC2r9Nx0vrI1umw="
+
+env:
+  - DITA_OT=3.5.1
+
+before_install:
+  - sudo wget https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-1-amd64.deb
+  - sudo dpkg -i pandoc-2.7.3-1-amd64.deb
+  - pandoc --version
+  - zip -r fox.jason.passthrough.swagger.zip . -x *.zip* *.git/* *temp/* *out/*
+  - curl -LO https://github.com/dita-ot/dita-ot/releases/download/$DITA_OT/dita-ot-$DITA_OT.zip
+  - unzip -q dita-ot-$DITA_OT.zip
+  - chmod +x dita-ot-$DITA_OT/bin/dita
+
+install:
+  - dita-ot-$DITA_OT/bin/dita install https://github.com/jason-fox/fox.jason.unit-test/archive/master.zip
+  - dita-ot-$DITA_OT/bin/dita install https://github.com/doctales/org.doctales.xmltask/archive/master.zip
+  - dita-ot-$DITA_OT/bin/dita install https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
+  - dita-ot-$DITA_OT/bin/dita install https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
+  - dita-ot-$DITA_OT/bin/dita install https://github.com/jason-fox/fox.jason.passthrough/archive/master.zip
+  - dita-ot-$DITA_OT/bin/dita install https://github.com/jason-fox/fox.jason.passthrough.pandoc/archive/master.zip
+  - dita-ot-$DITA_OT/bin/dita install fox.jason.passthrough.swagger.zip
+
+before_script:
+  - dita-ot-$DITA_OT/bin/dita --input dita-ot-$DITA_OT/plugins/fox.jason.passthrough.swagger -f xsl-instrument
+
+script:
+  - dita-ot-$DITA_OT/bin/dita --input dita-ot-$DITA_OT/plugins/fox.jason.passthrough.swagger -f unit-test --output . -v
+
+after_success:
+  - mvn clean compile
+  - cp dita-ot-$DITA_OT/plugins/fox.jason.unit-test/resource/pom.xml pom.xml
+  - mvn org.eluder.coveralls:coveralls-maven-plugin:report
+  - rm -rf dita-ot-$DITA_OT
+  - sonar-scanner 
+
+
+
+

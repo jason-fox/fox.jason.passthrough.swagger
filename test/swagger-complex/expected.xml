@@ -1,0 +1,3497 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<topic id="iom-rma-rest-api" outputclass="swagger">
+  <title>IOM RMA REST API</title>
+  <body></body>
+  <topic id="overview">
+    <title>Overview</title>
+    <body>
+      <p>The IOM RMA REST API supports programmatic access to objects related to the Return Merchandise Authorization process.</p>
+      <section id="version-information" outputclass="section">
+        <title>Version information</title>
+        <p>
+          <i>Version</i>: 2.9.4</p>
+      </section>
+      <section id="contact-information" outputclass="section">
+        <title>Contact information</title>
+        <p>
+          <i>Contact</i>: Intershop Communications AG</p>
+      </section>
+      <section id="uri-scheme" outputclass="section">
+        <title>URI scheme</title>
+        <p>
+          <i>Host</i>: localhost:8080
+          <i>BasePath</i>: /rest/rma
+          <i>Schemes</i>: HTTP</p>
+      </section>
+      <section id="tags" outputclass="section">
+        <title>Tags</title>
+        <ul>
+          <li>shop : API endpoints, that could be used by the shop.</li>
+        </ul>
+      </section>
+      <section id="consumes" outputclass="section">
+        <title>Consumes</title>
+        <ul>
+          <li>
+            <codeph>application/json</codeph>
+          </li>
+        </ul>
+      </section>
+      <section id="produces" outputclass="section">
+        <title>Produces</title>
+        <ul>
+          <li>
+            <codeph>application/json</codeph>
+          </li>
+        </ul>
+      </section>
+    </body>
+  </topic>
+  <topic id="paths">
+    <title>Paths</title>
+    <body></body>
+    <topic id="shopname-orders-shopordernumber-return-request-post" outputclass="swagger-post">
+      <title>createReturnRequest</title>
+      <body>
+        <codeblock outputclass="swagger-post">POST /{shopName}/orders/{shopOrderNumber}/return-request</codeblock>
+        <section id="description" outputclass="section">
+          <title>Description</title>
+          <p>Creates a new return request</p>
+        </section>
+        <section id="parameters" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1"></colspec>
+              <colspec colname="c2" colnum="2"></colspec>
+              <colspec colname="c3" colnum="3"></colspec>
+              <colspec colname="c4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">Type</entry>
+                  <entry align="left" colname="c2">Name</entry>
+                  <entry align="left" colname="c3">Description</entry>
+                  <entry align="left" colname="c4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The shop name</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The order number of the shop</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Body</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>body</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines></lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>
+                      <xref format="dita" href="#writereturnrequest">WriteReturnRequest</xref>
+                    </lines>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"></colspec>
+              <colspec colname="c2" colnum="2"></colspec>
+              <colspec colname="c3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">HTTP Code</entry>
+                  <entry align="left" colname="c2">Description</entry>
+                  <entry align="left" colname="c3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>201</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>Created
+                      <b>Headers</b>:
+                      <codeph>Location</codeph>(string)</lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>No Content</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>400</b>
+                  </entry>
+                  <entry align="left" colname="c2">Bad Request</entry>
+                  <entry align="left" colname="c3">
+                    <xref format="dita" href="#errorreport">ErrorReport</xref>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>401</b>
+                  </entry>
+                  <entry align="left" colname="c2">Authentication information is missing or invalid</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>403</b>
+                  </entry>
+                  <entry align="left" colname="c2">Forbidden</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>415</b>
+                  </entry>
+                  <entry align="left" colname="c2">Unsupported Media Type</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>default</b>
+                  </entry>
+                  <entry align="left" colname="c2">An unexpected error occured</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-1" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/json</codeph>
+            </li>
+          </ul>
+        </section>
+        <section id="tags-1" outputclass="section">
+          <title>Tags</title>
+          <ul>
+            <li>shop</li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="shopname-orders-shopordernumber-return-request-get" outputclass="swagger-get">
+      <title>getReturnRequests</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-request</codeblock>
+        <section id="description-1" outputclass="section">
+          <title>Description</title>
+          <p>Returns a list of return requests for a given shopName and shopOrderNumber.</p>
+        </section>
+        <section id="parameters-1" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1"></colspec>
+              <colspec colname="c2" colnum="2"></colspec>
+              <colspec colname="c3" colnum="3"></colspec>
+              <colspec colname="c4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">Type</entry>
+                  <entry align="left" colname="c2">Name</entry>
+                  <entry align="left" colname="c3">Description</entry>
+                  <entry align="left" colname="c4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The shop name</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The order number of the shop</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-1" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"></colspec>
+              <colspec colname="c2" colnum="2"></colspec>
+              <colspec colname="c3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">HTTP Code</entry>
+                  <entry align="left" colname="c2">Description</entry>
+                  <entry align="left" colname="c3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>200</b>
+                  </entry>
+                  <entry align="left" colname="c2">OK</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>401</b>
+                  </entry>
+                  <entry align="left" colname="c2">Authentication information is missing or invalid</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>403</b>
+                  </entry>
+                  <entry align="left" colname="c2">Forbidden</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>404</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Found</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>406</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Acceptable</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-2" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.return-request.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+        <section id="tags-2" outputclass="section">
+          <title>Tags</title>
+          <ul>
+            <li>shop</li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-get" outputclass="swagger-get">
+      <title>getReturnRequest</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}</codeblock>
+        <section id="description-2" outputclass="section">
+          <title>Description</title>
+          <p>Returns a return request for a given shopName, shopOrderNumber and returnRequestId.</p>
+        </section>
+        <section id="parameters-2" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1" colwidth="25%"></colspec>
+              <colspec colname="c2" colnum="2" colwidth="25%"></colspec>
+              <colspec colname="c3" colnum="3" colwidth="25%"></colspec>
+              <colspec colname="c4" colnum="4" colwidth="25%"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">Type</entry>
+                  <entry align="left" colname="c2">Name</entry>
+                  <entry align="left" colname="c3">Description</entry>
+                  <entry align="left" colname="c4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The return request id of the related order</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>integer (int64)</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The shop name</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The order number of the shop</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-2" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"></colspec>
+              <colspec colname="c2" colnum="2"></colspec>
+              <colspec colname="c3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">HTTP Code</entry>
+                  <entry align="left" colname="c2">Description</entry>
+                  <entry align="left" colname="c3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>200</b>
+                  </entry>
+                  <entry align="left" colname="c2">OK</entry>
+                  <entry align="left" colname="c3">
+                    <xref format="dita" href="#readreturnrequest">ReadReturnRequest</xref>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>401</b>
+                  </entry>
+                  <entry align="left" colname="c2">Authentication information is missing or invalid</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>403</b>
+                  </entry>
+                  <entry align="left" colname="c2">Forbidden</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>404</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Found</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>406</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Acceptable</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-3" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.return-request.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+        <section id="tags-3" outputclass="section">
+          <title>Tags</title>
+          <ul>
+            <li>shop</li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-approvals-post" outputclass="swagger-post">
+      <title>createApproval</title>
+      <body>
+        <codeblock outputclass="swagger-post">POST /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/approvals</codeblock>
+        <section id="description-3" outputclass="section">
+          <title>Description</title>
+          <p>Creates a new approval</p>
+        </section>
+        <section id="parameters-3" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1" colwidth="25%"></colspec>
+              <colspec colname="c2" colnum="2" colwidth="25%"></colspec>
+              <colspec colname="c3" colnum="3" colwidth="25%"></colspec>
+              <colspec colname="c4" colnum="4" colwidth="25%"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">Type</entry>
+                  <entry align="left" colname="c2">Name</entry>
+                  <entry align="left" colname="c3">Description</entry>
+                  <entry align="left" colname="c4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The return request id of the related order</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>integer (int64)</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The shop name</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The order number of the shop</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Body</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>body</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines></lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>
+                      <xref format="dita" href="#writeapproval">WriteApproval</xref>
+                    </lines>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-3" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"></colspec>
+              <colspec colname="c2" colnum="2"></colspec>
+              <colspec colname="c3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">HTTP Code</entry>
+                  <entry align="left" colname="c2">Description</entry>
+                  <entry align="left" colname="c3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>201</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>Created
+                      <b>Headers</b>:
+                      <codeph>Location</codeph>(string)</lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>No Content</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>400</b>
+                  </entry>
+                  <entry align="left" colname="c2">Bad Request</entry>
+                  <entry align="left" colname="c3">
+                    <xref format="dita" href="#errorreport">ErrorReport</xref>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>401</b>
+                  </entry>
+                  <entry align="left" colname="c2">Authentication information is missing or invalid</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>403</b>
+                  </entry>
+                  <entry align="left" colname="c2">Forbidden</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>415</b>
+                  </entry>
+                  <entry align="left" colname="c2">Unsupported Media Type</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>default</b>
+                  </entry>
+                  <entry align="left" colname="c2">An unexpected error occured</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-4" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/json</codeph>
+            </li>
+          </ul>
+        </section>
+        <section id="tags-4" outputclass="section">
+          <title>Tags</title>
+          <ul>
+            <li>shop</li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-contact-persons-get" outputclass="swagger-get">
+      <title>getContactPersons</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/contact-persons</codeblock>
+        <section id="description-4" outputclass="section">
+          <title>Description</title>
+          <p>Returns a list of return request contact persons for a given returnRequestId, shopName and shopOrderNumber.</p>
+        </section>
+        <section id="parameters-4" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1" colwidth="25%"></colspec>
+              <colspec colname="c2" colnum="2" colwidth="25%"></colspec>
+              <colspec colname="c3" colnum="3" colwidth="25%"></colspec>
+              <colspec colname="c4" colnum="4" colwidth="25%"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">Type</entry>
+                  <entry align="left" colname="c2">Name</entry>
+                  <entry align="left" colname="c3">Description</entry>
+                  <entry align="left" colname="c4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The return request id of the related order</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>integer (int64)</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The shop name</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The order number of the shop</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-4" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"></colspec>
+              <colspec colname="c2" colnum="2"></colspec>
+              <colspec colname="c3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">HTTP Code</entry>
+                  <entry align="left" colname="c2">Description</entry>
+                  <entry align="left" colname="c3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>200</b>
+                  </entry>
+                  <entry align="left" colname="c2">OK</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>401</b>
+                  </entry>
+                  <entry align="left" colname="c2">Authentication information is missing or invalid</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>403</b>
+                  </entry>
+                  <entry align="left" colname="c2">Forbidden</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>404</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Found</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>406</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Acceptable</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-5" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.contact-person.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+        <section id="tags-5" outputclass="section">
+          <title>Tags</title>
+          <ul>
+            <li>shop</li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-custom-attributes-get" outputclass="swagger-get">
+      <title>getCustomAttributes</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/custom-attributes</codeblock>
+        <section id="description-5" outputclass="section">
+          <title>Description</title>
+          <p>Returns a list of return request custom attributes for a given returnRequestId, shopName and shopOrderNumber.</p>
+        </section>
+        <section id="parameters-5" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1" colwidth="25%"></colspec>
+              <colspec colname="c2" colnum="2" colwidth="25%"></colspec>
+              <colspec colname="c3" colnum="3" colwidth="25%"></colspec>
+              <colspec colname="c4" colnum="4" colwidth="25%"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">Type</entry>
+                  <entry align="left" colname="c2">Name</entry>
+                  <entry align="left" colname="c3">Description</entry>
+                  <entry align="left" colname="c4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The return request id of the related order</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>integer (int64)</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The shop name</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The order number of the shop</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-5" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"></colspec>
+              <colspec colname="c2" colnum="2"></colspec>
+              <colspec colname="c3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">HTTP Code</entry>
+                  <entry align="left" colname="c2">Description</entry>
+                  <entry align="left" colname="c3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>200</b>
+                  </entry>
+                  <entry align="left" colname="c2">OK</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>401</b>
+                  </entry>
+                  <entry align="left" colname="c2">Authentication information is missing or invalid</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>403</b>
+                  </entry>
+                  <entry align="left" colname="c2">Forbidden</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>404</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Found</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>406</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Acceptable</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-6" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.custom-attribute.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+        <section id="tags-6" outputclass="section">
+          <title>Tags</title>
+          <ul>
+            <li>shop</li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-pickup-addresses-get" outputclass="swagger-get">
+      <title>getReturnRequestPickupAddresses</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/pickup-addresses</codeblock>
+        <section id="description-6" outputclass="section">
+          <title>Description</title>
+          <p>Returns a list of return request pickup addresses for a given returnRequestId, shopName and shopOrderNumber.</p>
+        </section>
+        <section id="parameters-6" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1" colwidth="25%"></colspec>
+              <colspec colname="c2" colnum="2" colwidth="25%"></colspec>
+              <colspec colname="c3" colnum="3" colwidth="25%"></colspec>
+              <colspec colname="c4" colnum="4" colwidth="25%"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">Type</entry>
+                  <entry align="left" colname="c2">Name</entry>
+                  <entry align="left" colname="c3">Description</entry>
+                  <entry align="left" colname="c4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The return request id of the related order</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>integer (int64)</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The shop name</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The order number of the shop</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-6" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"></colspec>
+              <colspec colname="c2" colnum="2"></colspec>
+              <colspec colname="c3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">HTTP Code</entry>
+                  <entry align="left" colname="c2">Description</entry>
+                  <entry align="left" colname="c3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>200</b>
+                  </entry>
+                  <entry align="left" colname="c2">OK</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>401</b>
+                  </entry>
+                  <entry align="left" colname="c2">Authentication information is missing or invalid</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>403</b>
+                  </entry>
+                  <entry align="left" colname="c2">Forbidden</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>404</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Found</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>406</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Acceptable</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-7" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.pickup-address.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+        <section id="tags-7" outputclass="section">
+          <title>Tags</title>
+          <ul>
+            <li>shop</li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-positions-get" outputclass="swagger-get">
+      <title>getReturnRequestPositions</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions</codeblock>
+        <section id="description-7" outputclass="section">
+          <title>Description</title>
+          <p>Returns a list of return request positions for a given returnRequestId, shopName and shopOrderNumber.</p>
+        </section>
+        <section id="parameters-7" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1" colwidth="25%"></colspec>
+              <colspec colname="c2" colnum="2" colwidth="25%"></colspec>
+              <colspec colname="c3" colnum="3" colwidth="25%"></colspec>
+              <colspec colname="c4" colnum="4" colwidth="25%"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">Type</entry>
+                  <entry align="left" colname="c2">Name</entry>
+                  <entry align="left" colname="c3">Description</entry>
+                  <entry align="left" colname="c4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The return request id of the related order</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>integer (int64)</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The shop name</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The order number of the shop</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-7" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"></colspec>
+              <colspec colname="c2" colnum="2"></colspec>
+              <colspec colname="c3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">HTTP Code</entry>
+                  <entry align="left" colname="c2">Description</entry>
+                  <entry align="left" colname="c3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>200</b>
+                  </entry>
+                  <entry align="left" colname="c2">OK</entry>
+                  <entry align="left" colname="c3">&lt;
+                    <xref format="dita" href="#readreturnrequestposition">ReadReturnRequestPosition</xref>&gt; array</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>401</b>
+                  </entry>
+                  <entry align="left" colname="c2">Authentication information is missing or invalid</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>403</b>
+                  </entry>
+                  <entry align="left" colname="c2">Forbidden</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>404</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Found</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>406</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Acceptable</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-8" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.return-request-position.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+        <section id="tags-8" outputclass="section">
+          <title>Tags</title>
+          <ul>
+            <li>shop</li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-positions-returnrequestpositionid-get" outputclass="swagger-get">
+      <title>getReturnRequestPosition</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}</codeblock>
+        <section id="description-8" outputclass="section">
+          <title>Description</title>
+          <p>Returns a return request position for a given returnRequestId, shopName, shopOrderNumber and a returnRequestPositionId.</p>
+        </section>
+        <section id="parameters-8" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1" colwidth="25%"></colspec>
+              <colspec colname="c2" colnum="2" colwidth="25%"></colspec>
+              <colspec colname="c3" colnum="3" colwidth="25%"></colspec>
+              <colspec colname="c4" colnum="4" colwidth="25%"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">Type</entry>
+                  <entry align="left" colname="c2">Name</entry>
+                  <entry align="left" colname="c3">Description</entry>
+                  <entry align="left" colname="c4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The return request id of the related order</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>integer (int64)</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>returnRequestPositionId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The return request position id of the related return request</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>integer (int64)</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The shop name</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The order number of the shop</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-8" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"></colspec>
+              <colspec colname="c2" colnum="2"></colspec>
+              <colspec colname="c3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">HTTP Code</entry>
+                  <entry align="left" colname="c2">Description</entry>
+                  <entry align="left" colname="c3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>200</b>
+                  </entry>
+                  <entry align="left" colname="c2">OK</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>401</b>
+                  </entry>
+                  <entry align="left" colname="c2">Authentication information is missing or invalid</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>403</b>
+                  </entry>
+                  <entry align="left" colname="c2">Forbidden</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>404</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Found</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>406</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Acceptable</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-9" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.return-request-position.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+        <section id="tags-9" outputclass="section">
+          <title>Tags</title>
+          <ul>
+            <li>shop</li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-positions-returnrequestpositionid-items-get" outputclass="swagger-get">
+      <title>getReturnRequestItems</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}/items</codeblock>
+        <section id="description-9" outputclass="section">
+          <title>Description</title>
+          <p>Returns a list of return request position items for a given returnRequestId, shopName and shopOrderNumber.</p>
+        </section>
+        <section id="parameters-9" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1" colwidth="25%"></colspec>
+              <colspec colname="c2" colnum="2" colwidth="25%"></colspec>
+              <colspec colname="c3" colnum="3" colwidth="25%"></colspec>
+              <colspec colname="c4" colnum="4" colwidth="25%"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">Type</entry>
+                  <entry align="left" colname="c2">Name</entry>
+                  <entry align="left" colname="c3">Description</entry>
+                  <entry align="left" colname="c4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The return request id of the related order</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>integer (int64)</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>returnRequestPositionId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The return request position id of the related return request</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>integer (int64)</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The shop name</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <lines>
+                      <b>Path</b>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry align="left" colname="c3">
+                    <lines>The order number of the shop</lines>
+                  </entry>
+                  <entry align="left" colname="c4">
+                    <lines>string</lines>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-9" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"></colspec>
+              <colspec colname="c2" colnum="2"></colspec>
+              <colspec colname="c3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry align="left" colname="c1">HTTP Code</entry>
+                  <entry align="left" colname="c2">Description</entry>
+                  <entry align="left" colname="c3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>200</b>
+                  </entry>
+                  <entry align="left" colname="c2">OK</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>401</b>
+                  </entry>
+                  <entry align="left" colname="c2">Authentication information is missing or invalid</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>403</b>
+                  </entry>
+                  <entry align="left" colname="c2">Forbidden</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>404</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Found</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+                <row>
+                  <entry align="left" colname="c1">
+                    <b>406</b>
+                  </entry>
+                  <entry align="left" colname="c2">Not Acceptable</entry>
+                  <entry align="left" colname="c3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-10" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.return-request-item.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+        <section id="tags-10" outputclass="section">
+          <title>Tags</title>
+          <ul>
+            <li>shop</li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+  </topic>
+  <topic id="definitions">
+    <title>Definitions</title>
+    <body></body>
+    <topic id="businessstatus">
+      <title>BusinessStatus</title>
+      <body>
+        <p>The business status of the return request.</p>
+        <p>
+          <i>Type</i>: enum (ACCEPTED, IN_APPROVAL, READY_TO_APPROVE, REJECTED, UNKNOWN)</p>
+      </body>
+    </topic>
+    <topic id="contactperson">
+      <title>ContactPerson</title>
+      <body>
+        <p>Represents a contact person of the return request from an order of a shop.</p>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>company</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The name of the company of the contact person.
+                    <b>Example</b>:
+                    <codeph>"Intershop Communication AG"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>emailAddress</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The email address of the contact person.
+                    <b>Example</b>:
+                    <codeph>"john.doe@intershop.com"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>firstName</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The first name of the contact person.
+                    <b>Example</b>:
+                    <codeph>"John"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>id</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The contact person identifier.
+                    <b>Example</b>:
+                    <codeph>10000</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>integer (int64)</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>language</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The preferred correspondence language to answer the contact person.
+                    <b>Example</b>:
+                    <codeph>"english"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>lastName</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The last name of the contact person.
+                    <b>Example</b>:
+                    <codeph>"Doe"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>links</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>&lt;
+                    <xref format="dita" href="#link">Link</xref>&gt; array</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>phoneNumber</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The phone number of the contact person.
+                    <b>Example</b>:
+                    <codeph>"0176 12345677"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="error">
+      <title>Error</title>
+      <body>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>code</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>Exception / Error code
+                    <b>Example</b>:
+                    <codeph>"VALIDATION_EXCEPTION"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>message</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>Exception / Error message
+                    <b>Example</b>:
+                    <codeph>"Attribute XYZ is mandatory"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>value</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>Value which caused the exception / error</lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>object</lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="errorreport">
+      <title>ErrorReport</title>
+      <body>
+        <p>Detailed information about what went wrong</p>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>errors</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>&lt;
+                    <xref format="dita" href="#error">Error</xref>&gt; array</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>status</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The HTTP status code applicable to this problem, expressed as a string value
+                    <b>Example</b>:
+                    <codeph>400</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>integer (int32)</lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="link">
+      <title>Link</title>
+      <body>
+        <table>
+          <tgroup cols="2">
+            <colspec colname="c1" colnum="1"></colspec>
+            <colspec colname="c2" colnum="2"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>href</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>rel</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>string</lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="readcustomattribute">
+      <title>ReadCustomAttribute</title>
+      <body>
+        <p>Represents a custom attribute (key/value pair) of a return request from an order of a shop.</p>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>id</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The custom attribute identifier.
+                    <b>Example</b>:
+                    <codeph>10000</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>integer (int64)</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>key</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The key of a custom attribute.
+                    <b>Length</b>:
+                    <codeph>1 - 250</codeph>
+                    <b>Example</b>:
+                    <codeph>"Example Key"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>links</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>&lt;
+                    <xref format="dita" href="#link">Link</xref>&gt; array</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>value</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The value of a custom attribute.
+                    <b>Length</b>:
+                    <codeph>1 - 1000</codeph>
+                    <b>Example</b>:
+                    <codeph>"Example Value"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="readpickupaddress">
+      <title>ReadPickupAddress</title>
+      <body>
+        <p>Represents a pickup address related to the return request from an order of
+a shop.</p>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>additionFirstLine</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The first addition line related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 100</codeph>
+                    <b>Example</b>:
+                    <codeph>"Finanz"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>additionSecondLine</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The second addition line related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 100</codeph>
+                    <b>Example</b>:
+                    <codeph>"3.Floor"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>city</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The city name related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 100</codeph>
+                    <b>Example</b>:
+                    <codeph>"Berlin"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>company</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The name of the company of the pickup adress.
+                    <b>Length</b>:
+                    <codeph>1 - 100</codeph>
+                    <b>Example</b>:
+                    <codeph>"Intershop Communication AG"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>countryCode</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The ISO 3166-1 alpha-3 code for the country name related to the pickup
+address.
+                    <b>Example</b>:
+                    <codeph>"DEU"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>district</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The district related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 100</codeph>
+                    <b>Example</b>:
+                    <codeph>"Berlin"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>firstName</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The first name related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 50</codeph>
+                    <b>Example</b>:
+                    <codeph>"John"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>houseNumber</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The house number related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 20</codeph>
+                    <b>Example</b>:
+                    <codeph>"28"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>id</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The pickup address identifier.
+                    <b>Example</b>:
+                    <codeph>10000</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>integer (int64)</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>lastName</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The last name related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 50</codeph>
+                    <b>Example</b>:
+                    <codeph>"Doe"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>links</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>&lt;
+                    <xref format="dita" href="#link">Link</xref>&gt; array</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>postCode</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The post code related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 25</codeph>
+                    <b>Example</b>:
+                    <codeph>"12053"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>streetName</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The name of the street related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 100</codeph>
+                    <b>Example</b>:
+                    <codeph>"Alexstra&#223;e"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="readreturnrequest">
+      <title>ReadReturnRequest</title>
+      <body>
+        <p>Represents a return request from a shop.</p>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>businessStatus</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>
+                    <xref format="dita" href="#businessstatus">BusinessStatus</xref>
+                  </lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>comment</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The comment of the return request.
+                    <b>Length</b>:
+                    <codeph>0 - 255</codeph>
+                    <b>Example</b>:
+                    <codeph>"The battery is draining quickly"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>creationDate</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The date when the return request was created.</lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string (date-time)</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>id</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The return request identifier.
+                    <b>Example</b>:
+                    <codeph>10000</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>integer (int64)</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>links</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>&lt;
+                    <xref format="dita" href="#link">Link</xref>&gt; array</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>rmaNumber</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The actual number of the return request.
+                    <b>Length</b>:
+                    <codeph>1 - 50</codeph>
+                    <b>Example</b>:
+                    <codeph>"10901095"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>shopName</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The name of the shop.
+                    <b>Example</b>:
+                    <codeph>"Test Shop US DE"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>shopOrderNumber</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The order number as used by the shop.
+                    <b>Example</b>:
+                    <codeph>"20180303123"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>status</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>
+                    <xref format="dita" href="#status">Status</xref>
+                  </lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>supplierName</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The name of the supplier.
+                    <b>Example</b>:
+                    <codeph>"Test Supplier US DE"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>supplierOrderNumber</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The order number as used by the supplier.
+                    <b>Example</b>:
+                    <codeph>"20180303321"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>type</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>
+                    <xref format="dita" href="#type">Type</xref>
+                  </lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="readreturnrequestitem">
+      <title>ReadReturnRequestItem</title>
+      <body>
+        <p>Represents a return request item of a return request from an order of a
+shop.</p>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>id</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The return request item identifier.
+                    <b>Example</b>:
+                    <codeph>10000</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>integer (int64)</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>links</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>&lt;
+                    <xref format="dita" href="#link">Link</xref>&gt; array</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>productSerialNumber</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The serial number of the product.
+                    <b>Length</b>:
+                    <codeph>1 - 70</codeph>
+                    <b>Example</b>:
+                    <codeph>"W88401231AX"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="readreturnrequestposition">
+      <title>ReadReturnRequestPosition</title>
+      <body>
+        <p>Represents a return request position of a return request from an order of
+a shop.</p>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>id</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The return request position identifier.
+                    <b>Example</b>:
+                    <codeph>10000</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>integer (int64)</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>links</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>&lt;
+                    <xref format="dita" href="#link">Link</xref>&gt; array</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>positionNumber</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The posistion number as used by the shop.
+                    <b>Example</b>:
+                    <codeph>1</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>integer (int32)</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>productName</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The product name as used by the shop.
+                    <b>Example</b>:
+                    <codeph>"test_product_1"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>productNumber</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The product number as used by the shop.
+                    <b>Length</b>:
+                    <codeph>1 - 50</codeph>
+                    <b>Example</b>:
+                    <codeph>"20180303123"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>quantity</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The quantity of the related product by the shop.
+                    <b>Minimum value</b>:
+                    <codeph>1</codeph>
+                    <b>Example</b>:
+                    <codeph>1</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>integer (int32)</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>reason</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The reason for the return.
+                    <b>Example</b>:
+                    <codeph>"RET100"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>supplierProductNumber</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The article number as used by the supplier.
+                    <b>Example</b>:
+                    <codeph>"20180303123"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="status">
+      <title>Status</title>
+      <body>
+        <p>The technical status of the return request.</p>
+        <p>
+          <i>Type</i>: enum (ACCEPTED, CLOSED, DO_APPROVE, DO_CLOSE, INITIAL, REJECTED)</p>
+      </body>
+    </topic>
+    <topic id="status1">
+      <title>Status1</title>
+      <body>
+        <p>The status of the approval.</p>
+        <p>
+          <i>Type</i>: enum (APPROVED, NOT_APPROVED)</p>
+      </body>
+    </topic>
+    <topic id="type">
+      <title>Type</title>
+      <body>
+        <p>The type that specifies the return request.</p>
+        <p>
+          <i>Type</i>: enum (RETURN, PICKUP)</p>
+      </body>
+    </topic>
+    <topic id="writeapproval">
+      <title>WriteApproval</title>
+      <body>
+        <p>Represents an approval of a return request of an order of a shop.</p>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>comment</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The comment for the approval.
+                    <b>Example</b>:
+                    <codeph>"The return request reasons are not convincing."</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>status</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>
+                    <xref format="dita" href="#status1">Status1</xref>
+                  </lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="writecustomattribute">
+      <title>WriteCustomAttribute</title>
+      <body>
+        <p>Represents a custom attribute (key/value pair) of a return request from an order of a shop.</p>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>key</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The key of a custom attribute.
+                    <b>Length</b>:
+                    <codeph>1 - 250</codeph>
+                    <b>Example</b>:
+                    <codeph>"Example Key"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>value</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The value of a custom attribute.
+                    <b>Length</b>:
+                    <codeph>1 - 1000</codeph>
+                    <b>Example</b>:
+                    <codeph>"Example Value"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="writepickupaddress">
+      <title>WritePickupAddress</title>
+      <body>
+        <p>Represents a pickup address related to the return request from an order of a shop.</p>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>additionFirstLine</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The first addition line related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 100</codeph>
+                    <b>Example</b>:
+                    <codeph>"Finanz"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>additionSecondLine</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The second addition line related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 100</codeph>
+                    <b>Example</b>:
+                    <codeph>"3.Floor"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>city</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The city name related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 100</codeph>
+                    <b>Example</b>:
+                    <codeph>"Berlin"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>company</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The name of the company of the pickup adress.
+                    <b>Length</b>:
+                    <codeph>1 - 100</codeph>
+                    <b>Example</b>:
+                    <codeph>"Intershop Communication AG"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>countryCode</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The ISO 3166-1 alpha-3 code for the country name related to the pickup address.
+                    <b>Example</b>:
+                    <codeph>"DEU"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>district</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The district related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 100</codeph>
+                    <b>Example</b>:
+                    <codeph>"Berlin"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>firstName</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The first name related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 50</codeph>
+                    <b>Example</b>:
+                    <codeph>"John"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>houseNumber</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The house number related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 20</codeph>
+                    <b>Example</b>:
+                    <codeph>"28"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>lastName</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The last name related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 50</codeph>
+                    <b>Example</b>:
+                    <codeph>"Doe"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>postCode</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The post code related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 25</codeph>
+                    <b>Example</b>:
+                    <codeph>"12053"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>streetName</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The name of the street related to the pickup address.
+                    <b>Length</b>:
+                    <codeph>1 - 100</codeph>
+                    <b>Example</b>:
+                    <codeph>"Alexstra&#223;e"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="writereturnrequest">
+      <title>WriteReturnRequest</title>
+      <body>
+        <p>Represents a return request from a shop.</p>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>comment</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The comment of the return request.
+                    <b>Length</b>:
+                    <codeph>0 - 255</codeph>
+                    <b>Example</b>:
+                    <codeph>"The battery is draining quickly"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>customAttributes</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>&lt;
+                    <xref format="dita" href="#writecustomattribute">WriteCustomAttribute</xref>&gt; array</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>pickupAddress</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>
+                    <xref format="dita" href="#writepickupaddress">WritePickupAddress</xref>
+                  </lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>positions</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>&lt;
+                    <xref format="dita" href="#writereturnrequestposition">WriteReturnRequestPosition</xref>&gt; array</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>rmaNumber</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The actual number of the return request.
+                    <b>Length</b>:
+                    <codeph>1 - 50</codeph>
+                    <b>Example</b>:
+                    <codeph>"10901095"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>type</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>
+                    <xref format="dita" href="#type">Type</xref>
+                  </lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="writereturnrequestitem">
+      <title>WriteReturnRequestItem</title>
+      <body>
+        <p>Represents a return request item of a return request from an order of a shop.</p>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>productSerialNumber</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The serial number of the product.
+                    <b>Length</b>:
+                    <codeph>1 - 70</codeph>
+                    <b>Example</b>:
+                    <codeph>"W88401231AX"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="writereturnrequestposition">
+      <title>WriteReturnRequestPosition</title>
+      <body>
+        <p>Represents a return request position of a return request from an order of a shop.</p>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="33%"></colspec>
+            <colspec colname="c2" colnum="2" colwidth="33%"></colspec>
+            <colspec colname="c3" colnum="3" colwidth="33%"></colspec>
+            <thead>
+              <row>
+                <entry align="left" colname="c1">Name</entry>
+                <entry align="left" colname="c2">Description</entry>
+                <entry align="left" colname="c3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>items</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines></lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>&lt;
+                    <xref format="dita" href="#writereturnrequestitem">WriteReturnRequestItem</xref>&gt; array</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>positionNumber</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The posistion number as used by the shop.
+                    <b>Example</b>:
+                    <codeph>1</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>integer (int32)</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>productNumber</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The product number as used by the shop.
+                    <b>Length</b>:
+                    <codeph>1 - 50</codeph>
+                    <b>Example</b>:
+                    <codeph>"20180303123"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>quantity</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The quantity of the related product by the shop.
+                    <b>Minimum value</b>:
+                    <codeph>1</codeph>
+                    <b>Example</b>:
+                    <codeph>1</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>integer (int32)</lines>
+                </entry>
+              </row>
+              <row>
+                <entry align="left" colname="c1">
+                  <lines>
+                    <b>reason</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c2">
+                  <lines>The reason for the return.
+                    <b>Example</b>:
+                    <codeph>"RET100"</codeph>
+                  </lines>
+                </entry>
+                <entry align="left" colname="c3">
+                  <lines>string</lines>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
+    <topic id="protocol">
+      <title>protocol</title>
+      <body>
+        <p>
+          <i>Type</i>: enum (http, https)</p>
+      </body>
+    </topic>
+  </topic>
+  <topic id="securityscheme">
+    <title>Security</title>
+    <body></body>
+    <topic id="auth">
+      <title>auth</title>
+      <body>
+        <p>
+          <i>Type</i>: basic</p>
+      </body>
+    </topic>
+  </topic>
+</topic>
+
