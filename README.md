@@ -130,6 +130,7 @@ To download a copy follow the instructions on the [Install page](https://github.
 
 ## Usage
 
+For DITA processing, a swagger file can be defined in either `json` or `yaml` format.
 To mark a file to be passed through for **Swagger** processing, label it with `format="swagger"` within the `*.ditamap`
 as shown:
 

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project basedir="." default="unit-test">
-	<!-- @disabled -->
 	<import file="../bootstrap.xml"/>
 	<description>
-		Expect that a local swagger file  with examples is copied to an HTML build
+		Expect that a local swagger YAML file  with examples is parsed.
 	</description>
 	<target name="unit-test">
-		<property name="file" value="${basedir}/out/swagger.json.dita"/>
+		<property name="file" value="${basedir}/out/swagger.yaml.dita"/>
 		<exec-transtype transtype="dita"/>
 		<xmltask expandEntityReferences="false" dest="${file}" outputter="simple" source="${file}">
 			<xmlcatalog>
