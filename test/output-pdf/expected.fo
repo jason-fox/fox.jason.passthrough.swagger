@@ -62,7 +62,7 @@
               </fo:list-block>
             </fo:block>
           </fo:table-cell>
-          <fo:table-cell padding-start="10pt">
+          <fo:table-cell>
             <fo:block></fo:block>
           </fo:table-cell>
         </fo:table-row>
@@ -172,9 +172,9 @@
                 <fo:wrapper></fo:wrapper>Add a new pet to the store</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
-                <fo:inline padding-start="10pt">/pet</fo:inline>
+                <fo:inline>/pet</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -416,9 +416,9 @@
                 <fo:wrapper></fo:wrapper>Update an existing pet</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="BEIGE" border-color="#fca130" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="BEIGE" border-color="#fca130" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#fca130" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">PUT</fo:inline>
-                <fo:inline padding-start="10pt">/pet</fo:inline>
+                <fo:inline>/pet</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -686,9 +686,9 @@
                 <fo:wrapper></fo:wrapper>Finds Pets by status</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
-                <fo:inline padding-start="10pt">/pet/findByStatus</fo:inline>
+                <fo:inline>/pet/findByStatus</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
@@ -921,9 +921,9 @@
                 <fo:wrapper></fo:wrapper>Finds Pets by tags</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
-                <fo:inline padding-start="10pt">/pet/findByTags</fo:inline>
+                <fo:inline>/pet/findByTags</fo:inline>
               </fo:block>
               <fo:block>Caution :
 This operation is deprecated.</fo:block>
@@ -1158,9 +1158,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Updates a pet in the store with form data</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
-                <fo:inline padding-start="10pt">/pet/{petId}</fo:inline>
+                <fo:inline>/pet/{petId}</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -1439,9 +1439,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Find pet by ID</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
-                <fo:inline padding-start="10pt">/pet/{petId}</fo:inline>
+                <fo:inline>/pet/{petId}</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
@@ -1681,9 +1681,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Deletes a pet</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="BEIGE" border-color="#f93e3e" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="BEIGE" border-color="#f93e3e" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">DELETE</fo:inline>
-                <fo:inline padding-start="10pt">/pet/{petId}</fo:inline>
+                <fo:inline>/pet/{petId}</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -1931,9 +1931,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>uploads an image</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
-                <fo:inline padding-start="10pt">/pet/{petId}/uploadImage</fo:inline>
+                <fo:inline>/pet/{petId}/uploadImage</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -2209,9 +2209,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Returns pet inventories by status</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
-                <fo:inline padding-start="10pt">/store/inventory</fo:inline>
+                <fo:inline>/store/inventory</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
@@ -2348,9 +2348,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Place an order for a pet</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
-                <fo:inline padding-start="10pt">/store/order</fo:inline>
+                <fo:inline>/store/order</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -2534,9 +2534,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Find purchase order by ID</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
-                <fo:inline padding-start="10pt">/store/order/{orderId}</fo:inline>
+                <fo:inline>/store/order/{orderId}</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
@@ -2732,9 +2732,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Delete purchase order by ID</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="BEIGE" border-color="#f93e3e" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="BEIGE" border-color="#f93e3e" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">DELETE</fo:inline>
-                <fo:inline padding-start="10pt">/store/order/{orderId}</fo:inline>
+                <fo:inline>/store/order/{orderId}</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
@@ -2910,9 +2910,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Create user</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
-                <fo:inline padding-start="10pt">/user</fo:inline>
+                <fo:inline>/user</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
@@ -3082,9 +3082,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Creates list of users with given input array</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
-                <fo:inline padding-start="10pt">/user/createWithArray</fo:inline>
+                <fo:inline>/user/createWithArray</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -3247,9 +3247,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Creates list of users with given input array</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
-                <fo:inline padding-start="10pt">/user/createWithList</fo:inline>
+                <fo:inline>/user/createWithList</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -3412,9 +3412,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Logs user into the system</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
-                <fo:inline padding-start="10pt">/user/login</fo:inline>
+                <fo:inline>/user/login</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -3620,9 +3620,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Logs out current logged in user session</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
-                <fo:inline padding-start="10pt">/user/logout</fo:inline>
+                <fo:inline>/user/logout</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
@@ -3719,9 +3719,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Get user by user name</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
-                <fo:inline padding-start="10pt">/user/{username}</fo:inline>
+                <fo:inline>/user/{username}</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -3911,9 +3911,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Updated user</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="BEIGE" border-color="#fca130" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="BEIGE" border-color="#fca130" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#fca130" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">PUT</fo:inline>
-                <fo:inline padding-start="10pt">/user/{username}</fo:inline>
+                <fo:inline>/user/{username}</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
@@ -4123,9 +4123,9 @@ This operation is deprecated.</fo:block>
                 <fo:wrapper></fo:wrapper>Delete user</fo:block>
             </fo:block>
             <fo:block>
-              <fo:block background-color="BEIGE" border-color="#f93e3e" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold" padding-start="10pt">
+              <fo:block background-color="BEIGE" border-color="#f93e3e" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">DELETE</fo:inline>
-                <fo:inline padding-start="10pt">/user/{username}</fo:inline>
+                <fo:inline>/user/{username}</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
