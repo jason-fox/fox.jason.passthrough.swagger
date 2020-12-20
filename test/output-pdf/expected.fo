@@ -173,7 +173,7 @@
             </fo:block>
             <fo:block>
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
+                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/pet</fo:inline>
               </fo:block>
               <fo:block>
@@ -417,7 +417,7 @@
             </fo:block>
             <fo:block>
               <fo:block background-color="BEIGE" border-color="#fca130" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="#fca130" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">PUT</fo:inline>
+                <fo:inline background-color="#fca130" color="white" font-family="STANDARD">PUT</fo:inline>
                 <fo:inline>/pet</fo:inline>
               </fo:block>
               <fo:block>
@@ -687,7 +687,7 @@
             </fo:block>
             <fo:block>
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
+                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/pet/findByStatus</fo:inline>
               </fo:block>
               <fo:block>
@@ -922,7 +922,7 @@
             </fo:block>
             <fo:block>
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
+                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/pet/findByTags</fo:inline>
               </fo:block>
               <fo:block>Caution :
@@ -1159,7 +1159,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
+                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/pet/{petId}</fo:inline>
               </fo:block>
               <fo:block>
@@ -1440,7 +1440,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
+                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/pet/{petId}</fo:inline>
               </fo:block>
               <fo:block>
@@ -1682,7 +1682,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="BEIGE" border-color="#f93e3e" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">DELETE</fo:inline>
+                <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD">DELETE</fo:inline>
                 <fo:inline>/pet/{petId}</fo:inline>
               </fo:block>
               <fo:block>
@@ -1932,7 +1932,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
+                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/pet/{petId}/uploadImage</fo:inline>
               </fo:block>
               <fo:block>
@@ -2210,7 +2210,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
+                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/store/inventory</fo:inline>
               </fo:block>
               <fo:block>
@@ -2349,7 +2349,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
+                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/store/order</fo:inline>
               </fo:block>
               <fo:block>
@@ -2535,7 +2535,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
+                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/store/order/{orderId}</fo:inline>
               </fo:block>
               <fo:block>
@@ -2733,7 +2733,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="BEIGE" border-color="#f93e3e" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">DELETE</fo:inline>
+                <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD">DELETE</fo:inline>
                 <fo:inline>/store/order/{orderId}</fo:inline>
               </fo:block>
               <fo:block>
@@ -2911,7 +2911,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
+                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/user</fo:inline>
               </fo:block>
               <fo:block>
@@ -3083,7 +3083,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
+                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/user/createWithArray</fo:inline>
               </fo:block>
               <fo:block>
@@ -3248,7 +3248,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">POST</fo:inline>
+                <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/user/createWithList</fo:inline>
               </fo:block>
               <fo:block>
@@ -3413,7 +3413,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
+                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/user/login</fo:inline>
               </fo:block>
               <fo:block>
@@ -3621,7 +3621,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
+                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/user/logout</fo:inline>
               </fo:block>
               <fo:block>
@@ -3720,7 +3720,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">GET</fo:inline>
+                <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/user/{username}</fo:inline>
               </fo:block>
               <fo:block>
@@ -3912,7 +3912,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="BEIGE" border-color="#fca130" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="#fca130" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">PUT</fo:inline>
+                <fo:inline background-color="#fca130" color="white" font-family="STANDARD">PUT</fo:inline>
                 <fo:inline>/user/{username}</fo:inline>
               </fo:block>
               <fo:block>
@@ -4124,7 +4124,7 @@ This operation is deprecated.</fo:block>
             </fo:block>
             <fo:block>
               <fo:block background-color="BEIGE" border-color="#f93e3e" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
-                <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD" padding-end="8pt" padding-start="8pt">DELETE</fo:inline>
+                <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD">DELETE</fo:inline>
                 <fo:inline>/user/{username}</fo:inline>
               </fo:block>
               <fo:block>
