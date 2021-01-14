@@ -2,24 +2,21 @@
 	This file is part of the DITA-OT Swagger Plug-in project.
 	See the accompanying LICENSE file for applicable licenses.
 -->
-<project name="fox.jason.passthrough.swagger">
+<project name="fox.jason.passthrough.swagger" default="swagger.process">
 
 	<target name="swagger.css.copy">
 		<loadfile property="swagger.css" srcFile="${dita.plugin.fox.jason.passthrough.swagger.dir}/resource/swagger.css"/>
 		<echo append="true" message="${line.separator}${swagger.css}" file="${extend.css.file}"/>
 	</target>
-	<!--
-		Create Swagger processing macros.
-	-->
-	<target name="swagger.process.pre">
-		<taskdef resource="fox/jason/swagger/antlib.xml"/>
-	</target>
-
 
 	<!--
 		Iterate across all files marked format="swagger" and process them
 	-->
 	<target name="swagger.process">
-		<passthrough-iterate format="swagger" macro="add-swagger-file"/>
+		<property name="passthrough.input" value=""/>
+		<property name="passthrough.output" value=""/>
+		<property name="passthrough.title" value=""/>
+		<typedef file="${basedir}/resource/antlib.xml"/>
+		<add-swagger-file src="${passthrough.input}" dest="${passthrough.output}" title="${passthrough.title}"/>
 	</target>
 </project>

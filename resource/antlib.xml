@@ -13,7 +13,13 @@
 			@param file	- The Swagger Markdown file to clean up
 		
 	-->
-	<taskdef classname="fox.jason.passthrough.tasks.FormatMarkdownTask" name="format-swagger-markdown"/>
+	<taskdef classname="fox.jason.passthrough.tasks.FormatMarkdownTask" name="format-swagger-markdown">
+		<classpath>
+			<fileset dir="lib">
+				<include name="**/*.jar"/>
+			</fileset>
+		</classpath>
+	</taskdef>
 
 	<!--
 		Individual file processing for swagger.
@@ -28,7 +34,6 @@
 		<attribute name="src" />
 		<attribute name="dest" />
 		<attribute name="title" />
-		<attribute name="metadata"/>
 		<sequential>
 			<echo if:set="swagger.installed" taskname="swagger" level="info" message="Processing @{src}"/>
 
@@ -38,19 +43,16 @@
 			<local name="swagger.error"/>
 			<local name="swagger.isError"/>
 
-			<tempfile deleteonexit="true" destdir="${dita.temp.dir}" 
-				property="swagger.temp.file" suffix=""/>
-
-			<java taskname="swagger-gen" outputproperty="swagger.output" resultproperty="swagger.result"  errorproperty="swagger.error" jar="${dita.plugin.fox.jason.passthrough.swagger.dir}/lib/swagger2markup-cli-2.0.0.jar"
+			<java taskname="swagger-gen" outputproperty="swagger.output" resultproperty="swagger.result"  errorproperty="swagger.error" jar="${basedir}/lib/swagger2markup-cli-2.0.0.jar"
 				fork="true" failonerror="false" maxmemory="128m">
 			  
 				<arg value="convert"/>
 				<arg value="-i"/>
 				<arg value="@{src}"/>
 				<arg value="-f"/>
-				<arg value="${swagger.temp.file}"/>
+				<arg value="@{dest}"/>
 				<arg value="-c"/>
-				<arg value="${dita.plugin.fox.jason.passthrough.swagger.dir}/cfg/config.properties"/>
+				<arg value="${basedir}/cfg/config.properties"/>
 			</java>
 
 			<condition property="swagger.isError">
@@ -60,13 +62,10 @@
 		    </condition>
 
 			<echo taskname="swagger-gen" if:set="swagger.isError" level="error" message="${swagger.error}"/>
-			<dita-ot-fail if:set="swagger.isError" id="SWAG001F">
-		    	<param name="1" value="@{src}"/>
-		    </dita-ot-fail>
-			<format-swagger-markdown file="${swagger.temp.file}.md"/>
+			<fail if:set="swagger.isError" id="SWAG001F" message="SwaggerGen failed to generate documentation:&#xD;&#xD; @{src}"/>
 
-			<!--copy file="${swagger.temp.file}.md" tofile="${output.dir}/test.md"/-->
-			<add-pandoc-file src="${swagger.temp.file}.md" dest="@{dest}" title="@{title}" metadata="@{metadata}"/>
+			<format-swagger-markdown file="@{dest}.md"/>
+			<move file="@{dest}.md" tofile="@{dest}"/>
 		</sequential>
 	</macrodef>
 

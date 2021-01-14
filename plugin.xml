@@ -6,7 +6,7 @@
 -->
 <plugin id="fox.jason.passthrough.swagger" version="1.3.0">
 	<feature extension="dita.conductor.lib.import" file="lib/swagger2markup-cli-2.0.0.jar"/>
-	<feature extension="dita.conductor.lib.import" file="lib/passthrough.swagger-1.1.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/passthrough.swagger-2.0.jar"/>
 	<feature extension="ant.import" file="process_swagger.xml"/>
 	<!--
 		This plugin requires Pandoc and the passthrough reader.
@@ -26,10 +26,8 @@
 	<feature extension="extend.css.process" value="swagger.css.copy"/>
 	<!-- Uses the passthrough extension point and file reader -->
 	<feature extension="dita.parser">
-		<parser format="swagger" class="fox.jason.passthrough.parser.FileReader"/>
+		<parser format="swagger" class="fox.jason.passthrough.SwaggerFileReader"/>
 	</feature>
-	<feature extension="passthrough.pre" value="swagger.process.pre"/>
-	<feature extension="passthrough.process" value="swagger.process"/>
 	<!-- Ensure the plugin's error and logging messages are available -->
 	<feature extension="dita.xsl.messages" file="resource/messages.xml"/>
 </plugin>

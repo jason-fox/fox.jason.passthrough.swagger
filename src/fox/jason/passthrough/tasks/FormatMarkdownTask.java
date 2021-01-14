@@ -18,6 +18,7 @@ import org.apache.tools.ant.util.FileUtils;
 //    removes HTML anchor tags and adds ids to headers
 
 public class FormatMarkdownTask extends Task {
+
   /**
    * Field file.
    */
