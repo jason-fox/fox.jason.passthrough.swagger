@@ -16,14 +16,14 @@
 			<artifactId>passthrough.parser</artifactId>
 			<version>${passthrough-version}</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/../fox.jason.passthrough/lib/passthrough.parser-${passthrough-version}.jar</systemPath>
+			<systemPath>${project.basedir}/lib/passthrough.parser-${passthrough-version}.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>fox.jason</groupId>
 			<artifactId>passthrough.pandoc</artifactId>
 			<version>${pandoc-version}</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/../fox.jason.passthrough.pandoc/lib/passthrough.pandoc-${pandoc-version}.jar</systemPath>
+			<systemPath>${project.basedir}/lib/passthrough.pandoc-${pandoc-version}.jar</systemPath>
 		</dependency>
 	</dependencies>
 

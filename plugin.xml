@@ -12,7 +12,6 @@
 		This plugin requires Pandoc and the passthrough reader.
 		The swagger CSS/FOP processing is used to display the colored bars
 	-->
-	<require plugin="fox.jason.passthrough"/>
 	<require plugin="fox.jason.passthrough.pandoc"/>
 	<require plugin="fox.jason.extend.css"/>
 
