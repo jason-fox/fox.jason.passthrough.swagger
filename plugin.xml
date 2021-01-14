@@ -4,7 +4,7 @@
 	This file is part of the DITA-OT Swagger Plug-in project.
 	See the accompanying LICENSE file for applicable licenses.
 -->
-<plugin id="fox.jason.passthrough.swagger" version="1.3.0">
+<plugin id="fox.jason.passthrough.swagger" version="2.0.0">
 	<feature extension="dita.conductor.lib.import" file="lib/swagger2markup-cli-2.0.0.jar"/>
 	<feature extension="dita.conductor.lib.import" file="lib/passthrough.swagger-2.0.jar"/>
 	<feature extension="ant.import" file="process_swagger.xml"/>
