@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<topic id="identity" outputclass="swagger">
+<?path2rootmap-uri ./?>
+<topic id="identity" outputclass="swagger" specializations="@props/deliveryTarget">
   <title>identity</title>
   <body></body>
-  <topic id="overview">
+  <topic id="overview" specializations="@props/deliveryTarget">
     <title>Overview</title>
     <body>
       <section id="version-information" outputclass="section">
@@ -29,10 +30,10 @@
       </section>
     </body>
   </topic>
-  <topic id="paths">
+  <topic id="paths" specializations="@props/deliveryTarget">
     <title>Paths</title>
     <body></body>
-    <topic id="getversions-v2" outputclass="swagger-get">
+    <topic id="getversions-v2" outputclass="swagger-get" specializations="@props/deliveryTarget">
       <title>List versions</title>
       <body>
         <codeblock outputclass="swagger-get">GET /</codeblock>
@@ -44,23 +45,23 @@
           <title>Responses</title>
           <table>
             <tgroup cols="3">
-              <colspec colname="c1" colnum="1"></colspec>
-              <colspec colname="c2" colnum="2"></colspec>
-              <colspec colname="c3" colnum="3"></colspec>
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="c1">HTTP Code</entry>
-                  <entry align="left" colname="c2">Description</entry>
-                  <entry align="left" colname="c3">Schema</entry>
+                  <entry align="left" colname="col1">HTTP Code</entry>
+                  <entry align="left" colname="col2">Description</entry>
+                  <entry align="left" colname="col3">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <b>200</b>
                   </entry>
-                  <entry align="left" colname="c2">200 response</entry>
-                  <entry align="left" colname="c3">No Content</entry>
+                  <entry align="left" colname="col2">200 response</entry>
+                  <entry align="left" colname="col3">No Content</entry>
                 </row>
               </tbody>
             </tgroup>
@@ -135,7 +136,7 @@
         </example>
       </body>
     </topic>
-    <topic id="getversioninfo-v2-0" outputclass="swagger-get">
+    <topic id="getversioninfo-v2-0" outputclass="swagger-get" specializations="@props/deliveryTarget">
       <title>Show version details</title>
       <body>
         <codeblock outputclass="swagger-get">GET /v2.0</codeblock>
@@ -147,30 +148,30 @@
           <title>Responses</title>
           <table>
             <tgroup cols="3">
-              <colspec colname="c1" colnum="1"></colspec>
-              <colspec colname="c2" colnum="2"></colspec>
-              <colspec colname="c3" colnum="3"></colspec>
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="c1">HTTP Code</entry>
-                  <entry align="left" colname="c2">Description</entry>
-                  <entry align="left" colname="c3">Schema</entry>
+                  <entry align="left" colname="col1">HTTP Code</entry>
+                  <entry align="left" colname="col2">Description</entry>
+                  <entry align="left" colname="col3">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <b>200</b>
                   </entry>
-                  <entry align="left" colname="c2">200 203 response</entry>
-                  <entry align="left" colname="c3">No Content</entry>
+                  <entry align="left" colname="col2">200 203 response</entry>
+                  <entry align="left" colname="col3">No Content</entry>
                 </row>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <b>203</b>
                   </entry>
-                  <entry align="left" colname="c2">200 203 response</entry>
-                  <entry align="left" colname="c3">No Content</entry>
+                  <entry align="left" colname="col2">200 203 response</entry>
+                  <entry align="left" colname="col3">No Content</entry>
                 </row>
               </tbody>
             </tgroup>
@@ -241,7 +242,7 @@
         </example>
       </body>
     </topic>
-    <topic id="listextensions-v2-0" outputclass="swagger-get">
+    <topic id="listextensions-v2-0" outputclass="swagger-get" specializations="@props/deliveryTarget">
       <title>List extensions</title>
       <body>
         <codeblock outputclass="swagger-get">GET /v2.0/extensions</codeblock>
@@ -253,30 +254,30 @@
           <title>Responses</title>
           <table>
             <tgroup cols="3">
-              <colspec colname="c1" colnum="1"></colspec>
-              <colspec colname="c2" colnum="2"></colspec>
-              <colspec colname="c3" colnum="3"></colspec>
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="c1">HTTP Code</entry>
-                  <entry align="left" colname="c2">Description</entry>
-                  <entry align="left" colname="c3">Schema</entry>
+                  <entry align="left" colname="col1">HTTP Code</entry>
+                  <entry align="left" colname="col2">Description</entry>
+                  <entry align="left" colname="col3">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <b>200</b>
                   </entry>
-                  <entry align="left" colname="c2">200 203 response</entry>
-                  <entry align="left" colname="c3">No Content</entry>
+                  <entry align="left" colname="col2">200 203 response</entry>
+                  <entry align="left" colname="col3">No Content</entry>
                 </row>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <b>203</b>
                   </entry>
-                  <entry align="left" colname="c2">200 203 response</entry>
-                  <entry align="left" colname="c3">No Content</entry>
+                  <entry align="left" colname="col2">200 203 response</entry>
+                  <entry align="left" colname="col3">No Content</entry>
                 </row>
               </tbody>
             </tgroup>
@@ -481,7 +482,7 @@
         </example>
       </body>
     </topic>
-    <topic id="getextension-v2-0" outputclass="swagger-get">
+    <topic id="getextension-v2-0" outputclass="swagger-get" specializations="@props/deliveryTarget">
       <title>Get extension details</title>
       <body>
         <codeblock outputclass="swagger-get">GET /v2.0/extensions/{alias}</codeblock>
@@ -493,35 +494,35 @@
           <title>Parameters</title>
           <table>
             <tgroup cols="4">
-              <colspec colname="c1" colnum="1"></colspec>
-              <colspec colname="c2" colnum="2"></colspec>
-              <colspec colname="c3" colnum="3"></colspec>
-              <colspec colname="c4" colnum="4"></colspec>
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="c1">Type</entry>
-                  <entry align="left" colname="c2">Name</entry>
-                  <entry align="left" colname="c3">Description</entry>
-                  <entry align="left" colname="c4">Schema</entry>
+                  <entry align="left" colname="col1">Type</entry>
+                  <entry align="left" colname="col2">Name</entry>
+                  <entry align="left" colname="col3">Description</entry>
+                  <entry align="left" colname="col4">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <lines>
                       <b>Path</b>
                     </lines>
                   </entry>
-                  <entry align="left" colname="c2">
+                  <entry align="left" colname="col2">
                     <lines>
                       <b>alias</b>
                       <i>required</i>
                     </lines>
                   </entry>
-                  <entry align="left" colname="c3">
+                  <entry align="left" colname="col3">
                     <lines>The extension name.</lines>
                   </entry>
-                  <entry align="left" colname="c4">
+                  <entry align="left" colname="col4">
                     <lines>string</lines>
                   </entry>
                 </row>
@@ -533,30 +534,30 @@
           <title>Responses</title>
           <table>
             <tgroup cols="3">
-              <colspec colname="c1" colnum="1"></colspec>
-              <colspec colname="c2" colnum="2"></colspec>
-              <colspec colname="c3" colnum="3"></colspec>
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="c1">HTTP Code</entry>
-                  <entry align="left" colname="c2">Description</entry>
-                  <entry align="left" colname="c3">Schema</entry>
+                  <entry align="left" colname="col1">HTTP Code</entry>
+                  <entry align="left" colname="col2">Description</entry>
+                  <entry align="left" colname="col3">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <b>200</b>
                   </entry>
-                  <entry align="left" colname="c2">200 203 response</entry>
-                  <entry align="left" colname="c3">No Content</entry>
+                  <entry align="left" colname="col2">200 203 response</entry>
+                  <entry align="left" colname="col3">No Content</entry>
                 </row>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <b>203</b>
                   </entry>
-                  <entry align="left" colname="c2">200 203 response</entry>
-                  <entry align="left" colname="c3">No Content</entry>
+                  <entry align="left" colname="col2">200 203 response</entry>
+                  <entry align="left" colname="col3">No Content</entry>
                 </row>
               </tbody>
             </tgroup>
@@ -613,7 +614,7 @@
         </example>
       </body>
     </topic>
-    <topic id="listtenants" outputclass="swagger-get">
+    <topic id="listtenants" outputclass="swagger-get" specializations="@props/deliveryTarget">
       <title>List tenants</title>
       <body>
         <codeblock outputclass="swagger-get">GET /v2.0/tenants</codeblock>
@@ -625,73 +626,73 @@
           <title>Parameters</title>
           <table>
             <tgroup cols="4">
-              <colspec colname="c1" colnum="1"></colspec>
-              <colspec colname="c2" colnum="2"></colspec>
-              <colspec colname="c3" colnum="3"></colspec>
-              <colspec colname="c4" colnum="4"></colspec>
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="c1">Type</entry>
-                  <entry align="left" colname="c2">Name</entry>
-                  <entry align="left" colname="c3">Description</entry>
-                  <entry align="left" colname="c4">Schema</entry>
+                  <entry align="left" colname="col1">Type</entry>
+                  <entry align="left" colname="col2">Name</entry>
+                  <entry align="left" colname="col3">Description</entry>
+                  <entry align="left" colname="col4">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <lines>
                       <b>Header</b>
                     </lines>
                   </entry>
-                  <entry align="left" colname="c2">
+                  <entry align="left" colname="col2">
                     <lines>
                       <b>X-Auth-Token</b>
                       <i>required</i>
                     </lines>
                   </entry>
-                  <entry align="left" colname="c3">
+                  <entry align="left" colname="col3">
                     <lines>A valid authentication token.</lines>
                   </entry>
-                  <entry align="left" colname="c4">
+                  <entry align="left" colname="col4">
                     <lines>string</lines>
                   </entry>
                 </row>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <lines>
                       <b>Query</b>
                     </lines>
                   </entry>
-                  <entry align="left" colname="c2">
+                  <entry align="left" colname="col2">
                     <lines>
                       <b>limit</b>
                       <i>optional</i>
                     </lines>
                   </entry>
-                  <entry align="left" colname="c3">
+                  <entry align="left" colname="col3">
                     <lines>The page size.</lines>
                   </entry>
-                  <entry align="left" colname="c4">
+                  <entry align="left" colname="col4">
                     <lines>integer</lines>
                   </entry>
                 </row>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <lines>
                       <b>Query</b>
                     </lines>
                   </entry>
-                  <entry align="left" colname="c2">
+                  <entry align="left" colname="col2">
                     <lines>
                       <b>marker</b>
                       <i>optional</i>
                     </lines>
                   </entry>
-                  <entry align="left" colname="c3">
+                  <entry align="left" colname="col3">
                     <lines>The ID of the last item in the previous list.</lines>
                   </entry>
-                  <entry align="left" colname="c4">
+                  <entry align="left" colname="col4">
                     <lines>string</lines>
                   </entry>
                 </row>
@@ -703,30 +704,30 @@
           <title>Responses</title>
           <table>
             <tgroup cols="3">
-              <colspec colname="c1" colnum="1"></colspec>
-              <colspec colname="c2" colnum="2"></colspec>
-              <colspec colname="c3" colnum="3"></colspec>
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="c1">HTTP Code</entry>
-                  <entry align="left" colname="c2">Description</entry>
-                  <entry align="left" colname="c3">Schema</entry>
+                  <entry align="left" colname="col1">HTTP Code</entry>
+                  <entry align="left" colname="col2">Description</entry>
+                  <entry align="left" colname="col3">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <b>200</b>
                   </entry>
-                  <entry align="left" colname="c2">200 203 response</entry>
-                  <entry align="left" colname="c3">No Content</entry>
+                  <entry align="left" colname="col2">200 203 response</entry>
+                  <entry align="left" colname="col3">No Content</entry>
                 </row>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <b>203</b>
                   </entry>
-                  <entry align="left" colname="c2">200 203 response</entry>
-                  <entry align="left" colname="c3">No Content</entry>
+                  <entry align="left" colname="col2">200 203 response</entry>
+                  <entry align="left" colname="col3">No Content</entry>
                 </row>
               </tbody>
             </tgroup>
@@ -785,7 +786,7 @@
         </example>
       </body>
     </topic>
-    <topic id="authenticate-v2-0" outputclass="swagger-post">
+    <topic id="authenticate-v2-0" outputclass="swagger-post" specializations="@props/deliveryTarget">
       <title>Authenticate</title>
       <body>
         <codeblock outputclass="swagger-post">POST /v2.0/tokens</codeblock>
@@ -797,30 +798,30 @@
           <title>Responses</title>
           <table>
             <tgroup cols="3">
-              <colspec colname="c1" colnum="1"></colspec>
-              <colspec colname="c2" colnum="2"></colspec>
-              <colspec colname="c3" colnum="3"></colspec>
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="c1">HTTP Code</entry>
-                  <entry align="left" colname="c2">Description</entry>
-                  <entry align="left" colname="c3">Schema</entry>
+                  <entry align="left" colname="col1">HTTP Code</entry>
+                  <entry align="left" colname="col2">Description</entry>
+                  <entry align="left" colname="col3">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <b>200</b>
                   </entry>
-                  <entry align="left" colname="c2">200 203 response</entry>
-                  <entry align="left" colname="c3">No Content</entry>
+                  <entry align="left" colname="col2">200 203 response</entry>
+                  <entry align="left" colname="col3">No Content</entry>
                 </row>
                 <row>
-                  <entry align="left" colname="c1">
+                  <entry align="left" colname="col1">
                     <b>203</b>
                   </entry>
-                  <entry align="left" colname="c2">200 203 response</entry>
-                  <entry align="left" colname="c3">No Content</entry>
+                  <entry align="left" colname="col2">200 203 response</entry>
+                  <entry align="left" colname="col3">No Content</entry>
                 </row>
               </tbody>
             </tgroup>

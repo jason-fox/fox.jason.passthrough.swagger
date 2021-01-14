@@ -5,12 +5,12 @@
 		Expect that a local swagger YAML file  with examples is parsed.
 	</description>
 	<target name="unit-test">
-		<property name="file" value="${basedir}/out/swagger.yaml.dita"/>
+		<property name="file" value="${basedir}/out/swagger.yaml"/>
 		<exec-transtype transtype="dita"/>
 		<xmltask expandEntityReferences="false" dest="${file}" outputter="simple" source="${file}">
 			<xmlcatalog>
 				<dtd publicId="-//OASIS//DTD DITA Topic//EN" 
-				location="${dita.dir}/plugins/fox.jason.passthrough/resource/fake.dtd"/>
+				location="../fake.dtd"/>
 			</xmlcatalog>
 		</xmltask>
 		<compare-output suffix=".xml" result="${file}"/>
