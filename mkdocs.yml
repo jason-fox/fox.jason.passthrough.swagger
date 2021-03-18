@@ -1,12 +1,10 @@
 site_name: DITA-OT Swagger Plugin
-
-repo_url: https://github.com/jason-fox/fox.jason.passthrough.swagger
+repo_url: 'https://github.com/jason-fox/fox.jason.passthrough.swagger'
 repo_name: GitHub
-
 pages:
-    -  Home: index.md
-    - 'Install' : 'install.md'
-    - 'Usage' : 'usage.md'
-
+  - Home: index.md
+  - Install: install.md
+  - Usage: usage.md
 theme: readthedocs
-extra_css: ["https://jason-fox.github.io/fox.jason.passthrough.swagger/dita.css"]
+extra_css:
+  - 'https://jason-fox.github.io/fox.jason.passthrough.swagger/dita.css'
