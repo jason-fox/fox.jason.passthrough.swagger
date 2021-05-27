@@ -22,7 +22,7 @@ span.swagger-verb {
     padding: 5px;
     padding-left: 1em;
     padding-right: 1em;
-    font-family: var( --font-family-sans-serif, sans-serif);
+    font-family: var( --bs-font-sans-serif, sans-serif);
     font-size: medium;
     margin-left: 1em;
     margin-right: 1em;
