@@ -6,7 +6,7 @@
 -->
 <plugin id="fox.jason.passthrough.swagger" version="2.0.0">
 	<feature extension="dita.conductor.lib.import" file="lib/swagger2markup-cli-2.0.0.jar"/>
-	<feature extension="dita.conductor.lib.import" file="lib/passthrough.swagger-2.0.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/passthrough.swagger-2.1.jar"/>
 	<feature extension="ant.import" file="process_swagger.xml"/>
 	<!--
 		This plugin requires Pandoc and the passthrough reader.

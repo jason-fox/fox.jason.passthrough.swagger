@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--ant-->
+<!--
+	This file is part of the DITA-OT Swagger Plug-in project.
+	See the accompanying LICENSE file for applicable licenses.
+-->
+<antlib>
+
+	<!--
+
+		Entry point to the JavaScript tidier function which 
+		removes HTML anchor tags and adds ids to headers
+
+			@param file	- The Swagger Markdown file to clean up
+		
+	-->
+	<taskdef classname="fox.jason.passthrough.tasks.FormatMarkdownTask" name="format-markdown" />
+
+</antlib>
