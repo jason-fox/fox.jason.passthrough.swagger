@@ -1,12 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><!--ant--><!--
+<?xml version="1.0" encoding="UTF-8"?>
+<!--ant-->
+<!--
 	This file is part of the DITA-OT Swagger Plug-in project.
 	See the accompanying LICENSE file for applicable licenses.
 -->
-<project name="fox.jason.passthrough.swagger" default="swagger.process" xmlns:swagger="antlib:fox.jason.passthrough.swagger"  xmlns:if="ant:if" xmlns:unless="ant:unless">
+<project
+  name="fox.jason.passthrough.swagger"
+  default="swagger.process"
+  xmlns:swagger="antlib:fox.jason.passthrough.swagger"
+  xmlns:if="ant:if"
+  xmlns:unless="ant:unless"
+>
 
 	<target name="swagger.css.copy">
-		<loadfile property="swagger.css" srcFile="${dita.plugin.fox.jason.passthrough.swagger.dir}/resource/swagger.css"/>
-		<echo append="true" message="${line.separator}${swagger.css}" file="${extend.css.file}"/>
+		<loadfile
+      property="swagger.css"
+      srcFile="${dita.plugin.fox.jason.passthrough.swagger.dir}/resource/swagger.css"
+    />
+		<echo
+      append="true"
+      message="${line.separator}${swagger.css}"
+      file="${extend.css.file}"
+    />
 	</target>
 
 	<!--
@@ -22,8 +37,16 @@
 		<local name="swagger.error"/>
 		<local name="swagger.isError"/>
 
-		<java taskname="swagger-gen" outputproperty="swagger.output" resultproperty="swagger.result"  errorproperty="swagger.error" jar="${basedir}/lib/swagger2markup-cli-2.0.0.jar"
-			fork="true" failonerror="false" maxmemory="128m">
+		<java
+      taskname="swagger-gen"
+      outputproperty="swagger.output"
+      resultproperty="swagger.result"
+      errorproperty="swagger.error"
+      jar="${basedir}/lib/swagger2markup-cli-2.0.0.jar"
+      fork="true"
+      failonerror="false"
+      maxmemory="128m"
+    >
 		  
 			<arg value="convert"/>
 			<arg value="-i"/>
@@ -40,8 +63,17 @@
 	        </not>
 	    </condition>
 
-		<echo taskname="swagger-gen" if:set="swagger.isError" level="error" message="${swagger.error}"/>
-		<fail if:set="swagger.isError" id="SWAG001F" message="SwaggerGen failed to generate documentation:&#xD;&#xD; ${passthrough.input}"/>
+		<echo
+      taskname="swagger-gen"
+      if:set="swagger.isError"
+      level="error"
+      message="${swagger.error}"
+    />
+		<fail
+      if:set="swagger.isError"
+      id="SWAG001F"
+      message="SwaggerGen failed to generate documentation:&#xD;&#xD; ${passthrough.input}"
+    />
 
 		<swagger:format-markdown file="${passthrough.output}.md"/>
 		<move file="${passthrough.output}.md" tofile="${passthrough.output}"/>

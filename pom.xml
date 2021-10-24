@@ -1,5 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fox.jason</groupId>
 	<artifactId>passthrough.swagger</artifactId>
@@ -16,14 +19,16 @@
 			<artifactId>passthrough.parser</artifactId>
 			<version>${passthrough-version}</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/passthrough.parser-${passthrough-version}.jar</systemPath>
+			<systemPath
+      >${project.basedir}/lib/passthrough.parser-${passthrough-version}.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>fox.jason</groupId>
 			<artifactId>passthrough.pandoc</artifactId>
 			<version>${pandoc-version}</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/passthrough.pandoc-${pandoc-version}.jar</systemPath>
+			<systemPath
+      >${project.basedir}/lib/passthrough.pandoc-${pandoc-version}.jar</systemPath>
 		</dependency>
 	</dependencies>
 
@@ -34,13 +39,16 @@
 		<sonar.organization>dita-ot-plugins</sonar.organization>
 		<sonar.sources>cfg,resource,xsl,src</sonar.sources>
 		<sonar.coverage.exclusions>src</sonar.coverage.exclusions>
-		<sonar.java.binaries>target/classes/fox/jason/passthrough,target/classes/fox/jason/passthrough/tasks</sonar.java.binaries>
+		<sonar.java.binaries
+    >target/classes/fox/jason/passthrough,target/classes/fox/jason/passthrough/tasks</sonar.java.binaries>
 		<sonar.java.libraries>lib/ant-*.jar,lib/passthrough.*.jar</sonar.java.libraries>
 		<sonar.test.exclusions>test</sonar.test.exclusions>
 		<sonar.cpd.exclusions>src/fox/jason/passthrough/**</sonar.cpd.exclusions>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<sonar.flex.cobertura.reportPaths>coverage.xml</sonar.flex.cobertura.reportPaths>
-		<sonar.exclusions>coverage.html,test-results.html,pom.xml,coverage.xml</sonar.exclusions>
+		<sonar.flex.cobertura.reportPaths
+    >coverage.xml</sonar.flex.cobertura.reportPaths>
+		<sonar.exclusions
+    >coverage.html,test-results.html,pom.xml,coverage.xml</sonar.exclusions>
 	</properties>
 	
 	<build>
