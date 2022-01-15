@@ -15,7 +15,7 @@
 	<target name="swagger.css.copy">
 		<loadfile
       property="swagger.css"
-      srcFile="${dita.plugin.fox.jason.passthrough.swagger.dir}/resource/swagger.css"
+      srcFile="${dita.plugin.fox.jason.passthrough.swagger.dir}/css/swagger.css"
     />
 		<echo
       append="true"
