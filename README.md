@@ -4,7 +4,6 @@
 [![DITA-OT 3.7](https://img.shields.io/badge/DITA--OT-3.7-blue.svg)](http://www.dita-ot.org/3.7)
 [![CI](https://github.com/jason-fox/fox.jason.passthrough.swagger/workflows/CI/badge.svg)](https://github.com/jason-fox/fox.jason.passthrough.swagger/actions?query=workflow%3ACI)
 [![Coverage Status](https://coveralls.io/repos/github/jason-fox/fox.jason.passthrough.swagger/badge.svg?branch=master)](https://coveralls.io/github/jason-fox/fox.jason.passthrough.swagger?branch=master)
-[![Documentation Status](https://readthedocs.org/projects/swaggerdita-ot/badge/?version=latest)](https://swaggerdita-ot.readthedocs.io/en/latest/?badge=latest)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=fox.jason.passthrough.swagger&metric=alert_status)](https://sonarcloud.io/dashboard?id=fox.jason.passthrough.swagger)
 
 This is a [DITA-OT Plug-in](https://www.dita-ot.org/plugins) used to auto-create valid DITA-based REST API
