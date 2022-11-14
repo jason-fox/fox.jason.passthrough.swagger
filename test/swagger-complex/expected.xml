@@ -64,10 +64,10 @@
           <title>Parameters</title>
           <table>
             <tgroup cols="4">
-              <colspec colname="col1" colnum="1"></colspec>
-              <colspec colname="col2" colnum="2"></colspec>
-              <colspec colname="col3" colnum="3"></colspec>
-              <colspec colname="col4" colnum="4"></colspec>
+              <colspec colname="col1" colnum="1" colwidth="25%"></colspec>
+              <colspec colname="col2" colnum="2" colwidth="25%"></colspec>
+              <colspec colname="col3" colnum="3" colwidth="25%"></colspec>
+              <colspec colname="col4" colnum="4" colwidth="25%"></colspec>
               <thead>
                 <row>
                   <entry align="left" colname="col1">Type</entry>
@@ -144,9 +144,9 @@
           <title>Responses</title>
           <table>
             <tgroup cols="3">
-              <colspec colname="col1" colnum="1"></colspec>
-              <colspec colname="col2" colnum="2"></colspec>
-              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col1" colnum="1" colwidth="33%"></colspec>
+              <colspec colname="col2" colnum="2" colwidth="33%"></colspec>
+              <colspec colname="col3" colnum="3" colwidth="33%"></colspec>
               <thead>
                 <row>
                   <entry align="left" colname="col1">HTTP Code</entry>
@@ -239,10 +239,10 @@
           <title>Parameters</title>
           <table>
             <tgroup cols="4">
-              <colspec colname="col1" colnum="1"></colspec>
-              <colspec colname="col2" colnum="2"></colspec>
-              <colspec colname="col3" colnum="3"></colspec>
-              <colspec colname="col4" colnum="4"></colspec>
+              <colspec colname="col1" colnum="1" colwidth="25%"></colspec>
+              <colspec colname="col2" colnum="2" colwidth="25%"></colspec>
+              <colspec colname="col3" colnum="3" colwidth="25%"></colspec>
+              <colspec colname="col4" colnum="4" colwidth="25%"></colspec>
               <thead>
                 <row>
                   <entry align="left" colname="col1">Type</entry>
@@ -633,9 +633,9 @@
           <title>Responses</title>
           <table>
             <tgroup cols="3">
-              <colspec colname="col1" colnum="1"></colspec>
-              <colspec colname="col2" colnum="2"></colspec>
-              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col1" colnum="1" colwidth="33%"></colspec>
+              <colspec colname="col2" colnum="2" colwidth="33%"></colspec>
+              <colspec colname="col3" colnum="3" colwidth="33%"></colspec>
               <thead>
                 <row>
                   <entry align="left" colname="col1">HTTP Code</entry>
@@ -1274,9 +1274,9 @@
           <title>Responses</title>
           <table>
             <tgroup cols="3">
-              <colspec colname="col1" colnum="1"></colspec>
-              <colspec colname="col2" colnum="2"></colspec>
-              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col1" colnum="1" colwidth="33%"></colspec>
+              <colspec colname="col2" colnum="2" colwidth="33%"></colspec>
+              <colspec colname="col3" colnum="3" colwidth="33%"></colspec>
               <thead>
                 <row>
                   <entry align="left" colname="col1">HTTP Code</entry>
