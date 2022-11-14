@@ -182,10 +182,10 @@
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
-                        <fo:table-column column-number="1"></fo:table-column>
-                        <fo:table-column column-number="2"></fo:table-column>
-                        <fo:table-column column-number="3"></fo:table-column>
-                        <fo:table-column column-number="4"></fo:table-column>
+                        <fo:table-column column-number="1" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="2" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="3" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="4" column-width="25%"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -228,11 +228,6 @@
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
                                   <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:block>
                               </fo:block>
                             </fo:table-cell>
@@ -387,11 +382,6 @@
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
                                   <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:inline>
                               </fo:block>
                             </fo:table-cell>
@@ -426,10 +416,10 @@
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
-                        <fo:table-column column-number="1"></fo:table-column>
-                        <fo:table-column column-number="2"></fo:table-column>
-                        <fo:table-column column-number="3"></fo:table-column>
-                        <fo:table-column column-number="4"></fo:table-column>
+                        <fo:table-column column-number="1" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="2" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="3" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="4" column-width="25%"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -472,11 +462,6 @@
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
                                   <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:block>
                               </fo:block>
                             </fo:table-cell>
@@ -657,11 +642,6 @@
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
                                   <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:inline>
                               </fo:block>
                             </fo:table-cell>
@@ -790,12 +770,7 @@
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">&lt;
-                                <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
-                                  </fo:inline>
-                                </fo:inline>&gt; array</fo:block>
+                                <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>&gt; array</fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                           <fo:table-row keep-together.within-page="always">
@@ -892,11 +867,6 @@
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
                                   <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:inline>
                               </fo:block>
                             </fo:table-cell>
@@ -939,10 +909,10 @@ This operation is deprecated.</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
-                        <fo:table-column column-number="1"></fo:table-column>
-                        <fo:table-column column-number="2"></fo:table-column>
-                        <fo:table-column column-number="3"></fo:table-column>
-                        <fo:table-column column-number="4"></fo:table-column>
+                        <fo:table-column column-number="1" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="2" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="3" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="4" column-width="25%"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1027,12 +997,7 @@ This operation is deprecated.</fo:block>
                             </fo:table-cell>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">&lt;
-                                <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
-                                  </fo:inline>
-                                </fo:inline>&gt; array</fo:block>
+                                <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>&gt; array</fo:block>
                             </fo:table-cell>
                           </fo:table-row>
                           <fo:table-row keep-together.within-page="always">
@@ -1129,11 +1094,6 @@ This operation is deprecated.</fo:block>
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
                                   <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:inline>
                               </fo:block>
                             </fo:table-cell>
@@ -1168,10 +1128,10 @@ This operation is deprecated.</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
-                        <fo:table-column column-number="1"></fo:table-column>
-                        <fo:table-column column-number="2"></fo:table-column>
-                        <fo:table-column column-number="3"></fo:table-column>
-                        <fo:table-column column-number="4"></fo:table-column>
+                        <fo:table-column column-number="1" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="2" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="3" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="4" column-width="25%"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -1410,11 +1370,6 @@ This operation is deprecated.</fo:block>
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
                                   <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:inline>
                               </fo:block>
                             </fo:table-cell>
@@ -1544,11 +1499,6 @@ This operation is deprecated.</fo:block>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:basic-link color="blue" internal-destination="unique_6">Pet</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_6"></fo:page-number-citation>
-                                  </fo:inline>
-                                </fo:inline>
                               </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
@@ -1655,11 +1605,6 @@ This operation is deprecated.</fo:block>
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
                                   <fo:basic-link color="blue" internal-destination="unique_13">api_key</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_13"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:inline>
                               </fo:block>
                             </fo:table-cell>
@@ -1902,11 +1847,6 @@ This operation is deprecated.</fo:block>
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
                                   <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:inline>
                               </fo:block>
                             </fo:table-cell>
@@ -2084,11 +2024,6 @@ This operation is deprecated.</fo:block>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:basic-link color="blue" internal-destination="unique_16">ApiResponse</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_16"></fo:page-number-citation>
-                                  </fo:inline>
-                                </fo:inline>
                               </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
@@ -2180,11 +2115,6 @@ This operation is deprecated.</fo:block>
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
                                   <fo:basic-link color="blue" internal-destination="unique_7">petstore_auth</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_7"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:inline>
                               </fo:block>
                             </fo:table-cell>
@@ -2322,11 +2252,6 @@ This operation is deprecated.</fo:block>
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:inline font-weight="bold">
                                   <fo:basic-link color="blue" internal-destination="unique_13">api_key</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_13"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:inline>
                               </fo:block>
                             </fo:table-cell>
@@ -2358,10 +2283,10 @@ This operation is deprecated.</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
-                        <fo:table-column column-number="1"></fo:table-column>
-                        <fo:table-column column-number="2"></fo:table-column>
-                        <fo:table-column column-number="3"></fo:table-column>
-                        <fo:table-column column-number="4"></fo:table-column>
+                        <fo:table-column column-number="1" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="2" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="3" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="4" column-width="25%"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -2404,11 +2329,6 @@ This operation is deprecated.</fo:block>
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
                                   <fo:basic-link color="blue" internal-destination="unique_19">Order</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:block>
                               </fo:block>
                             </fo:table-cell>
@@ -2454,11 +2374,6 @@ This operation is deprecated.</fo:block>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:basic-link color="blue" internal-destination="unique_19">Order</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
-                                  </fo:inline>
-                                </fo:inline>
                               </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
@@ -2550,10 +2465,10 @@ This operation is deprecated.</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
-                        <fo:table-column column-number="1"></fo:table-column>
-                        <fo:table-column column-number="2"></fo:table-column>
-                        <fo:table-column column-number="3"></fo:table-column>
-                        <fo:table-column column-number="4"></fo:table-column>
+                        <fo:table-column column-number="1" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="2" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="3" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="4" column-width="25%"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -2639,11 +2554,6 @@ This operation is deprecated.</fo:block>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:basic-link color="blue" internal-destination="unique_19">Order</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_19"></fo:page-number-citation>
-                                  </fo:inline>
-                                </fo:inline>
                               </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
@@ -2972,11 +2882,6 @@ This operation is deprecated.</fo:block>
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
                                   <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:block>
                               </fo:block>
                             </fo:table-cell>
@@ -3092,10 +2997,10 @@ This operation is deprecated.</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
-                        <fo:table-column column-number="1"></fo:table-column>
-                        <fo:table-column column-number="2"></fo:table-column>
-                        <fo:table-column column-number="3"></fo:table-column>
-                        <fo:table-column column-number="4"></fo:table-column>
+                        <fo:table-column column-number="1" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="2" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="3" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="4" column-width="25%"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -3137,12 +3042,7 @@ This operation is deprecated.</fo:block>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">&lt;
-                                  <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>&gt; array</fo:block>
+                                  <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>&gt; array</fo:block>
                               </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
@@ -3257,10 +3157,10 @@ This operation is deprecated.</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
-                        <fo:table-column column-number="1"></fo:table-column>
-                        <fo:table-column column-number="2"></fo:table-column>
-                        <fo:table-column column-number="3"></fo:table-column>
-                        <fo:table-column column-number="4"></fo:table-column>
+                        <fo:table-column column-number="1" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="2" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="3" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="4" column-width="25%"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -3302,12 +3202,7 @@ This operation is deprecated.</fo:block>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">&lt;
-                                  <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>&gt; array</fo:block>
+                                  <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>&gt; array</fo:block>
                               </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
@@ -3422,10 +3317,10 @@ This operation is deprecated.</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
-                        <fo:table-column column-number="1"></fo:table-column>
-                        <fo:table-column column-number="2"></fo:table-column>
-                        <fo:table-column column-number="3"></fo:table-column>
-                        <fo:table-column column-number="4"></fo:table-column>
+                        <fo:table-column column-number="1" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="2" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="3" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="4" column-width="25%"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -3818,11 +3713,6 @@ This operation is deprecated.</fo:block>
                             <fo:table-cell border-before-color="black" text-align="left">
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
-                                <fo:inline>on page
-                                  <fo:inline>
-                                    <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
-                                  </fo:inline>
-                                </fo:inline>
                               </fo:block>
                             </fo:table-cell>
                           </fo:table-row>
@@ -3927,10 +3817,10 @@ This operation is deprecated.</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
-                        <fo:table-column column-number="1"></fo:table-column>
-                        <fo:table-column column-number="2"></fo:table-column>
-                        <fo:table-column column-number="3"></fo:table-column>
-                        <fo:table-column column-number="4"></fo:table-column>
+                        <fo:table-column column-number="1" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="2" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="3" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="4" column-width="25%"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -4000,11 +3890,6 @@ This operation is deprecated.</fo:block>
                               <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                                 <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
                                   <fo:basic-link color="blue" internal-destination="unique_23">User</fo:basic-link>
-                                  <fo:inline>on page
-                                    <fo:inline>
-                                      <fo:page-number-citation ref-id="unique_23"></fo:page-number-citation>
-                                    </fo:inline>
-                                  </fo:inline>
                                 </fo:block>
                               </fo:block>
                             </fo:table-cell>
@@ -4139,10 +4024,10 @@ This operation is deprecated.</fo:block>
                   <fo:block-container reference-orientation="0">
                     <fo:block>
                       <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
-                        <fo:table-column column-number="1"></fo:table-column>
-                        <fo:table-column column-number="2"></fo:table-column>
-                        <fo:table-column column-number="3"></fo:table-column>
-                        <fo:table-column column-number="4"></fo:table-column>
+                        <fo:table-column column-number="1" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="2" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="3" column-width="25%"></fo:table-column>
+                        <fo:table-column column-number="4" column-width="25%"></fo:table-column>
                         <fo:table-header>
                           <fo:table-row>
                             <fo:table-cell border-before-color="black" text-align="left">
@@ -4452,9 +4337,9 @@ This operation is deprecated.</fo:block>
               <fo:block-container reference-orientation="0">
                 <fo:block>
                   <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
-                    <fo:table-column column-number="1"></fo:table-column>
-                    <fo:table-column column-number="2"></fo:table-column>
-                    <fo:table-column column-number="3"></fo:table-column>
+                    <fo:table-column column-number="1" column-width="33%"></fo:table-column>
+                    <fo:table-column column-number="2" column-width="33%"></fo:table-column>
+                    <fo:table-column column-number="3" column-width="33%"></fo:table-column>
                     <fo:table-header>
                       <fo:table-row>
                         <fo:table-cell border-before-color="black" text-align="left">
@@ -4610,9 +4495,9 @@ This operation is deprecated.</fo:block>
               <fo:block-container reference-orientation="0">
                 <fo:block>
                   <fo:table border-after-color="black" border-before-color="black" border-end-color="black" border-end-style="solid" border-end-width="1pt" table-layout="fixed" width="100%">
-                    <fo:table-column column-number="1"></fo:table-column>
-                    <fo:table-column column-number="2"></fo:table-column>
-                    <fo:table-column column-number="3"></fo:table-column>
+                    <fo:table-column column-number="1" column-width="33%"></fo:table-column>
+                    <fo:table-column column-number="2" column-width="33%"></fo:table-column>
+                    <fo:table-column column-number="3" column-width="33%"></fo:table-column>
                     <fo:table-header>
                       <fo:table-row>
                         <fo:table-cell border-before-color="black" text-align="left">
@@ -4645,11 +4530,6 @@ This operation is deprecated.</fo:block>
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                             <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">
                               <fo:basic-link color="blue" internal-destination="unique_32">Category</fo:basic-link>
-                              <fo:inline>on page
-                                <fo:inline>
-                                  <fo:page-number-citation ref-id="unique_32"></fo:page-number-citation>
-                                </fo:inline>
-                              </fo:inline>
                             </fo:block>
                           </fo:block>
                         </fo:table-cell>
@@ -4754,12 +4634,7 @@ This operation is deprecated.</fo:block>
                         <fo:table-cell text-align="left">
                           <fo:block space-after.conditionality="retain" space-before.conditionality="retain">
                             <fo:block linefeed-treatment="preserve" white-space-collapse="true" wrap-option="wrap">&lt;
-                              <fo:basic-link color="blue" internal-destination="unique_33">Tag</fo:basic-link>
-                              <fo:inline>on page
-                                <fo:inline>
-                                  <fo:page-number-citation ref-id="unique_33"></fo:page-number-citation>
-                                </fo:inline>
-                              </fo:inline>&gt; array</fo:block>
+                              <fo:basic-link color="blue" internal-destination="unique_33">Tag</fo:basic-link>&gt; array</fo:block>
                           </fo:block>
                         </fo:table-cell>
                       </fo:table-row>
