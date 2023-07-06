@@ -7,12 +7,12 @@ info:
   title: IOM RMA REST API
   contact:
     name: Intershop Communications AG
-    url: 'http://intershop.com'
-host: 'localhost:8080'
+    url: "http://intershop.com"
+host: "localhost:8080"
 basePath: /rest/rma
 tags:
   - name: shop
-    description: 'API endpoints, that could be used by the shop.'
+    description: "API endpoints, that could be used by the shop."
 schemes:
   - http
 consumes:
@@ -22,20 +22,20 @@ produces:
 security:
   - auth: []
 paths:
-  '/{shopName}/orders/{shopOrderNumber}/return-request':
+  "/{shopName}/orders/{shopOrderNumber}/return-request":
     get:
       produces:
         - application/vnd.intershop.return-request.v1+json
       responses:
-        '200':
+        "200":
           description: OK
-        '401':
+        "401":
           description: Authentication information is missing or invalid
-        '403':
+        "403":
           description: Forbidden
-        '404':
+        "404":
           description: Not Found
-        '406':
+        "406":
           description: Not Acceptable
       tags:
         - shop
@@ -75,30 +75,30 @@ paths:
           type: string
         - in: body
           name: body
-          description: ''
+          description: ""
           required: true
           schema:
-            $ref: '#/definitions/WriteReturnRequest'
+            $ref: "#/definitions/WriteReturnRequest"
       responses:
-        '201':
+        "201":
           description: Created
           headers:
             Location:
               type: string
-        '400':
+        "400":
           description: Bad Request
           schema:
-            $ref: '#/definitions/ErrorReport'
-        '401':
+            $ref: "#/definitions/ErrorReport"
+        "401":
           description: Authentication information is missing or invalid
-        '403':
+        "403":
           description: Forbidden
-        '415':
+        "415":
           description: Unsupported Media Type
         default:
           description: An unexpected error occured
       deprecated: false
-  '/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions':
+  "/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions":
     get:
       tags:
         - shop
@@ -126,22 +126,22 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
             type: array
             items:
-              $ref: '#/definitions/ReadReturnRequestPosition'
-        '401':
+              $ref: "#/definitions/ReadReturnRequestPosition"
+        "401":
           description: Authentication information is missing or invalid
-        '403':
+        "403":
           description: Forbidden
-        '404':
+        "404":
           description: Not Found
-        '406':
+        "406":
           description: Not Acceptable
       deprecated: false
-  '/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}':
+  "/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}":
     get:
       tags:
         - shop
@@ -175,29 +175,29 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
-        '401':
+        "401":
           description: Authentication information is missing or invalid
-        '403':
+        "403":
           description: Forbidden
-        '404':
+        "404":
           description: Not Found
-        '406':
+        "406":
           description: Not Acceptable
       deprecated: false
-  '/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}/items':
+  "/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}/items":
     get:
       responses:
-        '200':
+        "200":
           description: OK
-        '401':
+        "401":
           description: Authentication information is missing or invalid
-        '403':
+        "403":
           description: Forbidden
-        '404':
+        "404":
           description: Not Found
-        '406':
+        "406":
           description: Not Acceptable
       tags:
         - shop
@@ -231,18 +231,18 @@ paths:
           required: true
           type: string
       deprecated: false
-  '/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/custom-attributes':
+  "/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/custom-attributes":
     get:
       responses:
-        '200':
+        "200":
           description: OK
-        '401':
+        "401":
           description: Authentication information is missing or invalid
-        '403':
+        "403":
           description: Forbidden
-        '404':
+        "404":
           description: Not Found
-        '406':
+        "406":
           description: Not Acceptable
       tags:
         - shop
@@ -270,7 +270,7 @@ paths:
           required: true
           type: string
       deprecated: false
-  '/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/pickup-addresses':
+  "/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/pickup-addresses":
     get:
       tags:
         - shop
@@ -298,18 +298,18 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
-        '401':
+        "401":
           description: Authentication information is missing or invalid
-        '403':
+        "403":
           description: Forbidden
-        '404':
+        "404":
           description: Not Found
-        '406':
+        "406":
           description: Not Acceptable
       deprecated: false
-  '/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/approvals':
+  "/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/approvals":
     post:
       tags:
         - shop
@@ -336,41 +336,41 @@ paths:
           type: string
         - in: body
           name: body
-          description: ''
+          description: ""
           required: true
           schema:
-            $ref: '#/definitions/WriteApproval'
+            $ref: "#/definitions/WriteApproval"
       responses:
-        '201':
+        "201":
           description: Created
           headers:
             Location:
               type: string
-        '400':
+        "400":
           description: Bad Request
           schema:
-            $ref: '#/definitions/ErrorReport'
-        '401':
+            $ref: "#/definitions/ErrorReport"
+        "401":
           description: Authentication information is missing or invalid
-        '403':
+        "403":
           description: Forbidden
-        '415':
+        "415":
           description: Unsupported Media Type
         default:
           description: An unexpected error occured
       deprecated: false
-  '/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/contact-persons':
+  "/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/contact-persons":
     get:
       responses:
-        '200':
+        "200":
           description: OK
-        '401':
+        "401":
           description: Authentication information is missing or invalid
-        '403':
+        "403":
           description: Forbidden
-        '404':
+        "404":
           description: Not Found
-        '406':
+        "406":
           description: Not Acceptable
       tags:
         - shop
@@ -398,7 +398,7 @@ paths:
           required: true
           type: string
       deprecated: false
-  '/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}':
+  "/{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}":
     get:
       tags:
         - shop
@@ -426,17 +426,17 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/ReadReturnRequest'
-        '401':
+            $ref: "#/definitions/ReadReturnRequest"
+        "401":
           description: Authentication information is missing or invalid
-        '403':
+        "403":
           description: Forbidden
-        '404':
+        "404":
           description: Not Found
-        '406':
+        "406":
           description: Not Acceptable
       deprecated: false
 securityDefinitions:
@@ -475,7 +475,7 @@ definitions:
       errors:
         type: array
         items:
-          $ref: '#/definitions/Error'
+          $ref: "#/definitions/Error"
     title: ErrorReport
     description: Detailed information about what went wrong
   WriteCustomAttribute:
@@ -535,13 +535,13 @@ definitions:
         maxLength: 100
       houseNumber:
         type: string
-        example: '28'
+        example: "28"
         description: The house number related to the pickup address.
         minLength: 1
         maxLength: 20
       postCode:
         type: string
-        example: '12053'
+        example: "12053"
         description: The post code related to the pickup address.
         minLength: 1
         maxLength: 25
@@ -586,10 +586,10 @@ definitions:
       - type
     properties:
       type:
-        $ref: '#/definitions/Type'
+        $ref: "#/definitions/Type"
       rmaNumber:
         type: string
-        example: '10901095'
+        example: "10901095"
         description: The actual number of the return request.
         minLength: 1
         maxLength: 50
@@ -602,15 +602,15 @@ definitions:
       positions:
         type: array
         items:
-          $ref: '#/definitions/WriteReturnRequestPosition'
+          $ref: "#/definitions/WriteReturnRequestPosition"
         maxItems: 2147483647
         minItems: 1
       pickupAddress:
-        $ref: '#/definitions/WritePickupAddress'
+        $ref: "#/definitions/WritePickupAddress"
       customAttributes:
         type: array
         items:
-          $ref: '#/definitions/WriteCustomAttribute'
+          $ref: "#/definitions/WriteCustomAttribute"
     title: WriteReturnRequest
     description: Represents a return request from a shop.
   WriteReturnRequestItem:
@@ -643,7 +643,7 @@ definitions:
         description: The posistion number as used by the shop.
       productNumber:
         type: string
-        example: '20180303123'
+        example: "20180303123"
         description: The product number as used by the shop.
         minLength: 1
         maxLength: 50
@@ -660,7 +660,7 @@ definitions:
       items:
         type: array
         items:
-          $ref: '#/definitions/WriteReturnRequestItem'
+          $ref: "#/definitions/WriteReturnRequestItem"
     title: WriteReturnRequestPosition
     description: >-
       Represents a return request position of a return request from an order of
@@ -684,7 +684,7 @@ definitions:
       links:
         type: array
         items:
-          $ref: '#/definitions/Link'
+          $ref: "#/definitions/Link"
       positionNumber:
         type: integer
         format: int32
@@ -692,7 +692,7 @@ definitions:
         description: The posistion number as used by the shop.
       productNumber:
         type: string
-        example: '20180303123'
+        example: "20180303123"
         description: The product number as used by the shop.
         minLength: 1
         maxLength: 50
@@ -717,7 +717,7 @@ definitions:
         description: The product name as used by the shop.
       supplierProductNumber:
         type: string
-        example: '20180303123'
+        example: "20180303123"
         description: The article number as used by the supplier.
     title: ReadReturnRequestPosition
     description: |
@@ -731,7 +731,7 @@ definitions:
       links:
         type: array
         items:
-          $ref: '#/definitions/Link'
+          $ref: "#/definitions/Link"
       productSerialNumber:
         type: string
         example: W88401231AX
@@ -756,7 +756,7 @@ definitions:
       links:
         type: array
         items:
-          $ref: '#/definitions/Link'
+          $ref: "#/definitions/Link"
       key:
         type: string
         example: Example Key
@@ -790,7 +790,7 @@ definitions:
       links:
         type: array
         items:
-          $ref: '#/definitions/Link'
+          $ref: "#/definitions/Link"
       company:
         type: string
         example: Intershop Communication AG
@@ -817,13 +817,13 @@ definitions:
         maxLength: 100
       houseNumber:
         type: string
-        example: '28'
+        example: "28"
         description: The house number related to the pickup address.
         minLength: 1
         maxLength: 20
       postCode:
         type: string
-        example: '12053'
+        example: "12053"
         description: The post code related to the pickup address.
         minLength: 1
         maxLength: 25
@@ -874,12 +874,12 @@ definitions:
       links:
         type: array
         items:
-          $ref: '#/definitions/Link'
+          $ref: "#/definitions/Link"
       type:
-        $ref: '#/definitions/Type'
+        $ref: "#/definitions/Type"
       rmaNumber:
         type: string
-        example: '10901095'
+        example: "10901095"
         description: The actual number of the return request.
         minLength: 1
         maxLength: 50
@@ -900,7 +900,7 @@ definitions:
         description: The date when the return request was created.
       shopOrderNumber:
         type: string
-        example: '20180303123'
+        example: "20180303123"
         description: The order number as used by the shop.
       shopName:
         type: string
@@ -908,16 +908,16 @@ definitions:
         description: The name of the shop.
       supplierOrderNumber:
         type: string
-        example: '20180303321'
+        example: "20180303321"
         description: The order number as used by the supplier.
       supplierName:
         type: string
         example: Test Supplier US DE
         description: The name of the supplier.
       status:
-        $ref: '#/definitions/Status'
+        $ref: "#/definitions/Status"
       businessStatus:
-        $ref: '#/definitions/BusinessStatus'
+        $ref: "#/definitions/BusinessStatus"
     title: ReadReturnRequest
     description: Represents a return request from a shop.
   WriteApproval:
@@ -926,7 +926,7 @@ definitions:
       - status
     properties:
       status:
-        $ref: '#/definitions/Status1'
+        $ref: "#/definitions/Status1"
       comment:
         type: string
         example: The return request reasons are not convincing.
@@ -939,7 +939,7 @@ definitions:
       links:
         type: array
         items:
-          $ref: '#/definitions/Link'
+          $ref: "#/definitions/Link"
       id:
         type: integer
         format: int64
