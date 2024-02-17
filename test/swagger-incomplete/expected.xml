@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<?path2rootmap-uri ./?>
-<topic id="identity" outputclass="swagger" specializations="@props/deliveryTarget">
+<topic id="identity" outputclass="swagger">
   <title>identity</title>
   <body></body>
-  <topic id="overview" specializations="@props/deliveryTarget">
+  <topic id="overview">
     <title>Overview</title>
     <body>
       <section id="version-information" outputclass="section">
@@ -30,10 +29,10 @@
       </section>
     </body>
   </topic>
-  <topic id="paths" specializations="@props/deliveryTarget">
+  <topic id="paths">
     <title>Paths</title>
     <body></body>
-    <topic id="getversions-v2" outputclass="swagger-get" specializations="@props/deliveryTarget">
+    <topic id="getversions-v2" outputclass="swagger-get">
       <title>List versions</title>
       <body>
         <codeblock outputclass="swagger-get">GET /</codeblock>

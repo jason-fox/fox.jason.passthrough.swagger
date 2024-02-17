@@ -5,7 +5,7 @@
 		Expect that a local swagger YAML file  with examples is parsed.
 	</description>
 	<target name="unit-test">
-		<property name="file" value="${basedir}/out/swagger.yaml"/>
+		<property name="file" value="${basedir}/out/swagger.dita"/>
 		<exec-transtype transtype="dita"/>
 		<xmltask
       expandEntityReferences="false"

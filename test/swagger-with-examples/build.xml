@@ -5,7 +5,7 @@
 		Expect that a swagger file  with examples is copied to an HTML build
 	</description>
 	<target name="unit-test">
-		<property name="file" value="${basedir}/out/swagger.json"/>
+		<property name="file" value="${basedir}/out/swagger.dita"/>
 		<exec-transtype transtype="dita"/>
 		<xmltask
       expandEntityReferences="false"

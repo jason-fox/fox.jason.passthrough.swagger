@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<?path2rootmap-uri ./?>
-<topic id="iom-rma-rest-api" outputclass="swagger" specializations="@props/deliveryTarget">
+<topic id="iom-rma-rest-api" outputclass="swagger">
   <title>IOM RMA REST API</title>
   <body></body>
-  <topic id="overview" specializations="@props/deliveryTarget">
+  <topic id="overview">
     <title>Overview</title>
     <body>
       <p>The IOM RMA REST API supports programmatic access to objects related to the Return Merchandise Authorization process.</p>
@@ -49,10 +48,10 @@
       </section>
     </body>
   </topic>
-  <topic id="paths" specializations="@props/deliveryTarget">
+  <topic id="paths">
     <title>Paths</title>
     <body></body>
-    <topic id="shopname-orders-shopordernumber-return-request-post" outputclass="swagger-post" specializations="@props/deliveryTarget">
+    <topic id="shopname-orders-shopordernumber-return-request-post" outputclass="swagger-post">
       <title>createReturnRequest</title>
       <body>
         <codeblock outputclass="swagger-post">POST /{shopName}/orders/{shopOrderNumber}/return-request</codeblock>
@@ -132,7 +131,7 @@
                   </entry>
                   <entry align="left" colname="col4">
                     <lines>
-                      <xref format="dita" href="#writereturnrequest" type="topic">WriteReturnRequest</xref>
+                      <xref href="swagger.dita#writereturnrequest" type="topic">WriteReturnRequest</xref>
                     </lines>
                   </entry>
                 </row>
@@ -176,7 +175,7 @@
                   </entry>
                   <entry align="left" colname="col2">Bad Request</entry>
                   <entry align="left" colname="col3">
-                    <xref format="dita" href="#errorreport" type="topic">ErrorReport</xref>
+                    <xref href="swagger.dita#errorreport" type="topic">ErrorReport</xref>
                   </entry>
                 </row>
                 <row>
@@ -227,7 +226,7 @@
         </section>
       </body>
     </topic>
-    <topic id="shopname-orders-shopordernumber-return-request-get" outputclass="swagger-get" specializations="@props/deliveryTarget">
+    <topic id="shopname-orders-shopordernumber-return-request-get" outputclass="swagger-get">
       <title>getReturnRequests</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-request</codeblock>
@@ -364,7 +363,7 @@
         </section>
       </body>
     </topic>
-    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-get" outputclass="swagger-get" specializations="@props/deliveryTarget">
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-get" outputclass="swagger-get">
       <title>getReturnRequest</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}</codeblock>
@@ -471,7 +470,7 @@
                   </entry>
                   <entry align="left" colname="col2">OK</entry>
                   <entry align="left" colname="col3">
-                    <xref format="dita" href="#readreturnrequest" type="topic">ReadReturnRequest</xref>
+                    <xref href="swagger.dita#readreturnrequest" type="topic">ReadReturnRequest</xref>
                   </entry>
                 </row>
                 <row>
@@ -522,7 +521,7 @@
         </section>
       </body>
     </topic>
-    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-approvals-post" outputclass="swagger-post" specializations="@props/deliveryTarget">
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-approvals-post" outputclass="swagger-post">
       <title>createApproval</title>
       <body>
         <codeblock outputclass="swagger-post">POST /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/approvals</codeblock>
@@ -621,7 +620,7 @@
                   </entry>
                   <entry align="left" colname="col4">
                     <lines>
-                      <xref format="dita" href="#writeapproval" type="topic">WriteApproval</xref>
+                      <xref href="swagger.dita#writeapproval" type="topic">WriteApproval</xref>
                     </lines>
                   </entry>
                 </row>
@@ -665,7 +664,7 @@
                   </entry>
                   <entry align="left" colname="col2">Bad Request</entry>
                   <entry align="left" colname="col3">
-                    <xref format="dita" href="#errorreport" type="topic">ErrorReport</xref>
+                    <xref href="swagger.dita#errorreport" type="topic">ErrorReport</xref>
                   </entry>
                 </row>
                 <row>
@@ -716,7 +715,7 @@
         </section>
       </body>
     </topic>
-    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-contact-persons-get" outputclass="swagger-get" specializations="@props/deliveryTarget">
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-contact-persons-get" outputclass="swagger-get">
       <title>getContactPersons</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/contact-persons</codeblock>
@@ -872,7 +871,7 @@
         </section>
       </body>
     </topic>
-    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-custom-attributes-get" outputclass="swagger-get" specializations="@props/deliveryTarget">
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-custom-attributes-get" outputclass="swagger-get">
       <title>getCustomAttributes</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/custom-attributes</codeblock>
@@ -1028,7 +1027,7 @@
         </section>
       </body>
     </topic>
-    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-pickup-addresses-get" outputclass="swagger-get" specializations="@props/deliveryTarget">
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-pickup-addresses-get" outputclass="swagger-get">
       <title>getReturnRequestPickupAddresses</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/pickup-addresses</codeblock>
@@ -1184,7 +1183,7 @@
         </section>
       </body>
     </topic>
-    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-positions-get" outputclass="swagger-get" specializations="@props/deliveryTarget">
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-positions-get" outputclass="swagger-get">
       <title>getReturnRequestPositions</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions</codeblock>
@@ -1291,7 +1290,7 @@
                   </entry>
                   <entry align="left" colname="col2">OK</entry>
                   <entry align="left" colname="col3">&lt;
-                    <xref format="dita" href="#readreturnrequestposition" type="topic">ReadReturnRequestPosition</xref>&gt; array</entry>
+                    <xref href="swagger.dita#readreturnrequestposition" type="topic">ReadReturnRequestPosition</xref>&gt; array</entry>
                 </row>
                 <row>
                   <entry align="left" colname="col1">
@@ -1341,7 +1340,7 @@
         </section>
       </body>
     </topic>
-    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-positions-returnrequestpositionid-get" outputclass="swagger-get" specializations="@props/deliveryTarget">
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-positions-returnrequestpositionid-get" outputclass="swagger-get">
       <title>getReturnRequestPosition</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}</codeblock>
@@ -1516,7 +1515,7 @@
         </section>
       </body>
     </topic>
-    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-positions-returnrequestpositionid-items-get" outputclass="swagger-get" specializations="@props/deliveryTarget">
+    <topic id="shopname-orders-shopordernumber-return-requests-returnrequestid-positions-returnrequestpositionid-items-get" outputclass="swagger-get">
       <title>getReturnRequestItems</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}/items</codeblock>
@@ -1692,10 +1691,10 @@
       </body>
     </topic>
   </topic>
-  <topic id="definitions" specializations="@props/deliveryTarget">
+  <topic id="definitions">
     <title>Definitions</title>
     <body></body>
-    <topic id="businessstatus" specializations="@props/deliveryTarget">
+    <topic id="businessstatus">
       <title>BusinessStatus</title>
       <body>
         <p>The business status of the return request.</p>
@@ -1703,7 +1702,7 @@
           <i>Type</i>: enum (ACCEPTED, IN_APPROVAL, READY_TO_APPROVE, REJECTED, UNKNOWN)</p>
       </body>
     </topic>
-    <topic id="contactperson" specializations="@props/deliveryTarget">
+    <topic id="contactperson">
       <title>ContactPerson</title>
       <body>
         <p>Represents a contact person of the return request from an order of a shop.</p>
@@ -1834,7 +1833,7 @@
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>&lt;
-                    <xref format="dita" href="#link" type="topic">Link</xref>&gt; array</lines>
+                    <xref href="swagger.dita#link" type="topic">Link</xref>&gt; array</lines>
                 </entry>
               </row>
               <row>
@@ -1859,7 +1858,7 @@
         </table>
       </body>
     </topic>
-    <topic id="error" specializations="@props/deliveryTarget">
+    <topic id="error">
       <title>Error</title>
       <body>
         <table>
@@ -1928,7 +1927,7 @@
         </table>
       </body>
     </topic>
-    <topic id="errorreport" specializations="@props/deliveryTarget">
+    <topic id="errorreport">
       <title>ErrorReport</title>
       <body>
         <p>Detailed information about what went wrong</p>
@@ -1957,7 +1956,7 @@
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>&lt;
-                    <xref format="dita" href="#error" type="topic">Error</xref>&gt; array</lines>
+                    <xref href="swagger.dita#error" type="topic">Error</xref>&gt; array</lines>
                 </entry>
               </row>
               <row>
@@ -1982,7 +1981,7 @@
         </table>
       </body>
     </topic>
-    <topic id="link" specializations="@props/deliveryTarget">
+    <topic id="link">
       <title>Link</title>
       <body>
         <table>
@@ -2023,7 +2022,7 @@
         </table>
       </body>
     </topic>
-    <topic id="readcustomattribute" specializations="@props/deliveryTarget">
+    <topic id="readcustomattribute">
       <title>ReadCustomAttribute</title>
       <body>
         <p>Represents a custom attribute (key/value pair) of a return request from an order of a shop.</p>
@@ -2088,7 +2087,7 @@
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>&lt;
-                    <xref format="dita" href="#link" type="topic">Link</xref>&gt; array</lines>
+                    <xref href="swagger.dita#link" type="topic">Link</xref>&gt; array</lines>
                 </entry>
               </row>
               <row>
@@ -2115,7 +2114,7 @@
         </table>
       </body>
     </topic>
-    <topic id="readpickupaddress" specializations="@props/deliveryTarget">
+    <topic id="readpickupaddress">
       <title>ReadPickupAddress</title>
       <body>
         <p>Represents a pickup address related to the return request from an order of
@@ -2332,7 +2331,7 @@ address.
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>&lt;
-                    <xref format="dita" href="#link" type="topic">Link</xref>&gt; array</lines>
+                    <xref href="swagger.dita#link" type="topic">Link</xref>&gt; array</lines>
                 </entry>
               </row>
               <row>
@@ -2378,7 +2377,7 @@ address.
         </table>
       </body>
     </topic>
-    <topic id="readreturnrequest" specializations="@props/deliveryTarget">
+    <topic id="readreturnrequest">
       <title>ReadReturnRequest</title>
       <body>
         <p>Represents a return request from a shop.</p>
@@ -2407,7 +2406,7 @@ address.
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>
-                    <xref format="dita" href="#businessstatus" type="topic">BusinessStatus</xref>
+                    <xref href="swagger.dita#businessstatus" type="topic">BusinessStatus</xref>
                   </lines>
                 </entry>
               </row>
@@ -2473,7 +2472,7 @@ address.
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>&lt;
-                    <xref format="dita" href="#link" type="topic">Link</xref>&gt; array</lines>
+                    <xref href="swagger.dita#link" type="topic">Link</xref>&gt; array</lines>
                 </entry>
               </row>
               <row>
@@ -2541,7 +2540,7 @@ address.
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>
-                    <xref format="dita" href="#status" type="topic">Status</xref>
+                    <xref href="swagger.dita#status" type="topic">Status</xref>
                   </lines>
                 </entry>
               </row>
@@ -2591,7 +2590,7 @@ address.
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>
-                    <xref format="dita" href="#type" type="topic">Type</xref>
+                    <xref href="swagger.dita#type" type="topic">Type</xref>
                   </lines>
                 </entry>
               </row>
@@ -2600,7 +2599,7 @@ address.
         </table>
       </body>
     </topic>
-    <topic id="readreturnrequestitem" specializations="@props/deliveryTarget">
+    <topic id="readreturnrequestitem">
       <title>ReadReturnRequestItem</title>
       <body>
         <p>Represents a return request item of a return request from an order of a
@@ -2647,7 +2646,7 @@ shop.</p>
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>&lt;
-                    <xref format="dita" href="#link" type="topic">Link</xref>&gt; array</lines>
+                    <xref href="swagger.dita#link" type="topic">Link</xref>&gt; array</lines>
                 </entry>
               </row>
               <row>
@@ -2674,7 +2673,7 @@ shop.</p>
         </table>
       </body>
     </topic>
-    <topic id="readreturnrequestposition" specializations="@props/deliveryTarget">
+    <topic id="readreturnrequestposition">
       <title>ReadReturnRequestPosition</title>
       <body>
         <p>Represents a return request position of a return request from an order of
@@ -2721,7 +2720,7 @@ a shop.</p>
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>&lt;
-                    <xref format="dita" href="#link" type="topic">Link</xref>&gt; array</lines>
+                    <xref href="swagger.dita#link" type="topic">Link</xref>&gt; array</lines>
                 </entry>
               </row>
               <row>
@@ -2835,7 +2834,7 @@ a shop.</p>
         </table>
       </body>
     </topic>
-    <topic id="status" specializations="@props/deliveryTarget">
+    <topic id="status">
       <title>Status</title>
       <body>
         <p>The technical status of the return request.</p>
@@ -2843,7 +2842,7 @@ a shop.</p>
           <i>Type</i>: enum (ACCEPTED, CLOSED, DO_APPROVE, DO_CLOSE, INITIAL, REJECTED)</p>
       </body>
     </topic>
-    <topic id="status1" specializations="@props/deliveryTarget">
+    <topic id="status1">
       <title>Status1</title>
       <body>
         <p>The status of the approval.</p>
@@ -2851,7 +2850,7 @@ a shop.</p>
           <i>Type</i>: enum (APPROVED, NOT_APPROVED)</p>
       </body>
     </topic>
-    <topic id="type" specializations="@props/deliveryTarget">
+    <topic id="type">
       <title>Type</title>
       <body>
         <p>The type that specifies the return request.</p>
@@ -2859,7 +2858,7 @@ a shop.</p>
           <i>Type</i>: enum (RETURN, PICKUP)</p>
       </body>
     </topic>
-    <topic id="writeapproval" specializations="@props/deliveryTarget">
+    <topic id="writeapproval">
       <title>WriteApproval</title>
       <body>
         <p>Represents an approval of a return request of an order of a shop.</p>
@@ -2905,7 +2904,7 @@ a shop.</p>
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>
-                    <xref format="dita" href="#status1" type="topic">Status1</xref>
+                    <xref href="swagger.dita#status1" type="topic">Status1</xref>
                   </lines>
                 </entry>
               </row>
@@ -2914,7 +2913,7 @@ a shop.</p>
         </table>
       </body>
     </topic>
-    <topic id="writecustomattribute" specializations="@props/deliveryTarget">
+    <topic id="writecustomattribute">
       <title>WriteCustomAttribute</title>
       <body>
         <p>Represents a custom attribute (key/value pair) of a return request from an order of a shop.</p>
@@ -2974,7 +2973,7 @@ a shop.</p>
         </table>
       </body>
     </topic>
-    <topic id="writepickupaddress" specializations="@props/deliveryTarget">
+    <topic id="writepickupaddress">
       <title>WritePickupAddress</title>
       <body>
         <p>Represents a pickup address related to the return request from an order of a shop.</p>
@@ -3203,7 +3202,7 @@ a shop.</p>
         </table>
       </body>
     </topic>
-    <topic id="writereturnrequest" specializations="@props/deliveryTarget">
+    <topic id="writereturnrequest">
       <title>WriteReturnRequest</title>
       <body>
         <p>Represents a return request from a shop.</p>
@@ -3251,7 +3250,7 @@ a shop.</p>
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>&lt;
-                    <xref format="dita" href="#writecustomattribute" type="topic">WriteCustomAttribute</xref>&gt; array</lines>
+                    <xref href="swagger.dita#writecustomattribute" type="topic">WriteCustomAttribute</xref>&gt; array</lines>
                 </entry>
               </row>
               <row>
@@ -3266,7 +3265,7 @@ a shop.</p>
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>
-                    <xref format="dita" href="#writepickupaddress" type="topic">WritePickupAddress</xref>
+                    <xref href="swagger.dita#writepickupaddress" type="topic">WritePickupAddress</xref>
                   </lines>
                 </entry>
               </row>
@@ -3282,7 +3281,7 @@ a shop.</p>
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>&lt;
-                    <xref format="dita" href="#writereturnrequestposition" type="topic">WriteReturnRequestPosition</xref>&gt; array</lines>
+                    <xref href="swagger.dita#writereturnrequestposition" type="topic">WriteReturnRequestPosition</xref>&gt; array</lines>
                 </entry>
               </row>
               <row>
@@ -3316,7 +3315,7 @@ a shop.</p>
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>
-                    <xref format="dita" href="#type" type="topic">Type</xref>
+                    <xref href="swagger.dita#type" type="topic">Type</xref>
                   </lines>
                 </entry>
               </row>
@@ -3325,7 +3324,7 @@ a shop.</p>
         </table>
       </body>
     </topic>
-    <topic id="writereturnrequestitem" specializations="@props/deliveryTarget">
+    <topic id="writereturnrequestitem">
       <title>WriteReturnRequestItem</title>
       <body>
         <p>Represents a return request item of a return request from an order of a shop.</p>
@@ -3366,7 +3365,7 @@ a shop.</p>
         </table>
       </body>
     </topic>
-    <topic id="writereturnrequestposition" specializations="@props/deliveryTarget">
+    <topic id="writereturnrequestposition">
       <title>WriteReturnRequestPosition</title>
       <body>
         <p>Represents a return request position of a return request from an order of a shop.</p>
@@ -3395,7 +3394,7 @@ a shop.</p>
                 </entry>
                 <entry align="left" colname="col3">
                   <lines>&lt;
-                    <xref format="dita" href="#writereturnrequestitem" type="topic">WriteReturnRequestItem</xref>&gt; array</lines>
+                    <xref href="swagger.dita#writereturnrequestitem" type="topic">WriteReturnRequestItem</xref>&gt; array</lines>
                 </entry>
               </row>
               <row>
@@ -3475,7 +3474,7 @@ a shop.</p>
         </table>
       </body>
     </topic>
-    <topic id="protocol" specializations="@props/deliveryTarget">
+    <topic id="protocol">
       <title>protocol</title>
       <body>
         <p>
@@ -3483,10 +3482,10 @@ a shop.</p>
       </body>
     </topic>
   </topic>
-  <topic id="securityscheme" specializations="@props/deliveryTarget">
+  <topic id="securityscheme">
     <title>Security</title>
     <body></body>
-    <topic id="auth" specializations="@props/deliveryTarget">
+    <topic id="auth">
       <title>auth</title>
       <body>
         <p>
