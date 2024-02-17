@@ -33,14 +33,14 @@ jobs:
       - name: Run DITA-OT Unit Test
         uses: jason-fox/dita-unit-test-action@master
         with:
-          dita-ot-version: '4.0'
+          dita-ot-version: '4.2'
           plugin: 'fox.jason.passthrough.swagger'
           prerequisites: |
             fox.jason.extend.css
             https://github.com/jason-fox/fox.jason.passthrough.pandoc/archive/master.zip
           setup-script: 'test/setup.sh'
-        env:
-          COVERALLS_TOKEN: ${{ secrets.COVERALLS_TOKEN }}
+      #  env:
+      #    COVERALLS_TOKEN: ${{ secrets.COVERALLS_TOKEN }}
       - uses: actions/upload-artifact@v3
         if: always()
         with:
