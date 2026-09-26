@@ -1,26 +1,15 @@
 package fox.jason.passthrough;
 
+import fox.jason.passthrough.swagger.ApiDocumentConverter;
 import java.io.File;
 import java.io.IOException;
 
-public class SwaggerFileReader extends PandocFileReader {
+public class SwaggerFileReader extends AbstractFileReader {
 
   public SwaggerFileReader() {}
 
-  private static final String ANT_FILE = "/../process_swagger.xml";
-
   @Override
   protected String runTarget(File inputFile, String title) throws IOException {
-    File markdownFile = File.createTempFile("swagger", "md");
-    markdownFile.deleteOnExit();
-    writeToFile(
-      executeAntTask(
-        calculateJarPath(SwaggerFileReader.class) + ANT_FILE,
-        inputFile,
-        title
-      ),
-      markdownFile
-    );
-    return executePandoc(markdownFile, title);
+    return ApiDocumentConverter.convertToDita(inputFile, title);
   }
 }

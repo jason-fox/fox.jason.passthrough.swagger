@@ -7,8 +7,8 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=fox.jason.passthrough.swagger&metric=alert_status)](https://sonarcloud.io/dashboard?id=fox.jason.passthrough.swagger)
 
 This is a [DITA-OT Plug-in](https://www.dita-ot.org/plugins) used to auto-create valid DITA-based REST API
-documentation. The documentation can be generated directly from a [Swagger](https://github.com/swagger-api) file and
-processed as if it had been written in DITA.
+documentation. The documentation can be generated directly from a [Swagger 2.0 or OpenAPI 3.x](https://github.com/swagger-api)
+file and processed as if it had been written in DITA.
 
 :arrow_forward: [Video from DITA-OT Day 2019](https://youtu.be/cd7XThpkivw)
 
@@ -21,7 +21,6 @@ processed as if it had been written in DITA.
 -   [Install](#install)
     -   [Installing DITA-OT](#installing-dita-ot)
     -   [Installing the Plug-in](#installing-the-plug-in)
-    -   [Installing Pandoc](#installing-pandoc)
 -   [Usage](#usage)
 -   [License](#license)
 
@@ -35,13 +34,10 @@ processed as if it had been written in DITA.
 developers design, build, document, and consume RESTful Web services. While most users identify Swagger by the Swagger
 UI tool, the Swagger toolset includes support for automated documentation, code generation, and test-case generation.
 
-[Swagger2Markup](https://github.com/Swagger2Markup/swagger2markup) converts a Swagger JSON or YAML file into one or more
-AsciiDoc or GitHub Flavored Markdown documents which can be combined with hand-written documentation. The Swagger source
-file can be located locally or remotely via HTTP. Swagger2Markup supports the Swagger 1.2 and 2.0 specification.
-Internally it uses the official swagger-parser and my markup-document-builder.
-
-This plugin processes the Swagger file to Pandoc markdown, and the converts the markdown to DITA using the
-[Pandoc DITA-OT Plugin](https://github.com/jason-fox/fox.jason.passthrough.pandoc)
+This plugin reads a Swagger 2.0 or OpenAPI 3.x file (JSON or YAML, local or remote) and generates DITA directly,
+using the official [swagger-parser](https://github.com/swagger-api/swagger-parser) and
+[swagger-parser-v3](https://github.com/swagger-api/swagger-parser) libraries to parse the document. There is no
+intermediate Markdown or AsciiDoc step, and no dependency on Pandoc.
 
 #### Sample Swagger Endpoint
 
@@ -112,22 +108,15 @@ rm dita-ot-4.2.zip
 -   Run the plug-in installation commands:
 
 ```console
-dita install https://github.com/jason-fox/fox.jason.passthrough.pandoc/archive/master.zip
 dita install https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
 dita install https://github.com/jason-fox/fox.jason.passthrough.swagger/archive/master.zip
 ```
 
 The `dita` command line tool requires no additional configuration.
 
----
-
-### Installing Pandoc
-
-To download a copy follow the instructions on the [Install page](https://github.com/jgm/pandoc/blob/master/INSTALL.md)
-
 ## Usage
 
-For DITA processing, a swagger file can be defined in either `json` or `yaml` format.
+For DITA processing, a Swagger 2.0 or OpenAPI 3.x file can be defined in either `json` or `yaml` format.
 To mark a file to be passed through for **Swagger** processing, label it with `format="swagger"` within the `*.ditamap`
 as shown:
 
@@ -153,6 +142,22 @@ filename will be replaced by spaces in title.
 
 [Apache 2.0](LICENSE) © 2019 - 2024 Jason Fox
 
-The Program includes the following additional software components which were obtained under license:
+The Program includes the following additional software components which were obtained under license. See
+[NOTICES.txt](NOTICES.txt) for the full text of each license.
 
--   swagger2markup-cli-2.0.0.jar - https://github.com/Swagger2Markup/swagger2markup - **Apache 2.0 license**
+-   swagger-parser, swagger-parser-v3 and their swagger-core/swagger-models/swagger-annotations dependencies -
+    https://github.com/swagger-api/swagger-parser - **Apache 2.0 license**
+-   Jackson (jackson-core, jackson-databind, jackson-annotations, jackson-dataformat-yaml, jackson-datatype-jsr310) -
+    https://github.com/FasterXML/jackson - **Apache 2.0 license**
+-   Guava and its supporting libraries (guava, failureaccess, listenablefuture, jsr305, error_prone_annotations,
+    j2objc-annotations) - https://github.com/google/guava - **Apache 2.0 license**
+-   SnakeYAML - https://bitbucket.org/snakeyaml/snakeyaml - **Apache 2.0 license**
+-   Apache Commons IO and Commons Lang3 - https://commons.apache.org/ - **Apache 2.0 license**
+-   Jakarta Bean Validation API - https://github.com/jakartaee/validation - **Apache 2.0 license**
+-   javax.validation validation-api - https://github.com/jakartaee/validation - **Apache 2.0 license**
+-   SLF4J (slf4j-api, slf4j-ext) - https://www.slf4j.org/ - **MIT license**
+-   Animal Sniffer Annotations - https://www.mojohaus.org/animal-sniffer/ - **MIT license**
+-   Jakarta XML Binding API and Jakarta Activation API - https://github.com/eclipse-ee4j - **Eclipse Distribution
+    License 1.0**
+-   Checker Framework checker-compat-qual - https://github.com/typetools/checker-framework - **GNU General Public
+    License, version 2, with the Classpath Exception**

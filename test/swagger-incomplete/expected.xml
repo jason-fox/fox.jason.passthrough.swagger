@@ -49,18 +49,18 @@
               <colspec colname="col3" colnum="3"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="col1">HTTP Code</entry>
-                  <entry align="left" colname="col2">Description</entry>
-                  <entry align="left" colname="col3">Schema</entry>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="col1">
+                  <entry colname="col1">
                     <b>200</b>
                   </entry>
-                  <entry align="left" colname="col2">200 response</entry>
-                  <entry align="left" colname="col3">No Content</entry>
+                  <entry colname="col2">200 response</entry>
+                  <entry colname="col3">No Content</entry>
                 </row>
               </tbody>
             </tgroup>

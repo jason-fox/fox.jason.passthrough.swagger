@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fox.jason</groupId>
 	<artifactId>passthrough.swagger</artifactId>
-	<version>2.1</version>
+	<version>3.0</version>
 
 	<dependencies>
 		<dependency>
@@ -23,24 +23,25 @@
       >${project.basedir}/lib/passthrough.parser-${passthrough-version}.jar</systemPath>
 		</dependency>
 		<dependency>
-			<groupId>fox.jason</groupId>
-			<artifactId>passthrough.pandoc</artifactId>
-			<version>${pandoc-version}</version>
-			<scope>system</scope>
-			<systemPath
-      >${project.basedir}/lib/passthrough.pandoc-${pandoc-version}.jar</systemPath>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-parser</artifactId>
+			<version>1.0.53</version>
+		</dependency>
+		<dependency>
+			<groupId>io.swagger.parser.v3</groupId>
+			<artifactId>swagger-parser-v3</artifactId>
+			<version>2.0.24</version>
 		</dependency>
 	</dependencies>
 
 	<properties>
 		<passthrough-version>4.0</passthrough-version>
-		<pandoc-version>1.0</pandoc-version>
 		<sonar.projectKey>fox.jason.passthrough.swagger</sonar.projectKey>
 		<sonar.organization>dita-ot-plugins</sonar.organization>
-		<sonar.sources>cfg,resource,xsl,src</sonar.sources>
+		<sonar.sources>cfg,xsl,src</sonar.sources>
 		<sonar.coverage.exclusions>src</sonar.coverage.exclusions>
 		<sonar.java.binaries
-    >target/classes/fox/jason/passthrough,target/classes/fox/jason/passthrough/tasks</sonar.java.binaries>
+    >target/classes/fox/jason/passthrough,target/classes/fox/jason/passthrough/swagger</sonar.java.binaries>
 		<sonar.java.libraries>lib/ant-*.jar,lib/passthrough.*.jar</sonar.java.libraries>
 		<sonar.test.exclusions>test</sonar.test.exclusions>
 		<sonar.cpd.exclusions>src/fox/jason/passthrough/**</sonar.cpd.exclusions>

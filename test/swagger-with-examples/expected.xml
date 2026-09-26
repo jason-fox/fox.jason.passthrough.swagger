@@ -49,18 +49,18 @@
               <colspec colname="col3" colnum="3"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="col1">HTTP Code</entry>
-                  <entry align="left" colname="col2">Description</entry>
-                  <entry align="left" colname="col3">Schema</entry>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="col1">
+                  <entry colname="col1">
                     <b>200</b>
                   </entry>
-                  <entry align="left" colname="col2">200 response</entry>
-                  <entry align="left" colname="col3">No Content</entry>
+                  <entry colname="col2">200 response</entry>
+                  <entry colname="col3">No Content</entry>
                 </row>
               </tbody>
             </tgroup>
@@ -73,9 +73,6 @@
               <codeph>application/json</codeph>
             </li>
           </ul>
-        </section>
-        <section id="example-http-response" outputclass="section">
-          <title>Example HTTP response</title>
         </section>
         <example id="response-200" outputclass="example">
           <title>Response 200</title>
@@ -152,25 +149,25 @@
               <colspec colname="col3" colnum="3"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="col1">HTTP Code</entry>
-                  <entry align="left" colname="col2">Description</entry>
-                  <entry align="left" colname="col3">Schema</entry>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="col1">
+                  <entry colname="col1">
                     <b>200</b>
                   </entry>
-                  <entry align="left" colname="col2">200 203 response</entry>
-                  <entry align="left" colname="col3">No Content</entry>
+                  <entry colname="col2">200 203 response</entry>
+                  <entry colname="col3">No Content</entry>
                 </row>
                 <row>
-                  <entry align="left" colname="col1">
+                  <entry colname="col1">
                     <b>203</b>
                   </entry>
-                  <entry align="left" colname="col2">200 203 response</entry>
-                  <entry align="left" colname="col3">No Content</entry>
+                  <entry colname="col2">200 203 response</entry>
+                  <entry colname="col3">No Content</entry>
                 </row>
               </tbody>
             </tgroup>
@@ -183,9 +180,6 @@
               <codeph>application/json</codeph>
             </li>
           </ul>
-        </section>
-        <section id="example-http-response-1" outputclass="section">
-          <title>Example HTTP response</title>
         </section>
         <example id="response-200-1" outputclass="example">
           <title>Response 200</title>
@@ -258,25 +252,25 @@
               <colspec colname="col3" colnum="3"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="col1">HTTP Code</entry>
-                  <entry align="left" colname="col2">Description</entry>
-                  <entry align="left" colname="col3">Schema</entry>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="col1">
+                  <entry colname="col1">
                     <b>200</b>
                   </entry>
-                  <entry align="left" colname="col2">200 203 response</entry>
-                  <entry align="left" colname="col3">No Content</entry>
+                  <entry colname="col2">200 203 response</entry>
+                  <entry colname="col3">No Content</entry>
                 </row>
                 <row>
-                  <entry align="left" colname="col1">
+                  <entry colname="col1">
                     <b>203</b>
                   </entry>
-                  <entry align="left" colname="col2">200 203 response</entry>
-                  <entry align="left" colname="col3">No Content</entry>
+                  <entry colname="col2">200 203 response</entry>
+                  <entry colname="col3">No Content</entry>
                 </row>
               </tbody>
             </tgroup>
@@ -289,9 +283,6 @@
               <codeph>application/json</codeph>
             </li>
           </ul>
-        </section>
-        <section id="example-http-response-2" outputclass="section">
-          <title>Example HTTP response</title>
         </section>
         <example id="response-200-2" outputclass="example">
           <title>Response 200</title>
@@ -499,31 +490,23 @@
               <colspec colname="col4" colnum="4"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="col1">Type</entry>
-                  <entry align="left" colname="col2">Name</entry>
-                  <entry align="left" colname="col3">Description</entry>
-                  <entry align="left" colname="col4">Schema</entry>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="col1">
-                    <lines>
-                      <b>Path</b>
-                    </lines>
-                  </entry>
-                  <entry align="left" colname="col2">
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
                     <lines>
                       <b>alias</b>
                       <i>required</i>
                     </lines>
                   </entry>
-                  <entry align="left" colname="col3">
-                    <lines>The extension name.</lines>
-                  </entry>
-                  <entry align="left" colname="col4">
-                    <lines>string</lines>
-                  </entry>
+                  <entry colname="col3">The extension name.</entry>
+                  <entry colname="col4">string</entry>
                 </row>
               </tbody>
             </tgroup>
@@ -538,25 +521,25 @@
               <colspec colname="col3" colnum="3"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="col1">HTTP Code</entry>
-                  <entry align="left" colname="col2">Description</entry>
-                  <entry align="left" colname="col3">Schema</entry>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="col1">
+                  <entry colname="col1">
                     <b>200</b>
                   </entry>
-                  <entry align="left" colname="col2">200 203 response</entry>
-                  <entry align="left" colname="col3">No Content</entry>
+                  <entry colname="col2">200 203 response</entry>
+                  <entry colname="col3">No Content</entry>
                 </row>
                 <row>
-                  <entry align="left" colname="col1">
+                  <entry colname="col1">
                     <b>203</b>
                   </entry>
-                  <entry align="left" colname="col2">200 203 response</entry>
-                  <entry align="left" colname="col3">No Content</entry>
+                  <entry colname="col2">200 203 response</entry>
+                  <entry colname="col3">No Content</entry>
                 </row>
               </tbody>
             </tgroup>
@@ -569,9 +552,6 @@
               <codeph>application/json</codeph>
             </li>
           </ul>
-        </section>
-        <section id="example-http-response-3" outputclass="section">
-          <title>Example HTTP response</title>
         </section>
         <example id="response-200-3" outputclass="example">
           <title>Response 200</title>
@@ -613,91 +593,13 @@
         </example>
       </body>
     </topic>
-    <topic id="listtenants" outputclass="swagger-get">
-      <title>List tenants</title>
+    <topic id="authenticate-v2-0" outputclass="swagger-post">
+      <title>Authenticate</title>
       <body>
-        <codeblock outputclass="swagger-get">GET /v2.0/tenants</codeblock>
+        <codeblock outputclass="swagger-post">POST /v2.0/tokens</codeblock>
         <section id="description-4" outputclass="section">
           <title>Description</title>
-          <p>Lists tenants to which the specified token has access.</p>
-        </section>
-        <section id="parameters-1" outputclass="section">
-          <title>Parameters</title>
-          <table>
-            <tgroup cols="4">
-              <colspec colname="col1" colnum="1" colwidth="25%"></colspec>
-              <colspec colname="col2" colnum="2" colwidth="25%"></colspec>
-              <colspec colname="col3" colnum="3" colwidth="25%"></colspec>
-              <colspec colname="col4" colnum="4" colwidth="25%"></colspec>
-              <thead>
-                <row>
-                  <entry align="left" colname="col1">Type</entry>
-                  <entry align="left" colname="col2">Name</entry>
-                  <entry align="left" colname="col3">Description</entry>
-                  <entry align="left" colname="col4">Schema</entry>
-                </row>
-              </thead>
-              <tbody>
-                <row>
-                  <entry align="left" colname="col1">
-                    <lines>
-                      <b>Header</b>
-                    </lines>
-                  </entry>
-                  <entry align="left" colname="col2">
-                    <lines>
-                      <b>X-Auth-Token</b>
-                      <i>required</i>
-                    </lines>
-                  </entry>
-                  <entry align="left" colname="col3">
-                    <lines>A valid authentication token.</lines>
-                  </entry>
-                  <entry align="left" colname="col4">
-                    <lines>string</lines>
-                  </entry>
-                </row>
-                <row>
-                  <entry align="left" colname="col1">
-                    <lines>
-                      <b>Query</b>
-                    </lines>
-                  </entry>
-                  <entry align="left" colname="col2">
-                    <lines>
-                      <b>limit</b>
-                      <i>optional</i>
-                    </lines>
-                  </entry>
-                  <entry align="left" colname="col3">
-                    <lines>The page size.</lines>
-                  </entry>
-                  <entry align="left" colname="col4">
-                    <lines>integer</lines>
-                  </entry>
-                </row>
-                <row>
-                  <entry align="left" colname="col1">
-                    <lines>
-                      <b>Query</b>
-                    </lines>
-                  </entry>
-                  <entry align="left" colname="col2">
-                    <lines>
-                      <b>marker</b>
-                      <i>optional</i>
-                    </lines>
-                  </entry>
-                  <entry align="left" colname="col3">
-                    <lines>The ID of the last item in the previous list.</lines>
-                  </entry>
-                  <entry align="left" colname="col4">
-                    <lines>string</lines>
-                  </entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
+          <p>Authenticates and generates a token.</p>
         </section>
         <section id="responses-4" outputclass="section">
           <title>Responses</title>
@@ -708,25 +610,25 @@
               <colspec colname="col3" colnum="3"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="col1">HTTP Code</entry>
-                  <entry align="left" colname="col2">Description</entry>
-                  <entry align="left" colname="col3">Schema</entry>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="col1">
+                  <entry colname="col1">
                     <b>200</b>
                   </entry>
-                  <entry align="left" colname="col2">200 203 response</entry>
-                  <entry align="left" colname="col3">No Content</entry>
+                  <entry colname="col2">200 203 response</entry>
+                  <entry colname="col3">No Content</entry>
                 </row>
                 <row>
-                  <entry align="left" colname="col1">
+                  <entry colname="col1">
                     <b>203</b>
                   </entry>
-                  <entry align="left" colname="col2">200 203 response</entry>
-                  <entry align="left" colname="col3">No Content</entry>
+                  <entry colname="col2">200 203 response</entry>
+                  <entry colname="col3">No Content</entry>
                 </row>
               </tbody>
             </tgroup>
@@ -740,58 +642,431 @@
             </li>
           </ul>
         </section>
-        <section id="example-http-response-4" outputclass="section">
-          <title>Example HTTP response</title>
-        </section>
         <example id="response-200-4" outputclass="example">
           <title>Response 200</title>
           <codeblock outputclass="json">{
- "tenants_links": [],
- "tenants": [
-  {
-   "description": "A description ...",
-   "enabled": true,
-   "id": "1234",
-   "name": "ACME Corp"
+ "access": {
+  "token": {
+   "issued_at": "2014-01-30T15:30:58.819584",
+   "expires": "2014-01-31T15:30:58Z",
+   "id": "aaaaa-bbbbb-ccccc-dddd",
+   "tenant": {
+    "enabled": true,
+    "description": null,
+    "name": "demo",
+    "id": "fc394f2ab2df4114bde39905f800dc57"
+   }
   },
-  {
-   "description": "A description ...",
-   "enabled": true,
-   "id": "3456",
-   "name": "Iron Works"
+  "serviceCatalog": [
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+      "id": "2dad48f09e2a447a9bf852bcd93548ef"
+     }
+    ],
+    "type": "compute",
+    "name": "nova"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:9696/",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:9696/",
+      "internalURL": "http://23.253.72.207:9696/",
+      "id": "97c526db8d7a4c88bbb8d68db1bdcdb8"
+     }
+    ],
+    "type": "network",
+    "name": "neutron"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+      "id": "93f86dfcbba143a39a33d0c2cd424870"
+     }
+    ],
+    "type": "volumev2",
+    "name": "cinder"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8774/v3",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8774/v3",
+      "internalURL": "http://23.253.72.207:8774/v3",
+      "id": "3eb274b12b1d47b2abc536038d87339e"
+     }
+    ],
+    "type": "computev3",
+    "name": "nova"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:3333",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:3333",
+      "internalURL": "http://23.253.72.207:3333",
+      "id": "957f1e54afc64d33a62099faa5e980a2"
+     }
+    ],
+    "type": "s3",
+    "name": "s3"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:9292",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:9292",
+      "internalURL": "http://23.253.72.207:9292",
+      "id": "27d5749f36864c7d96bebf84a5ec9767"
+     }
+    ],
+    "type": "image",
+    "name": "glance"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+      "id": "37c83a2157f944f1972e74658aa0b139"
+     }
+    ],
+    "type": "volume",
+    "name": "cinder"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8773/services/Admin",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8773/services/Cloud",
+      "internalURL": "http://23.253.72.207:8773/services/Cloud",
+      "id": "289b59289d6048e2912b327e5d3240ca"
+     }
+    ],
+    "type": "ec2",
+    "name": "ec2"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8080",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
+      "id": "16b76b5e5b7d48039a6e4cc3129545f3"
+     }
+    ],
+    "type": "object-store",
+    "name": "swift"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:35357/v2.0",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:5000/v2.0",
+      "internalURL": "http://23.253.72.207:5000/v2.0",
+      "id": "26af053673df4ef3a2340c4239e21ea2"
+     }
+    ],
+    "type": "identity",
+    "name": "keystone"
+   }
+  ],
+  "user": {
+   "username": "demo",
+   "roles_links": [],
+   "id": "9a6590b2ab024747bc2167c4e064d00d",
+   "roles": [
+    {
+     "name": "Member"
+    },
+    {
+     "name": "anotherrole"
+    }
+   ],
+   "name": "demo"
+  },
+  "metadata": {
+   "is_admin": 0,
+   "roles": [
+    "7598ac3c634d4c3da4b9126a5f67ca2b",
+    "f95c0ab82d6045d9805033ee1fbc80d4"
+   ]
   }
- ]
+ }
 }</codeblock>
         </example>
         <example id="response-203-3" outputclass="example">
           <title>Response 203</title>
           <codeblock outputclass="json">{
- "tenants_links": [],
- "tenants": [
-  {
-   "description": "A description ...",
-   "enabled": true,
-   "id": "1234",
-   "name": "ACME Corp"
+ "access": {
+  "token": {
+   "issued_at": "2014-01-30T15:30:58.819584",
+   "expires": "2014-01-31T15:30:58Z",
+   "id": "aaaaa-bbbbb-ccccc-dddd",
+   "tenant": {
+    "enabled": true,
+    "description": null,
+    "name": "demo",
+    "id": "fc394f2ab2df4114bde39905f800dc57"
+   }
   },
-  {
-   "description": "A description ...",
-   "enabled": true,
-   "id": "3456",
-   "name": "Iron Works"
+  "serviceCatalog": [
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
+      "id": "2dad48f09e2a447a9bf852bcd93548ef"
+     }
+    ],
+    "type": "compute",
+    "name": "nova"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:9696/",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:9696/",
+      "internalURL": "http://23.253.72.207:9696/",
+      "id": "97c526db8d7a4c88bbb8d68db1bdcdb8"
+     }
+    ],
+    "type": "network",
+    "name": "neutron"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
+      "id": "93f86dfcbba143a39a33d0c2cd424870"
+     }
+    ],
+    "type": "volumev2",
+    "name": "cinder"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8774/v3",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8774/v3",
+      "internalURL": "http://23.253.72.207:8774/v3",
+      "id": "3eb274b12b1d47b2abc536038d87339e"
+     }
+    ],
+    "type": "computev3",
+    "name": "nova"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:3333",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:3333",
+      "internalURL": "http://23.253.72.207:3333",
+      "id": "957f1e54afc64d33a62099faa5e980a2"
+     }
+    ],
+    "type": "s3",
+    "name": "s3"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:9292",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:9292",
+      "internalURL": "http://23.253.72.207:9292",
+      "id": "27d5749f36864c7d96bebf84a5ec9767"
+     }
+    ],
+    "type": "image",
+    "name": "glance"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
+      "id": "37c83a2157f944f1972e74658aa0b139"
+     }
+    ],
+    "type": "volume",
+    "name": "cinder"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8773/services/Admin",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8773/services/Cloud",
+      "internalURL": "http://23.253.72.207:8773/services/Cloud",
+      "id": "289b59289d6048e2912b327e5d3240ca"
+     }
+    ],
+    "type": "ec2",
+    "name": "ec2"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:8080",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
+      "internalURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
+      "id": "16b76b5e5b7d48039a6e4cc3129545f3"
+     }
+    ],
+    "type": "object-store",
+    "name": "swift"
+   },
+   {
+    "endpoints_links": [],
+    "endpoints": [
+     {
+      "adminURL": "http://23.253.72.207:35357/v2.0",
+      "region": "RegionOne",
+      "publicURL": "http://23.253.72.207:5000/v2.0",
+      "internalURL": "http://23.253.72.207:5000/v2.0",
+      "id": "26af053673df4ef3a2340c4239e21ea2"
+     }
+    ],
+    "type": "identity",
+    "name": "keystone"
+   }
+  ],
+  "user": {
+   "username": "demo",
+   "roles_links": [],
+   "id": "9a6590b2ab024747bc2167c4e064d00d",
+   "roles": [
+    {
+     "name": "Member"
+    },
+    {
+     "name": "anotherrole"
+    }
+   ],
+   "name": "demo"
+  },
+  "metadata": {
+   "is_admin": 0,
+   "roles": [
+    "7598ac3c634d4c3da4b9126a5f67ca2b",
+    "f95c0ab82d6045d9805033ee1fbc80d4"
+   ]
   }
- ]
+ }
 }</codeblock>
         </example>
       </body>
     </topic>
-    <topic id="authenticate-v2-0" outputclass="swagger-post">
-      <title>Authenticate</title>
+    <topic id="listtenants" outputclass="swagger-get">
+      <title>List tenants</title>
       <body>
-        <codeblock outputclass="swagger-post">POST /v2.0/tokens</codeblock>
+        <codeblock outputclass="swagger-get">GET /v2.0/tenants</codeblock>
         <section id="description-5" outputclass="section">
           <title>Description</title>
-          <p>Authenticates and generates a token.</p>
+          <p>Lists tenants to which the specified token has access.</p>
+        </section>
+        <section id="parameters-1" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">Header</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>X-Auth-Token</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">A valid authentication token.</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Query</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>marker</b>
+                      <i>optional</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The ID of the last item in the previous list.</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Query</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>limit</b>
+                      <i>optional</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The page size.</entry>
+                  <entry colname="col4">integer</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
         </section>
         <section id="responses-5" outputclass="section">
           <title>Responses</title>
@@ -802,25 +1077,25 @@
               <colspec colname="col3" colnum="3"></colspec>
               <thead>
                 <row>
-                  <entry align="left" colname="col1">HTTP Code</entry>
-                  <entry align="left" colname="col2">Description</entry>
-                  <entry align="left" colname="col3">Schema</entry>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry align="left" colname="col1">
+                  <entry colname="col1">
                     <b>200</b>
                   </entry>
-                  <entry align="left" colname="col2">200 203 response</entry>
-                  <entry align="left" colname="col3">No Content</entry>
+                  <entry colname="col2">200 203 response</entry>
+                  <entry colname="col3">No Content</entry>
                 </row>
                 <row>
-                  <entry align="left" colname="col1">
+                  <entry colname="col1">
                     <b>203</b>
                   </entry>
-                  <entry align="left" colname="col2">200 203 response</entry>
-                  <entry align="left" colname="col3">No Content</entry>
+                  <entry colname="col2">200 203 response</entry>
+                  <entry colname="col3">No Content</entry>
                 </row>
               </tbody>
             </tgroup>
@@ -834,369 +1109,44 @@
             </li>
           </ul>
         </section>
-        <section id="example-http-response-5" outputclass="section">
-          <title>Example HTTP response</title>
-        </section>
         <example id="response-200-5" outputclass="example">
           <title>Response 200</title>
           <codeblock outputclass="json">{
- "access": {
-  "token": {
-   "issued_at": "2014-01-30T15:30:58.819584",
-   "expires": "2014-01-31T15:30:58Z",
-   "id": "aaaaa-bbbbb-ccccc-dddd",
-   "tenant": {
-    "enabled": true,
-    "description": null,
-    "name": "demo",
-    "id": "fc394f2ab2df4114bde39905f800dc57"
-   }
+ "tenants_links": [],
+ "tenants": [
+  {
+   "description": "A description ...",
+   "enabled": true,
+   "id": "1234",
+   "name": "ACME Corp"
   },
-  "serviceCatalog": [
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
-      "id": "2dad48f09e2a447a9bf852bcd93548ef"
-     }
-    ],
-    "type": "compute",
-    "name": "nova"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:9696/",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:9696/",
-      "internalURL": "http://23.253.72.207:9696/",
-      "id": "97c526db8d7a4c88bbb8d68db1bdcdb8"
-     }
-    ],
-    "type": "network",
-    "name": "neutron"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
-      "id": "93f86dfcbba143a39a33d0c2cd424870"
-     }
-    ],
-    "type": "volumev2",
-    "name": "cinder"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8774/v3",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8774/v3",
-      "internalURL": "http://23.253.72.207:8774/v3",
-      "id": "3eb274b12b1d47b2abc536038d87339e"
-     }
-    ],
-    "type": "computev3",
-    "name": "nova"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:3333",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:3333",
-      "internalURL": "http://23.253.72.207:3333",
-      "id": "957f1e54afc64d33a62099faa5e980a2"
-     }
-    ],
-    "type": "s3",
-    "name": "s3"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:9292",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:9292",
-      "internalURL": "http://23.253.72.207:9292",
-      "id": "27d5749f36864c7d96bebf84a5ec9767"
-     }
-    ],
-    "type": "image",
-    "name": "glance"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
-      "id": "37c83a2157f944f1972e74658aa0b139"
-     }
-    ],
-    "type": "volume",
-    "name": "cinder"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8773/services/Admin",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8773/services/Cloud",
-      "internalURL": "http://23.253.72.207:8773/services/Cloud",
-      "id": "289b59289d6048e2912b327e5d3240ca"
-     }
-    ],
-    "type": "ec2",
-    "name": "ec2"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8080",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
-      "id": "16b76b5e5b7d48039a6e4cc3129545f3"
-     }
-    ],
-    "type": "object-store",
-    "name": "swift"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:35357/v2.0",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:5000/v2.0",
-      "internalURL": "http://23.253.72.207:5000/v2.0",
-      "id": "26af053673df4ef3a2340c4239e21ea2"
-     }
-    ],
-    "type": "identity",
-    "name": "keystone"
-   }
-  ],
-  "user": {
-   "username": "demo",
-   "roles_links": [],
-   "id": "9a6590b2ab024747bc2167c4e064d00d",
-   "roles": [
-    {
-     "name": "Member"
-    },
-    {
-     "name": "anotherrole"
-    }
-   ],
-   "name": "demo"
-  },
-  "metadata": {
-   "is_admin": 0,
-   "roles": [
-    "7598ac3c634d4c3da4b9126a5f67ca2b",
-    "f95c0ab82d6045d9805033ee1fbc80d4"
-   ]
+  {
+   "description": "A description ...",
+   "enabled": true,
+   "id": "3456",
+   "name": "Iron Works"
   }
- }
+ ]
 }</codeblock>
         </example>
         <example id="response-203-4" outputclass="example">
           <title>Response 203</title>
           <codeblock outputclass="json">{
- "access": {
-  "token": {
-   "issued_at": "2014-01-30T15:30:58.819584",
-   "expires": "2014-01-31T15:30:58Z",
-   "id": "aaaaa-bbbbb-ccccc-dddd",
-   "tenant": {
-    "enabled": true,
-    "description": null,
-    "name": "demo",
-    "id": "fc394f2ab2df4114bde39905f800dc57"
-   }
+ "tenants_links": [],
+ "tenants": [
+  {
+   "description": "A description ...",
+   "enabled": true,
+   "id": "1234",
+   "name": "ACME Corp"
   },
-  "serviceCatalog": [
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8774/v2/fc394f2ab2df4114bde39905f800dc57",
-      "id": "2dad48f09e2a447a9bf852bcd93548ef"
-     }
-    ],
-    "type": "compute",
-    "name": "nova"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:9696/",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:9696/",
-      "internalURL": "http://23.253.72.207:9696/",
-      "id": "97c526db8d7a4c88bbb8d68db1bdcdb8"
-     }
-    ],
-    "type": "network",
-    "name": "neutron"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8776/v2/fc394f2ab2df4114bde39905f800dc57",
-      "id": "93f86dfcbba143a39a33d0c2cd424870"
-     }
-    ],
-    "type": "volumev2",
-    "name": "cinder"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8774/v3",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8774/v3",
-      "internalURL": "http://23.253.72.207:8774/v3",
-      "id": "3eb274b12b1d47b2abc536038d87339e"
-     }
-    ],
-    "type": "computev3",
-    "name": "nova"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:3333",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:3333",
-      "internalURL": "http://23.253.72.207:3333",
-      "id": "957f1e54afc64d33a62099faa5e980a2"
-     }
-    ],
-    "type": "s3",
-    "name": "s3"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:9292",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:9292",
-      "internalURL": "http://23.253.72.207:9292",
-      "id": "27d5749f36864c7d96bebf84a5ec9767"
-     }
-    ],
-    "type": "image",
-    "name": "glance"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8776/v1/fc394f2ab2df4114bde39905f800dc57",
-      "id": "37c83a2157f944f1972e74658aa0b139"
-     }
-    ],
-    "type": "volume",
-    "name": "cinder"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8773/services/Admin",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8773/services/Cloud",
-      "internalURL": "http://23.253.72.207:8773/services/Cloud",
-      "id": "289b59289d6048e2912b327e5d3240ca"
-     }
-    ],
-    "type": "ec2",
-    "name": "ec2"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:8080",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
-      "internalURL": "http://23.253.72.207:8080/v1/AUTH_fc394f2ab2df4114bde39905f800dc57",
-      "id": "16b76b5e5b7d48039a6e4cc3129545f3"
-     }
-    ],
-    "type": "object-store",
-    "name": "swift"
-   },
-   {
-    "endpoints_links": [],
-    "endpoints": [
-     {
-      "adminURL": "http://23.253.72.207:35357/v2.0",
-      "region": "RegionOne",
-      "publicURL": "http://23.253.72.207:5000/v2.0",
-      "internalURL": "http://23.253.72.207:5000/v2.0",
-      "id": "26af053673df4ef3a2340c4239e21ea2"
-     }
-    ],
-    "type": "identity",
-    "name": "keystone"
-   }
-  ],
-  "user": {
-   "username": "demo",
-   "roles_links": [],
-   "id": "9a6590b2ab024747bc2167c4e064d00d",
-   "roles": [
-    {
-     "name": "Member"
-    },
-    {
-     "name": "anotherrole"
-    }
-   ],
-   "name": "demo"
-  },
-  "metadata": {
-   "is_admin": 0,
-   "roles": [
-    "7598ac3c634d4c3da4b9126a5f67ca2b",
-    "f95c0ab82d6045d9805033ee1fbc80d4"
-   ]
+  {
+   "description": "A description ...",
+   "enabled": true,
+   "id": "3456",
+   "name": "Iron Works"
   }
- }
+ ]
 }</codeblock>
         </example>
       </body>
