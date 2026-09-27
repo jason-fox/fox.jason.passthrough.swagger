@@ -183,7 +183,7 @@
               <fo:block background-color="BEIGE" border-color="#fca130" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#fca130" color="white" font-family="STANDARD">PUT</fo:inline>
                 <fo:inline>/pet</fo:inline>
-                <fo:inline font-weight="bold">Update an existing pet</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Update an existing pet</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -356,7 +356,7 @@
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/pet</fo:inline>
-                <fo:inline font-weight="bold">Add a new pet to the store</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Add a new pet to the store</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -503,12 +503,9 @@
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/pet/findByStatus</fo:inline>
-                <fo:inline font-weight="bold">Finds Pets by status</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Finds Pets by status</fo:inline>
               </fo:block>
-              <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
-                <fo:block>Multiple status values can be provided with comma separated strings</fo:block>
-              </fo:block>
+              <fo:block>Multiple status values can be provided with comma separated strings</fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:table>
@@ -642,12 +639,9 @@
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/pet/findByTags</fo:inline>
-                <fo:inline font-weight="bold">Finds Pets by tags</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Finds Pets by tags</fo:inline>
               </fo:block>
-              <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
-                <fo:block>Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.</fo:block>
-              </fo:block>
+              <fo:block>Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.</fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:table>
@@ -781,12 +775,9 @@
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/pet/{petId}</fo:inline>
-                <fo:inline font-weight="bold">Find pet by ID</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Find pet by ID</fo:inline>
               </fo:block>
-              <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
-                <fo:block>Returns a single pet</fo:block>
-              </fo:block>
+              <fo:block>Returns a single pet</fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:table>
@@ -933,7 +924,7 @@
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/pet/{petId}</fo:inline>
-                <fo:inline font-weight="bold">Updates a pet in the store with form data</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Updates a pet in the store with form data</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -1106,7 +1097,7 @@
               <fo:block background-color="BEIGE" border-color="#f93e3e" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD">DELETE</fo:inline>
                 <fo:inline>/pet/{petId}</fo:inline>
-                <fo:inline font-weight="bold">Deletes a pet</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Deletes a pet</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -1258,7 +1249,7 @@
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/pet/{petId}/uploadImage</fo:inline>
-                <fo:inline font-weight="bold">uploads an image</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">uploads an image</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -1436,12 +1427,9 @@
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/store/inventory</fo:inline>
-                <fo:inline font-weight="bold">Returns pet inventories by status</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Returns pet inventories by status</fo:inline>
               </fo:block>
-              <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
-                <fo:block>Returns a map of status codes to quantities</fo:block>
-              </fo:block>
+              <fo:block>Returns a map of status codes to quantities</fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
                 <fo:table>
@@ -1504,7 +1492,7 @@
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/store/order</fo:inline>
-                <fo:inline font-weight="bold">Place an order for a pet</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Place an order for a pet</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -1641,12 +1629,9 @@
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/store/order/{orderId}</fo:inline>
-                <fo:inline font-weight="bold">Find purchase order by ID</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Find purchase order by ID</fo:inline>
               </fo:block>
-              <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
-                <fo:block>For valid response try integer IDs with value &gt;= 1 and &lt;= 10. Other values will generated exceptions</fo:block>
-              </fo:block>
+              <fo:block>For valid response try integer IDs with value &gt;= 1 and &lt;= 10. Other values will generated exceptions</fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:table>
@@ -1793,12 +1778,9 @@
               <fo:block background-color="BEIGE" border-color="#f93e3e" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD">DELETE</fo:inline>
                 <fo:inline>/store/order/{orderId}</fo:inline>
-                <fo:inline font-weight="bold">Delete purchase order by ID</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Delete purchase order by ID</fo:inline>
               </fo:block>
-              <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
-                <fo:block>For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors</fo:block>
-              </fo:block>
+              <fo:block>For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors</fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:table>
@@ -1943,12 +1925,9 @@
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/user</fo:inline>
-                <fo:inline font-weight="bold">Create user</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Create user</fo:inline>
               </fo:block>
-              <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
-                <fo:block>This can only be done by the logged in user.</fo:block>
-              </fo:block>
+              <fo:block>This can only be done by the logged in user.</fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:table>
@@ -2069,7 +2048,7 @@
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/user/createWithArray</fo:inline>
-                <fo:inline font-weight="bold">Creates list of users with given input array</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Creates list of users with given input array</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -2191,7 +2170,7 @@
               <fo:block background-color="BEIGE" border-color="#49cc90" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#49cc90" color="white" font-family="STANDARD">POST</fo:inline>
                 <fo:inline>/user/createWithList</fo:inline>
-                <fo:inline font-weight="bold">Creates list of users with given input array</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Creates list of users with given input array</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -2313,7 +2292,7 @@
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/user/login</fo:inline>
-                <fo:inline font-weight="bold">Logs user into the system</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Logs user into the system</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -2471,7 +2450,7 @@
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/user/logout</fo:inline>
-                <fo:inline font-weight="bold">Logs out current logged in user session</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Logs out current logged in user session</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Responses</fo:block>
@@ -2545,7 +2524,7 @@
               <fo:block background-color="ALICEBLUE" border-color="CORNFLOWERBLUE" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="CORNFLOWERBLUE" color="white" font-family="STANDARD">GET</fo:inline>
                 <fo:inline>/user/{username}</fo:inline>
-                <fo:inline font-weight="bold">Get user by user name</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Get user by user name</fo:inline>
               </fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
@@ -2693,12 +2672,9 @@
               <fo:block background-color="BEIGE" border-color="#fca130" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#fca130" color="white" font-family="STANDARD">PUT</fo:inline>
                 <fo:inline>/user/{username}</fo:inline>
-                <fo:inline font-weight="bold">Updated user</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Updated user</fo:inline>
               </fo:block>
-              <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
-                <fo:block>This can only be done by the logged in user.</fo:block>
-              </fo:block>
+              <fo:block>This can only be done by the logged in user.</fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:table>
@@ -2851,12 +2827,9 @@
               <fo:block background-color="BEIGE" border-color="#f93e3e" border-style="solid" border-width="1pt" font-family="MONOSPACE" font-weight="bold">
                 <fo:inline background-color="#f93e3e" color="white" font-family="STANDARD">DELETE</fo:inline>
                 <fo:inline>/user/{username}</fo:inline>
-                <fo:inline font-weight="bold">Delete user</fo:inline>
+                <fo:inline font-family="STANDARD" font-weight="normal">Delete user</fo:inline>
               </fo:block>
-              <fo:block>
-                <fo:block font-family="STANDARD" font-weight="bold">Description</fo:block>
-                <fo:block>This can only be done by the logged in user.</fo:block>
-              </fo:block>
+              <fo:block>This can only be done by the logged in user.</fo:block>
               <fo:block>
                 <fo:block font-family="STANDARD" font-weight="bold">Parameters</fo:block>
                 <fo:table>

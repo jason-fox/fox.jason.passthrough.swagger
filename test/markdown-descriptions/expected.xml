@@ -31,12 +31,9 @@
     <title>Get a widget</title>
     <body>
       <codeblock outputclass="swagger-get">GET /widgets/{widgetId}</codeblock>
-      <section id="description" outputclass="section">
-        <title>Description</title>
-        <p>Returns a single widget. See
-          <codeph>GET /widgets</codeph>for the
-          <b>list</b>endpoint.</p>
-      </section>
+      <p>Returns a single widget. See
+        <codeph>GET /widgets</codeph>for the
+        <b>list</b>endpoint.</p>
       <section id="parameters" outputclass="section">
         <title>Parameters</title>
         <table>

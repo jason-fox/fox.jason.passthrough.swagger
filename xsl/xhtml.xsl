@@ -24,7 +24,7 @@
 			</code>
 			<xsl:if test="$operationTitle">
 				<xsl:text> </xsl:text>
-				<b><xsl:apply-templates select="$operationTitle/node()"/></b>
+				<span class="swagger-summary"><xsl:apply-templates select="$operationTitle/node()"/></span>
 			</xsl:if>
 		</pre>
     </xsl:template>

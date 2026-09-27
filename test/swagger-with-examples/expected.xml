@@ -35,10 +35,7 @@
     <title>List versions</title>
     <body>
       <codeblock outputclass="swagger-get">GET /</codeblock>
-      <section id="description" outputclass="section">
-        <title>Description</title>
-        <p>Lists information about all Identity API versions.</p>
-      </section>
+      <p>Lists information about all Identity API versions.</p>
       <section id="responses" outputclass="section">
         <title>Responses</title>
         <table>
@@ -135,10 +132,7 @@
     <title>Show version details</title>
     <body>
       <codeblock outputclass="swagger-get">GET /v2.0</codeblock>
-      <section id="description-1" outputclass="section">
-        <title>Description</title>
-        <p>Shows details for the Identity API v2.0.</p>
-      </section>
+      <p>Shows details for the Identity API v2.0.</p>
       <section id="responses-1" outputclass="section">
         <title>Responses</title>
         <table>
@@ -238,10 +232,7 @@
     <title>List extensions</title>
     <body>
       <codeblock outputclass="swagger-get">GET /v2.0/extensions</codeblock>
-      <section id="description-2" outputclass="section">
-        <title>Description</title>
-        <p>Lists available extensions.</p>
-      </section>
+      <p>Lists available extensions.</p>
       <section id="responses-2" outputclass="section">
         <title>Responses</title>
         <table>
@@ -475,10 +466,7 @@
     <title>Get extension details</title>
     <body>
       <codeblock outputclass="swagger-get">GET /v2.0/extensions/{alias}</codeblock>
-      <section id="description-3" outputclass="section">
-        <title>Description</title>
-        <p>Gets detailed information for a specified extension.</p>
-      </section>
+      <p>Gets detailed information for a specified extension.</p>
       <section id="parameters" outputclass="section">
         <title>Parameters</title>
         <table>
@@ -596,10 +584,7 @@
     <title>Authenticate</title>
     <body>
       <codeblock outputclass="swagger-post">POST /v2.0/tokens</codeblock>
-      <section id="description-4" outputclass="section">
-        <title>Description</title>
-        <p>Authenticates and generates a token.</p>
-      </section>
+      <p>Authenticates and generates a token.</p>
       <section id="responses-4" outputclass="section">
         <title>Responses</title>
         <table>
@@ -1009,10 +994,7 @@
     <title>List tenants</title>
     <body>
       <codeblock outputclass="swagger-get">GET /v2.0/tenants</codeblock>
-      <section id="description-5" outputclass="section">
-        <title>Description</title>
-        <p>Lists tenants to which the specified token has access.</p>
-      </section>
+      <p>Lists tenants to which the specified token has access.</p>
       <section id="parameters-1" outputclass="section">
         <title>Parameters</title>
         <table>

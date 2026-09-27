@@ -28,6 +28,11 @@ span.swagger-verb {
     margin-right: 1em;
 }
 
+span.swagger-summary {
+    font-family: var( --bs-body-font-family, sans-serif);
+    font-weight: var( --bs-body-font-weight, normal);
+}
+
 
 pre.swagger-post {
     border-color: #49cc90;

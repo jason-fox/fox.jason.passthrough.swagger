@@ -254,9 +254,7 @@ final class DitaEmitter {
         .append("</codeblock>\n");
 
     if (!isBlank(operation.description)) {
-      startSection("Description");
       out.append(MarkdownDita.renderBlocks(operation.description));
-      endSection();
     }
 
     if (!operation.parameters.isEmpty()) {

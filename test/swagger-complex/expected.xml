@@ -59,10 +59,7 @@
       <title>getReturnRequests</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-request</codeblock>
-        <section id="description" outputclass="section">
-          <title>Description</title>
-          <p>Returns a list of return requests for a given shopName and shopOrderNumber.</p>
-        </section>
+        <p>Returns a list of return requests for a given shopName and shopOrderNumber.</p>
         <section id="parameters" outputclass="section">
           <title>Parameters</title>
           <table>
@@ -174,10 +171,7 @@
       <title>createReturnRequest</title>
       <body>
         <codeblock outputclass="swagger-post">POST /{shopName}/orders/{shopOrderNumber}/return-request</codeblock>
-        <section id="description-1" outputclass="section">
-          <title>Description</title>
-          <p>Creates a new return request</p>
-        </section>
+        <p>Creates a new return request</p>
         <section id="parameters-1" outputclass="section">
           <title>Parameters</title>
           <table>
@@ -315,10 +309,7 @@
       <title>getReturnRequestPositions</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions</codeblock>
-        <section id="description-2" outputclass="section">
-          <title>Description</title>
-          <p>Returns a list of return request positions for a given returnRequestId, shopName and shopOrderNumber.</p>
-        </section>
+        <p>Returns a list of return request positions for a given returnRequestId, shopName and shopOrderNumber.</p>
         <section id="parameters-2" outputclass="section">
           <title>Parameters</title>
           <table>
@@ -443,10 +434,7 @@
       <title>getReturnRequestPosition</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}</codeblock>
-        <section id="description-3" outputclass="section">
-          <title>Description</title>
-          <p>Returns a return request position for a given returnRequestId, shopName, shopOrderNumber and a returnRequestPositionId.</p>
-        </section>
+        <p>Returns a return request position for a given returnRequestId, shopName, shopOrderNumber and a returnRequestPositionId.</p>
         <section id="parameters-3" outputclass="section">
           <title>Parameters</title>
           <table>
@@ -580,10 +568,7 @@
       <title>getReturnRequestItems</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}/items</codeblock>
-        <section id="description-4" outputclass="section">
-          <title>Description</title>
-          <p>Returns a list of return request position items for a given returnRequestId, shopName and shopOrderNumber.</p>
-        </section>
+        <p>Returns a list of return request position items for a given returnRequestId, shopName and shopOrderNumber.</p>
         <section id="parameters-4" outputclass="section">
           <title>Parameters</title>
           <table>
@@ -717,10 +702,7 @@
       <title>getCustomAttributes</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/custom-attributes</codeblock>
-        <section id="description-5" outputclass="section">
-          <title>Description</title>
-          <p>Returns a list of return request custom attributes for a given returnRequestId, shopName and shopOrderNumber.</p>
-        </section>
+        <p>Returns a list of return request custom attributes for a given returnRequestId, shopName and shopOrderNumber.</p>
         <section id="parameters-5" outputclass="section">
           <title>Parameters</title>
           <table>
@@ -843,10 +825,7 @@
       <title>getReturnRequestPickupAddresses</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/pickup-addresses</codeblock>
-        <section id="description-6" outputclass="section">
-          <title>Description</title>
-          <p>Returns a list of return request pickup addresses for a given returnRequestId, shopName and shopOrderNumber.</p>
-        </section>
+        <p>Returns a list of return request pickup addresses for a given returnRequestId, shopName and shopOrderNumber.</p>
         <section id="parameters-6" outputclass="section">
           <title>Parameters</title>
           <table>
@@ -969,10 +948,7 @@
       <title>createApproval</title>
       <body>
         <codeblock outputclass="swagger-post">POST /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/approvals</codeblock>
-        <section id="description-7" outputclass="section">
-          <title>Description</title>
-          <p>Creates a new approval</p>
-        </section>
+        <p>Creates a new approval</p>
         <section id="parameters-7" outputclass="section">
           <title>Parameters</title>
           <table>
@@ -1121,10 +1097,7 @@
       <title>getContactPersons</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/contact-persons</codeblock>
-        <section id="description-8" outputclass="section">
-          <title>Description</title>
-          <p>Returns a list of return request contact persons for a given returnRequestId, shopName and shopOrderNumber.</p>
-        </section>
+        <p>Returns a list of return request contact persons for a given returnRequestId, shopName and shopOrderNumber.</p>
         <section id="parameters-8" outputclass="section">
           <title>Parameters</title>
           <table>
@@ -1247,10 +1220,7 @@
       <title>getReturnRequest</title>
       <body>
         <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}</codeblock>
-        <section id="description-9" outputclass="section">
-          <title>Description</title>
-          <p>Returns a return request for a given shopName, shopOrderNumber and returnRequestId.</p>
-        </section>
+        <p>Returns a return request for a given shopName, shopOrderNumber and returnRequestId.</p>
         <section id="parameters-9" outputclass="section">
           <title>Parameters</title>
           <table>

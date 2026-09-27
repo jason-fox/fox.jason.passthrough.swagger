@@ -48,7 +48,7 @@
                 <xsl:value-of select="substring-after(text(),' ')"/>
               </fo:inline>
               <xsl:if test="$operationTitle">
-                <fo:inline padding-start="10pt" font-weight="bold">
+                <fo:inline padding-start="10pt" font-weight="normal" font-family="sans-serif">
                   <xsl:value-of select="$operationTitle"/>
                 </fo:inline>
               </xsl:if>
