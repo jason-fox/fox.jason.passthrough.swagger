@@ -8,7 +8,11 @@ import fox.jason.passthrough.swagger.ApiModel.Param;
 import fox.jason.passthrough.swagger.ApiModel.Prop;
 import fox.jason.passthrough.swagger.ApiModel.Resp;
 import fox.jason.passthrough.swagger.ApiModel.SecurityScheme;
+import fox.jason.passthrough.swagger.ApiModel.TagInfo;
+import fox.jason.passthrough.markdown.MarkdownDita;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -82,7 +86,7 @@ final class DitaEmitter {
     openTopic(slugs.slugify("Overview"), null, "Overview");
     out.append("<body class=\"- topic/body \">\n");
     if (!isBlank(doc.description)) {
-      out.append("<p class=\"- topic/p \">").append(esc(collapse(doc.description))).append("</p>\n");
+      out.append(MarkdownDita.renderBlocks(doc.description));
     }
 
     startSection("Version information");
@@ -139,10 +143,10 @@ final class DitaEmitter {
     if (!doc.tags.isEmpty()) {
       startSection("Tags");
       out.append("<ul class=\"- topic/ul \">\n");
-      for (ApiModel.TagInfo tag : doc.tags) {
+      for (TagInfo tag : doc.tags) {
         out.append("<li class=\"- topic/li \">").append(esc(tag.name));
         if (!isBlank(tag.description)) {
-          out.append(" : ").append(esc(tag.description));
+          out.append(" : ").append(MarkdownDita.renderInlineOnly(tag.description));
         }
         out.append("</li>\n");
       }
@@ -172,15 +176,68 @@ final class DitaEmitter {
     out.append("</topic>\n");
   }
 
+  // Groups operations by tag, in declared order, matching the swagger-ui/petstore.swagger.io
+  // convention (https://petstore.swagger.io/#/): a topic per tag with its description, its
+  // operations in spec order beneath it, an implicit "default" group for tagless operations
+  // once any tag grouping exists, and a plain flat list when the spec defines no tags at all.
   private void emitPaths(ApiDoc doc) {
     openTopic(slugs.slugify("Paths"), null, "Paths");
     out.append("<body class=\"- topic/body \"></body>\n");
 
+    Map<String, List<Operation>> byTag = new LinkedHashMap<>();
+    for (TagInfo tag : doc.tags) {
+      byTag.put(tag.name, new ArrayList<>());
+    }
+    List<Operation> untagged = new ArrayList<>();
     for (Operation operation : doc.operations) {
-      emitOperation(operation);
+      if (operation.tags.isEmpty()) {
+        untagged.add(operation);
+        continue;
+      }
+      for (String tagName : operation.tags) {
+        byTag.computeIfAbsent(tagName, key -> new ArrayList<>()).add(operation);
+      }
+    }
+
+    if (byTag.isEmpty()) {
+      for (Operation operation : doc.operations) {
+        emitOperation(operation);
+      }
+    } else {
+      for (Map.Entry<String, List<Operation>> entry : byTag.entrySet()) {
+        emitTagGroup(entry.getKey(), tagDescription(doc, entry.getKey()), entry.getValue());
+      }
+      if (!untagged.isEmpty()) {
+        emitTagGroup("default", null, untagged);
+      }
     }
 
     out.append("</topic>\n");
+  }
+
+  private void emitTagGroup(String name, String description, List<Operation> operations) {
+    if (operations.isEmpty()) {
+      return;
+    }
+    openTopic(slugs.slugify(name), null, name);
+    out.append("<body class=\"- topic/body \">\n");
+    if (!isBlank(description)) {
+      out.append(MarkdownDita.renderBlocks(description));
+    }
+    out.append("</body>\n");
+    for (Operation operation : operations) {
+      emitOperation(operation);
+    }
+    out.append("</topic>\n");
+  }
+
+  private static String tagDescription(ApiDoc doc, String tagName) {
+    for (TagInfo tag : doc.tags) {
+      if (tag.name.equals(tagName)) {
+        return tag.description;
+      }
+    }
+    return null;
   }
 
   private void emitOperation(Operation operation) {
@@ -201,9 +258,7 @@ final class DitaEmitter {
 
     if (!isBlank(operation.description)) {
       startSection("Description");
-      out.append("<p class=\"- topic/p \">")
-          .append(esc(collapse(operation.description)))
-          .append("</p>\n");
+      out.append(MarkdownDita.renderBlocks(operation.description));
       endSection();
     }
 
@@ -264,7 +319,7 @@ final class DitaEmitter {
               + "</b>\n<i class=\"+ topic/ph hi-d/i \">"
               + (param.required ? "required" : "optional")
               + "</i></lines>");
-      entry(esc(nullToEmpty(param.description)));
+      entry(MarkdownDita.renderInlineOnly(nullToEmpty(param.description)));
       entry(schemaCell(param.schemaRef, param.schemaIsArray, param.type));
       out.append("</row>\n");
     }
@@ -276,7 +331,7 @@ final class DitaEmitter {
     for (Resp resp : responses) {
       out.append("<row class=\"- topic/row \">\n");
       entry("<b class=\"+ topic/ph hi-d/b \">" + esc(resp.code) + "</b>");
-      StringBuilder description = new StringBuilder(esc(nullToEmpty(resp.description)));
+      StringBuilder description = new StringBuilder(MarkdownDita.renderInlineOnly(nullToEmpty(resp.description)));
       if (!resp.headers.isEmpty()) {
         for (HeaderInfo header : resp.headers) {
           description
@@ -323,9 +378,7 @@ final class DitaEmitter {
       openTopic(definitionIds.get(definition.name), null, definition.name);
       out.append("<body class=\"- topic/body \">\n");
       if (!isBlank(definition.description)) {
-        out.append("<p class=\"- topic/p \">")
-            .append(esc(collapse(definition.description)))
-            .append("</p>\n");
+        out.append(MarkdownDita.renderBlocks(definition.description));
       }
       if (definition.isEnum) {
         out.append("<p class=\"- topic/p \"><i class=\"+ topic/ph hi-d/i \">Type</i>: enum (")
@@ -351,7 +404,7 @@ final class DitaEmitter {
               + "</b>\n<i class=\"+ topic/ph hi-d/i \">"
               + (prop.required ? "required" : "optional")
               + "</i></lines>");
-      StringBuilder description = new StringBuilder(esc(nullToEmpty(prop.description)));
+      StringBuilder description = new StringBuilder(MarkdownDita.renderInlineOnly(nullToEmpty(prop.description)));
       if (isBlank(prop.example)) {
         entry(description.toString());
       } else {
@@ -380,7 +433,7 @@ final class DitaEmitter {
           .append(esc(scheme.type))
           .append(')');
       if (!isBlank(scheme.description)) {
-        out.append(" : ").append(esc(scheme.description));
+        out.append(" : ").append(MarkdownDita.renderInlineOnly(scheme.description));
       }
       out.append("</li>\n");
     }
@@ -484,10 +537,6 @@ final class DitaEmitter {
       return "";
     }
     return Character.toUpperCase(value.charAt(0)) + value.substring(1);
-  }
-
-  private static String collapse(String text) {
-    return text.trim().replaceAll("\\s*\\n\\s*", " ");
   }
 
   private static boolean isBlank(String value) {

@@ -151,9 +151,23 @@ and silently falls back to copying the raw source instead of converting it - so 
 alongside it at build time under a `.ast` suffix (`Swagger_Definition.json` → `Swagger_Definition.ast.json`). This
 generated file is a build artifact, not authored content - `.gitignore` it in projects that use this plug-in.
 
+### Markdown descriptions
+
+The OpenAPI/Swagger spec allows CommonMark in `description` fields (info, operation, parameter, schema/property,
+tag, security scheme). This plug-in parses that Markdown and renders it as real DITA rather than escaped plain text,
+using [`fox.jason.passthrough`](https://github.com/jason-fox/fox.jason.passthrough)'s shared `MarkdownDita` utility:
+
+- Block-level descriptions (info, operation, definition, tag-group) support full paragraphs, lists, code blocks,
+  tables, links and images.
+- Table-cell descriptions (parameters, responses, properties) and one-line descriptions (tags, security schemes)
+  render inline formatting only - `` `code` `` → `<codeph>`, `**bold**` → `<b>`, `*italic*` → `<i>`, links →
+  `<xref>` - without a block wrapper.
+
+Plain text with no Markdown syntax round-trips unchanged.
+
 ## License
 
-[Apache 2.0](LICENSE) © 2019 - 2024 Jason Fox
+[Apache 2.0](LICENSE) © 2019 - 2026 Jason Fox
 
 The Program includes the following additional software components which were obtained under license. See
 [NOTICES.txt](NOTICES.txt) for the full text of each license.
@@ -174,3 +188,6 @@ The Program includes the following additional software components which were obt
     License 1.0**
 -   Checker Framework checker-compat-qual - https://github.com/typetools/checker-framework - **GNU General Public
     License, version 2, with the Classpath Exception**
+-   flexmark and its flexmark-util/flexmark-ext-tables dependencies (via `fox.jason.passthrough`'s `MarkdownDita`) -
+    https://github.com/vsch/flexmark-java - **BSD 2-Clause license**
+-   JetBrains Annotations - https://github.com/JetBrains/java-annotations - **Apache 2.0 license**

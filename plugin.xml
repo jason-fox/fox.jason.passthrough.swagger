@@ -6,6 +6,22 @@
 -->
 <plugin id="fox.jason.passthrough.swagger" version="2.0.1">
 	<feature extension="dita.conductor.lib.import" file="lib/passthrough.parser-5.0.jar"/>
+	<!-- MarkdownDita (in passthrough.parser) renders description-field Markdown as DITA -->
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-ext-tables-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-util-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-util-ast-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-util-builder-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-util-collection-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-util-data-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-util-dependency-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-util-format-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-util-html-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-util-misc-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-util-options-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-util-sequence-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/flexmark-util-visitor-0.64.8.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/annotations-24.0.1.jar"/>
 	<feature extension="dita.conductor.lib.import" file="lib/passthrough.swagger-3.0.jar"/>
 	<feature extension="dita.conductor.lib.import" file="lib/swagger-parser-1.0.53.jar"/>
 	<feature extension="dita.conductor.lib.import" file="lib/swagger-core-1.6.1.jar"/>
