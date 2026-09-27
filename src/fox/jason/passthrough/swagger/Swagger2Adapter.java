@@ -153,6 +153,11 @@ final class Swagger2Adapter {
 
     if (parameter instanceof BodyParameter) {
       Model schema = ((BodyParameter) parameter).getSchema();
+      if ((param.description == null || param.description.isEmpty())
+          && schema != null
+          && schema.getDescription() != null) {
+        param.description = schema.getDescription();
+      }
       applyModelType(param, schema);
     } else if (parameter instanceof AbstractSerializableParameter) {
       AbstractSerializableParameter<?> serializable = (AbstractSerializableParameter<?>) parameter;

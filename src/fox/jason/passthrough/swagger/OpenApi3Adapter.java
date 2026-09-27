@@ -141,8 +141,12 @@ final class OpenApi3Adapter {
         param.in = "body";
         param.name = "body";
         param.required = Boolean.TRUE.equals(body.getRequired());
-        param.description = body.getDescription();
-        applySchemaType(param, entry.getValue().getSchema());
+        Schema<?> requestSchema = entry.getValue().getSchema();
+        param.description =
+            body.getDescription() != null && !body.getDescription().isEmpty()
+                ? body.getDescription()
+                : requestSchema != null ? requestSchema.getDescription() : null;
+        applySchemaType(param, requestSchema);
         op.parameters.add(param);
       }
     }
