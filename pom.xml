@@ -35,7 +35,7 @@
 	</dependencies>
 
 	<properties>
-		<passthrough-version>4.0</passthrough-version>
+		<passthrough-version>5.0</passthrough-version>
 		<sonar.projectKey>fox.jason.passthrough.swagger</sonar.projectKey>
 		<sonar.organization>dita-ot-plugins</sonar.organization>
 		<sonar.sources>cfg,xsl,src</sonar.sources>

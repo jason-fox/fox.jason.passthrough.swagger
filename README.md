@@ -138,6 +138,19 @@ The additional file will be converted to a `*.dita` file and will be added to th
 Unless overriden, the `navtitle` of the included topic will be the same as root name of the file. Any underscores in the
 filename will be replaced by spaces in title.
 
+The converted topic's body also carries an `<object data="..." outputclass="swagger-spec">` reference to the raw
+spec, alongside an empty `<fallback>` (every other transtype's fallback is the topic's own decomposed
+sections/tables, its sibling content, not `<fallback>` itself). The [DITA Bootstrap
+AST](https://github.com/jason-fox/dita-bootstrap.ast) plug-in's `ast-bootstrap` transtype renders this as a
+`ScalarApiReference` node for a React harness to hand to
+[`@scalar/api-reference-react`](https://scalar.com/products/api-references/integrations/react); html5/PDF output is
+unaffected since neither has a template that treats `outputclass="swagger-spec"` specially.
+
+`object/@data` must point at a file distinct from the swagger topicref's own `href`, or DITA-OT's job model collides
+and silently falls back to copying the raw source instead of converting it - so a copy of the source is written
+alongside it at build time under a `.ast` suffix (`Swagger_Definition.json` → `Swagger_Definition.ast.json`). This
+generated file is a build artifact, not authored content - `.gitignore` it in projects that use this plug-in.
+
 ## License
 
 [Apache 2.0](LICENSE) © 2019 - 2024 Jason Fox

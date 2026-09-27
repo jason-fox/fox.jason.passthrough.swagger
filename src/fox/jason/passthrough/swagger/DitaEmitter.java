@@ -31,18 +31,24 @@ final class DitaEmitter {
   private final Slugs slugs = new Slugs();
   private final Map<String, String> definitionIds = new HashMap<>();
 
-  static String render(ApiDoc doc, String fallbackTitle) {
-    return new DitaEmitter().emit(doc, fallbackTitle);
+  static String render(ApiDoc doc, String fallbackTitle, String sourceFileName) {
+    return new DitaEmitter().emit(doc, fallbackTitle, sourceFileName);
   }
 
-  private String emit(ApiDoc doc, String fallbackTitle) {
+  private String emit(ApiDoc doc, String fallbackTitle, String sourceFileName) {
     for (Definition definition : doc.definitions) {
       definitionIds.put(definition.name, slugs.slugify(definition.name));
     }
 
     String title = isBlank(doc.title) ? fallbackTitle : doc.title;
     openTopic(slugs.slugify(title), "swagger", title);
-    out.append("<body class=\"- topic/body \"></body>\n");
+    if (isBlank(sourceFileName)) {
+      out.append("<body class=\"- topic/body \"></body>\n");
+    } else {
+      out.append("<body class=\"- topic/body \">\n");
+      emitSpecObject(sourceFileName);
+      out.append("</body>\n");
+    }
 
     emitOverview(doc);
     emitPaths(doc);
@@ -51,6 +57,25 @@ final class DitaEmitter {
 
     out.append("</topic>\n");
     return out.toString();
+  }
+
+  // AST-bootstrap renders this as a single Scalar API reference component and ignores the
+  // fallback; every other transtype falls through to <fallback>'s own content, which is nothing
+  // more than the same overview/paths/definitions/security topics emitted below - html5-bootstrap
+  // and PDF just need to know to render object/@data's non-<param> children, which html5 already
+  // does by default.
+  private void emitSpecObject(String sourceFileName) {
+    String type = sourceFileName.toLowerCase().endsWith(".yaml")
+            || sourceFileName.toLowerCase().endsWith(".yml")
+        ? "application/yaml"
+        : "application/json";
+    out.append("<object class=\"- topic/object \" data=\"")
+        .append(esc(sourceFileName))
+        .append("\" type=\"")
+        .append(type)
+        .append("\" outputclass=\"swagger-spec\">\n");
+    out.append("<fallback class=\"- topic/fallback \"/>\n");
+    out.append("</object>\n");
   }
 
   private void emitOverview(ApiDoc doc) {
