@@ -31,54 +31,51 @@
       </section>
     </body>
   </topic>
-  <topic id="paths">
-    <title>Paths</title>
-    <body></body>
-    <topic id="getversions-v2" outputclass="swagger-get">
-      <title>List versions</title>
-      <body>
-        <codeblock outputclass="swagger-get">GET /</codeblock>
-        <section id="description" outputclass="section">
-          <title>Description</title>
-          <p>Lists information about all Identity API versions.</p>
-        </section>
-        <section id="responses" outputclass="section">
-          <title>Responses</title>
-          <table>
-            <tgroup cols="3">
-              <colspec colname="col1" colnum="1"></colspec>
-              <colspec colname="col2" colnum="2"></colspec>
-              <colspec colname="col3" colnum="3"></colspec>
-              <thead>
-                <row>
-                  <entry colname="col1">HTTP Code</entry>
-                  <entry colname="col2">Description</entry>
-                  <entry colname="col3">Schema</entry>
-                </row>
-              </thead>
-              <tbody>
-                <row>
-                  <entry colname="col1">
-                    <b>200</b>
-                  </entry>
-                  <entry colname="col2">200 response</entry>
-                  <entry colname="col3">No Content</entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-        </section>
-        <section id="produces-1" outputclass="section">
-          <title>Produces</title>
-          <ul>
-            <li>
-              <codeph>application/json</codeph>
-            </li>
-          </ul>
-        </section>
-        <example id="response-200" outputclass="example">
-          <title>Response 200</title>
-          <codeblock outputclass="json">{
+  <topic id="getversions-v2" outputclass="swagger-get">
+    <title>List versions</title>
+    <body>
+      <codeblock outputclass="swagger-get">GET /</codeblock>
+      <section id="description" outputclass="section">
+        <title>Description</title>
+        <p>Lists information about all Identity API versions.</p>
+      </section>
+      <section id="responses" outputclass="section">
+        <title>Responses</title>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="col1" colnum="1"></colspec>
+            <colspec colname="col2" colnum="2"></colspec>
+            <colspec colname="col3" colnum="3"></colspec>
+            <thead>
+              <row>
+                <entry colname="col1">HTTP Code</entry>
+                <entry colname="col2">Description</entry>
+                <entry colname="col3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <b>200</b>
+                </entry>
+                <entry colname="col2">200 response</entry>
+                <entry colname="col3">No Content</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+      <section id="produces-1" outputclass="section">
+        <title>Produces</title>
+        <ul>
+          <li>
+            <codeph>application/json</codeph>
+          </li>
+        </ul>
+      </section>
+      <example id="response-200" outputclass="example">
+        <title>Response 200</title>
+        <codeblock outputclass="json">{
  "versions": {
   "values": [
    {
@@ -131,61 +128,61 @@
   ]
  }
 }</codeblock>
-        </example>
-      </body>
-    </topic>
-    <topic id="getversioninfo-v2-0" outputclass="swagger-get">
-      <title>Show version details</title>
-      <body>
-        <codeblock outputclass="swagger-get">GET /v2.0</codeblock>
-        <section id="description-1" outputclass="section">
-          <title>Description</title>
-          <p>Shows details for the Identity API v2.0.</p>
-        </section>
-        <section id="responses-1" outputclass="section">
-          <title>Responses</title>
-          <table>
-            <tgroup cols="3">
-              <colspec colname="col1" colnum="1"></colspec>
-              <colspec colname="col2" colnum="2"></colspec>
-              <colspec colname="col3" colnum="3"></colspec>
-              <thead>
-                <row>
-                  <entry colname="col1">HTTP Code</entry>
-                  <entry colname="col2">Description</entry>
-                  <entry colname="col3">Schema</entry>
-                </row>
-              </thead>
-              <tbody>
-                <row>
-                  <entry colname="col1">
-                    <b>200</b>
-                  </entry>
-                  <entry colname="col2">200 203 response</entry>
-                  <entry colname="col3">No Content</entry>
-                </row>
-                <row>
-                  <entry colname="col1">
-                    <b>203</b>
-                  </entry>
-                  <entry colname="col2">200 203 response</entry>
-                  <entry colname="col3">No Content</entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-        </section>
-        <section id="produces-2" outputclass="section">
-          <title>Produces</title>
-          <ul>
-            <li>
-              <codeph>application/json</codeph>
-            </li>
-          </ul>
-        </section>
-        <example id="response-200-1" outputclass="example">
-          <title>Response 200</title>
-          <codeblock outputclass="json">{
+      </example>
+    </body>
+  </topic>
+  <topic id="getversioninfo-v2-0" outputclass="swagger-get">
+    <title>Show version details</title>
+    <body>
+      <codeblock outputclass="swagger-get">GET /v2.0</codeblock>
+      <section id="description-1" outputclass="section">
+        <title>Description</title>
+        <p>Shows details for the Identity API v2.0.</p>
+      </section>
+      <section id="responses-1" outputclass="section">
+        <title>Responses</title>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="col1" colnum="1"></colspec>
+            <colspec colname="col2" colnum="2"></colspec>
+            <colspec colname="col3" colnum="3"></colspec>
+            <thead>
+              <row>
+                <entry colname="col1">HTTP Code</entry>
+                <entry colname="col2">Description</entry>
+                <entry colname="col3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <b>200</b>
+                </entry>
+                <entry colname="col2">200 203 response</entry>
+                <entry colname="col3">No Content</entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <b>203</b>
+                </entry>
+                <entry colname="col2">200 203 response</entry>
+                <entry colname="col3">No Content</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+      <section id="produces-2" outputclass="section">
+        <title>Produces</title>
+        <ul>
+          <li>
+            <codeph>application/json</codeph>
+          </li>
+        </ul>
+      </section>
+      <example id="response-200-1" outputclass="example">
+        <title>Response 200</title>
+        <codeblock outputclass="json">{
  "version": {
   "status": "stable",
   "updated": "2013-03-06T00:00:00Z",
@@ -208,10 +205,10 @@
   ]
  }
 }</codeblock>
-        </example>
-        <example id="response-203" outputclass="example">
-          <title>Response 203</title>
-          <codeblock outputclass="json">{
+      </example>
+      <example id="response-203" outputclass="example">
+        <title>Response 203</title>
+        <codeblock outputclass="json">{
  "version": {
   "status": "stable",
   "updated": "2013-03-06T00:00:00Z",
@@ -234,61 +231,61 @@
   ]
  }
 }</codeblock>
-        </example>
-      </body>
-    </topic>
-    <topic id="listextensions-v2-0" outputclass="swagger-get">
-      <title>List extensions</title>
-      <body>
-        <codeblock outputclass="swagger-get">GET /v2.0/extensions</codeblock>
-        <section id="description-2" outputclass="section">
-          <title>Description</title>
-          <p>Lists available extensions.</p>
-        </section>
-        <section id="responses-2" outputclass="section">
-          <title>Responses</title>
-          <table>
-            <tgroup cols="3">
-              <colspec colname="col1" colnum="1"></colspec>
-              <colspec colname="col2" colnum="2"></colspec>
-              <colspec colname="col3" colnum="3"></colspec>
-              <thead>
-                <row>
-                  <entry colname="col1">HTTP Code</entry>
-                  <entry colname="col2">Description</entry>
-                  <entry colname="col3">Schema</entry>
-                </row>
-              </thead>
-              <tbody>
-                <row>
-                  <entry colname="col1">
-                    <b>200</b>
-                  </entry>
-                  <entry colname="col2">200 203 response</entry>
-                  <entry colname="col3">No Content</entry>
-                </row>
-                <row>
-                  <entry colname="col1">
-                    <b>203</b>
-                  </entry>
-                  <entry colname="col2">200 203 response</entry>
-                  <entry colname="col3">No Content</entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-        </section>
-        <section id="produces-3" outputclass="section">
-          <title>Produces</title>
-          <ul>
-            <li>
-              <codeph>application/json</codeph>
-            </li>
-          </ul>
-        </section>
-        <example id="response-200-2" outputclass="example">
-          <title>Response 200</title>
-          <codeblock outputclass="json">{
+      </example>
+    </body>
+  </topic>
+  <topic id="listextensions-v2-0" outputclass="swagger-get">
+    <title>List extensions</title>
+    <body>
+      <codeblock outputclass="swagger-get">GET /v2.0/extensions</codeblock>
+      <section id="description-2" outputclass="section">
+        <title>Description</title>
+        <p>Lists available extensions.</p>
+      </section>
+      <section id="responses-2" outputclass="section">
+        <title>Responses</title>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="col1" colnum="1"></colspec>
+            <colspec colname="col2" colnum="2"></colspec>
+            <colspec colname="col3" colnum="3"></colspec>
+            <thead>
+              <row>
+                <entry colname="col1">HTTP Code</entry>
+                <entry colname="col2">Description</entry>
+                <entry colname="col3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <b>200</b>
+                </entry>
+                <entry colname="col2">200 203 response</entry>
+                <entry colname="col3">No Content</entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <b>203</b>
+                </entry>
+                <entry colname="col2">200 203 response</entry>
+                <entry colname="col3">No Content</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+      <section id="produces-3" outputclass="section">
+        <title>Produces</title>
+        <ul>
+          <li>
+            <codeph>application/json</codeph>
+          </li>
+        </ul>
+      </section>
+      <example id="response-200-2" outputclass="example">
+        <title>Response 200</title>
+        <codeblock outputclass="json">{
  "extensions": {
   "values": [
    {
@@ -378,10 +375,10 @@
   ]
  }
 }</codeblock>
-        </example>
-        <example id="response-203-1" outputclass="example">
-          <title>Response 203</title>
-          <codeblock outputclass="json">{
+      </example>
+      <example id="response-203-1" outputclass="example">
+        <title>Response 203</title>
+        <codeblock outputclass="json">{
  "extensions": {
   "values": [
    {
@@ -471,93 +468,93 @@
   ]
  }
 }</codeblock>
-        </example>
-      </body>
-    </topic>
-    <topic id="getextension-v2-0" outputclass="swagger-get">
-      <title>Get extension details</title>
-      <body>
-        <codeblock outputclass="swagger-get">GET /v2.0/extensions/{alias}</codeblock>
-        <section id="description-3" outputclass="section">
-          <title>Description</title>
-          <p>Gets detailed information for a specified extension.</p>
-        </section>
-        <section id="parameters" outputclass="section">
-          <title>Parameters</title>
-          <table>
-            <tgroup cols="4">
-              <colspec colname="col1" colnum="1"></colspec>
-              <colspec colname="col2" colnum="2"></colspec>
-              <colspec colname="col3" colnum="3"></colspec>
-              <colspec colname="col4" colnum="4"></colspec>
-              <thead>
-                <row>
-                  <entry colname="col1">Type</entry>
-                  <entry colname="col2">Name</entry>
-                  <entry colname="col3">Description</entry>
-                  <entry colname="col4">Schema</entry>
-                </row>
-              </thead>
-              <tbody>
-                <row>
-                  <entry colname="col1">Path</entry>
-                  <entry colname="col2">
-                    <lines>
-                      <b>alias</b>
-                      <i>required</i>
-                    </lines>
-                  </entry>
-                  <entry colname="col3">The extension name.</entry>
-                  <entry colname="col4">string</entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-        </section>
-        <section id="responses-3" outputclass="section">
-          <title>Responses</title>
-          <table>
-            <tgroup cols="3">
-              <colspec colname="col1" colnum="1"></colspec>
-              <colspec colname="col2" colnum="2"></colspec>
-              <colspec colname="col3" colnum="3"></colspec>
-              <thead>
-                <row>
-                  <entry colname="col1">HTTP Code</entry>
-                  <entry colname="col2">Description</entry>
-                  <entry colname="col3">Schema</entry>
-                </row>
-              </thead>
-              <tbody>
-                <row>
-                  <entry colname="col1">
-                    <b>200</b>
-                  </entry>
-                  <entry colname="col2">200 203 response</entry>
-                  <entry colname="col3">No Content</entry>
-                </row>
-                <row>
-                  <entry colname="col1">
-                    <b>203</b>
-                  </entry>
-                  <entry colname="col2">200 203 response</entry>
-                  <entry colname="col3">No Content</entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-        </section>
-        <section id="produces-4" outputclass="section">
-          <title>Produces</title>
-          <ul>
-            <li>
-              <codeph>application/json</codeph>
-            </li>
-          </ul>
-        </section>
-        <example id="response-200-3" outputclass="example">
-          <title>Response 200</title>
-          <codeblock outputclass="json">{
+      </example>
+    </body>
+  </topic>
+  <topic id="getextension-v2-0" outputclass="swagger-get">
+    <title>Get extension details</title>
+    <body>
+      <codeblock outputclass="swagger-get">GET /v2.0/extensions/{alias}</codeblock>
+      <section id="description-3" outputclass="section">
+        <title>Description</title>
+        <p>Gets detailed information for a specified extension.</p>
+      </section>
+      <section id="parameters" outputclass="section">
+        <title>Parameters</title>
+        <table>
+          <tgroup cols="4">
+            <colspec colname="col1" colnum="1"></colspec>
+            <colspec colname="col2" colnum="2"></colspec>
+            <colspec colname="col3" colnum="3"></colspec>
+            <colspec colname="col4" colnum="4"></colspec>
+            <thead>
+              <row>
+                <entry colname="col1">Type</entry>
+                <entry colname="col2">Name</entry>
+                <entry colname="col3">Description</entry>
+                <entry colname="col4">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">Path</entry>
+                <entry colname="col2">
+                  <lines>
+                    <b>alias</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry colname="col3">The extension name.</entry>
+                <entry colname="col4">string</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+      <section id="responses-3" outputclass="section">
+        <title>Responses</title>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="col1" colnum="1"></colspec>
+            <colspec colname="col2" colnum="2"></colspec>
+            <colspec colname="col3" colnum="3"></colspec>
+            <thead>
+              <row>
+                <entry colname="col1">HTTP Code</entry>
+                <entry colname="col2">Description</entry>
+                <entry colname="col3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <b>200</b>
+                </entry>
+                <entry colname="col2">200 203 response</entry>
+                <entry colname="col3">No Content</entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <b>203</b>
+                </entry>
+                <entry colname="col2">200 203 response</entry>
+                <entry colname="col3">No Content</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+      <section id="produces-4" outputclass="section">
+        <title>Produces</title>
+        <ul>
+          <li>
+            <codeph>application/json</codeph>
+          </li>
+        </ul>
+      </section>
+      <example id="response-200-3" outputclass="example">
+        <title>Response 200</title>
+        <codeblock outputclass="json">{
  "extension": {
   "updated": "2013-07-07T12:00:0-00:00",
   "name": "OpenStack S3 API",
@@ -573,10 +570,10 @@
   "description": "OpenStack S3 API."
  }
 }</codeblock>
-        </example>
-        <example id="response-203-2" outputclass="example">
-          <title>Response 203</title>
-          <codeblock outputclass="json">{
+      </example>
+      <example id="response-203-2" outputclass="example">
+        <title>Response 203</title>
+        <codeblock outputclass="json">{
  "extension": {
   "updated": "2013-07-07T12:00:0-00:00",
   "name": "OpenStack S3 API",
@@ -592,61 +589,61 @@
   "description": "OpenStack S3 API."
  }
 }</codeblock>
-        </example>
-      </body>
-    </topic>
-    <topic id="authenticate-v2-0" outputclass="swagger-post">
-      <title>Authenticate</title>
-      <body>
-        <codeblock outputclass="swagger-post">POST /v2.0/tokens</codeblock>
-        <section id="description-4" outputclass="section">
-          <title>Description</title>
-          <p>Authenticates and generates a token.</p>
-        </section>
-        <section id="responses-4" outputclass="section">
-          <title>Responses</title>
-          <table>
-            <tgroup cols="3">
-              <colspec colname="col1" colnum="1"></colspec>
-              <colspec colname="col2" colnum="2"></colspec>
-              <colspec colname="col3" colnum="3"></colspec>
-              <thead>
-                <row>
-                  <entry colname="col1">HTTP Code</entry>
-                  <entry colname="col2">Description</entry>
-                  <entry colname="col3">Schema</entry>
-                </row>
-              </thead>
-              <tbody>
-                <row>
-                  <entry colname="col1">
-                    <b>200</b>
-                  </entry>
-                  <entry colname="col2">200 203 response</entry>
-                  <entry colname="col3">No Content</entry>
-                </row>
-                <row>
-                  <entry colname="col1">
-                    <b>203</b>
-                  </entry>
-                  <entry colname="col2">200 203 response</entry>
-                  <entry colname="col3">No Content</entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-        </section>
-        <section id="produces-5" outputclass="section">
-          <title>Produces</title>
-          <ul>
-            <li>
-              <codeph>application/json</codeph>
-            </li>
-          </ul>
-        </section>
-        <example id="response-200-4" outputclass="example">
-          <title>Response 200</title>
-          <codeblock outputclass="json">{
+      </example>
+    </body>
+  </topic>
+  <topic id="authenticate-v2-0" outputclass="swagger-post">
+    <title>Authenticate</title>
+    <body>
+      <codeblock outputclass="swagger-post">POST /v2.0/tokens</codeblock>
+      <section id="description-4" outputclass="section">
+        <title>Description</title>
+        <p>Authenticates and generates a token.</p>
+      </section>
+      <section id="responses-4" outputclass="section">
+        <title>Responses</title>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="col1" colnum="1"></colspec>
+            <colspec colname="col2" colnum="2"></colspec>
+            <colspec colname="col3" colnum="3"></colspec>
+            <thead>
+              <row>
+                <entry colname="col1">HTTP Code</entry>
+                <entry colname="col2">Description</entry>
+                <entry colname="col3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <b>200</b>
+                </entry>
+                <entry colname="col2">200 203 response</entry>
+                <entry colname="col3">No Content</entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <b>203</b>
+                </entry>
+                <entry colname="col2">200 203 response</entry>
+                <entry colname="col3">No Content</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+      <section id="produces-5" outputclass="section">
+        <title>Produces</title>
+        <ul>
+          <li>
+            <codeph>application/json</codeph>
+          </li>
+        </ul>
+      </section>
+      <example id="response-200-4" outputclass="example">
+        <title>Response 200</title>
+        <codeblock outputclass="json">{
  "access": {
   "token": {
    "issued_at": "2014-01-30T15:30:58.819584",
@@ -824,10 +821,10 @@
   }
  }
 }</codeblock>
-        </example>
-        <example id="response-203-3" outputclass="example">
-          <title>Response 203</title>
-          <codeblock outputclass="json">{
+      </example>
+      <example id="response-203-3" outputclass="example">
+        <title>Response 203</title>
+        <codeblock outputclass="json">{
  "access": {
   "token": {
    "issued_at": "2014-01-30T15:30:58.819584",
@@ -1005,115 +1002,115 @@
   }
  }
 }</codeblock>
-        </example>
-      </body>
-    </topic>
-    <topic id="listtenants" outputclass="swagger-get">
-      <title>List tenants</title>
-      <body>
-        <codeblock outputclass="swagger-get">GET /v2.0/tenants</codeblock>
-        <section id="description-5" outputclass="section">
-          <title>Description</title>
-          <p>Lists tenants to which the specified token has access.</p>
-        </section>
-        <section id="parameters-1" outputclass="section">
-          <title>Parameters</title>
-          <table>
-            <tgroup cols="4">
-              <colspec colname="col1" colnum="1"></colspec>
-              <colspec colname="col2" colnum="2"></colspec>
-              <colspec colname="col3" colnum="3"></colspec>
-              <colspec colname="col4" colnum="4"></colspec>
-              <thead>
-                <row>
-                  <entry colname="col1">Type</entry>
-                  <entry colname="col2">Name</entry>
-                  <entry colname="col3">Description</entry>
-                  <entry colname="col4">Schema</entry>
-                </row>
-              </thead>
-              <tbody>
-                <row>
-                  <entry colname="col1">Header</entry>
-                  <entry colname="col2">
-                    <lines>
-                      <b>X-Auth-Token</b>
-                      <i>required</i>
-                    </lines>
-                  </entry>
-                  <entry colname="col3">A valid authentication token.</entry>
-                  <entry colname="col4">string</entry>
-                </row>
-                <row>
-                  <entry colname="col1">Query</entry>
-                  <entry colname="col2">
-                    <lines>
-                      <b>marker</b>
-                      <i>optional</i>
-                    </lines>
-                  </entry>
-                  <entry colname="col3">The ID of the last item in the previous list.</entry>
-                  <entry colname="col4">string</entry>
-                </row>
-                <row>
-                  <entry colname="col1">Query</entry>
-                  <entry colname="col2">
-                    <lines>
-                      <b>limit</b>
-                      <i>optional</i>
-                    </lines>
-                  </entry>
-                  <entry colname="col3">The page size.</entry>
-                  <entry colname="col4">integer</entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-        </section>
-        <section id="responses-5" outputclass="section">
-          <title>Responses</title>
-          <table>
-            <tgroup cols="3">
-              <colspec colname="col1" colnum="1"></colspec>
-              <colspec colname="col2" colnum="2"></colspec>
-              <colspec colname="col3" colnum="3"></colspec>
-              <thead>
-                <row>
-                  <entry colname="col1">HTTP Code</entry>
-                  <entry colname="col2">Description</entry>
-                  <entry colname="col3">Schema</entry>
-                </row>
-              </thead>
-              <tbody>
-                <row>
-                  <entry colname="col1">
-                    <b>200</b>
-                  </entry>
-                  <entry colname="col2">200 203 response</entry>
-                  <entry colname="col3">No Content</entry>
-                </row>
-                <row>
-                  <entry colname="col1">
-                    <b>203</b>
-                  </entry>
-                  <entry colname="col2">200 203 response</entry>
-                  <entry colname="col3">No Content</entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-        </section>
-        <section id="produces-6" outputclass="section">
-          <title>Produces</title>
-          <ul>
-            <li>
-              <codeph>application/json</codeph>
-            </li>
-          </ul>
-        </section>
-        <example id="response-200-5" outputclass="example">
-          <title>Response 200</title>
-          <codeblock outputclass="json">{
+      </example>
+    </body>
+  </topic>
+  <topic id="listtenants" outputclass="swagger-get">
+    <title>List tenants</title>
+    <body>
+      <codeblock outputclass="swagger-get">GET /v2.0/tenants</codeblock>
+      <section id="description-5" outputclass="section">
+        <title>Description</title>
+        <p>Lists tenants to which the specified token has access.</p>
+      </section>
+      <section id="parameters-1" outputclass="section">
+        <title>Parameters</title>
+        <table>
+          <tgroup cols="4">
+            <colspec colname="col1" colnum="1"></colspec>
+            <colspec colname="col2" colnum="2"></colspec>
+            <colspec colname="col3" colnum="3"></colspec>
+            <colspec colname="col4" colnum="4"></colspec>
+            <thead>
+              <row>
+                <entry colname="col1">Type</entry>
+                <entry colname="col2">Name</entry>
+                <entry colname="col3">Description</entry>
+                <entry colname="col4">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">Header</entry>
+                <entry colname="col2">
+                  <lines>
+                    <b>X-Auth-Token</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry colname="col3">A valid authentication token.</entry>
+                <entry colname="col4">string</entry>
+              </row>
+              <row>
+                <entry colname="col1">Query</entry>
+                <entry colname="col2">
+                  <lines>
+                    <b>marker</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry colname="col3">The ID of the last item in the previous list.</entry>
+                <entry colname="col4">string</entry>
+              </row>
+              <row>
+                <entry colname="col1">Query</entry>
+                <entry colname="col2">
+                  <lines>
+                    <b>limit</b>
+                    <i>optional</i>
+                  </lines>
+                </entry>
+                <entry colname="col3">The page size.</entry>
+                <entry colname="col4">integer</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+      <section id="responses-5" outputclass="section">
+        <title>Responses</title>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="col1" colnum="1"></colspec>
+            <colspec colname="col2" colnum="2"></colspec>
+            <colspec colname="col3" colnum="3"></colspec>
+            <thead>
+              <row>
+                <entry colname="col1">HTTP Code</entry>
+                <entry colname="col2">Description</entry>
+                <entry colname="col3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <b>200</b>
+                </entry>
+                <entry colname="col2">200 203 response</entry>
+                <entry colname="col3">No Content</entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <b>203</b>
+                </entry>
+                <entry colname="col2">200 203 response</entry>
+                <entry colname="col3">No Content</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+      <section id="produces-6" outputclass="section">
+        <title>Produces</title>
+        <ul>
+          <li>
+            <codeph>application/json</codeph>
+          </li>
+        </ul>
+      </section>
+      <example id="response-200-5" outputclass="example">
+        <title>Response 200</title>
+        <codeblock outputclass="json">{
  "tenants_links": [],
  "tenants": [
   {
@@ -1130,10 +1127,10 @@
   }
  ]
 }</codeblock>
-        </example>
-        <example id="response-203-4" outputclass="example">
-          <title>Response 203</title>
-          <codeblock outputclass="json">{
+      </example>
+      <example id="response-203-4" outputclass="example">
+        <title>Response 203</title>
+        <codeblock outputclass="json">{
  "tenants_links": [],
  "tenants": [
   {
@@ -1150,9 +1147,8 @@
   }
  ]
 }</codeblock>
-        </example>
-      </body>
-    </topic>
+      </example>
+    </body>
   </topic>
 </topic>
 

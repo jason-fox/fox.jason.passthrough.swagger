@@ -23,6 +23,7 @@
    
 
     <xsl:template match="*[contains(@class,' pr-d/codeblock ') and starts-with(@outputclass, 'swagger-')]">
+        <xsl:variable name="operationTitle" select="../../*[contains(@class,' topic/title ')]"/>
         <xsl:call-template name="generateAttrLabel"/>
         <fo:block>
 
@@ -46,8 +47,26 @@
                 <xsl:attribute name="padding-start">10pt</xsl:attribute>
                 <xsl:value-of select="substring-after(text(),' ')"/>
               </fo:inline>
+              <xsl:if test="$operationTitle">
+                <fo:inline padding-start="10pt" font-weight="bold">
+                  <xsl:value-of select="$operationTitle"/>
+                </fo:inline>
+              </xsl:if>
         </fo:block>
     </xsl:template>
 
+    <xsl:template
+      match="*[contains(@class,' topic/topic ')][starts-with(@outputclass, 'swagger-')]/*[contains(@class,' topic/title ')]"
+      priority="10"
+    >
+        <fo:wrapper id="{parent::node()/@id}"/>
+        <fo:wrapper>
+            <xsl:attribute name="id">
+                <xsl:call-template name="generate-toc-id">
+                    <xsl:with-param name="element" select=".."/>
+                </xsl:call-template>
+            </xsl:attribute>
+        </fo:wrapper>
+    </xsl:template>
 
 </xsl:stylesheet>

@@ -11,6 +11,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 >
 	<xsl:template match="*[contains(@class,' pr-d/codeblock ') and starts-with(@outputclass, 'swagger-')]">
+		<xsl:variable name="operationTitle" select="../../*[contains(@class,' topic/title ')]"/>
 		<pre>
 			<xsl:call-template name="commonattributes"/>
 			<xsl:call-template name="setscale"/>
@@ -21,6 +22,19 @@
 				</span>
 				<xsl:value-of select="substring-after(text(),' ')"/>
 			</code>
+			<xsl:if test="$operationTitle">
+				<xsl:text> </xsl:text>
+				<b><xsl:apply-templates select="$operationTitle/node()"/></b>
+			</xsl:if>
 		</pre>
     </xsl:template>
+
+	<xsl:template
+	  match="*[contains(@class,' topic/topic ')][starts-with(@outputclass, 'swagger-')]/*[contains(@class,' topic/title ')]"
+	  priority="10"
+	>
+		<a>
+			<xsl:attribute name="id"><xsl:apply-templates select="." mode="return-aria-label-id"/></xsl:attribute>
+		</a>
+	</xsl:template>
 </xsl:stylesheet>

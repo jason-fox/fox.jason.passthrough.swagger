@@ -50,1390 +50,1326 @@
       </section>
     </body>
   </topic>
-  <topic id="paths">
-    <title>Paths</title>
-    <body></body>
-    <topic id="shop">
-      <title>shop</title>
+  <topic id="shop">
+    <title>shop</title>
+    <body>
+      <p>API endpoints, that could be used by the shop.</p>
+    </body>
+    <topic id="get-shopname-orders-shopordernumber-return-request" outputclass="swagger-get">
+      <title>getReturnRequests</title>
       <body>
-        <p>API endpoints, that could be used by the shop.</p>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-request</codeblock>
+        <section id="description" outputclass="section">
+          <title>Description</title>
+          <p>Returns a list of return requests for a given shopName and shopOrderNumber.</p>
+        </section>
+        <section id="parameters" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The order number of the shop</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The shop name</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <b>200</b>
+                  </entry>
+                  <entry colname="col2">OK</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>401</b>
+                  </entry>
+                  <entry colname="col2">Authentication information is missing or invalid</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>403</b>
+                  </entry>
+                  <entry colname="col2">Forbidden</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>404</b>
+                  </entry>
+                  <entry colname="col2">Not Found</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>406</b>
+                  </entry>
+                  <entry colname="col2">Not Acceptable</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-1" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.return-request.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
       </body>
-      <topic id="get-shopname-orders-shopordernumber-return-request" outputclass="swagger-get">
-        <title>getReturnRequests</title>
-        <body>
-          <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-request</codeblock>
-          <section id="description" outputclass="section">
-            <title>Description</title>
-            <p>Returns a list of return requests for a given shopName and shopOrderNumber.</p>
-          </section>
-          <section id="parameters" outputclass="section">
-            <title>Parameters</title>
-            <table>
-              <tgroup cols="4">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <colspec colname="col4" colnum="4"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">Type</entry>
-                    <entry colname="col2">Name</entry>
-                    <entry colname="col3">Description</entry>
-                    <entry colname="col4">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopOrderNumber</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The order number of the shop</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopName</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The shop name</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="responses" outputclass="section">
-            <title>Responses</title>
-            <table>
-              <tgroup cols="3">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">HTTP Code</entry>
-                    <entry colname="col2">Description</entry>
-                    <entry colname="col3">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">
-                      <b>200</b>
-                    </entry>
-                    <entry colname="col2">OK</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>401</b>
-                    </entry>
-                    <entry colname="col2">Authentication information is missing or invalid</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>403</b>
-                    </entry>
-                    <entry colname="col2">Forbidden</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>404</b>
-                    </entry>
-                    <entry colname="col2">Not Found</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>406</b>
-                    </entry>
-                    <entry colname="col2">Not Acceptable</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="produces-1" outputclass="section">
-            <title>Produces</title>
-            <ul>
-              <li>
-                <codeph>application/vnd.intershop.return-request.v1+json</codeph>
-              </li>
-            </ul>
-          </section>
-          <section id="tags-1" outputclass="section">
-            <title>Tags</title>
-            <ul>
-              <li>shop</li>
-            </ul>
-          </section>
-        </body>
-      </topic>
-      <topic id="post-shopname-orders-shopordernumber-return-request" outputclass="swagger-post">
-        <title>createReturnRequest</title>
-        <body>
-          <codeblock outputclass="swagger-post">POST /{shopName}/orders/{shopOrderNumber}/return-request</codeblock>
-          <section id="description-1" outputclass="section">
-            <title>Description</title>
-            <p>Creates a new return request</p>
-          </section>
-          <section id="parameters-1" outputclass="section">
-            <title>Parameters</title>
-            <table>
-              <tgroup cols="4">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <colspec colname="col4" colnum="4"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">Type</entry>
-                    <entry colname="col2">Name</entry>
-                    <entry colname="col3">Description</entry>
-                    <entry colname="col4">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopOrderNumber</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The order number of the shop</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopName</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The shop name</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Body</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>body</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3"></entry>
-                    <entry colname="col4">
-                      <xref href="swagger.dita#writereturnrequest" type="topic">WriteReturnRequest</xref>
-                    </entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="responses-1" outputclass="section">
-            <title>Responses</title>
-            <table>
-              <tgroup cols="3">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">HTTP Code</entry>
-                    <entry colname="col2">Description</entry>
-                    <entry colname="col3">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">
-                      <b>201</b>
-                    </entry>
-                    <entry colname="col2">
-                      <lines>Created
-                        <b>Headers</b>:
-                        <codeph>Location</codeph>(string)</lines>
-                    </entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>400</b>
-                    </entry>
-                    <entry colname="col2">Bad Request</entry>
-                    <entry colname="col3">
-                      <xref href="swagger.dita#errorreport" type="topic">ErrorReport</xref>
-                    </entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>401</b>
-                    </entry>
-                    <entry colname="col2">Authentication information is missing or invalid</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>403</b>
-                    </entry>
-                    <entry colname="col2">Forbidden</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>415</b>
-                    </entry>
-                    <entry colname="col2">Unsupported Media Type</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>default</b>
-                    </entry>
-                    <entry colname="col2">An unexpected error occured</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="produces-2" outputclass="section">
-            <title>Produces</title>
-            <ul>
-              <li>
-                <codeph>application/json</codeph>
-              </li>
-            </ul>
-          </section>
-          <section id="tags-2" outputclass="section">
-            <title>Tags</title>
-            <ul>
-              <li>shop</li>
-            </ul>
-          </section>
-        </body>
-      </topic>
-      <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid-positions" outputclass="swagger-get">
-        <title>getReturnRequestPositions</title>
-        <body>
-          <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions</codeblock>
-          <section id="description-2" outputclass="section">
-            <title>Description</title>
-            <p>Returns a list of return request positions for a given returnRequestId, shopName and shopOrderNumber.</p>
-          </section>
-          <section id="parameters-2" outputclass="section">
-            <title>Parameters</title>
-            <table>
-              <tgroup cols="4">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <colspec colname="col4" colnum="4"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">Type</entry>
-                    <entry colname="col2">Name</entry>
-                    <entry colname="col3">Description</entry>
-                    <entry colname="col4">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>returnRequestId</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The return request id of the related order</entry>
-                    <entry colname="col4">integer (int64)</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopOrderNumber</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The order number of the shop</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopName</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The shop name</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="responses-2" outputclass="section">
-            <title>Responses</title>
-            <table>
-              <tgroup cols="3">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">HTTP Code</entry>
-                    <entry colname="col2">Description</entry>
-                    <entry colname="col3">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">
-                      <b>200</b>
-                    </entry>
-                    <entry colname="col2">OK</entry>
-                    <entry colname="col3">Array of
-                      <xref href="swagger.dita#readreturnrequestposition" type="topic">ReadReturnRequestPosition</xref>
-                    </entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>401</b>
-                    </entry>
-                    <entry colname="col2">Authentication information is missing or invalid</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>403</b>
-                    </entry>
-                    <entry colname="col2">Forbidden</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>404</b>
-                    </entry>
-                    <entry colname="col2">Not Found</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>406</b>
-                    </entry>
-                    <entry colname="col2">Not Acceptable</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="produces-3" outputclass="section">
-            <title>Produces</title>
-            <ul>
-              <li>
-                <codeph>application/vnd.intershop.return-request-position.v1+json</codeph>
-              </li>
-            </ul>
-          </section>
-          <section id="tags-3" outputclass="section">
-            <title>Tags</title>
-            <ul>
-              <li>shop</li>
-            </ul>
-          </section>
-        </body>
-      </topic>
-      <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid-positions-returnrequestpositionid" outputclass="swagger-get">
-        <title>getReturnRequestPosition</title>
-        <body>
-          <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}</codeblock>
-          <section id="description-3" outputclass="section">
-            <title>Description</title>
-            <p>Returns a return request position for a given returnRequestId, shopName, shopOrderNumber and a returnRequestPositionId.</p>
-          </section>
-          <section id="parameters-3" outputclass="section">
-            <title>Parameters</title>
-            <table>
-              <tgroup cols="4">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <colspec colname="col4" colnum="4"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">Type</entry>
-                    <entry colname="col2">Name</entry>
-                    <entry colname="col3">Description</entry>
-                    <entry colname="col4">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>returnRequestPositionId</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The return request position id of the related return request</entry>
-                    <entry colname="col4">integer (int64)</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>returnRequestId</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The return request id of the related order</entry>
-                    <entry colname="col4">integer (int64)</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopOrderNumber</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The order number of the shop</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopName</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The shop name</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="responses-3" outputclass="section">
-            <title>Responses</title>
-            <table>
-              <tgroup cols="3">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">HTTP Code</entry>
-                    <entry colname="col2">Description</entry>
-                    <entry colname="col3">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">
-                      <b>200</b>
-                    </entry>
-                    <entry colname="col2">OK</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>401</b>
-                    </entry>
-                    <entry colname="col2">Authentication information is missing or invalid</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>403</b>
-                    </entry>
-                    <entry colname="col2">Forbidden</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>404</b>
-                    </entry>
-                    <entry colname="col2">Not Found</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>406</b>
-                    </entry>
-                    <entry colname="col2">Not Acceptable</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="produces-4" outputclass="section">
-            <title>Produces</title>
-            <ul>
-              <li>
-                <codeph>application/vnd.intershop.return-request-position.v1+json</codeph>
-              </li>
-            </ul>
-          </section>
-          <section id="tags-4" outputclass="section">
-            <title>Tags</title>
-            <ul>
-              <li>shop</li>
-            </ul>
-          </section>
-        </body>
-      </topic>
-      <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid-positions-returnrequestpositionid-items" outputclass="swagger-get">
-        <title>getReturnRequestItems</title>
-        <body>
-          <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}/items</codeblock>
-          <section id="description-4" outputclass="section">
-            <title>Description</title>
-            <p>Returns a list of return request position items for a given returnRequestId, shopName and shopOrderNumber.</p>
-          </section>
-          <section id="parameters-4" outputclass="section">
-            <title>Parameters</title>
-            <table>
-              <tgroup cols="4">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <colspec colname="col4" colnum="4"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">Type</entry>
-                    <entry colname="col2">Name</entry>
-                    <entry colname="col3">Description</entry>
-                    <entry colname="col4">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>returnRequestPositionId</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The return request position id of the related return request</entry>
-                    <entry colname="col4">integer (int64)</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>returnRequestId</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The return request id of the related order</entry>
-                    <entry colname="col4">integer (int64)</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopOrderNumber</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The order number of the shop</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopName</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The shop name</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="responses-4" outputclass="section">
-            <title>Responses</title>
-            <table>
-              <tgroup cols="3">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">HTTP Code</entry>
-                    <entry colname="col2">Description</entry>
-                    <entry colname="col3">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">
-                      <b>200</b>
-                    </entry>
-                    <entry colname="col2">OK</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>401</b>
-                    </entry>
-                    <entry colname="col2">Authentication information is missing or invalid</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>403</b>
-                    </entry>
-                    <entry colname="col2">Forbidden</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>404</b>
-                    </entry>
-                    <entry colname="col2">Not Found</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>406</b>
-                    </entry>
-                    <entry colname="col2">Not Acceptable</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="produces-5" outputclass="section">
-            <title>Produces</title>
-            <ul>
-              <li>
-                <codeph>application/vnd.intershop.return-request-item.v1+json</codeph>
-              </li>
-            </ul>
-          </section>
-          <section id="tags-5" outputclass="section">
-            <title>Tags</title>
-            <ul>
-              <li>shop</li>
-            </ul>
-          </section>
-        </body>
-      </topic>
-      <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid-custom-attributes" outputclass="swagger-get">
-        <title>getCustomAttributes</title>
-        <body>
-          <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/custom-attributes</codeblock>
-          <section id="description-5" outputclass="section">
-            <title>Description</title>
-            <p>Returns a list of return request custom attributes for a given returnRequestId, shopName and shopOrderNumber.</p>
-          </section>
-          <section id="parameters-5" outputclass="section">
-            <title>Parameters</title>
-            <table>
-              <tgroup cols="4">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <colspec colname="col4" colnum="4"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">Type</entry>
-                    <entry colname="col2">Name</entry>
-                    <entry colname="col3">Description</entry>
-                    <entry colname="col4">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>returnRequestId</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The return request id of the related order</entry>
-                    <entry colname="col4">integer (int64)</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopOrderNumber</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The order number of the shop</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopName</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The shop name</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="responses-5" outputclass="section">
-            <title>Responses</title>
-            <table>
-              <tgroup cols="3">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">HTTP Code</entry>
-                    <entry colname="col2">Description</entry>
-                    <entry colname="col3">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">
-                      <b>200</b>
-                    </entry>
-                    <entry colname="col2">OK</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>401</b>
-                    </entry>
-                    <entry colname="col2">Authentication information is missing or invalid</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>403</b>
-                    </entry>
-                    <entry colname="col2">Forbidden</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>404</b>
-                    </entry>
-                    <entry colname="col2">Not Found</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>406</b>
-                    </entry>
-                    <entry colname="col2">Not Acceptable</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="produces-6" outputclass="section">
-            <title>Produces</title>
-            <ul>
-              <li>
-                <codeph>application/vnd.intershop.custom-attribute.v1+json</codeph>
-              </li>
-            </ul>
-          </section>
-          <section id="tags-6" outputclass="section">
-            <title>Tags</title>
-            <ul>
-              <li>shop</li>
-            </ul>
-          </section>
-        </body>
-      </topic>
-      <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid-pickup-addresses" outputclass="swagger-get">
-        <title>getReturnRequestPickupAddresses</title>
-        <body>
-          <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/pickup-addresses</codeblock>
-          <section id="description-6" outputclass="section">
-            <title>Description</title>
-            <p>Returns a list of return request pickup addresses for a given returnRequestId, shopName and shopOrderNumber.</p>
-          </section>
-          <section id="parameters-6" outputclass="section">
-            <title>Parameters</title>
-            <table>
-              <tgroup cols="4">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <colspec colname="col4" colnum="4"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">Type</entry>
-                    <entry colname="col2">Name</entry>
-                    <entry colname="col3">Description</entry>
-                    <entry colname="col4">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>returnRequestId</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The return request id of the related order</entry>
-                    <entry colname="col4">integer (int64)</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopOrderNumber</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The order number of the shop</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopName</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The shop name</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="responses-6" outputclass="section">
-            <title>Responses</title>
-            <table>
-              <tgroup cols="3">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">HTTP Code</entry>
-                    <entry colname="col2">Description</entry>
-                    <entry colname="col3">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">
-                      <b>200</b>
-                    </entry>
-                    <entry colname="col2">OK</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>401</b>
-                    </entry>
-                    <entry colname="col2">Authentication information is missing or invalid</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>403</b>
-                    </entry>
-                    <entry colname="col2">Forbidden</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>404</b>
-                    </entry>
-                    <entry colname="col2">Not Found</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>406</b>
-                    </entry>
-                    <entry colname="col2">Not Acceptable</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="produces-7" outputclass="section">
-            <title>Produces</title>
-            <ul>
-              <li>
-                <codeph>application/vnd.intershop.pickup-address.v1+json</codeph>
-              </li>
-            </ul>
-          </section>
-          <section id="tags-7" outputclass="section">
-            <title>Tags</title>
-            <ul>
-              <li>shop</li>
-            </ul>
-          </section>
-        </body>
-      </topic>
-      <topic id="post-shopname-orders-shopordernumber-return-requests-returnrequestid-approvals" outputclass="swagger-post">
-        <title>createApproval</title>
-        <body>
-          <codeblock outputclass="swagger-post">POST /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/approvals</codeblock>
-          <section id="description-7" outputclass="section">
-            <title>Description</title>
-            <p>Creates a new approval</p>
-          </section>
-          <section id="parameters-7" outputclass="section">
-            <title>Parameters</title>
-            <table>
-              <tgroup cols="4">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <colspec colname="col4" colnum="4"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">Type</entry>
-                    <entry colname="col2">Name</entry>
-                    <entry colname="col3">Description</entry>
-                    <entry colname="col4">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>returnRequestId</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The return request id of the related order</entry>
-                    <entry colname="col4">integer (int64)</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopOrderNumber</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The order number of the shop</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopName</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The shop name</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Body</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>body</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3"></entry>
-                    <entry colname="col4">
-                      <xref href="swagger.dita#writeapproval" type="topic">WriteApproval</xref>
-                    </entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="responses-7" outputclass="section">
-            <title>Responses</title>
-            <table>
-              <tgroup cols="3">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">HTTP Code</entry>
-                    <entry colname="col2">Description</entry>
-                    <entry colname="col3">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">
-                      <b>201</b>
-                    </entry>
-                    <entry colname="col2">
-                      <lines>Created
-                        <b>Headers</b>:
-                        <codeph>Location</codeph>(string)</lines>
-                    </entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>400</b>
-                    </entry>
-                    <entry colname="col2">Bad Request</entry>
-                    <entry colname="col3">
-                      <xref href="swagger.dita#errorreport" type="topic">ErrorReport</xref>
-                    </entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>401</b>
-                    </entry>
-                    <entry colname="col2">Authentication information is missing or invalid</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>403</b>
-                    </entry>
-                    <entry colname="col2">Forbidden</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>415</b>
-                    </entry>
-                    <entry colname="col2">Unsupported Media Type</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>default</b>
-                    </entry>
-                    <entry colname="col2">An unexpected error occured</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="produces-8" outputclass="section">
-            <title>Produces</title>
-            <ul>
-              <li>
-                <codeph>application/json</codeph>
-              </li>
-            </ul>
-          </section>
-          <section id="tags-8" outputclass="section">
-            <title>Tags</title>
-            <ul>
-              <li>shop</li>
-            </ul>
-          </section>
-        </body>
-      </topic>
-      <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid-contact-persons" outputclass="swagger-get">
-        <title>getContactPersons</title>
-        <body>
-          <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/contact-persons</codeblock>
-          <section id="description-8" outputclass="section">
-            <title>Description</title>
-            <p>Returns a list of return request contact persons for a given returnRequestId, shopName and shopOrderNumber.</p>
-          </section>
-          <section id="parameters-8" outputclass="section">
-            <title>Parameters</title>
-            <table>
-              <tgroup cols="4">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <colspec colname="col4" colnum="4"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">Type</entry>
-                    <entry colname="col2">Name</entry>
-                    <entry colname="col3">Description</entry>
-                    <entry colname="col4">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>returnRequestId</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The return request id of the related order</entry>
-                    <entry colname="col4">integer (int64)</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopOrderNumber</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The order number of the shop</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopName</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The shop name</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="responses-8" outputclass="section">
-            <title>Responses</title>
-            <table>
-              <tgroup cols="3">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">HTTP Code</entry>
-                    <entry colname="col2">Description</entry>
-                    <entry colname="col3">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">
-                      <b>200</b>
-                    </entry>
-                    <entry colname="col2">OK</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>401</b>
-                    </entry>
-                    <entry colname="col2">Authentication information is missing or invalid</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>403</b>
-                    </entry>
-                    <entry colname="col2">Forbidden</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>404</b>
-                    </entry>
-                    <entry colname="col2">Not Found</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>406</b>
-                    </entry>
-                    <entry colname="col2">Not Acceptable</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="produces-9" outputclass="section">
-            <title>Produces</title>
-            <ul>
-              <li>
-                <codeph>application/vnd.intershop.contact-person.v1+json</codeph>
-              </li>
-            </ul>
-          </section>
-          <section id="tags-9" outputclass="section">
-            <title>Tags</title>
-            <ul>
-              <li>shop</li>
-            </ul>
-          </section>
-        </body>
-      </topic>
-      <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid" outputclass="swagger-get">
-        <title>getReturnRequest</title>
-        <body>
-          <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}</codeblock>
-          <section id="description-9" outputclass="section">
-            <title>Description</title>
-            <p>Returns a return request for a given shopName, shopOrderNumber and returnRequestId.</p>
-          </section>
-          <section id="parameters-9" outputclass="section">
-            <title>Parameters</title>
-            <table>
-              <tgroup cols="4">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <colspec colname="col4" colnum="4"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">Type</entry>
-                    <entry colname="col2">Name</entry>
-                    <entry colname="col3">Description</entry>
-                    <entry colname="col4">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>returnRequestId</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The return request id of the related order</entry>
-                    <entry colname="col4">integer (int64)</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopOrderNumber</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The order number of the shop</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>shopName</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The shop name</entry>
-                    <entry colname="col4">string</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="responses-9" outputclass="section">
-            <title>Responses</title>
-            <table>
-              <tgroup cols="3">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">HTTP Code</entry>
-                    <entry colname="col2">Description</entry>
-                    <entry colname="col3">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">
-                      <b>200</b>
-                    </entry>
-                    <entry colname="col2">OK</entry>
-                    <entry colname="col3">
-                      <xref href="swagger.dita#readreturnrequest" type="topic">ReadReturnRequest</xref>
-                    </entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>401</b>
-                    </entry>
-                    <entry colname="col2">Authentication information is missing or invalid</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>403</b>
-                    </entry>
-                    <entry colname="col2">Forbidden</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>404</b>
-                    </entry>
-                    <entry colname="col2">Not Found</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>406</b>
-                    </entry>
-                    <entry colname="col2">Not Acceptable</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="produces-10" outputclass="section">
-            <title>Produces</title>
-            <ul>
-              <li>
-                <codeph>application/vnd.intershop.return-request.v1+json</codeph>
-              </li>
-            </ul>
-          </section>
-          <section id="tags-10" outputclass="section">
-            <title>Tags</title>
-            <ul>
-              <li>shop</li>
-            </ul>
-          </section>
-        </body>
-      </topic>
+    </topic>
+    <topic id="post-shopname-orders-shopordernumber-return-request" outputclass="swagger-post">
+      <title>createReturnRequest</title>
+      <body>
+        <codeblock outputclass="swagger-post">POST /{shopName}/orders/{shopOrderNumber}/return-request</codeblock>
+        <section id="description-1" outputclass="section">
+          <title>Description</title>
+          <p>Creates a new return request</p>
+        </section>
+        <section id="parameters-1" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The order number of the shop</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The shop name</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Body</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>body</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3"></entry>
+                  <entry colname="col4">
+                    <xref href="swagger.dita#writereturnrequest" type="topic">WriteReturnRequest</xref>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-1" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <b>201</b>
+                  </entry>
+                  <entry colname="col2">
+                    <lines>Created
+                      <b>Headers</b>:
+                      <codeph>Location</codeph>(string)</lines>
+                  </entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>400</b>
+                  </entry>
+                  <entry colname="col2">Bad Request</entry>
+                  <entry colname="col3">
+                    <xref href="swagger.dita#errorreport" type="topic">ErrorReport</xref>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>401</b>
+                  </entry>
+                  <entry colname="col2">Authentication information is missing or invalid</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>403</b>
+                  </entry>
+                  <entry colname="col2">Forbidden</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>415</b>
+                  </entry>
+                  <entry colname="col2">Unsupported Media Type</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>default</b>
+                  </entry>
+                  <entry colname="col2">An unexpected error occured</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-2" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/json</codeph>
+            </li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid-positions" outputclass="swagger-get">
+      <title>getReturnRequestPositions</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions</codeblock>
+        <section id="description-2" outputclass="section">
+          <title>Description</title>
+          <p>Returns a list of return request positions for a given returnRequestId, shopName and shopOrderNumber.</p>
+        </section>
+        <section id="parameters-2" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The return request id of the related order</entry>
+                  <entry colname="col4">integer (int64)</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The order number of the shop</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The shop name</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-2" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <b>200</b>
+                  </entry>
+                  <entry colname="col2">OK</entry>
+                  <entry colname="col3">Array of
+                    <xref href="swagger.dita#readreturnrequestposition" type="topic">ReadReturnRequestPosition</xref>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>401</b>
+                  </entry>
+                  <entry colname="col2">Authentication information is missing or invalid</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>403</b>
+                  </entry>
+                  <entry colname="col2">Forbidden</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>404</b>
+                  </entry>
+                  <entry colname="col2">Not Found</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>406</b>
+                  </entry>
+                  <entry colname="col2">Not Acceptable</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-3" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.return-request-position.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid-positions-returnrequestpositionid" outputclass="swagger-get">
+      <title>getReturnRequestPosition</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}</codeblock>
+        <section id="description-3" outputclass="section">
+          <title>Description</title>
+          <p>Returns a return request position for a given returnRequestId, shopName, shopOrderNumber and a returnRequestPositionId.</p>
+        </section>
+        <section id="parameters-3" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>returnRequestPositionId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The return request position id of the related return request</entry>
+                  <entry colname="col4">integer (int64)</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The return request id of the related order</entry>
+                  <entry colname="col4">integer (int64)</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The order number of the shop</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The shop name</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-3" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <b>200</b>
+                  </entry>
+                  <entry colname="col2">OK</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>401</b>
+                  </entry>
+                  <entry colname="col2">Authentication information is missing or invalid</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>403</b>
+                  </entry>
+                  <entry colname="col2">Forbidden</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>404</b>
+                  </entry>
+                  <entry colname="col2">Not Found</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>406</b>
+                  </entry>
+                  <entry colname="col2">Not Acceptable</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-4" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.return-request-position.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid-positions-returnrequestpositionid-items" outputclass="swagger-get">
+      <title>getReturnRequestItems</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/positions/{returnRequestPositionId}/items</codeblock>
+        <section id="description-4" outputclass="section">
+          <title>Description</title>
+          <p>Returns a list of return request position items for a given returnRequestId, shopName and shopOrderNumber.</p>
+        </section>
+        <section id="parameters-4" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>returnRequestPositionId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The return request position id of the related return request</entry>
+                  <entry colname="col4">integer (int64)</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The return request id of the related order</entry>
+                  <entry colname="col4">integer (int64)</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The order number of the shop</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The shop name</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-4" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <b>200</b>
+                  </entry>
+                  <entry colname="col2">OK</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>401</b>
+                  </entry>
+                  <entry colname="col2">Authentication information is missing or invalid</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>403</b>
+                  </entry>
+                  <entry colname="col2">Forbidden</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>404</b>
+                  </entry>
+                  <entry colname="col2">Not Found</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>406</b>
+                  </entry>
+                  <entry colname="col2">Not Acceptable</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-5" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.return-request-item.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid-custom-attributes" outputclass="swagger-get">
+      <title>getCustomAttributes</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/custom-attributes</codeblock>
+        <section id="description-5" outputclass="section">
+          <title>Description</title>
+          <p>Returns a list of return request custom attributes for a given returnRequestId, shopName and shopOrderNumber.</p>
+        </section>
+        <section id="parameters-5" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The return request id of the related order</entry>
+                  <entry colname="col4">integer (int64)</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The order number of the shop</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The shop name</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-5" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <b>200</b>
+                  </entry>
+                  <entry colname="col2">OK</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>401</b>
+                  </entry>
+                  <entry colname="col2">Authentication information is missing or invalid</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>403</b>
+                  </entry>
+                  <entry colname="col2">Forbidden</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>404</b>
+                  </entry>
+                  <entry colname="col2">Not Found</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>406</b>
+                  </entry>
+                  <entry colname="col2">Not Acceptable</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-6" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.custom-attribute.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid-pickup-addresses" outputclass="swagger-get">
+      <title>getReturnRequestPickupAddresses</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/pickup-addresses</codeblock>
+        <section id="description-6" outputclass="section">
+          <title>Description</title>
+          <p>Returns a list of return request pickup addresses for a given returnRequestId, shopName and shopOrderNumber.</p>
+        </section>
+        <section id="parameters-6" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The return request id of the related order</entry>
+                  <entry colname="col4">integer (int64)</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The order number of the shop</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The shop name</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-6" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <b>200</b>
+                  </entry>
+                  <entry colname="col2">OK</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>401</b>
+                  </entry>
+                  <entry colname="col2">Authentication information is missing or invalid</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>403</b>
+                  </entry>
+                  <entry colname="col2">Forbidden</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>404</b>
+                  </entry>
+                  <entry colname="col2">Not Found</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>406</b>
+                  </entry>
+                  <entry colname="col2">Not Acceptable</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-7" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.pickup-address.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="post-shopname-orders-shopordernumber-return-requests-returnrequestid-approvals" outputclass="swagger-post">
+      <title>createApproval</title>
+      <body>
+        <codeblock outputclass="swagger-post">POST /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/approvals</codeblock>
+        <section id="description-7" outputclass="section">
+          <title>Description</title>
+          <p>Creates a new approval</p>
+        </section>
+        <section id="parameters-7" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The return request id of the related order</entry>
+                  <entry colname="col4">integer (int64)</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The order number of the shop</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The shop name</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Body</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>body</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3"></entry>
+                  <entry colname="col4">
+                    <xref href="swagger.dita#writeapproval" type="topic">WriteApproval</xref>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-7" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <b>201</b>
+                  </entry>
+                  <entry colname="col2">
+                    <lines>Created
+                      <b>Headers</b>:
+                      <codeph>Location</codeph>(string)</lines>
+                  </entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>400</b>
+                  </entry>
+                  <entry colname="col2">Bad Request</entry>
+                  <entry colname="col3">
+                    <xref href="swagger.dita#errorreport" type="topic">ErrorReport</xref>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>401</b>
+                  </entry>
+                  <entry colname="col2">Authentication information is missing or invalid</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>403</b>
+                  </entry>
+                  <entry colname="col2">Forbidden</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>415</b>
+                  </entry>
+                  <entry colname="col2">Unsupported Media Type</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>default</b>
+                  </entry>
+                  <entry colname="col2">An unexpected error occured</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-8" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/json</codeph>
+            </li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid-contact-persons" outputclass="swagger-get">
+      <title>getContactPersons</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}/contact-persons</codeblock>
+        <section id="description-8" outputclass="section">
+          <title>Description</title>
+          <p>Returns a list of return request contact persons for a given returnRequestId, shopName and shopOrderNumber.</p>
+        </section>
+        <section id="parameters-8" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The return request id of the related order</entry>
+                  <entry colname="col4">integer (int64)</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The order number of the shop</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The shop name</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-8" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <b>200</b>
+                  </entry>
+                  <entry colname="col2">OK</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>401</b>
+                  </entry>
+                  <entry colname="col2">Authentication information is missing or invalid</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>403</b>
+                  </entry>
+                  <entry colname="col2">Forbidden</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>404</b>
+                  </entry>
+                  <entry colname="col2">Not Found</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>406</b>
+                  </entry>
+                  <entry colname="col2">Not Acceptable</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-9" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.contact-person.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="get-shopname-orders-shopordernumber-return-requests-returnrequestid" outputclass="swagger-get">
+      <title>getReturnRequest</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /{shopName}/orders/{shopOrderNumber}/return-requests/{returnRequestId}</codeblock>
+        <section id="description-9" outputclass="section">
+          <title>Description</title>
+          <p>Returns a return request for a given shopName, shopOrderNumber and returnRequestId.</p>
+        </section>
+        <section id="parameters-9" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>returnRequestId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The return request id of the related order</entry>
+                  <entry colname="col4">integer (int64)</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopOrderNumber</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The order number of the shop</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>shopName</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The shop name</entry>
+                  <entry colname="col4">string</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-9" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <b>200</b>
+                  </entry>
+                  <entry colname="col2">OK</entry>
+                  <entry colname="col3">
+                    <xref href="swagger.dita#readreturnrequest" type="topic">ReadReturnRequest</xref>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>401</b>
+                  </entry>
+                  <entry colname="col2">Authentication information is missing or invalid</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>403</b>
+                  </entry>
+                  <entry colname="col2">Forbidden</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>404</b>
+                  </entry>
+                  <entry colname="col2">Not Found</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>406</b>
+                  </entry>
+                  <entry colname="col2">Not Acceptable</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-10" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/vnd.intershop.return-request.v1+json</codeph>
+            </li>
+          </ul>
+        </section>
+      </body>
     </topic>
   </topic>
   <topic id="definitions">

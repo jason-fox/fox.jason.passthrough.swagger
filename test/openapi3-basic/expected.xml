@@ -41,250 +41,228 @@
       </section>
     </body>
   </topic>
-  <topic id="paths">
-    <title>Paths</title>
-    <body></body>
-    <topic id="pets">
-      <title>pets</title>
+  <topic id="pets">
+    <title>pets</title>
+    <body>
+      <p>Everything about pets</p>
+    </body>
+    <topic id="listpets" outputclass="swagger-get">
+      <title>List pets</title>
       <body>
-        <p>Everything about pets</p>
+        <codeblock outputclass="swagger-get">GET /pets</codeblock>
+        <section id="description" outputclass="section">
+          <title>Description</title>
+          <p>Returns all pets in the store.</p>
+        </section>
+        <section id="responses" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <b>200</b>
+                  </entry>
+                  <entry colname="col2">OK</entry>
+                  <entry colname="col3">Array of
+                    <xref href="openapi.dita#pet" type="topic">Pet</xref>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/json</codeph>
+            </li>
+          </ul>
+        </section>
       </body>
-      <topic id="listpets" outputclass="swagger-get">
-        <title>List pets</title>
-        <body>
-          <codeblock outputclass="swagger-get">GET /pets</codeblock>
-          <section id="description" outputclass="section">
-            <title>Description</title>
-            <p>Returns all pets in the store.</p>
-          </section>
-          <section id="responses" outputclass="section">
-            <title>Responses</title>
-            <table>
-              <tgroup cols="3">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">HTTP Code</entry>
-                    <entry colname="col2">Description</entry>
-                    <entry colname="col3">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">
-                      <b>200</b>
-                    </entry>
-                    <entry colname="col2">OK</entry>
-                    <entry colname="col3">Array of
-                      <xref href="openapi.dita#pet" type="topic">Pet</xref>
-                    </entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="produces" outputclass="section">
-            <title>Produces</title>
-            <ul>
-              <li>
-                <codeph>application/json</codeph>
-              </li>
-            </ul>
-          </section>
-          <section id="tags-1" outputclass="section">
-            <title>Tags</title>
-            <ul>
-              <li>pets</li>
-            </ul>
-          </section>
-        </body>
-      </topic>
-      <topic id="createpet" outputclass="swagger-post">
-        <title>Create a pet</title>
-        <body>
-          <codeblock outputclass="swagger-post">POST /pets</codeblock>
-          <section id="description-1" outputclass="section">
-            <title>Description</title>
-            <p>Adds a new pet to the store.</p>
-          </section>
-          <section id="parameters" outputclass="section">
-            <title>Parameters</title>
-            <table>
-              <tgroup cols="4">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <colspec colname="col4" colnum="4"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">Type</entry>
-                    <entry colname="col2">Name</entry>
-                    <entry colname="col3">Description</entry>
-                    <entry colname="col4">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">Body</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>body</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">Pet to add</entry>
-                    <entry colname="col4">
-                      <xref href="openapi.dita#pet" type="topic">Pet</xref>
-                    </entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="responses-1" outputclass="section">
-            <title>Responses</title>
-            <table>
-              <tgroup cols="3">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">HTTP Code</entry>
-                    <entry colname="col2">Description</entry>
-                    <entry colname="col3">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">
-                      <b>201</b>
-                    </entry>
-                    <entry colname="col2">Created</entry>
-                    <entry colname="col3">
-                      <xref href="openapi.dita#pet" type="topic">Pet</xref>
-                    </entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>400</b>
-                    </entry>
-                    <entry colname="col2">Bad Request</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="produces-1" outputclass="section">
-            <title>Produces</title>
-            <ul>
-              <li>
-                <codeph>application/json</codeph>
-              </li>
-            </ul>
-          </section>
-          <section id="tags-2" outputclass="section">
-            <title>Tags</title>
-            <ul>
-              <li>pets</li>
-            </ul>
-          </section>
-        </body>
-      </topic>
-      <topic id="getpet" outputclass="swagger-get">
-        <title>Get a pet by id</title>
-        <body>
-          <codeblock outputclass="swagger-get">GET /pets/{petId}</codeblock>
-          <section id="description-2" outputclass="section">
-            <title>Description</title>
-            <p>Returns a single pet.</p>
-          </section>
-          <section id="parameters-1" outputclass="section">
-            <title>Parameters</title>
-            <table>
-              <tgroup cols="4">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <colspec colname="col4" colnum="4"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">Type</entry>
-                    <entry colname="col2">Name</entry>
-                    <entry colname="col3">Description</entry>
-                    <entry colname="col4">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">Path</entry>
-                    <entry colname="col2">
-                      <lines>
-                        <b>petId</b>
-                        <i>required</i>
-                      </lines>
-                    </entry>
-                    <entry colname="col3">The id of the pet to fetch</entry>
-                    <entry colname="col4">integer (int64)</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="responses-2" outputclass="section">
-            <title>Responses</title>
-            <table>
-              <tgroup cols="3">
-                <colspec colname="col1" colnum="1"></colspec>
-                <colspec colname="col2" colnum="2"></colspec>
-                <colspec colname="col3" colnum="3"></colspec>
-                <thead>
-                  <row>
-                    <entry colname="col1">HTTP Code</entry>
-                    <entry colname="col2">Description</entry>
-                    <entry colname="col3">Schema</entry>
-                  </row>
-                </thead>
-                <tbody>
-                  <row>
-                    <entry colname="col1">
-                      <b>200</b>
-                    </entry>
-                    <entry colname="col2">OK</entry>
-                    <entry colname="col3">
-                      <xref href="openapi.dita#pet" type="topic">Pet</xref>
-                    </entry>
-                  </row>
-                  <row>
-                    <entry colname="col1">
-                      <b>404</b>
-                    </entry>
-                    <entry colname="col2">Not Found</entry>
-                    <entry colname="col3">No Content</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-          </section>
-          <section id="produces-2" outputclass="section">
-            <title>Produces</title>
-            <ul>
-              <li>
-                <codeph>application/json</codeph>
-              </li>
-            </ul>
-          </section>
-          <section id="tags-3" outputclass="section">
-            <title>Tags</title>
-            <ul>
-              <li>pets</li>
-            </ul>
-          </section>
-        </body>
-      </topic>
+    </topic>
+    <topic id="createpet" outputclass="swagger-post">
+      <title>Create a pet</title>
+      <body>
+        <codeblock outputclass="swagger-post">POST /pets</codeblock>
+        <section id="description-1" outputclass="section">
+          <title>Description</title>
+          <p>Adds a new pet to the store.</p>
+        </section>
+        <section id="parameters" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">Body</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>body</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">Pet to add</entry>
+                  <entry colname="col4">
+                    <xref href="openapi.dita#pet" type="topic">Pet</xref>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-1" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <b>201</b>
+                  </entry>
+                  <entry colname="col2">Created</entry>
+                  <entry colname="col3">
+                    <xref href="openapi.dita#pet" type="topic">Pet</xref>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>400</b>
+                  </entry>
+                  <entry colname="col2">Bad Request</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-1" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/json</codeph>
+            </li>
+          </ul>
+        </section>
+      </body>
+    </topic>
+    <topic id="getpet" outputclass="swagger-get">
+      <title>Get a pet by id</title>
+      <body>
+        <codeblock outputclass="swagger-get">GET /pets/{petId}</codeblock>
+        <section id="description-2" outputclass="section">
+          <title>Description</title>
+          <p>Returns a single pet.</p>
+        </section>
+        <section id="parameters-1" outputclass="section">
+          <title>Parameters</title>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <colspec colname="col4" colnum="4"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">Type</entry>
+                  <entry colname="col2">Name</entry>
+                  <entry colname="col3">Description</entry>
+                  <entry colname="col4">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">Path</entry>
+                  <entry colname="col2">
+                    <lines>
+                      <b>petId</b>
+                      <i>required</i>
+                    </lines>
+                  </entry>
+                  <entry colname="col3">The id of the pet to fetch</entry>
+                  <entry colname="col4">integer (int64)</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="responses-2" outputclass="section">
+          <title>Responses</title>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1"></colspec>
+              <colspec colname="col2" colnum="2"></colspec>
+              <colspec colname="col3" colnum="3"></colspec>
+              <thead>
+                <row>
+                  <entry colname="col1">HTTP Code</entry>
+                  <entry colname="col2">Description</entry>
+                  <entry colname="col3">Schema</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <b>200</b>
+                  </entry>
+                  <entry colname="col2">OK</entry>
+                  <entry colname="col3">
+                    <xref href="openapi.dita#pet" type="topic">Pet</xref>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <b>404</b>
+                  </entry>
+                  <entry colname="col2">Not Found</entry>
+                  <entry colname="col3">No Content</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+        <section id="produces-2" outputclass="section">
+          <title>Produces</title>
+          <ul>
+            <li>
+              <codeph>application/json</codeph>
+            </li>
+          </ul>
+        </section>
+      </body>
     </topic>
   </topic>
   <topic id="definitions">

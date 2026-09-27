@@ -180,10 +180,9 @@ final class DitaEmitter {
   // convention (https://petstore.swagger.io/#/): a topic per tag with its description, its
   // operations in spec order beneath it, an implicit "default" group for tagless operations
   // once any tag grouping exists, and a plain flat list when the spec defines no tags at all.
+  // Tag-group topics (or the flat list) attach directly under the root topic - petstore-ui has
+  // no separate "Paths" heading above its tag groups, so neither does this.
   private void emitPaths(ApiDoc doc) {
-    openTopic(slugs.slugify("Paths"), null, "Paths");
-    out.append("<body class=\"- topic/body \"></body>\n");
-
     Map<String, List<Operation>> byTag = new LinkedHashMap<>();
     for (TagInfo tag : doc.tags) {
       byTag.put(tag.name, new ArrayList<>());
@@ -211,8 +210,6 @@ final class DitaEmitter {
         emitTagGroup("default", null, untagged);
       }
     }
-
-    out.append("</topic>\n");
   }
 
   private void emitTagGroup(String name, String description, List<Operation> operations) {
@@ -277,15 +274,8 @@ final class DitaEmitter {
     emitMimeSection("Consumes", operation.consumes);
     emitMimeSection("Produces", operation.produces);
 
-    if (!operation.tags.isEmpty()) {
-      startSection("Tags");
-      out.append("<ul class=\"- topic/ul \">\n");
-      for (String tag : operation.tags) {
-        out.append("<li class=\"- topic/li \">").append(esc(tag)).append("</li>\n");
-      }
-      out.append("</ul>\n");
-      endSection();
-    }
+    // No per-operation tags list here: operations are already grouped by tag in emitPaths, so
+    // repeating tag membership per operation is the redundant listing petstore-ui doesn't show.
 
     for (Resp response : operation.responses) {
       if (!isBlank(response.example)) {
