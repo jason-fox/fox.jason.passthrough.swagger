@@ -33,12 +33,6 @@
           <i>BasePath</i>: /v1
           <i>Schemes</i>: HTTPS</p>
       </section>
-      <section id="tags" outputclass="section">
-        <title>Tags</title>
-        <ul>
-          <li>pets : Everything about pets</li>
-        </ul>
-      </section>
     </body>
   </topic>
   <topic id="pets">

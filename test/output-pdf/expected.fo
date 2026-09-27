@@ -127,35 +127,6 @@
               <fo:inline>Schemes</fo:inline>: HTTPS, HTTP</fo:block>
           </fo:block>
           <fo:block>
-            <fo:block font-family="STANDARD" font-weight="bold">Tags</fo:block>
-            <fo:list-block provisional-distance-between-starts="5mm" provisional-label-separation="1mm">
-              <fo:list-item relative-align="baseline">
-                <fo:list-item-label keep-together.within-line="always">
-                  <fo:block text-align="start">&#8226;</fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body>
-                  <fo:block>pet : Everything about your Pets</fo:block>
-                </fo:list-item-body>
-              </fo:list-item>
-              <fo:list-item relative-align="baseline">
-                <fo:list-item-label keep-together.within-line="always">
-                  <fo:block text-align="start">&#8226;</fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body>
-                  <fo:block>store : Access to Petstore orders</fo:block>
-                </fo:list-item-body>
-              </fo:list-item>
-              <fo:list-item relative-align="baseline">
-                <fo:list-item-label keep-together.within-line="always">
-                  <fo:block text-align="start">&#8226;</fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body>
-                  <fo:block>user : Operations about user</fo:block>
-                </fo:list-item-body>
-              </fo:list-item>
-            </fo:list-block>
-          </fo:block>
-          <fo:block>
             <fo:block font-family="STANDARD" font-weight="bold">External Docs</fo:block>
             <fo:block>
               <fo:inline>Description</fo:inline>: Find out more about Swagger

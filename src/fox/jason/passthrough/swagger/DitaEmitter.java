@@ -140,19 +140,9 @@ final class DitaEmitter {
       endSection();
     }
 
-    if (!doc.tags.isEmpty()) {
-      startSection("Tags");
-      out.append("<ul class=\"- topic/ul \">\n");
-      for (TagInfo tag : doc.tags) {
-        out.append("<li class=\"- topic/li \">").append(esc(tag.name));
-        if (!isBlank(tag.description)) {
-          out.append(" : ").append(MarkdownDita.renderInlineOnly(tag.description));
-        }
-        out.append("</li>\n");
-      }
-      out.append("</ul>\n");
-      endSection();
-    }
+    // No top-level Tags catalog here: each tag already gets its own name/description directly
+    // above its operations in emitPaths/emitTagGroup, so repeating the same list here up front is
+    // the same kind of redundant listing already dropped from individual operations.
 
     emitMimeSection("Consumes", doc.consumes);
     emitMimeSection("Produces", doc.produces);

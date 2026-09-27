@@ -26,12 +26,6 @@
           <i>BasePath</i>: /rest/rma
           <i>Schemes</i>: HTTP</p>
       </section>
-      <section id="tags" outputclass="section">
-        <title>Tags</title>
-        <ul>
-          <li>shop : API endpoints, that could be used by the shop.</li>
-        </ul>
-      </section>
       <section id="consumes" outputclass="section">
         <title>Consumes</title>
         <ul>
