@@ -23,7 +23,6 @@
 			<xsl:value-of select="substring-after($codeblock/text(),' ')"/>
 		</code>
 		<xsl:if test="$operationTitle">
-			<xsl:text> </xsl:text>
 			<span class="swagger-summary small"><xsl:apply-templates select="$operationTitle/node()"/></span>
 		</xsl:if>
 	</xsl:template>

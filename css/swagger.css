@@ -1,17 +1,22 @@
 
 
-code[class*="swagger-"],
-pre[class*="swagger-"]{
+.swagger-get,
+.swagger-post,
+.swagger-put,
+.swagger-delete,
+.swagger-patch,
+.swagger-head,
+.swagger-options {
     border-width: 2px;
     border-style: solid;
-    padding: 10px;
-    padding-left: 1em;
-    font-weight: bold;
-    font-size: large;
     border-radius: 3px;
 }
 
 pre[class*="swagger-"]{
+    padding: 10px;
+    padding-left: 1em;
+    font-weight: bold;
+    font-size: large;
     margin: 0.5em 0em 0.5em 0em;
 }
 
@@ -31,75 +36,76 @@ span.swagger-verb {
 span.swagger-summary {
     font-family: var( --bs-body-font-family, sans-serif);
     font-weight: var( --bs-body-font-weight, normal);
+    margin-left: 0.5em;
 }
 
 
-pre.swagger-post {
+.swagger-post {
     border-color: #49cc90;
     background: rgba(73,204,144,.1)
 }
 
-pre.swagger-post span.swagger-verb {
+.swagger-post .swagger-verb {
 	background: #49cc90;
 }
 
 
-pre.swagger-put {
+.swagger-put {
     border-color: #fca130;
     background: rgba(252,161,48,.1)
 }
 
-pre.swagger-put span.swagger-verb {
+.swagger-put .swagger-verb {
 	background: #fca130;
 }
 
 
-pre.swagger-delete {
+.swagger-delete {
     border-color: #f93e3e;
     background: rgba(249,62,62,.1)
 }
 
-pre.swagger-delete span.swagger-verb {
+.swagger-delete .swagger-verb {
 	background: #f93e3e;
 }
 
-pre.swagger-get {
+.swagger-get {
     border-color: #61affe;
     background: rgba(97,175,254,.1)
 }
 
-pre.swagger-get span.swagger-verb {
+.swagger-get .swagger-verb {
 	background: #61affe;
 }
 
-pre.swagger-patch {
+.swagger-patch {
     border-color: #50e3c2;
     background: rgba(80,227,194,.1)
 }
 
-pre.swagger-patch span.swagger-verb {
+.swagger-patch .swagger-verb {
 	background: #50e3c2;
 }
 
-pre.swagger-head {
+.swagger-head {
     border-color: #9012fe;
     background: rgba(144,18,254,.1)
 }
 
-pre.swagger-head span.swagger-verb {
+.swagger-head .swagger-verb {
 	background: #9012fe;
 }
 
-pre.swagger-options {
+.swagger-options {
     border-color: #0d5aa7;
     background: rgba(13,90,167,.1)
 }
 
-pre.swagger-options span.swagger-verb {
+.swagger-options .swagger-verb {
 	background: #0d5aa7;
 }
 
-pre.swagger-deprecated {
+.swagger-deprecated {
     border-color: #ebebeb;
     background: hsla(0,0%,92.2%,.1)
 }
