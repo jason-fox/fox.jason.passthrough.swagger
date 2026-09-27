@@ -10,22 +10,30 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 >
+	<!-- Shared by the plain <pre> rendering below and dita-bootstrap's accordion-button rendering
+	     (bootstrap-accordion.xsl) - takes an explicit $codeblock param rather than using "." so it
+	     renders identically regardless of which element is the caller's context node. -->
+	<xsl:template name="swagger-summary-row">
+		<xsl:param name="codeblock" select="."/>
+		<xsl:param name="operationTitle" select="$codeblock/../../*[contains(@class,' topic/title ')]"/>
+		<code>
+			<span class="swagger-verb">
+				<xsl:value-of select="substring-before($codeblock/text(),' ')"/>
+			</span>
+			<xsl:value-of select="substring-after($codeblock/text(),' ')"/>
+		</code>
+		<xsl:if test="$operationTitle">
+			<xsl:text> </xsl:text>
+			<span class="swagger-summary small"><xsl:apply-templates select="$operationTitle/node()"/></span>
+		</xsl:if>
+	</xsl:template>
+
 	<xsl:template match="*[contains(@class,' pr-d/codeblock ') and starts-with(@outputclass, 'swagger-')]">
-		<xsl:variable name="operationTitle" select="../../*[contains(@class,' topic/title ')]"/>
 		<pre>
 			<xsl:call-template name="commonattributes"/>
 			<xsl:call-template name="setscale"/>
 			<xsl:call-template name="setidaname"/>
-			<code>
-				<span class="swagger-verb">
-					<xsl:value-of select="substring-before(text(),' ')"/>
-				</span>
-				<xsl:value-of select="substring-after(text(),' ')"/>
-			</code>
-			<xsl:if test="$operationTitle">
-				<xsl:text> </xsl:text>
-				<span class="swagger-summary"><xsl:apply-templates select="$operationTitle/node()"/></span>
-			</xsl:if>
+			<xsl:call-template name="swagger-summary-row"/>
 		</pre>
     </xsl:template>
 
