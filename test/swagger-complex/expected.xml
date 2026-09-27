@@ -1339,7 +1339,7 @@
   <topic id="definitions">
     <title>Definitions</title>
     <body></body>
-    <topic id="error">
+    <topic id="error" outputclass="definition">
       <title>Error</title>
       <body>
         <table>
@@ -1400,7 +1400,7 @@
         </table>
       </body>
     </topic>
-    <topic id="errorreport">
+    <topic id="errorreport" outputclass="definition">
       <title>ErrorReport</title>
       <body>
         <p>Detailed information about what went wrong</p>
@@ -1449,7 +1449,7 @@
         </table>
       </body>
     </topic>
-    <topic id="writecustomattribute">
+    <topic id="writecustomattribute" outputclass="definition">
       <title>WriteCustomAttribute</title>
       <body>
         <p>Represents a custom attribute (key/value pair) of a return request from an order of a shop.</p>
@@ -1501,7 +1501,7 @@
         </table>
       </body>
     </topic>
-    <topic id="writepickupaddress">
+    <topic id="writepickupaddress" outputclass="definition">
       <title>WritePickupAddress</title>
       <body>
         <p>Represents a pickup address related to the return request from an order of a shop.</p>
@@ -1688,7 +1688,7 @@
         </table>
       </body>
     </topic>
-    <topic id="writereturnrequest">
+    <topic id="writereturnrequest" outputclass="definition">
       <title>WriteReturnRequest</title>
       <body>
         <p>Represents a return request from a shop.</p>
@@ -1788,7 +1788,7 @@
         </table>
       </body>
     </topic>
-    <topic id="writereturnrequestitem">
+    <topic id="writereturnrequestitem" outputclass="definition">
       <title>WriteReturnRequestItem</title>
       <body>
         <p>Represents a return request item of a return request from an order of a shop.</p>
@@ -1825,7 +1825,7 @@
         </table>
       </body>
     </topic>
-    <topic id="writereturnrequestposition">
+    <topic id="writereturnrequestposition" outputclass="definition">
       <title>WriteReturnRequestPosition</title>
       <body>
         <p>Represents a return request position of a return request from an order of a shop.</p>
@@ -1919,7 +1919,7 @@
         </table>
       </body>
     </topic>
-    <topic id="link">
+    <topic id="link" outputclass="definition">
       <title>Link</title>
       <body>
         <table>
@@ -1960,7 +1960,7 @@
         </table>
       </body>
     </topic>
-    <topic id="readreturnrequestposition">
+    <topic id="readreturnrequestposition" outputclass="definition">
       <title>ReadReturnRequestPosition</title>
       <body>
         <p>Represents a return request position of a return request from an order of
@@ -2100,7 +2100,7 @@ a shop.</p>
         </table>
       </body>
     </topic>
-    <topic id="readreturnrequestitem">
+    <topic id="readreturnrequestitem" outputclass="definition">
       <title>ReadReturnRequestItem</title>
       <body>
         <p>Represents a return request item of a return request from an order of a
@@ -2165,7 +2165,7 @@ shop.</p>
         </table>
       </body>
     </topic>
-    <topic id="readcustomattribute">
+    <topic id="readcustomattribute" outputclass="definition">
       <title>ReadCustomAttribute</title>
       <body>
         <p>Represents a custom attribute (key/value pair) of a return request from an order of a shop.</p>
@@ -2244,7 +2244,7 @@ shop.</p>
         </table>
       </body>
     </topic>
-    <topic id="readpickupaddress">
+    <topic id="readpickupaddress" outputclass="definition">
       <title>ReadPickupAddress</title>
       <body>
         <p>Represents a pickup address related to the return request from an order of
@@ -2460,7 +2460,7 @@ address.
         </table>
       </body>
     </topic>
-    <topic id="readreturnrequest">
+    <topic id="readreturnrequest" outputclass="definition">
       <title>ReadReturnRequest</title>
       <body>
         <p>Represents a return request from a shop.</p>
@@ -2645,7 +2645,7 @@ address.
         </table>
       </body>
     </topic>
-    <topic id="writeapproval">
+    <topic id="writeapproval" outputclass="definition">
       <title>WriteApproval</title>
       <body>
         <p>Represents an approval of a return request of an order of a shop.</p>
@@ -2694,7 +2694,7 @@ address.
         </table>
       </body>
     </topic>
-    <topic id="contactperson">
+    <topic id="contactperson" outputclass="definition">
       <title>ContactPerson</title>
       <body>
         <p>Represents a contact person of the return request from an order of a shop.</p>
@@ -2833,7 +2833,7 @@ address.
         </table>
       </body>
     </topic>
-    <topic id="businessstatus">
+    <topic id="businessstatus" outputclass="definition">
       <title>BusinessStatus</title>
       <body>
         <p>The business status of the return request.</p>
@@ -2841,14 +2841,14 @@ address.
           <i>Type</i>: enum (ACCEPTED, IN_APPROVAL, READY_TO_APPROVE, REJECTED, UNKNOWN)</p>
       </body>
     </topic>
-    <topic id="protocol">
+    <topic id="protocol" outputclass="definition">
       <title>protocol</title>
       <body>
         <p>
           <i>Type</i>: enum (http, https)</p>
       </body>
     </topic>
-    <topic id="status">
+    <topic id="status" outputclass="definition">
       <title>Status</title>
       <body>
         <p>The technical status of the return request.</p>
@@ -2856,7 +2856,7 @@ address.
           <i>Type</i>: enum (ACCEPTED, CLOSED, DO_APPROVE, DO_CLOSE, INITIAL, REJECTED)</p>
       </body>
     </topic>
-    <topic id="status1">
+    <topic id="status1" outputclass="definition">
       <title>Status1</title>
       <body>
         <p>The status of the approval.</p>
@@ -2864,7 +2864,7 @@ address.
           <i>Type</i>: enum (APPROVED, NOT_APPROVED)</p>
       </body>
     </topic>
-    <topic id="type">
+    <topic id="type" outputclass="definition">
       <title>Type</title>
       <body>
         <p>The type that specifies the return request.</p>

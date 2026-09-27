@@ -353,7 +353,7 @@ final class DitaEmitter {
     out.append("<body class=\"- topic/body \"></body>\n");
 
     for (Definition definition : doc.definitions) {
-      openTopic(definitionIds.get(definition.name), null, definition.name);
+      openTopic(definitionIds.get(definition.name), "definition", definition.name);
       out.append("<body class=\"- topic/body \">\n");
       if (!isBlank(definition.description)) {
         out.append(MarkdownDita.renderBlocks(definition.description));

@@ -253,7 +253,7 @@
   <topic id="definitions">
     <title>Definitions</title>
     <body></body>
-    <topic id="pet">
+    <topic id="pet" outputclass="definition">
       <title>Pet</title>
       <body>
         <p>A pet available in the store.</p>
