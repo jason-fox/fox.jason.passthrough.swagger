@@ -15,7 +15,7 @@ public class SwaggerFileReader extends AbstractFileReader {
 
   @Override
   protected String runTarget(File inputFile, String title) throws IOException {
-    return ApiDocumentConverter.convertToDita(inputFile, title, null);
+    return ApiDocumentConverter.convertToDita(inputFile, title, null, getDefaultLanguage());
   }
 
   @Override
@@ -30,7 +30,7 @@ public class SwaggerFileReader extends AbstractFileReader {
     Files.copy(
         inputFile.toPath(), source.resolveSibling(specFileName), StandardCopyOption.REPLACE_EXISTING);
 
-    return ApiDocumentConverter.convertToDita(inputFile, title, specFileName);
+    return ApiDocumentConverter.convertToDita(inputFile, title, specFileName, getDefaultLanguage());
   }
 
   private static String astSpecFileName(String originalFileName) {

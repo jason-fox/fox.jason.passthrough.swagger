@@ -18,7 +18,8 @@ public final class ApiDocumentConverter {
 
   private ApiDocumentConverter() {}
 
-  public static String convertToDita(File inputFile, String fallbackTitle, String sourceFileName)
+  public static String convertToDita(
+      File inputFile, String fallbackTitle, String sourceFileName, String lang)
       throws IOException {
     String content = new String(Files.readAllBytes(inputFile.toPath()), StandardCharsets.UTF_8);
 
@@ -27,7 +28,7 @@ public final class ApiDocumentConverter {
             ? OpenApi3Adapter.convert(parseOpenApi3(content))
             : Swagger2Adapter.convert(new SwaggerParser().parse(content));
 
-    return DitaEmitter.render(doc, fallbackTitle, sourceFileName);
+    return DitaEmitter.render(doc, fallbackTitle, sourceFileName, lang);
   }
 
   private static OpenAPI parseOpenApi3(String content) throws IOException {

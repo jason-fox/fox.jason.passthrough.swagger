@@ -34,9 +34,14 @@ final class DitaEmitter {
   private final StringBuilder out = new StringBuilder();
   private final Slugs slugs = new Slugs();
   private final Map<String, String> definitionIds = new HashMap<>();
+  private final SwaggerLabels labels;
 
-  static String render(ApiDoc doc, String fallbackTitle, String sourceFileName) {
-    return new DitaEmitter().emit(doc, fallbackTitle, sourceFileName);
+  private DitaEmitter(String lang) {
+    labels = SwaggerLabels.forLanguage(lang);
+  }
+
+  static String render(ApiDoc doc, String fallbackTitle, String sourceFileName, String lang) {
+    return new DitaEmitter(lang).emit(doc, fallbackTitle, sourceFileName);
   }
 
   private String emit(ApiDoc doc, String fallbackTitle, String sourceFileName) {
@@ -83,20 +88,21 @@ final class DitaEmitter {
   }
 
   private void emitOverview(ApiDoc doc) {
-    openTopic(slugs.slugify("Overview"), null, "Overview");
+    String overview = labels.get("overview");
+    openTopic(slugs.slugify(overview), null, overview);
     out.append("<body class=\"- topic/body \">\n");
     if (!isBlank(doc.description)) {
       out.append(MarkdownDita.renderBlocks(doc.description));
     }
 
-    startSection("Version information");
+    startSection(labels.get("version-information"), "h5");
     out.append("<p class=\"- topic/p \"><i class=\"+ topic/ph hi-d/i \">Version</i>: ")
         .append(esc(nullToUnknown(doc.version)))
         .append("</p>\n");
     endSection();
 
     if (!isBlank(doc.contactName) || !isBlank(doc.contactEmail)) {
-      startSection("Contact information");
+      startSection(labels.get("contact-information"), "h5");
       out.append("<p class=\"- topic/p \">");
       if (!isBlank(doc.contactName)) {
         out.append("<i class=\"+ topic/ph hi-d/i \">Contact</i>: ").append(esc(doc.contactName)).append(' ');
@@ -109,7 +115,7 @@ final class DitaEmitter {
     }
 
     if (!isBlank(doc.licenseName)) {
-      startSection("License information");
+      startSection(labels.get("license-information"), "h5");
       out.append("<p class=\"- topic/p \"><i class=\"+ topic/ph hi-d/i \">License</i>: ")
           .append(esc(doc.licenseName));
       if (!isBlank(doc.licenseUrl)) {
@@ -122,7 +128,7 @@ final class DitaEmitter {
     }
 
     if (!isBlank(doc.host) || !isBlank(doc.basePath) || !doc.schemes.isEmpty()) {
-      startSection("URI scheme");
+      startSection(labels.get("uri-scheme"), "h5");
       out.append("<p class=\"- topic/p \">");
       if (!isBlank(doc.host)) {
         out.append("<i class=\"+ topic/ph hi-d/i \">Host</i>: ").append(esc(doc.host)).append(' ');
@@ -144,11 +150,11 @@ final class DitaEmitter {
     // above its operations in emitPaths/emitTagGroup, so repeating the same list here up front is
     // the same kind of redundant listing already dropped from individual operations.
 
-    emitMimeSection("Consumes", doc.consumes);
-    emitMimeSection("Produces", doc.produces);
+    emitMimeSection(labels.get("consumes"), doc.consumes, "h5");
+    emitMimeSection(labels.get("produces"), doc.produces, "h5");
 
     if (!isBlank(doc.externalDocsDescription) || !isBlank(doc.externalDocsUrl)) {
-      startSection("External Docs");
+      startSection(labels.get("external-docs"), "h5");
       out.append("<p class=\"- topic/p \">");
       if (!isBlank(doc.externalDocsDescription)) {
         out.append("<i class=\"+ topic/ph hi-d/i \">Description</i>: ")
@@ -248,19 +254,19 @@ final class DitaEmitter {
     }
 
     if (!operation.parameters.isEmpty()) {
-      startSection("Parameters");
+      startSection(labels.get("parameters"));
       emitParameterTable(operation.parameters);
       endSection();
     }
 
     if (!operation.responses.isEmpty()) {
-      startSection("Responses");
+      startSection(labels.get("responses"));
       emitResponseTable(operation.responses);
       endSection();
     }
 
-    emitMimeSection("Consumes", operation.consumes);
-    emitMimeSection("Produces", operation.produces);
+    emitMimeSection(labels.get("consumes"), operation.consumes);
+    emitMimeSection(labels.get("produces"), operation.produces);
 
     // No per-operation tags list here: operations are already grouped by tag in emitPaths, so
     // repeating tag membership per operation is the redundant listing petstore-ui doesn't show.
@@ -270,7 +276,9 @@ final class DitaEmitter {
         out.append("<example class=\"- topic/example \" id=\"")
             .append(slugs.slugify("Response " + response.code))
             .append("\" outputclass=\"example\">\n");
-        out.append("<title class=\"- topic/title \">Response ")
+        out.append("<title class=\"- topic/title \">")
+            .append(esc(labels.get("response")))
+            .append(' ')
             .append(esc(response.code))
             .append("</title>\n");
         out.append("<codeblock class=\"+ topic/pre pr-d/codeblock \" outputclass=\"")
@@ -349,7 +357,8 @@ final class DitaEmitter {
     if (doc.definitions.isEmpty()) {
       return;
     }
-    openTopic(slugs.slugify("Definitions"), null, "Definitions");
+    String definitions = labels.get("definitions");
+    openTopic(slugs.slugify(definitions), null, definitions);
     out.append("<body class=\"- topic/body \"></body>\n");
 
     for (Definition definition : doc.definitions) {
@@ -402,7 +411,8 @@ final class DitaEmitter {
     if (doc.securitySchemes.isEmpty()) {
       return;
     }
-    openTopic(slugs.slugify("Security"), null, "Security");
+    String security = labels.get("security");
+    openTopic(slugs.slugify(security), null, security);
     out.append("<body class=\"- topic/body \">\n<ul class=\"- topic/ul \">\n");
     for (SecurityScheme scheme : doc.securitySchemes) {
       out.append("<li class=\"- topic/li \"><b class=\"+ topic/ph hi-d/b \">")
@@ -420,10 +430,14 @@ final class DitaEmitter {
   }
 
   private void emitMimeSection(String heading, List<String> mimeTypes) {
+    emitMimeSection(heading, mimeTypes, null);
+  }
+
+  private void emitMimeSection(String heading, List<String> mimeTypes, String titleOutputClass) {
     if (mimeTypes.isEmpty()) {
       return;
     }
-    startSection(heading);
+    startSection(heading, titleOutputClass);
     out.append("<ul class=\"- topic/ul \">\n");
     for (String mime : mimeTypes) {
       out.append("<li class=\"- topic/li \"><codeph class=\"+ topic/ph pr-d/codeph \">")
@@ -448,10 +462,18 @@ final class DitaEmitter {
   }
 
   private void startSection(String heading) {
+    startSection(heading, null);
+  }
+
+  private void startSection(String heading, String titleOutputClass) {
     out.append("<section class=\"- topic/section \" id=\"")
         .append(slugs.slugify(heading))
         .append("\" outputclass=\"section\">\n");
-    out.append("<title class=\"- topic/title \">").append(esc(heading)).append("</title>\n");
+    out.append("<title class=\"- topic/title \"");
+    if (titleOutputClass != null) {
+      out.append(" outputclass=\"").append(titleOutputClass).append('"');
+    }
+    out.append('>').append(esc(heading)).append("</title>\n");
   }
 
   private void endSection() {
