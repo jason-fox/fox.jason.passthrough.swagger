@@ -4,7 +4,7 @@
 	This file is part of the DITA-OT Swagger Plug-in project.
 	See the accompanying LICENSE file for applicable licenses.
 -->
-<plugin id="fox.jason.passthrough.swagger" version="2.0.1">
+<plugin id="fox.jason.passthrough.swagger" version="2.1.0">
 	<feature extension="dita.conductor.lib.import" file="lib/passthrough.parser-5.0.jar"/>
 	<!-- MarkdownDita (in passthrough.parser) renders description-field Markdown as DITA -->
 	<feature extension="dita.conductor.lib.import" file="lib/flexmark-0.64.8.jar"/>
