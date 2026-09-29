@@ -12,6 +12,13 @@
 >
 
 	<target name="swagger.css.copy">
+		<property name="swagger.css.theme" value="${dita.plugin.fox.jason.passthrough.swagger.dir}/css/default-theme.css"/>
+		<loadfile property="swagger.theme.css" srcFile="${swagger.css.theme}"/>
+		<echo
+      append="true"
+      message="${line.separator}${swagger.theme.css}"
+      file="${extend.css.file}"
+    />
 		<loadfile
       property="swagger.css"
       srcFile="${dita.plugin.fox.jason.passthrough.swagger.dir}/css/swagger.css"

@@ -9,12 +9,12 @@
     <title>Overview</title>
     <body>
       <section id="version-information" outputclass="section">
-        <title>Version information</title>
+        <title outputclass="h5">Version information</title>
         <p>
           <i>Version</i>: Unknown</p>
       </section>
       <section id="consumes" outputclass="section">
-        <title>Consumes</title>
+        <title outputclass="h5">Consumes</title>
         <ul>
           <li>
             <codeph>application/json</codeph>
@@ -22,7 +22,7 @@
         </ul>
       </section>
       <section id="produces" outputclass="section">
-        <title>Produces</title>
+        <title outputclass="h5">Produces</title>
         <ul>
           <li>
             <codeph>application/json</codeph>

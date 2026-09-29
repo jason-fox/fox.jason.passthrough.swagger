@@ -10,24 +10,24 @@
     <body>
       <p>The IOM RMA REST API supports programmatic access to objects related to the Return Merchandise Authorization process.</p>
       <section id="version-information" outputclass="section">
-        <title>Version information</title>
+        <title outputclass="h5">Version information</title>
         <p>
           <i>Version</i>: 2.9.4</p>
       </section>
       <section id="contact-information" outputclass="section">
-        <title>Contact information</title>
+        <title outputclass="h5">Contact information</title>
         <p>
           <i>Contact</i>: Intershop Communications AG</p>
       </section>
       <section id="uri-scheme" outputclass="section">
-        <title>URI scheme</title>
+        <title outputclass="h5">URI scheme</title>
         <p>
           <i>Host</i>: localhost:8080
           <i>BasePath</i>: /rest/rma
           <i>Schemes</i>: HTTP</p>
       </section>
       <section id="consumes" outputclass="section">
-        <title>Consumes</title>
+        <title outputclass="h5">Consumes</title>
         <ul>
           <li>
             <codeph>application/json</codeph>
@@ -35,7 +35,7 @@
         </ul>
       </section>
       <section id="produces" outputclass="section">
-        <title>Produces</title>
+        <title outputclass="h5">Produces</title>
         <ul>
           <li>
             <codeph>application/json</codeph>

@@ -73,4 +73,11 @@
 	<feature extension="dita.parser">
 		<parser format="swagger" class="fox.jason.passthrough.SwaggerFileReader"/>
 	</feature>
+	<transtype name="base-html" abstract="true" desc="HTML-based output">
+		<param
+			name="swagger.css.theme"
+			desc="Specifies the location of a custom .css color theme file for the HTTP verb colors."
+			type="string"
+		/>
+	</transtype>
 </plugin>

@@ -10,24 +10,24 @@
     <body>
       <p>A minimal OpenAPI 3 document used to verify the plugin parses OpenAPI 3 as well as Swagger 2.0.</p>
       <section id="version-information" outputclass="section">
-        <title>Version information</title>
+        <title outputclass="h5">Version information</title>
         <p>
           <i>Version</i>: 1.0.0</p>
       </section>
       <section id="contact-information" outputclass="section">
-        <title>Contact information</title>
+        <title outputclass="h5">Contact information</title>
         <p>
           <i>Contact</i>: API Team
           <i>Contact Email</i>: apiteam@example.com</p>
       </section>
       <section id="license-information" outputclass="section">
-        <title>License information</title>
+        <title outputclass="h5">License information</title>
         <p>
           <i>License</i>: Apache 2.0
           <i>License URL</i>: http://www.apache.org/licenses/LICENSE-2.0.html</p>
       </section>
       <section id="uri-scheme" outputclass="section">
-        <title>URI scheme</title>
+        <title outputclass="h5">URI scheme</title>
         <p>
           <i>Host</i>: api.example.com
           <i>BasePath</i>: /v1

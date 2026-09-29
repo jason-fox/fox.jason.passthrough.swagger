@@ -16,12 +16,12 @@
         <li>Second item</li>
       </ul>
       <section id="version-information" outputclass="section">
-        <title>Version information</title>
+        <title outputclass="h5">Version information</title>
         <p>
           <i>Version</i>: 1.0.0</p>
       </section>
       <section id="uri-scheme" outputclass="section">
-        <title>URI scheme</title>
+        <title outputclass="h5">URI scheme</title>
         <p>
           <i>BasePath</i>: /</p>
       </section>

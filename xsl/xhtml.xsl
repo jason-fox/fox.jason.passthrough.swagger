@@ -44,4 +44,5 @@
 			<xsl:attribute name="id"><xsl:apply-templates select="." mode="return-aria-label-id"/></xsl:attribute>
 		</a>
 	</xsl:template>
+	<xsl:template match="*[contains(@class,' topic/object ')][@outputclass = 'swagger-spec']"/>
 </xsl:stylesheet>

@@ -12,12 +12,14 @@
     border-color: var(--swagger-color);
 }
 
-pre[class*="swagger-"]{
-    padding: 10px;
-    padding-left: 1em;
+pre[class*="swagger-"] {
+    padding: 10px 10px 10px 1em;
     font-weight: bold;
     font-size: large;
-    margin: 0.5em 0em 0.5em 0em;
+    margin: 0 0 0.5em;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 
 
@@ -40,43 +42,7 @@ span.swagger-summary {
     margin-left: 0.5em;
 }
 
-
-.swagger-post {
-    --swagger-color: #49cc90;
-    background: rgba(73,204,144,.1)
-}
-
-.swagger-put {
-    --swagger-color: #fca130;
-    background: rgba(252,161,48,.1)
-}
-
-.swagger-delete {
-    --swagger-color: #f93e3e;
-    background: rgba(249,62,62,.1)
-}
-
-.swagger-get {
-    --swagger-color: #61affe;
-    background: rgba(97,175,254,.1)
-}
-
-.swagger-patch {
-    --swagger-color: #50e3c2;
-    background: rgba(80,227,194,.1)
-}
-
-.swagger-head {
-    --swagger-color: #9012fe;
-    background: rgba(144,18,254,.1)
-}
-
-.swagger-options {
-    --swagger-color: #0d5aa7;
-    background: rgba(13,90,167,.1)
-}
-
-.swagger-deprecated {
-    --swagger-color: #ebebeb;
-    background: hsla(0,0%,92.2%,.1)
+[class*="swagger-"] p,
+[class*="swagger-"] section {
+    margin: 1rem;
 }
