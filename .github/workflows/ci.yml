@@ -20,7 +20,7 @@ jobs:
           plugin: 'fox.jason.passthrough.swagger'
           prerequisites: |
             fox.jason.extend.css
-            fox.jason.passthrough
+            https://github.com/jason-fox/fox.jason.passthrough/archive/master.zip
       #  env:
       #    COVERALLS_TOKEN: ${{ secrets.COVERALLS_TOKEN }}
       - uses: actions/upload-artifact@v7
