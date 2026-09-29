@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<topic id="identity" outputclass="swagger">
+  <title>identity</title>
+  <body>
+    <object data="swagger.ast.json" outputclass="swagger-spec" type="application/json"></object>
+  </body>
+  <topic id="overview">
+    <title>Overview</title>
+    <body>
+      <section id="version-information" outputclass="section">
+        <title outputclass="h5">Version information</title>
+        <p>
+          <i>Version</i>: Unknown</p>
+      </section>
+      <section id="consumes" outputclass="section">
+        <title outputclass="h5">Consumes</title>
+        <ul>
+          <li>
+            <codeph>application/json</codeph>
+          </li>
+        </ul>
+      </section>
+      <section id="produces" outputclass="section">
+        <title outputclass="h5">Produces</title>
+        <ul>
+          <li>
+            <codeph>application/json</codeph>
+          </li>
+        </ul>
+      </section>
+    </body>
+  </topic>
+  <topic id="getversions-v2" outputclass="swagger-get">
+    <title>List versions</title>
+    <body>
+      <codeblock outputclass="swagger-get">GET /</codeblock>
+      <p>Lists information about all Identity API versions.</p>
+      <section id="responses" outputclass="section">
+        <title>Responses</title>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="col1" colnum="1"></colspec>
+            <colspec colname="col2" colnum="2"></colspec>
+            <colspec colname="col3" colnum="3"></colspec>
+            <thead>
+              <row>
+                <entry colname="col1">HTTP Code</entry>
+                <entry colname="col2">Description</entry>
+                <entry colname="col3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <b>200</b>
+                </entry>
+                <entry colname="col2">200 response</entry>
+                <entry colname="col3">No Content</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+      <section id="produces-1" outputclass="section">
+        <title>Produces</title>
+        <ul>
+          <li>
+            <codeph>application/json</codeph>
+          </li>
+        </ul>
+      </section>
+    </body>
+  </topic>
+</topic>
+

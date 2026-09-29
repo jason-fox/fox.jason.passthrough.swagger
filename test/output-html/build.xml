@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="unit-test">
+	<import file="../bootstrap.xml"/>
+	<description>
+		Expect that a swagger file generates as HTML
+	</description>
+	<target name="unit-test">
+		<exec-html5/>
+		<get-html-body from="swagger.html"/>
+		<compare-output suffix=".html"/>
+	</target>
+</project>

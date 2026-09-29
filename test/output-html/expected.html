@@ -1,0 +1,1053 @@
+<body class="swagger" id="swagger-petstore"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+<h1 class="title topictitle1" id="ariaid-title1">Swagger Petstore</h1>
+<div class="body">
+
+</div>
+<article class="topic nested1" aria-labelledby="ariaid-title2" id="overview">
+<h2 class="title topictitle2" id="ariaid-title2">Overview</h2>
+<div class="body">
+<p class="p">This is a sample server Petstore server.  You can find out more about Swagger at <a class="xref" href="http://swagger.io" target="_blank" rel="external noopener">http://swagger.io</a> or on <a class="xref" href="http://swagger.io/irc/" target="_blank" rel="external noopener">irc.freenode.net, #swagger</a>.  For this sample, you can use the api key <code class="ph codeph">special-key</code> to test the authorization filters.</p>
+<section class="section" id="overview__version-information"><h3 class="title sectiontitle h5">Version information</h3>
+
+<p class="p"><em class="ph i">Version</em>: 1.0.0</p>
+</section>
+<section class="section" id="overview__contact-information"><h3 class="title sectiontitle h5">Contact information</h3>
+
+<p class="p"><em class="ph i">Contact Email</em>: apiteam@swagger.io</p>
+</section>
+<section class="section" id="overview__license-information"><h3 class="title sectiontitle h5">License information</h3>
+
+<p class="p"><em class="ph i">License</em>: Apache 2.0 <em class="ph i">License URL</em>: http://www.apache.org/licenses/LICENSE-2.0.html</p>
+</section>
+<section class="section" id="overview__uri-scheme"><h3 class="title sectiontitle h5">URI scheme</h3>
+
+<p class="p"><em class="ph i">Host</em>: petstore.swagger.io <em class="ph i">BasePath</em>: /v2 <em class="ph i">Schemes</em>: HTTPS, HTTP</p>
+</section>
+<section class="section" id="overview__external-docs"><h3 class="title sectiontitle h5">External Docs</h3>
+
+<p class="p"><em class="ph i">Description</em>: Find out more about Swagger <em class="ph i">URL</em>: http://swagger.io</p>
+</section>
+</div>
+</article>
+<article class="topic nested1" aria-labelledby="ariaid-title3" id="pet-1">
+<h2 class="title topictitle2" id="ariaid-title3">pet</h2>
+<div class="body">
+<p class="p">Everything about your Pets</p>
+</div>
+<article class="topic nested2 swagger-put" aria-labelledby="ariaid-title4" id="updatepet">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title4"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-put"><code><span class="swagger-verb">PUT</span>/pet</code><span class="swagger-summary small">Update an existing pet</span></pre>
+<section class="section" id="updatepet__parameters"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="updatepet__parameters__entry__1">Type</th><th class="entry" id="updatepet__parameters__entry__2">Name</th><th class="entry" id="updatepet__parameters__entry__3">Description</th><th class="entry" id="updatepet__parameters__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="updatepet__parameters__entry__1">Body</td>
+<td class="entry" headers="updatepet__parameters__entry__2"><p class="lines"><strong class="ph b">body</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="updatepet__parameters__entry__3">Pet object that needs to be added to the store</td>
+<td class="entry" headers="updatepet__parameters__entry__4"><a class="xref" href="#pet">Pet</a></td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="updatepet__responses"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="updatepet__responses__entry__1">HTTP Code</th><th class="entry" id="updatepet__responses__entry__2">Description</th><th class="entry" id="updatepet__responses__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="updatepet__responses__entry__1"><strong class="ph b">400</strong></td>
+<td class="entry" headers="updatepet__responses__entry__2">Invalid ID supplied</td>
+<td class="entry" headers="updatepet__responses__entry__3">No Content</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="updatepet__responses__entry__1"><strong class="ph b">404</strong></td>
+<td class="entry" headers="updatepet__responses__entry__2">Pet not found</td>
+<td class="entry" headers="updatepet__responses__entry__3">No Content</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="updatepet__responses__entry__1"><strong class="ph b">405</strong></td>
+<td class="entry" headers="updatepet__responses__entry__2">Validation exception</td>
+<td class="entry" headers="updatepet__responses__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="updatepet__consumes"><h4 class="title sectiontitle">Consumes</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/json</code></li>
+<li class="li"><code class="ph codeph">application/xml</code></li>
+</ul>
+</section>
+<section class="section" id="updatepet__produces"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title5" id="addpet">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title5"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-post"><code><span class="swagger-verb">POST</span>/pet</code><span class="swagger-summary small">Add a new pet to the store</span></pre>
+<section class="section" id="addpet__parameters-1"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="addpet__parameters-1__entry__1">Type</th><th class="entry" id="addpet__parameters-1__entry__2">Name</th><th class="entry" id="addpet__parameters-1__entry__3">Description</th><th class="entry" id="addpet__parameters-1__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="addpet__parameters-1__entry__1">Body</td>
+<td class="entry" headers="addpet__parameters-1__entry__2"><p class="lines"><strong class="ph b">body</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="addpet__parameters-1__entry__3">Pet object that needs to be added to the store</td>
+<td class="entry" headers="addpet__parameters-1__entry__4"><a class="xref" href="#pet">Pet</a></td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="addpet__responses-1"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="addpet__responses-1__entry__1">HTTP Code</th><th class="entry" id="addpet__responses-1__entry__2">Description</th><th class="entry" id="addpet__responses-1__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="addpet__responses-1__entry__1"><strong class="ph b">405</strong></td>
+<td class="entry" headers="addpet__responses-1__entry__2">Invalid input</td>
+<td class="entry" headers="addpet__responses-1__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="addpet__consumes-1"><h4 class="title sectiontitle">Consumes</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/json</code></li>
+<li class="li"><code class="ph codeph">application/xml</code></li>
+</ul>
+</section>
+<section class="section" id="addpet__produces-1"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title6" id="findpetsbystatus">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title6"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-get"><code><span class="swagger-verb">GET</span>/pet/findByStatus</code><span class="swagger-summary small">Finds Pets by status</span></pre>
+<p class="p">Multiple status values can be provided with comma separated strings</p>
+<section class="section" id="findpetsbystatus__parameters-2"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="findpetsbystatus__parameters-2__entry__1">Type</th><th class="entry" id="findpetsbystatus__parameters-2__entry__2">Name</th><th class="entry" id="findpetsbystatus__parameters-2__entry__3">Description</th><th class="entry" id="findpetsbystatus__parameters-2__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="findpetsbystatus__parameters-2__entry__1">Query</td>
+<td class="entry" headers="findpetsbystatus__parameters-2__entry__2"><p class="lines"><strong class="ph b">status</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="findpetsbystatus__parameters-2__entry__3">Status values that need to be considered for filter</td>
+<td class="entry" headers="findpetsbystatus__parameters-2__entry__4">array</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="findpetsbystatus__responses-2"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="findpetsbystatus__responses-2__entry__1">HTTP Code</th><th class="entry" id="findpetsbystatus__responses-2__entry__2">Description</th><th class="entry" id="findpetsbystatus__responses-2__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="findpetsbystatus__responses-2__entry__1"><strong class="ph b">200</strong></td>
+<td class="entry" headers="findpetsbystatus__responses-2__entry__2">successful operation</td>
+<td class="entry" headers="findpetsbystatus__responses-2__entry__3">Array of <a class="xref" href="#pet">Pet</a></td>
+</tr>
+<tr class="row">
+<td class="entry" headers="findpetsbystatus__responses-2__entry__1"><strong class="ph b">400</strong></td>
+<td class="entry" headers="findpetsbystatus__responses-2__entry__2">Invalid status value</td>
+<td class="entry" headers="findpetsbystatus__responses-2__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="findpetsbystatus__produces-2"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title7" id="findpetsbytags">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title7"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-get"><code><span class="swagger-verb">GET</span>/pet/findByTags</code><span class="swagger-summary small">Finds Pets by tags</span></pre>
+<p class="p">Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.</p>
+<section class="section" id="findpetsbytags__parameters-3"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="findpetsbytags__parameters-3__entry__1">Type</th><th class="entry" id="findpetsbytags__parameters-3__entry__2">Name</th><th class="entry" id="findpetsbytags__parameters-3__entry__3">Description</th><th class="entry" id="findpetsbytags__parameters-3__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="findpetsbytags__parameters-3__entry__1">Query</td>
+<td class="entry" headers="findpetsbytags__parameters-3__entry__2"><p class="lines"><strong class="ph b">tags</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="findpetsbytags__parameters-3__entry__3">Tags to filter by</td>
+<td class="entry" headers="findpetsbytags__parameters-3__entry__4">array</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="findpetsbytags__responses-3"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="findpetsbytags__responses-3__entry__1">HTTP Code</th><th class="entry" id="findpetsbytags__responses-3__entry__2">Description</th><th class="entry" id="findpetsbytags__responses-3__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="findpetsbytags__responses-3__entry__1"><strong class="ph b">200</strong></td>
+<td class="entry" headers="findpetsbytags__responses-3__entry__2">successful operation</td>
+<td class="entry" headers="findpetsbytags__responses-3__entry__3">Array of <a class="xref" href="#pet">Pet</a></td>
+</tr>
+<tr class="row">
+<td class="entry" headers="findpetsbytags__responses-3__entry__1"><strong class="ph b">400</strong></td>
+<td class="entry" headers="findpetsbytags__responses-3__entry__2">Invalid tag value</td>
+<td class="entry" headers="findpetsbytags__responses-3__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="findpetsbytags__produces-3"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title8" id="getpetbyid">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title8"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-get"><code><span class="swagger-verb">GET</span>/pet/{petId}</code><span class="swagger-summary small">Find pet by ID</span></pre>
+<p class="p">Returns a single pet</p>
+<section class="section" id="getpetbyid__parameters-4"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="getpetbyid__parameters-4__entry__1">Type</th><th class="entry" id="getpetbyid__parameters-4__entry__2">Name</th><th class="entry" id="getpetbyid__parameters-4__entry__3">Description</th><th class="entry" id="getpetbyid__parameters-4__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="getpetbyid__parameters-4__entry__1">Path</td>
+<td class="entry" headers="getpetbyid__parameters-4__entry__2"><p class="lines"><strong class="ph b">petId</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="getpetbyid__parameters-4__entry__3">ID of pet to return</td>
+<td class="entry" headers="getpetbyid__parameters-4__entry__4">integer (int64)</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="getpetbyid__responses-4"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="getpetbyid__responses-4__entry__1">HTTP Code</th><th class="entry" id="getpetbyid__responses-4__entry__2">Description</th><th class="entry" id="getpetbyid__responses-4__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="getpetbyid__responses-4__entry__1"><strong class="ph b">200</strong></td>
+<td class="entry" headers="getpetbyid__responses-4__entry__2">successful operation</td>
+<td class="entry" headers="getpetbyid__responses-4__entry__3"><a class="xref" href="#pet">Pet</a></td>
+</tr>
+<tr class="row">
+<td class="entry" headers="getpetbyid__responses-4__entry__1"><strong class="ph b">400</strong></td>
+<td class="entry" headers="getpetbyid__responses-4__entry__2">Invalid ID supplied</td>
+<td class="entry" headers="getpetbyid__responses-4__entry__3">No Content</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="getpetbyid__responses-4__entry__1"><strong class="ph b">404</strong></td>
+<td class="entry" headers="getpetbyid__responses-4__entry__2">Pet not found</td>
+<td class="entry" headers="getpetbyid__responses-4__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="getpetbyid__produces-4"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title9" id="updatepetwithform">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title9"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-post"><code><span class="swagger-verb">POST</span>/pet/{petId}</code><span class="swagger-summary small">Updates a pet in the store with form data</span></pre>
+<section class="section" id="updatepetwithform__parameters-5"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="updatepetwithform__parameters-5__entry__1">Type</th><th class="entry" id="updatepetwithform__parameters-5__entry__2">Name</th><th class="entry" id="updatepetwithform__parameters-5__entry__3">Description</th><th class="entry" id="updatepetwithform__parameters-5__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="updatepetwithform__parameters-5__entry__1">Path</td>
+<td class="entry" headers="updatepetwithform__parameters-5__entry__2"><p class="lines"><strong class="ph b">petId</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="updatepetwithform__parameters-5__entry__3">ID of pet that needs to be updated</td>
+<td class="entry" headers="updatepetwithform__parameters-5__entry__4">integer (int64)</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="updatepetwithform__parameters-5__entry__1">FormData</td>
+<td class="entry" headers="updatepetwithform__parameters-5__entry__2"><p class="lines"><strong class="ph b">name</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="updatepetwithform__parameters-5__entry__3">Updated name of the pet</td>
+<td class="entry" headers="updatepetwithform__parameters-5__entry__4">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="updatepetwithform__parameters-5__entry__1">FormData</td>
+<td class="entry" headers="updatepetwithform__parameters-5__entry__2"><p class="lines"><strong class="ph b">status</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="updatepetwithform__parameters-5__entry__3">Updated status of the pet</td>
+<td class="entry" headers="updatepetwithform__parameters-5__entry__4">string</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="updatepetwithform__responses-5"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="updatepetwithform__responses-5__entry__1">HTTP Code</th><th class="entry" id="updatepetwithform__responses-5__entry__2">Description</th><th class="entry" id="updatepetwithform__responses-5__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="updatepetwithform__responses-5__entry__1"><strong class="ph b">405</strong></td>
+<td class="entry" headers="updatepetwithform__responses-5__entry__2">Invalid input</td>
+<td class="entry" headers="updatepetwithform__responses-5__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="updatepetwithform__consumes-2"><h4 class="title sectiontitle">Consumes</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/x-www-form-urlencoded</code></li>
+</ul>
+</section>
+<section class="section" id="updatepetwithform__produces-5"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-delete" aria-labelledby="ariaid-title10" id="deletepet">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title10"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-delete"><code><span class="swagger-verb">DELETE</span>/pet/{petId}</code><span class="swagger-summary small">Deletes a pet</span></pre>
+<section class="section" id="deletepet__parameters-6"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="deletepet__parameters-6__entry__1">Type</th><th class="entry" id="deletepet__parameters-6__entry__2">Name</th><th class="entry" id="deletepet__parameters-6__entry__3">Description</th><th class="entry" id="deletepet__parameters-6__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="deletepet__parameters-6__entry__1">Header</td>
+<td class="entry" headers="deletepet__parameters-6__entry__2"><p class="lines"><strong class="ph b">api_key</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="deletepet__parameters-6__entry__3"></td>
+<td class="entry" headers="deletepet__parameters-6__entry__4">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="deletepet__parameters-6__entry__1">Path</td>
+<td class="entry" headers="deletepet__parameters-6__entry__2"><p class="lines"><strong class="ph b">petId</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="deletepet__parameters-6__entry__3">Pet id to delete</td>
+<td class="entry" headers="deletepet__parameters-6__entry__4">integer (int64)</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="deletepet__responses-6"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="deletepet__responses-6__entry__1">HTTP Code</th><th class="entry" id="deletepet__responses-6__entry__2">Description</th><th class="entry" id="deletepet__responses-6__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="deletepet__responses-6__entry__1"><strong class="ph b">400</strong></td>
+<td class="entry" headers="deletepet__responses-6__entry__2">Invalid ID supplied</td>
+<td class="entry" headers="deletepet__responses-6__entry__3">No Content</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="deletepet__responses-6__entry__1"><strong class="ph b">404</strong></td>
+<td class="entry" headers="deletepet__responses-6__entry__2">Pet not found</td>
+<td class="entry" headers="deletepet__responses-6__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="deletepet__produces-6"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title11" id="uploadfile">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title11"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-post"><code><span class="swagger-verb">POST</span>/pet/{petId}/uploadImage</code><span class="swagger-summary small">uploads an image</span></pre>
+<section class="section" id="uploadfile__parameters-7"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="uploadfile__parameters-7__entry__1">Type</th><th class="entry" id="uploadfile__parameters-7__entry__2">Name</th><th class="entry" id="uploadfile__parameters-7__entry__3">Description</th><th class="entry" id="uploadfile__parameters-7__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="uploadfile__parameters-7__entry__1">Path</td>
+<td class="entry" headers="uploadfile__parameters-7__entry__2"><p class="lines"><strong class="ph b">petId</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="uploadfile__parameters-7__entry__3">ID of pet to update</td>
+<td class="entry" headers="uploadfile__parameters-7__entry__4">integer (int64)</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="uploadfile__parameters-7__entry__1">FormData</td>
+<td class="entry" headers="uploadfile__parameters-7__entry__2"><p class="lines"><strong class="ph b">additionalMetadata</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="uploadfile__parameters-7__entry__3">Additional data to pass to server</td>
+<td class="entry" headers="uploadfile__parameters-7__entry__4">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="uploadfile__parameters-7__entry__1">FormData</td>
+<td class="entry" headers="uploadfile__parameters-7__entry__2"><p class="lines"><strong class="ph b">file</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="uploadfile__parameters-7__entry__3">file to upload</td>
+<td class="entry" headers="uploadfile__parameters-7__entry__4">file</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="uploadfile__responses-7"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="uploadfile__responses-7__entry__1">HTTP Code</th><th class="entry" id="uploadfile__responses-7__entry__2">Description</th><th class="entry" id="uploadfile__responses-7__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="uploadfile__responses-7__entry__1"><strong class="ph b">200</strong></td>
+<td class="entry" headers="uploadfile__responses-7__entry__2">successful operation</td>
+<td class="entry" headers="uploadfile__responses-7__entry__3"><a class="xref" href="#apiresponse">ApiResponse</a></td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="uploadfile__consumes-3"><h4 class="title sectiontitle">Consumes</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">multipart/form-data</code></li>
+</ul>
+</section>
+<section class="section" id="uploadfile__produces-7"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+</article>
+<article class="topic nested1" aria-labelledby="ariaid-title12" id="store">
+<h2 class="title topictitle2" id="ariaid-title12">store</h2>
+<div class="body">
+<p class="p">Access to Petstore orders</p>
+</div>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title13" id="getinventory">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title13"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-get"><code><span class="swagger-verb">GET</span>/store/inventory</code><span class="swagger-summary small">Returns pet inventories by status</span></pre>
+<p class="p">Returns a map of status codes to quantities</p>
+<section class="section" id="getinventory__responses-8"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="getinventory__responses-8__entry__1">HTTP Code</th><th class="entry" id="getinventory__responses-8__entry__2">Description</th><th class="entry" id="getinventory__responses-8__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="getinventory__responses-8__entry__1"><strong class="ph b">200</strong></td>
+<td class="entry" headers="getinventory__responses-8__entry__2">successful operation</td>
+<td class="entry" headers="getinventory__responses-8__entry__3">object</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="getinventory__produces-8"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title14" id="placeorder">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title14"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-post"><code><span class="swagger-verb">POST</span>/store/order</code><span class="swagger-summary small">Place an order for a pet</span></pre>
+<section class="section" id="placeorder__parameters-8"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="placeorder__parameters-8__entry__1">Type</th><th class="entry" id="placeorder__parameters-8__entry__2">Name</th><th class="entry" id="placeorder__parameters-8__entry__3">Description</th><th class="entry" id="placeorder__parameters-8__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="placeorder__parameters-8__entry__1">Body</td>
+<td class="entry" headers="placeorder__parameters-8__entry__2"><p class="lines"><strong class="ph b">body</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="placeorder__parameters-8__entry__3">order placed for purchasing the pet</td>
+<td class="entry" headers="placeorder__parameters-8__entry__4"><a class="xref" href="#order">Order</a></td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="placeorder__responses-9"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="placeorder__responses-9__entry__1">HTTP Code</th><th class="entry" id="placeorder__responses-9__entry__2">Description</th><th class="entry" id="placeorder__responses-9__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="placeorder__responses-9__entry__1"><strong class="ph b">200</strong></td>
+<td class="entry" headers="placeorder__responses-9__entry__2">successful operation</td>
+<td class="entry" headers="placeorder__responses-9__entry__3"><a class="xref" href="#order">Order</a></td>
+</tr>
+<tr class="row">
+<td class="entry" headers="placeorder__responses-9__entry__1"><strong class="ph b">400</strong></td>
+<td class="entry" headers="placeorder__responses-9__entry__2">Invalid Order</td>
+<td class="entry" headers="placeorder__responses-9__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="placeorder__produces-9"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title15" id="getorderbyid">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title15"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-get"><code><span class="swagger-verb">GET</span>/store/order/{orderId}</code><span class="swagger-summary small">Find purchase order by ID</span></pre>
+<p class="p">For valid response try integer IDs with value &gt;= 1 and &lt;= 10. Other values will generated exceptions</p>
+<section class="section" id="getorderbyid__parameters-9"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="getorderbyid__parameters-9__entry__1">Type</th><th class="entry" id="getorderbyid__parameters-9__entry__2">Name</th><th class="entry" id="getorderbyid__parameters-9__entry__3">Description</th><th class="entry" id="getorderbyid__parameters-9__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="getorderbyid__parameters-9__entry__1">Path</td>
+<td class="entry" headers="getorderbyid__parameters-9__entry__2"><p class="lines"><strong class="ph b">orderId</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="getorderbyid__parameters-9__entry__3">ID of pet that needs to be fetched</td>
+<td class="entry" headers="getorderbyid__parameters-9__entry__4">integer (int64)</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="getorderbyid__responses-10"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="getorderbyid__responses-10__entry__1">HTTP Code</th><th class="entry" id="getorderbyid__responses-10__entry__2">Description</th><th class="entry" id="getorderbyid__responses-10__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="getorderbyid__responses-10__entry__1"><strong class="ph b">200</strong></td>
+<td class="entry" headers="getorderbyid__responses-10__entry__2">successful operation</td>
+<td class="entry" headers="getorderbyid__responses-10__entry__3"><a class="xref" href="#order">Order</a></td>
+</tr>
+<tr class="row">
+<td class="entry" headers="getorderbyid__responses-10__entry__1"><strong class="ph b">400</strong></td>
+<td class="entry" headers="getorderbyid__responses-10__entry__2">Invalid ID supplied</td>
+<td class="entry" headers="getorderbyid__responses-10__entry__3">No Content</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="getorderbyid__responses-10__entry__1"><strong class="ph b">404</strong></td>
+<td class="entry" headers="getorderbyid__responses-10__entry__2">Order not found</td>
+<td class="entry" headers="getorderbyid__responses-10__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="getorderbyid__produces-10"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-delete" aria-labelledby="ariaid-title16" id="deleteorder">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title16"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-delete"><code><span class="swagger-verb">DELETE</span>/store/order/{orderId}</code><span class="swagger-summary small">Delete purchase order by ID</span></pre>
+<p class="p">For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors</p>
+<section class="section" id="deleteorder__parameters-10"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="deleteorder__parameters-10__entry__1">Type</th><th class="entry" id="deleteorder__parameters-10__entry__2">Name</th><th class="entry" id="deleteorder__parameters-10__entry__3">Description</th><th class="entry" id="deleteorder__parameters-10__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="deleteorder__parameters-10__entry__1">Path</td>
+<td class="entry" headers="deleteorder__parameters-10__entry__2"><p class="lines"><strong class="ph b">orderId</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="deleteorder__parameters-10__entry__3">ID of the order that needs to be deleted</td>
+<td class="entry" headers="deleteorder__parameters-10__entry__4">integer (int64)</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="deleteorder__responses-11"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="deleteorder__responses-11__entry__1">HTTP Code</th><th class="entry" id="deleteorder__responses-11__entry__2">Description</th><th class="entry" id="deleteorder__responses-11__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="deleteorder__responses-11__entry__1"><strong class="ph b">400</strong></td>
+<td class="entry" headers="deleteorder__responses-11__entry__2">Invalid ID supplied</td>
+<td class="entry" headers="deleteorder__responses-11__entry__3">No Content</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="deleteorder__responses-11__entry__1"><strong class="ph b">404</strong></td>
+<td class="entry" headers="deleteorder__responses-11__entry__2">Order not found</td>
+<td class="entry" headers="deleteorder__responses-11__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="deleteorder__produces-11"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+</article>
+<article class="topic nested1" aria-labelledby="ariaid-title17" id="user-1">
+<h2 class="title topictitle2" id="ariaid-title17">user</h2>
+<div class="body">
+<p class="p">Operations about user</p>
+</div>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title18" id="createuser">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title18"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-post"><code><span class="swagger-verb">POST</span>/user</code><span class="swagger-summary small">Create user</span></pre>
+<p class="p">This can only be done by the logged in user.</p>
+<section class="section" id="createuser__parameters-11"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="createuser__parameters-11__entry__1">Type</th><th class="entry" id="createuser__parameters-11__entry__2">Name</th><th class="entry" id="createuser__parameters-11__entry__3">Description</th><th class="entry" id="createuser__parameters-11__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="createuser__parameters-11__entry__1">Body</td>
+<td class="entry" headers="createuser__parameters-11__entry__2"><p class="lines"><strong class="ph b">body</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="createuser__parameters-11__entry__3">Created user object</td>
+<td class="entry" headers="createuser__parameters-11__entry__4"><a class="xref" href="#user">User</a></td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="createuser__responses-12"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="createuser__responses-12__entry__1">HTTP Code</th><th class="entry" id="createuser__responses-12__entry__2">Description</th><th class="entry" id="createuser__responses-12__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="createuser__responses-12__entry__1"><strong class="ph b">default</strong></td>
+<td class="entry" headers="createuser__responses-12__entry__2">successful operation</td>
+<td class="entry" headers="createuser__responses-12__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="createuser__produces-12"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title19" id="createuserswitharrayinput">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title19"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-post"><code><span class="swagger-verb">POST</span>/user/createWithArray</code><span class="swagger-summary small">Creates list of users with given input array</span></pre>
+<section class="section" id="createuserswitharrayinput__parameters-12"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="createuserswitharrayinput__parameters-12__entry__1">Type</th><th class="entry" id="createuserswitharrayinput__parameters-12__entry__2">Name</th><th class="entry" id="createuserswitharrayinput__parameters-12__entry__3">Description</th><th class="entry" id="createuserswitharrayinput__parameters-12__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="createuserswitharrayinput__parameters-12__entry__1">Body</td>
+<td class="entry" headers="createuserswitharrayinput__parameters-12__entry__2"><p class="lines"><strong class="ph b">body</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="createuserswitharrayinput__parameters-12__entry__3">List of user object</td>
+<td class="entry" headers="createuserswitharrayinput__parameters-12__entry__4">Array of <a class="xref" href="#user">User</a></td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="createuserswitharrayinput__responses-13"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="createuserswitharrayinput__responses-13__entry__1">HTTP Code</th><th class="entry" id="createuserswitharrayinput__responses-13__entry__2">Description</th><th class="entry" id="createuserswitharrayinput__responses-13__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="createuserswitharrayinput__responses-13__entry__1"><strong class="ph b">default</strong></td>
+<td class="entry" headers="createuserswitharrayinput__responses-13__entry__2">successful operation</td>
+<td class="entry" headers="createuserswitharrayinput__responses-13__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="createuserswitharrayinput__produces-13"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-post" aria-labelledby="ariaid-title20" id="createuserswithlistinput">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title20"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-post"><code><span class="swagger-verb">POST</span>/user/createWithList</code><span class="swagger-summary small">Creates list of users with given input array</span></pre>
+<section class="section" id="createuserswithlistinput__parameters-13"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="createuserswithlistinput__parameters-13__entry__1">Type</th><th class="entry" id="createuserswithlistinput__parameters-13__entry__2">Name</th><th class="entry" id="createuserswithlistinput__parameters-13__entry__3">Description</th><th class="entry" id="createuserswithlistinput__parameters-13__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="createuserswithlistinput__parameters-13__entry__1">Body</td>
+<td class="entry" headers="createuserswithlistinput__parameters-13__entry__2"><p class="lines"><strong class="ph b">body</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="createuserswithlistinput__parameters-13__entry__3">List of user object</td>
+<td class="entry" headers="createuserswithlistinput__parameters-13__entry__4">Array of <a class="xref" href="#user">User</a></td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="createuserswithlistinput__responses-14"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="createuserswithlistinput__responses-14__entry__1">HTTP Code</th><th class="entry" id="createuserswithlistinput__responses-14__entry__2">Description</th><th class="entry" id="createuserswithlistinput__responses-14__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="createuserswithlistinput__responses-14__entry__1"><strong class="ph b">default</strong></td>
+<td class="entry" headers="createuserswithlistinput__responses-14__entry__2">successful operation</td>
+<td class="entry" headers="createuserswithlistinput__responses-14__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="createuserswithlistinput__produces-14"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title21" id="loginuser">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title21"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-get"><code><span class="swagger-verb">GET</span>/user/login</code><span class="swagger-summary small">Logs user into the system</span></pre>
+<section class="section" id="loginuser__parameters-14"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="loginuser__parameters-14__entry__1">Type</th><th class="entry" id="loginuser__parameters-14__entry__2">Name</th><th class="entry" id="loginuser__parameters-14__entry__3">Description</th><th class="entry" id="loginuser__parameters-14__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="loginuser__parameters-14__entry__1">Query</td>
+<td class="entry" headers="loginuser__parameters-14__entry__2"><p class="lines"><strong class="ph b">username</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="loginuser__parameters-14__entry__3">The user name for login</td>
+<td class="entry" headers="loginuser__parameters-14__entry__4">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="loginuser__parameters-14__entry__1">Query</td>
+<td class="entry" headers="loginuser__parameters-14__entry__2"><p class="lines"><strong class="ph b">password</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="loginuser__parameters-14__entry__3">The password for login in clear text</td>
+<td class="entry" headers="loginuser__parameters-14__entry__4">string</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="loginuser__responses-15"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="loginuser__responses-15__entry__1">HTTP Code</th><th class="entry" id="loginuser__responses-15__entry__2">Description</th><th class="entry" id="loginuser__responses-15__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="loginuser__responses-15__entry__1"><strong class="ph b">200</strong></td>
+<td class="entry" headers="loginuser__responses-15__entry__2"><p class="lines">successful operation<br><strong class="ph b">Headers</strong>: <code class="ph codeph">X-Rate-Limit</code> (integer (int32))<br><strong class="ph b">Headers</strong>: <code class="ph codeph">X-Expires-After</code> (string (date-time))</p></td>
+<td class="entry" headers="loginuser__responses-15__entry__3">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="loginuser__responses-15__entry__1"><strong class="ph b">400</strong></td>
+<td class="entry" headers="loginuser__responses-15__entry__2">Invalid username/password supplied</td>
+<td class="entry" headers="loginuser__responses-15__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="loginuser__produces-15"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title22" id="logoutuser">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title22"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-get"><code><span class="swagger-verb">GET</span>/user/logout</code><span class="swagger-summary small">Logs out current logged in user session</span></pre>
+<section class="section" id="logoutuser__responses-16"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="logoutuser__responses-16__entry__1">HTTP Code</th><th class="entry" id="logoutuser__responses-16__entry__2">Description</th><th class="entry" id="logoutuser__responses-16__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="logoutuser__responses-16__entry__1"><strong class="ph b">default</strong></td>
+<td class="entry" headers="logoutuser__responses-16__entry__2">successful operation</td>
+<td class="entry" headers="logoutuser__responses-16__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="logoutuser__produces-16"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-get" aria-labelledby="ariaid-title23" id="getuserbyname">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title23"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-get"><code><span class="swagger-verb">GET</span>/user/{username}</code><span class="swagger-summary small">Get user by user name</span></pre>
+<section class="section" id="getuserbyname__parameters-15"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="getuserbyname__parameters-15__entry__1">Type</th><th class="entry" id="getuserbyname__parameters-15__entry__2">Name</th><th class="entry" id="getuserbyname__parameters-15__entry__3">Description</th><th class="entry" id="getuserbyname__parameters-15__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="getuserbyname__parameters-15__entry__1">Path</td>
+<td class="entry" headers="getuserbyname__parameters-15__entry__2"><p class="lines"><strong class="ph b">username</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="getuserbyname__parameters-15__entry__3">The name that needs to be fetched. Use user1 for testing.</td>
+<td class="entry" headers="getuserbyname__parameters-15__entry__4">string</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="getuserbyname__responses-17"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="getuserbyname__responses-17__entry__1">HTTP Code</th><th class="entry" id="getuserbyname__responses-17__entry__2">Description</th><th class="entry" id="getuserbyname__responses-17__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="getuserbyname__responses-17__entry__1"><strong class="ph b">200</strong></td>
+<td class="entry" headers="getuserbyname__responses-17__entry__2">successful operation</td>
+<td class="entry" headers="getuserbyname__responses-17__entry__3"><a class="xref" href="#user">User</a></td>
+</tr>
+<tr class="row">
+<td class="entry" headers="getuserbyname__responses-17__entry__1"><strong class="ph b">400</strong></td>
+<td class="entry" headers="getuserbyname__responses-17__entry__2">Invalid username supplied</td>
+<td class="entry" headers="getuserbyname__responses-17__entry__3">No Content</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="getuserbyname__responses-17__entry__1"><strong class="ph b">404</strong></td>
+<td class="entry" headers="getuserbyname__responses-17__entry__2">User not found</td>
+<td class="entry" headers="getuserbyname__responses-17__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="getuserbyname__produces-17"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-put" aria-labelledby="ariaid-title24" id="updateuser">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title24"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-put"><code><span class="swagger-verb">PUT</span>/user/{username}</code><span class="swagger-summary small">Updated user</span></pre>
+<p class="p">This can only be done by the logged in user.</p>
+<section class="section" id="updateuser__parameters-16"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="updateuser__parameters-16__entry__1">Type</th><th class="entry" id="updateuser__parameters-16__entry__2">Name</th><th class="entry" id="updateuser__parameters-16__entry__3">Description</th><th class="entry" id="updateuser__parameters-16__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="updateuser__parameters-16__entry__1">Path</td>
+<td class="entry" headers="updateuser__parameters-16__entry__2"><p class="lines"><strong class="ph b">username</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="updateuser__parameters-16__entry__3">name that need to be updated</td>
+<td class="entry" headers="updateuser__parameters-16__entry__4">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="updateuser__parameters-16__entry__1">Body</td>
+<td class="entry" headers="updateuser__parameters-16__entry__2"><p class="lines"><strong class="ph b">body</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="updateuser__parameters-16__entry__3">Updated user object</td>
+<td class="entry" headers="updateuser__parameters-16__entry__4"><a class="xref" href="#user">User</a></td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="updateuser__responses-18"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="updateuser__responses-18__entry__1">HTTP Code</th><th class="entry" id="updateuser__responses-18__entry__2">Description</th><th class="entry" id="updateuser__responses-18__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="updateuser__responses-18__entry__1"><strong class="ph b">400</strong></td>
+<td class="entry" headers="updateuser__responses-18__entry__2">Invalid user supplied</td>
+<td class="entry" headers="updateuser__responses-18__entry__3">No Content</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="updateuser__responses-18__entry__1"><strong class="ph b">404</strong></td>
+<td class="entry" headers="updateuser__responses-18__entry__2">User not found</td>
+<td class="entry" headers="updateuser__responses-18__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="updateuser__produces-18"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+<article class="topic nested2 swagger-delete" aria-labelledby="ariaid-title25" id="deleteuser">
+<a xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="ariaid-title25"></a>
+<div class="body">
+<pre xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="pre codeblock swagger-delete"><code><span class="swagger-verb">DELETE</span>/user/{username}</code><span class="swagger-summary small">Delete user</span></pre>
+<p class="p">This can only be done by the logged in user.</p>
+<section class="section" id="deleteuser__parameters-17"><h4 class="title sectiontitle">Parameters</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="deleteuser__parameters-17__entry__1">Type</th><th class="entry" id="deleteuser__parameters-17__entry__2">Name</th><th class="entry" id="deleteuser__parameters-17__entry__3">Description</th><th class="entry" id="deleteuser__parameters-17__entry__4">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="deleteuser__parameters-17__entry__1">Path</td>
+<td class="entry" headers="deleteuser__parameters-17__entry__2"><p class="lines"><strong class="ph b">username</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="deleteuser__parameters-17__entry__3">The name that needs to be deleted</td>
+<td class="entry" headers="deleteuser__parameters-17__entry__4">string</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="deleteuser__responses-19"><h4 class="title sectiontitle">Responses</h4>
+
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="deleteuser__responses-19__entry__1">HTTP Code</th><th class="entry" id="deleteuser__responses-19__entry__2">Description</th><th class="entry" id="deleteuser__responses-19__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="deleteuser__responses-19__entry__1"><strong class="ph b">400</strong></td>
+<td class="entry" headers="deleteuser__responses-19__entry__2">Invalid username supplied</td>
+<td class="entry" headers="deleteuser__responses-19__entry__3">No Content</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="deleteuser__responses-19__entry__1"><strong class="ph b">404</strong></td>
+<td class="entry" headers="deleteuser__responses-19__entry__2">User not found</td>
+<td class="entry" headers="deleteuser__responses-19__entry__3">No Content</td>
+</tr>
+</tbody></table>
+</section>
+<section class="section" id="deleteuser__produces-19"><h4 class="title sectiontitle">Produces</h4>
+
+<ul class="ul">
+<li class="li"><code class="ph codeph">application/xml</code></li>
+<li class="li"><code class="ph codeph">application/json</code></li>
+</ul>
+</section>
+</div>
+</article>
+</article>
+<article class="topic nested1" aria-labelledby="ariaid-title26" id="definitions">
+<h2 class="title topictitle2" id="ariaid-title26">Definitions</h2>
+<div class="body"></div>
+<article class="topic nested2 definition" aria-labelledby="ariaid-title27" id="order">
+<h3 class="title topictitle3" id="ariaid-title27">Order</h3>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="order__entry__1">Name</th><th class="entry" id="order__entry__2">Description</th><th class="entry" id="order__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="order__entry__1"><p class="lines"><strong class="ph b">id</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="order__entry__2"></td>
+<td class="entry" headers="order__entry__3">integer (int64)</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="order__entry__1"><p class="lines"><strong class="ph b">petId</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="order__entry__2"></td>
+<td class="entry" headers="order__entry__3">integer (int64)</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="order__entry__1"><p class="lines"><strong class="ph b">quantity</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="order__entry__2"></td>
+<td class="entry" headers="order__entry__3">integer (int32)</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="order__entry__1"><p class="lines"><strong class="ph b">shipDate</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="order__entry__2"></td>
+<td class="entry" headers="order__entry__3">string (date-time)</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="order__entry__1"><p class="lines"><strong class="ph b">status</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="order__entry__2">Order Status</td>
+<td class="entry" headers="order__entry__3">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="order__entry__1"><p class="lines"><strong class="ph b">complete</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="order__entry__2"></td>
+<td class="entry" headers="order__entry__3">boolean</td>
+</tr>
+</tbody></table>
+</div>
+</article>
+<article class="topic nested2 definition" aria-labelledby="ariaid-title28" id="user">
+<h3 class="title topictitle3" id="ariaid-title28">User</h3>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="user__entry__1">Name</th><th class="entry" id="user__entry__2">Description</th><th class="entry" id="user__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="user__entry__1"><p class="lines"><strong class="ph b">id</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="user__entry__2"></td>
+<td class="entry" headers="user__entry__3">integer (int64)</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="user__entry__1"><p class="lines"><strong class="ph b">username</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="user__entry__2"></td>
+<td class="entry" headers="user__entry__3">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="user__entry__1"><p class="lines"><strong class="ph b">firstName</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="user__entry__2"></td>
+<td class="entry" headers="user__entry__3">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="user__entry__1"><p class="lines"><strong class="ph b">lastName</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="user__entry__2"></td>
+<td class="entry" headers="user__entry__3">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="user__entry__1"><p class="lines"><strong class="ph b">email</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="user__entry__2"></td>
+<td class="entry" headers="user__entry__3">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="user__entry__1"><p class="lines"><strong class="ph b">password</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="user__entry__2"></td>
+<td class="entry" headers="user__entry__3">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="user__entry__1"><p class="lines"><strong class="ph b">phone</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="user__entry__2"></td>
+<td class="entry" headers="user__entry__3">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="user__entry__1"><p class="lines"><strong class="ph b">userStatus</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="user__entry__2">User Status</td>
+<td class="entry" headers="user__entry__3">integer (int32)</td>
+</tr>
+</tbody></table>
+</div>
+</article>
+<article class="topic nested2 definition" aria-labelledby="ariaid-title29" id="category">
+<h3 class="title topictitle3" id="ariaid-title29">Category</h3>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="category__entry__1">Name</th><th class="entry" id="category__entry__2">Description</th><th class="entry" id="category__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="category__entry__1"><p class="lines"><strong class="ph b">id</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="category__entry__2"></td>
+<td class="entry" headers="category__entry__3">integer (int64)</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="category__entry__1"><p class="lines"><strong class="ph b">name</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="category__entry__2"></td>
+<td class="entry" headers="category__entry__3">string</td>
+</tr>
+</tbody></table>
+</div>
+</article>
+<article class="topic nested2 definition" aria-labelledby="ariaid-title30" id="tag">
+<h3 class="title topictitle3" id="ariaid-title30">Tag</h3>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="tag__entry__1">Name</th><th class="entry" id="tag__entry__2">Description</th><th class="entry" id="tag__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="tag__entry__1"><p class="lines"><strong class="ph b">id</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="tag__entry__2"></td>
+<td class="entry" headers="tag__entry__3">integer (int64)</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="tag__entry__1"><p class="lines"><strong class="ph b">name</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="tag__entry__2"></td>
+<td class="entry" headers="tag__entry__3">string</td>
+</tr>
+</tbody></table>
+</div>
+</article>
+<article class="topic nested2 definition" aria-labelledby="ariaid-title31" id="pet">
+<h3 class="title topictitle3" id="ariaid-title31">Pet</h3>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="pet__entry__1">Name</th><th class="entry" id="pet__entry__2">Description</th><th class="entry" id="pet__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="pet__entry__1"><p class="lines"><strong class="ph b">id</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="pet__entry__2"></td>
+<td class="entry" headers="pet__entry__3">integer (int64)</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="pet__entry__1"><p class="lines"><strong class="ph b">category</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="pet__entry__2"></td>
+<td class="entry" headers="pet__entry__3"><a class="xref" href="#category">Category</a></td>
+</tr>
+<tr class="row">
+<td class="entry" headers="pet__entry__1"><p class="lines"><strong class="ph b">name</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="pet__entry__2"><p class="lines"><br><strong class="ph b">Example</strong>: <code class="ph codeph">doggie</code></p></td>
+<td class="entry" headers="pet__entry__3">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="pet__entry__1"><p class="lines"><strong class="ph b">photoUrls</strong><br><em class="ph i">required</em></p></td>
+<td class="entry" headers="pet__entry__2"></td>
+<td class="entry" headers="pet__entry__3">Array of string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="pet__entry__1"><p class="lines"><strong class="ph b">tags</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="pet__entry__2"></td>
+<td class="entry" headers="pet__entry__3">Array of <a class="xref" href="#tag">Tag</a></td>
+</tr>
+<tr class="row">
+<td class="entry" headers="pet__entry__1"><p class="lines"><strong class="ph b">status</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="pet__entry__2">pet status in the store</td>
+<td class="entry" headers="pet__entry__3">string</td>
+</tr>
+</tbody></table>
+</div>
+</article>
+<article class="topic nested2 definition" aria-labelledby="ariaid-title32" id="apiresponse">
+<h3 class="title topictitle3" id="ariaid-title32">ApiResponse</h3>
+<div class="body">
+<table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row"><th class="entry" id="apiresponse__entry__1">Name</th><th class="entry" id="apiresponse__entry__2">Description</th><th class="entry" id="apiresponse__entry__3">Schema</th></tr></thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="apiresponse__entry__1"><p class="lines"><strong class="ph b">code</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="apiresponse__entry__2"></td>
+<td class="entry" headers="apiresponse__entry__3">integer (int32)</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="apiresponse__entry__1"><p class="lines"><strong class="ph b">type</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="apiresponse__entry__2"></td>
+<td class="entry" headers="apiresponse__entry__3">string</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="apiresponse__entry__1"><p class="lines"><strong class="ph b">message</strong><br><em class="ph i">optional</em></p></td>
+<td class="entry" headers="apiresponse__entry__2"></td>
+<td class="entry" headers="apiresponse__entry__3">string</td>
+</tr>
+</tbody></table>
+</div>
+</article>
+</article>
+<article class="topic nested1" aria-labelledby="ariaid-title33" id="security">
+<h2 class="title topictitle2" id="ariaid-title33">Security</h2>
+<div class="body">
+<ul class="ul">
+<li class="li"><strong class="ph b">petstore_auth</strong> (oauth2)</li>
+<li class="li"><strong class="ph b">api_key</strong> (apiKey)</li>
+</ul>
+</div>
+</article>
+</article></main></body>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<topic id="request-body-schema-description-example" outputclass="swagger">
+  <title>Request Body Schema Description Example</title>
+  <body>
+    <object data="openapi.ast.json" outputclass="swagger-spec" type="application/json"></object>
+  </body>
+  <topic id="overview">
+    <title>Overview</title>
+    <body>
+      <section id="version-information" outputclass="section">
+        <title outputclass="h5">Version information</title>
+        <p>
+          <i>Version</i>: 1.0.0</p>
+      </section>
+      <section id="uri-scheme" outputclass="section">
+        <title outputclass="h5">URI scheme</title>
+        <p>
+          <i>BasePath</i>: /</p>
+      </section>
+    </body>
+  </topic>
+  <topic id="createdocset" outputclass="swagger-post">
+    <title>Create a new document set</title>
+    <body>
+      <codeblock outputclass="swagger-post">POST /docsets/{docSetId}</codeblock>
+      <section id="parameters" outputclass="section">
+        <title>Parameters</title>
+        <table>
+          <tgroup cols="4">
+            <colspec colname="col1" colnum="1"></colspec>
+            <colspec colname="col2" colnum="2"></colspec>
+            <colspec colname="col3" colnum="3"></colspec>
+            <colspec colname="col4" colnum="4"></colspec>
+            <thead>
+              <row>
+                <entry colname="col1">Type</entry>
+                <entry colname="col2">Name</entry>
+                <entry colname="col3">Description</entry>
+                <entry colname="col4">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">Body</entry>
+                <entry colname="col2">
+                  <lines>
+                    <b>body</b>
+                    <i>required</i>
+                  </lines>
+                </entry>
+                <entry colname="col3">Zip archive of AST-rendered content with
+                  <codeph>toc.json</codeph>at root</entry>
+                <entry colname="col4">string (binary)</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+      <section id="responses" outputclass="section">
+        <title>Responses</title>
+        <table>
+          <tgroup cols="3">
+            <colspec colname="col1" colnum="1"></colspec>
+            <colspec colname="col2" colnum="2"></colspec>
+            <colspec colname="col3" colnum="3"></colspec>
+            <thead>
+              <row>
+                <entry colname="col1">HTTP Code</entry>
+                <entry colname="col2">Description</entry>
+                <entry colname="col3">Schema</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <b>201</b>
+                </entry>
+                <entry colname="col2">Document set created.</entry>
+                <entry colname="col3">No Content</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+    </body>
+  </topic>
+</topic>
+
