@@ -2,9 +2,7 @@
 
 <topic id="request-body-schema-description-example" outputclass="swagger">
   <title>Request Body Schema Description Example</title>
-  <body>
-    <object data="swagger/openapi.json" outputclass="swagger-spec" type="application/json"></object>
-  </body>
+  <body></body>
   <topic id="overview">
     <title>Overview</title>
     <body>

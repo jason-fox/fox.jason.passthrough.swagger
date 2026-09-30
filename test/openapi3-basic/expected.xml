@@ -2,9 +2,7 @@
 
 <topic id="pet-store-openapi-3-example" outputclass="swagger">
   <title>Pet Store OpenAPI 3 Example</title>
-  <body>
-    <object data="swagger/openapi.json" outputclass="swagger-spec" type="application/json"></object>
-  </body>
+  <body></body>
   <topic id="overview">
     <title>Overview</title>
     <body>

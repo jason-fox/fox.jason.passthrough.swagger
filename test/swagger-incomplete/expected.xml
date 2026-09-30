@@ -2,9 +2,7 @@
 
 <topic id="identity" outputclass="swagger">
   <title>identity</title>
-  <body>
-    <object data="swagger/swagger.json" outputclass="swagger-spec" type="application/json"></object>
-  </body>
+  <body></body>
   <topic id="overview">
     <title>Overview</title>
     <body>

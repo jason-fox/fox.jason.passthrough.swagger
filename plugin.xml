@@ -69,7 +69,6 @@
 
 	<!-- Uses the Extended CSS extension point -->
 	<feature extension="extend.css.process" value="swagger.css.copy"/>
-	<feature extension="depend.preprocess.post" value="swagger.spec.copy"/>
 	<!-- Uses the passthrough extension point and file reader -->
 	<feature extension="dita.parser">
 		<parser format="swagger" class="fox.jason.passthrough.SwaggerFileReader"/>

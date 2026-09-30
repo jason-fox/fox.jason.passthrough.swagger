@@ -2,9 +2,7 @@
 
 <topic id="iom-rma-rest-api" outputclass="swagger">
   <title>IOM RMA REST API</title>
-  <body>
-    <object data="swagger/swagger.yaml" outputclass="swagger-spec" type="application/yaml"></object>
-  </body>
+  <body></body>
   <topic id="overview">
     <title>Overview</title>
     <body>

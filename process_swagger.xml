@@ -29,14 +29,4 @@
       file="${extend.css.file}"
     />
 	</target>
-
-	<target name="swagger.spec.copy" if="passthrough.spec.keep">
-		<copy todir="${dita.output.dir}" failonerror="false" overwrite="true">
-			<fileset dir="${user.input.dir}" includes="**/*.yaml,**/*.yml,**/*.json">
-				<present targetdir="${dita.temp.dir}"/>
-				<containsregexp expression="^\s*[&quot;']?(swagger|openapi)[&quot;']?\s*:"/>
-			</fileset>
-			<regexpmapper from="^((?:.*/)?)([^/]+)$$" to="\1swagger/\2"/>
-		</copy>
-	</target>
 </project>
