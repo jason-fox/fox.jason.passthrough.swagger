@@ -83,9 +83,7 @@
             </fo:block>
           </fo:table-cell>
           <fo:table-cell>
-            <fo:block>
-              <fo:inline></fo:inline>
-            </fo:block>
+            <fo:block></fo:block>
           </fo:table-cell>
         </fo:table-row>
       </fo:table-body>
