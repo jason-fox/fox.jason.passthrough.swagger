@@ -3,7 +3,7 @@
 <topic id="identity" outputclass="swagger">
   <title>identity</title>
   <body>
-    <object data="swagger.ast.json" outputclass="swagger-spec" type="application/json"></object>
+    <object data="swagger/swagger.json" outputclass="swagger-spec" type="application/json"></object>
   </body>
   <topic id="overview">
     <title>Overview</title>

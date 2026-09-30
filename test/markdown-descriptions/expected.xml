@@ -3,7 +3,7 @@
 <topic id="markdown-descriptions-example" outputclass="swagger">
   <title>Markdown Descriptions Example</title>
   <body>
-    <object data="markdown.ast.json" outputclass="swagger-spec" type="application/json"></object>
+    <object data="swagger/markdown.json" outputclass="swagger-spec" type="application/json"></object>
   </body>
   <topic id="overview">
     <title>Overview</title>

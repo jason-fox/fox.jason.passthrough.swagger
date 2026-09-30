@@ -2,11 +2,6 @@
 **/temp/**
 **/tmp/**
 
-# sibling spec files SwaggerFileReader writes next to the source so object/@data has a distinct,
-# real file to reference (see SwaggerFileReader#astSpecFileName)
-**/*.ast.json
-**/*.ast.yaml
-**/*.ast.yml
 target/
 classes/
 lib/ant-*.jar
