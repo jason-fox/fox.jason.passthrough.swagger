@@ -50,6 +50,7 @@
 	<feature extension="dita.conductor.lib.import" file="lib/animal-sniffer-annotations-1.17.jar"/>
 	<feature extension="dita.conductor.lib.import" file="lib/slf4j-api-1.7.28.jar"/>
 	<feature extension="dita.conductor.lib.import" file="lib/slf4j-ext-1.7.28.jar"/>
+	<feature extension="dita.conductor.lib.import" file="lib/slf4j-nop-1.7.28.jar"/>
 	<feature extension="dita.conductor.lib.import" file="lib/validation-api-1.1.0.Final.jar"/>
 	<feature extension="dita.conductor.lib.import" file="lib/jakarta.xml.bind-api-2.3.2.jar"/>
 	<feature extension="dita.conductor.lib.import" file="lib/jakarta.activation-api-1.2.1.jar"/>
