@@ -1,0 +1,30 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Request Body Schema Description Example",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/docsets/{docSetId}": {
+      "post": {
+        "operationId": "createDocSet",
+        "summary": "Create a new document set",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/zip": {
+              "schema": {
+                "type": "string",
+                "format": "binary",
+                "description": "Zip archive of AST-rendered content with `toc.json` at root"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Document set created." }
+        }
+      }
+    }
+  }
+}

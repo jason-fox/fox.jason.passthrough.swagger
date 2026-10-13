@@ -1,0 +1,30 @@
+name: CI
+'on':
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  unit-test:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v7
+      - name: Run DITA-OT Unit Test
+        uses: jason-fox/dita-unit-test-action@master
+        with:
+          dita-ot-version: '4.4'
+          plugin: 'fox.jason.passthrough.swagger'
+          prerequisites: |
+            fox.jason.extend.css
+            https://github.com/jason-fox/fox.jason.passthrough/archive/master.zip
+      #  env:
+      #    COVERALLS_TOKEN: ${{ secrets.COVERALLS_TOKEN }}
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: test-results
+          path: test-results.html
